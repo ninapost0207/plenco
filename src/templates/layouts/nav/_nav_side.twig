@@ -1,0 +1,85 @@
+{% set inputs = [
+    {
+        header: "First Name*",
+        placeholder: "First Name",
+        type: "text",
+        required: true,
+        inputarea_p: "width: 47% !important",
+        id: "contactUsFirstName",
+    },   
+    {
+        header: "Last Name*",
+        placeholder: "Last Name",
+        type: "text",
+        required: true,
+        inputarea_p: "width: 47% !important",
+        id: "contactUsLastName"
+    },   
+    {
+        header: "Email Address*",
+        placeholder: "email@address.com",
+        type: "email",
+        required: true,
+        inputarea_p: "width: 47% !important",
+        id: "contactUsEmail"
+    },  
+    {
+        header: "Phone Number",
+        placeholder: "(000) 000-0000",
+        type: "phone",
+        required: false,
+        inputarea_p: "width: 47% !important",
+        id: "contactUsPhone"
+    },   
+    {
+        header: "Company Name",
+        placeholder: "My Company’s Name",
+        required: false,
+        type: "text",
+        inputarea_p: "width: 100% !important",
+        id: "contactUsCompany"
+    },  
+    {
+        header: "Message",
+        placeholder: "Write your message",
+        required: false,
+        type: "text",
+        inputarea_p: "width: 100% !important",
+        id: "contactUsMessage"
+    } 
+] %}
+    
+
+
+
+
+<button  type="button" class="nav_side__btn-msg d-none d-md-flex flex-column navbtn {{ data.visible ? '' : 'd-md-none'}}" data-navbtn="contact_modal"> 
+    <img src="./assets/img/svg/chat.svg" alt="Chat" class="nav_side__btn-msg__icon">
+    <span class="nav_side__btn-msg__text_1">Message</span>
+    <span class="nav_side__btn-msg__text_2">plenco</span>
+</button>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade needs-validation novalidate" id="contactUsModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered contactUsModal-cont ">
+    <div class="modal-content contactUsModal rounded-0">
+      <div class="modal-header contactUsModal__header-cont">
+        <h5 class="modal-title contactUsModal__header text_bicolor" id="exampleModalLabel">Contact <em>Plenco</em></h5>
+        <button type="button" class="btn-close contactUsModal__btn_close button_yellow_arrow_60" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form class="modal-body contactUsModal__body" id="contactUsModalForm">
+            {% for input in inputs %}
+                {% include '../../components/blocks/_block_input_2.twig' with {param: input} %}
+            {% endfor %}
+            <p class="contactUsModal__add-text">*fields are required. Our team will try to respond as soon as we can.</p> 
+            <div class="w-100"></div> 
+            <button type="submit" form="contactUsModalForm" class="button_yellow contactUsModal__btn_submit" >Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+

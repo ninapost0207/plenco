@@ -1,0 +1,118 @@
+.section_3_bg {
+    //margin-top: 90px !important; 
+
+   //@at-root @include respond-to(sm) {
+    //@at-root    margin-top: 0px !important; 
+    //}
+
+    //background: url("../img/yellow_bubbles.jpg") #666;// linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    //background-image: url("../img/yellow_bubbles.jpg");
+    //background-position: 70% 50%;
+    //background-size: auto 80%;
+    //background-repeat: no-repeat;
+    //background-position: 600px center;
+    background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+
+    @include respond-to(md) {
+
+        background: none;
+    }
+
+    @include respond-to(sm) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+
+
+}
+
+.section_3 {
+    min-height: 1039px; 
+    
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+
+
+    & .section_3__data {
+
+        //padding-top: 216px;
+        //padding-bottom: 227px;
+
+        @include respond-to(md) {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            /*background-image: url("../img/section_3__bg_mobile.jpg");
+            background-position: left 50%;
+            background-size: 70% 20%;
+            background-repeat: no-repeat;*/
+        }
+
+        & .section_3__textarea {
+
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            
+            & .section_3__img_mobile {
+                display: none;
+
+                @include respond-to(md) {
+                    display: block;
+                    top: -90px;
+                    left: -30px;
+                    width: 60vw;
+                    z-index: 20;
+                }
+            }
+
+        }
+
+
+
+
+
+        & .section_3__img-wrapper {
+            margin-bottom: 0;
+            //border: 2px solid red;
+    
+            @include respond-to(md) {
+                top: 0; 
+                left: 25%;
+                position: relative !important;
+                order: -1;
+                height: 500px;
+                width: 900px !important;
+                //overflow: hidden;
+                //background-image: url("../img/yellow_bubbles.jpg");
+                margin-bottom: 44px;
+                //z-index: 60;
+                //border: 2px solid red;
+            }
+             
+    
+    
+            
+            & .section_3__image {
+                height: 826px;
+                width: auto;
+                left: 50%;
+                top: 98px;
+
+    
+                @include respond-to(md) {
+                    display: none;
+                    z-index: -1;
+                }
+            }
+    
+        }
+
+
+
+    }
+
+
+
+
+}
+

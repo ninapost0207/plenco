@@ -1,0 +1,22 @@
+.section_heading_bottom {
+    background-color: $dark-blue-1;    
+    border: 2px solid red;
+
+    & .section_heading_bottom__content {        
+        color: $white;
+        
+
+        @include respond-to(lg) {
+            width: 800px;
+        }
+
+        @include respond-to(sm) {
+            width: 450px;
+        }
+
+        @include respond-to(xs) {
+            width: 332px;
+        }
+
+    }
+} 

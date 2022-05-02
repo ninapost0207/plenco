@@ -1,0 +1,55 @@
+.section_19_bg {
+    background: url('../img/svg/section_18_bg.svg');
+    padding-top: 0px;
+    padding-bottom: 72px;
+    background-position: 25px 100%;
+    background-repeat: no-repeat;
+    background-size: 602px auto;
+
+
+    @include respond-to(md) {
+
+    }
+
+    @include respond-to(sm) {
+        background: url('../img/svg/section_18_bg_mob.svg');
+        background-position: 0 100%;
+        background-position: 10px 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 123px;
+    }
+
+
+}
+
+.section_19 {
+
+    & .section_19__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+        line-height: 25px;
+        @include ls(0);
+        text-align: left;
+        margin-bottom: 0;
+
+        @include respond-to(sm) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    & .section_19__content {
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include respond-to(sm) {
+            flex-direction: column;
+            margin-top: 18px;
+        }
+    }
+
+
+}
+

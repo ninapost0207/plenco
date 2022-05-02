@@ -1,0 +1,18 @@
+@import './base/global';
+@import './components/global';
+@import './layouts/global';
+@import './pages/global'; 
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+/*
+html, div, header, footer, body, a, h1,h2,h3,h4,h5,h6,p,
+span, svg, img, em, strong, li, ul, ol, button, form {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: black !important;
+    background: none !important;
+}
+
+    <script src='./assets/js/bootstrap.min.js'></script>
+*/

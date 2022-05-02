@@ -1,0 +1,26 @@
+<div class="row section_22_bg overflow-hidden {{ data.class }}" style="{{ data.style }}" id="section_16">
+    <div class="col">
+        <div class="container cont-site section_22">
+            <div class="section_22__left">
+                <h4 class="section_22__header">{{ data.left.header }}</h4>
+                    {% for block in data.left.links %}
+                    <div class="section_22__link-group">
+                        {% for link in block %}
+                            <a href={{ link.link_to }} class="section_22__link">{{ link.text }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+            </div>
+            <div class="section_22__right">
+                <h4 class="section_22__header">{{ data.right.header }}</h4>
+                {% for block in data.right.links %}
+                    <div class="section_22__link-group">
+                        {% for link in block %}
+                            <a href={{ link.link_to }} class="section_22__link">{{ link.text }}</a>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

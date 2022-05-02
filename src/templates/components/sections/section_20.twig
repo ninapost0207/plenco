@@ -1,0 +1,15 @@
+<div class="container cont-site">
+    <div class="row section_20_bg overflow-hidden {{ data.class }}" style="{{ data.style }}" id="section_16">
+        <div class="section_20 col">
+            <h3 class="section_20__header">{{ data.header }}</h3>
+            <h3 class="section_20__text">{{ data.text }}</h3>
+            {% for block in data.blocks %}
+                {% include block.block with {data: block} %} 
+            {% endfor %}
+
+            {% for block in data.blocks_mob %}
+                {% include block.block with {data: block} %} 
+            {% endfor %}
+        </div>
+    </div>
+</div>

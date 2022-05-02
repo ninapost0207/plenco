@@ -1,0 +1,12 @@
+<div class="row section_14_bg overflow-hidden {{ data.class }}" style="{{ data.style }}" id="section_14">
+    <div class="section_14 col px-2">
+        <div class="container cont-site">
+            <h3 class="section_14__header text_bicolor">Technical Service <em>Examples</em></h3>
+            <div class="section_14__examples">
+                {% for block in data.blocks %}
+                    {% include "../blocks/_block_5.twig" with {data: block} %} 
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

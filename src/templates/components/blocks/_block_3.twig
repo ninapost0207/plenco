@@ -1,0 +1,12 @@
+<div class="block_3" style="{{ data.props }}">
+    <div class="block_3__left">
+        <img src={{ data.img }} alt="Customer-1" class="block_3__left__img">
+    </div>
+        <div class="block_3__right  {{ data.pic_position }}">
+            <ul class="ul_1">
+                {% for text in data.texts %}
+                    <li class="ul_1__text">{{ text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+</div>

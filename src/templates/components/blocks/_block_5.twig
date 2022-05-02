@@ -1,0 +1,14 @@
+<a href={{ data.link_to }} class="text-decoration-none">
+    <div class="block_5">
+        <img src={{ data.img }} alt={{ data.alt }} class="block_5__img">
+        <div class="block_5__content">
+            <h4 class="block_5__header">{{ data.text }}</h4>
+            <div class="block_5__tags">
+                {% for tag in data.tags %}
+                    {% include "../blocks/_block_tag_1.twig" with {data: tag} %} 
+                {% endfor %}
+            </div>
+            <a href={{ data.link_to }} class="block_5__link_text text-decoration-none">{{ data.link_text }}</a>
+        </div>
+    </div>    
+</a>

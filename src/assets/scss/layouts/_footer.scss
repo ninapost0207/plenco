@@ -1,0 +1,264 @@
+.footer_bg {
+    padding-top: 82px;
+    padding-bottom: 0px;
+    background-color: $dark-blue-1;
+    width: 100%;
+
+    @include respond-to(sm) {
+        overflow: hidden;
+    }
+
+
+
+
+
+    & .footer__bg-cont {
+
+        top: -30px;
+        //left: calc(-12px - 0.4vw);
+        left: 0;
+        width: 110%;
+        overflow: hidden;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+        
+        @include respond-to(sm) {
+             top: 0px;
+         }
+
+
+        & .footer__bg__img_main {
+            width: 110vw;
+            max-width: none !important;
+            height: 450px;
+            left: calc(-10px - 1.9vw);
+
+
+    
+            @include respond-to(sm) {
+                height: auto;
+                top: 0px;
+                left: -25%;
+                min-width: 150%;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+.footer {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    
+
+    & .footer__block_left {
+
+        & .footer__text_bold {
+            font-family: "Almarai-700";
+            font-size: 14px;
+            color: $white;
+            margin-bottom: 8px !important;
+        }
+    
+    
+        & .footer__text {
+            color: $white;
+            font-family: "Mulish-300";
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 0 !important;
+        }
+
+        & .footer__logos_wrapper_left {
+            margin-top: 16px;
+            height: 24px;
+
+            & .footer__logo {
+                z-index: 30 !important;
+
+                &:nth-child(2) {
+                    margin-left: 24px;
+                    margin-right: 24px;
+                }
+            }
+
+        }
+
+
+        & .footer__website-by_wrapper {
+            margin-top: 110px;
+            height: 8px;
+
+            @include respond-to(sm) {
+                margin-top: 72px;
+            }
+
+            & .footer__website-by {
+                font-size: 12px;
+                line-height: auto;
+                color: $white;
+                margin-bottom: 0;
+            }
+
+            & .footer__logo {
+                z-index: 30 !important;
+                margin-left: 4px !important;
+            }
+        }
+
+
+    }
+
+
+  
+    & .footer__logos__cont  {
+        padding-top: 0 !important;
+        
+        @include respond-to(sm) {
+            padding-top: 32px !important;
+        }
+
+        & .footer__logos_wrapper_middle {
+            height: 24px !important;
+
+            & .footer__logo_middle {
+                margin-left: 28px !important;
+                margin-right: 28px !important;
+                
+                @include respond-to(md) {
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                }
+            }
+        }
+
+        & .footer__right-block {
+
+            & .footer__link {
+
+                text-decoration: none;
+
+                & .footer__text_bold {
+                    font-family: "Almarai-700";
+                    font-size: 14px;
+                    color: $white;
+                    margin-bottom: 0px !important;
+                    margin-top: 8px !important;
+
+                    @include respond-to(sm) {
+                        padding-bottom: 8px !important;
+                        padding-top: 0 !important;
+                        margin-top: 0 !important;
+                    }
+                }
+            
+            
+                & .footer__text {
+                    color: $white;
+                    font-family: "Mulish-300";
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-bottom: 0 !important;
+                    margin-top: 8px !important;
+
+                    @include respond-to(sm) {
+                        padding-bottom: 8px !important;
+                        padding-top: 0 !important;
+                        margin-top: 0 !important;
+                    }
+
+                }
+
+                & .footer__text_spec {
+                    margin-top: 0 !important;
+                }
+
+            }
+
+            & .footer__website-by_wrapper {
+                margin-top: 80px !important;
+                height: 8px !important;
+
+                @include respond-to(xs) {
+                    margin-top: 41px !important;
+                }
+    
+                & .footer__website-by {
+                    font-family: "Mulish-300";
+                    line-height: 22px;
+                    margin-bottom: 0 !important;
+                    font-size: 12px;
+                    line-height: auto;
+                    color: $white;
+                    margin-bottom: 0;
+                    margin-left: 4px !important;
+                }
+    
+                & .footer__logo {
+                    z-index: 30 !important;
+                }
+            }
+
+            & .footer__desing {
+                width: 128px !important;
+                height: 44px !important;
+                bottom: 0 !important;
+                right: 0 !important;
+
+                & .footer__design_text {
+                    color: $black;
+                    margin-bottom: 0;
+                    
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    & .footer__desing {
+        background-color: #D0CECE;
+
+        @include respond-to(sm) {
+            left: 0 !important;
+        }
+
+        & .footer__design_text {
+            font-size: 15px;
+            font-family: "Futura-700";
+        }
+    }
+
+
+
+
+}
+

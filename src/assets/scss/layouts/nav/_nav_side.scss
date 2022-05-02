@@ -1,0 +1,142 @@
+.nav_side__btn-msg {
+    position: fixed !important;
+    align-items: center;
+    justify-content: center;
+    top: 640px;
+    //z-index: 9999 !important    ;
+    right: 0px;
+    width: 130px !important;
+    height: 114px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;   
+    background-color: $light-blue-3;
+    z-index: 100;
+
+    & .nav_side__btn-msg__icon {
+        height: 43px;
+        width: 43px;
+    }
+
+    & .nav_side__btn-msg__text_1 {
+        text-transform: uppercase;
+        font-family: "Gotham-700";
+        font-size: 14px;
+    }
+
+    & .nav_side__btn-msg__text_2 {
+        text-transform: capitalize;
+        font-family: "Gotham-book";
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+.contactUsModal-cont {
+    width: 837px !important;
+    max-width: none !important;
+
+
+    .contactUsModal {
+        background-color: $light-blue-1 !important;
+        padding-left: 54px;
+        padding-right: 54px;
+        padding-bottom: 62px;
+    
+        & .contactUsModal__header-cont {
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none;
+    
+            & .contactUsModal__header {
+                font-family: "Almarai-700";
+                font-size: 28px;
+                margin: 82px 0 0 0 !important;
+                padding: 0 !important;
+            }
+
+            & .contactUsModal__btn_close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0;
+                margin: 0;
+                background-color: $yellow-1;
+                opacity: 1;
+                background-image: url("../img/svg/close.svg");
+                background-size: 25px 25px;
+                border: none;
+                border-radius: 0;
+
+                &:focus, &:active, &:checked {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+            }
+        }
+    
+    
+        & .contactUsModal__body {
+            display: flex;
+            font-display: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-left: 7px solid $light-blue-2 !important;
+            width: 725px;
+            padding: 0 0 0 31px !important;
+            margin-top: 17px ;
+    
+    
+            & .block_input_2__inputarea {
+                margin-bottom: 24px;
+                
+                & .block_input_2__inputarea__input{
+                    margin-top: 5px;
+            
+                }        
+                
+                &:nth-child(6) {
+                    
+                    & input {
+                        border: 3px solid red;
+                        height: 150px;
+                        rows: 5;
+                    }
+                }
+            }
+    
+            & .contactUsModal__add-text {
+                font-family: "Muli-300";
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+        
+        
+        
+            & .contactUsModal__btn_submit {
+                margin-left: auto;
+                margin-right: auto;
+                width: 208px;
+                margin-top: 0;
+                margin-bottom: 0;
+                position: relative;
+                top: 26px;
+            }
+        }
+    
+        
+    }
+    
+}
+
+.modal-backdrop {
+    background-color: $dark-blue-1 !important;
+    opacity: 0.8 !important;
+ }
+
+
+
+

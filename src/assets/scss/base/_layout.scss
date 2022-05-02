@@ -1,0 +1,161 @@
+html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer, section, nav, img, a, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cont-site {
+    //box-sizing: border-box !important;
+    max-width: 1184px !important; //1184-22-22=1140
+    //margin-left: auto;
+    //margin-right: auto;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+
+.container-fluid {
+    //padding-left: 22px;
+    //padding-right: 22px;
+}
+
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    //padding-left: 0 !important;
+    //padding-right: 0 !important;
+}
+
+
+.text_bicolor {
+    color: $black;
+
+    & em {
+        color: $blue-1;
+        font-style: normal;
+    }
+}
+
+.text_bicolor_2 {
+    color: $black;
+
+    & em {
+        color: $light-blue-2;
+        font-style: normal;
+    }
+}
+
+.text_bicolor_3 {
+    color: $white;
+
+    & em {
+        color: $light-blue-2;
+        font-style: normal;
+    }
+}
+
+
+button {
+    border: none;
+}
+
+input {
+    border: none;
+}
+
+
+
+
+.layout__line_bottom {
+    top: 98.8%;
+    left: 30%;
+    width: 40%;
+    height: 5px;
+    background-color: $black;
+    border-radius: 3px;
+    z-index: 5000; 
+}
+
+
+.layout__line_center {
+    //position: relative;
+    height: 300px;
+    width: 7px;
+    background-color: #FFF;
+    opacity: 0.5;
+    top: 210px;
+    left: calc(50vw - 13px) ;
+    z-index: 500 ;
+    //background-blend-mode:color;
+    
+    @include respond-to(sm) {
+        width: 3px;
+        top: 283px;
+        height: 182px;
+        left: calc(50vw - 10px);
+        z-index: 700;
+
+    }
+}
+
+
+
+.overline {
+    z-index: 600;
+}
+
+
+.overline-r {
+    z-index: 600;
+    position: relative;
+}
+
+.overline_mob {
+    @include respond-to(sm) {
+        z-index: 800 !important;
+    }
+}
+
+.overline_mob-r {
+    @include respond-to(sm) {
+        position: relative;
+        z-index: 800 !important;
+    }
+}
+
+
+
+
+.ul_1 {
+    padding-left: 24px;
+    margin-top: 20px;
+
+    & .ul_1__text {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+        margin-bottom: 0;
+        position: relative;
+        text-indent: -1.5em;
+        list-style: none;
+        margin-top: 20px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-2;
+        }
+
+        &:nth-child(1) {
+            margin-top: 0; //???
+        }
+
+    }
+
+}

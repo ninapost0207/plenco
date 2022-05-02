@@ -1,0 +1,11 @@
+.body_home {
+
+    & .layout__line_center {
+        height: 360px;
+        
+        @include respond-to(sm) {
+            top: 115px;
+            height: 410px; 
+        }
+    }
+}

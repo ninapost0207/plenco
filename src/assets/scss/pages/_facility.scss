@@ -1,0 +1,198 @@
+.body_facility {
+    
+    & .section_heading_bottom {
+        height: 362px;
+        
+        @include respond-to(sm) {
+            height: 300px;
+        }
+        @include respond-to(xs) {        
+            height: 256px;
+        }
+
+        & .section_heading_bottom__content {
+            margin-top: 150px;    
+        
+            @include respond-to(lg) {
+                margin-top: 120px;
+            }
+            @include respond-to(sm) {
+                margin-top: 100px;
+            }
+            @include respond-to(xs) {
+                margin-top: 50px;        
+            }
+        
+        
+        
+            & .section_heading_bottom__content__header {
+                font-family: "Almarai-700";
+                font-size: 34px;
+                line-height: 46px;            
+        
+                @include respond-to(lg) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+        
+                @include respond-to(sm) {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+        
+                @include respond-to(xs) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }        
+            }
+        }
+    } 
+
+
+    & .section_heading_top_bg {        
+    
+        & .section_heading_top__bg_img-cont {            
+    
+            & .section_heading_top__bg_img {                
+                background-position: 10% 100%;                
+                
+                @include respond-to(sm) {
+                    background-position: 55% 90%;
+                    background-size: auto 100%;
+                }
+            }    
+        }  
+          
+    }
+
+
+    & .section_8_bg {
+        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
+        background-position:  100% 0%;
+        background-size: 100% 100%;
+
+        
+        @include respond-to(sm) {
+            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
+        }
+
+    }
+
+    & .section_8__img-wrapper {
+        @include respond-to(md) {
+            margin-top: 54px;
+        }
+        
+    }
+
+
+    
+    & .section_16 {
+        padding-top: 113px;
+        padding-bottom: 148px;
+
+
+        @include respond-to(sm) {
+            padding-top: 46px;
+            padding-bottom: 144px;
+        }
+
+        & .block_7:nth-child(2) {
+            margin-top: 44px;
+
+            @include respond-to(sm) {
+                margin-top: 26px;
+            }
+        }
+    }
+
+
+    & .section_8_2 {
+        //border: 2px solid red;
+        
+        @include respond-to(sm) {
+            background: linear-gradient(180deg, rgba($green_el ,1) 250px, rgba($white,1) 250px, rgba($white,1) 100%);
+            background-size: 70% 100%;
+            background-repeat: no-repeat;
+        }
+
+        & .section_8 {
+            min-height: auto;
+            padding-bottom: 113px;
+
+            @include respond-to(sm) {
+                padding-bottom: 0px;
+            }
+            
+            & .section_8__img-wrapper {
+                overflow: hidden;
+
+                @include respond-to(sm) {
+                    background-position: left center;
+                    //background-size: auto 100%;
+                }
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+        
+                & .section_8__img-cont {
+                    height: 464px;
+                    overflow: hidden;
+                    
+
+                    & .section_8__image {
+                        position: relative;
+                        top: -130px;
+
+
+                    }
+                }
+            }
+
+
+        }
+
+
+
+        & .block_2 {
+
+            min-height: auto !important;
+
+
+            & .block_2__header {
+                @include respond-to(sm) {
+                    position: absolute;
+                    top: -420px;
+                }
+            }
+
+            & .block_2__button {
+                width: 349px;
+
+                @include respond-to(xs) {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    & .section_18 {
+        margin-top: 169px;
+
+        @include respond-to(sm) {
+            margin-top: 71px;
+        }
+    }
+
+
+
+    & .section_13__button {
+        width: 251px;
+    }
+    
+}
+
+    
+

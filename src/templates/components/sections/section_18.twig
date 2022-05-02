@@ -1,0 +1,27 @@
+<div class="row section_18_bg overflow-hidden {{ data.class }}" style="{{ data.style }}">
+    <div class="section_18 col">
+        <div class="container cont-site">
+            <div class="section_18__data">
+                <h3 class="section_18__header text_bicolor">{{ data.header }}</h3>
+                <div class="section_18__content">
+                    <div class="section_18__left">
+                        <p class="section_18__text">{{ data.block_left.text }}</p>
+                        <div class="section_18__blocks-cont">
+                            {% for block in data.block_left.blocks %}
+                                {% include data.block with {data: block} %} 
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="section_18__right">
+                        <p class="section_18__text">{{ data.block_right.text }}</p>
+                        <div class="section_18__blocks-cont">
+                            {% for block in data.block_right.blocks %}
+                                {% include data.block with {data: block} %} 
+                            {% endfor %}
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>

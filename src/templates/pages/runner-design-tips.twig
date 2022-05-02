@@ -1,0 +1,89 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Runner Design Tips' %}
+{% set pageClass = 'body_runner-design-tips' %}
+
+
+{% set page_runner_design_tips = {
+    heading: {
+        heading_top_text: "Runner Design Tips",
+        bg_img: "./assets/img/pages/runner-design-tips/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_16: {
+        class: "page_runner_design_tips overline-r overline_mob-r",
+        header: "When designing runners for molds, there are a number of possible approaches. These include the standard full round 
+            with a center parting line.",
+        blocks: [
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/runner-design-tips/full-round-runner.jpg",
+                img_mob: "./assets/img/pages/runner-design-tips/full-round-runner_mob.jpg",
+                alt: "Pic-1",
+                alt_mob: "Pic-1",
+                header: "Full Round Runner",
+                text: "This is the most efficient runner, but in some cases it is necessary for the runner to be in only one half of the mold."
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/runner-design-tips/standard-trapezoid-runner.jpg",
+                img_mob: "./assets/img/pages/runner-design-tips/standard-trapezoid-runner_mob.jpg",
+                alt: "Pic-2",
+                alt_mob: "Pic-2",
+                header: "Standard Trapezoid Runner",
+                text: "A standard trapezoid runner is often used in situations that require the runner to be only in one mold half. 
+                    The effective runner size is shown in the figure above. The four corners become “dead” areas with nearly no material movement."
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/runner-design-tips/modified-trapezoid-runner.jpg",
+                img_mob: "./assets/img/pages/runner-design-tips/modified-trapezoid-runner_mob.jpg",
+                alt: "Pic-3",
+                alt_mob: "Pic-3",
+                header: "Modified Trapezoid RUnner",
+                text: "To reduce the amount of scrap in the runner we suggest the use of a modified trapezoid. In our experience this 
+                    design reduces the dead areas without a significant change to the effectiveness of the runner. See the figure 
+                    above (left). (Runner Design Tips text)"
+            },
+        ]
+    },
+    section_21: {
+        class: "overline-r overline_mob-r",
+        header: "Reports & Resources CTA",
+        text: "Plenco’s Reports & Resources",
+        bg_img: "./assets/img/pages/polymer-rd-lab/heading.jpg",
+        button: "Reports & Resources",
+        link_to: "#",
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_runner_design_tips.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_runner_design_tips.heading} %}
+    {% include '../components/sections/section_heading_bottom_runner-design-tips.twig' with {data: page_runner_design_tips.heading} %}
+    {% include '../components/sections/section_16.twig' with {data: page_runner_design_tips.section_16} %}
+    {% include '../components/sections/section_21.twig' with {data: page_runner_design_tips.section_21} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

@@ -1,0 +1,39 @@
+.block_input_2__inputarea {
+
+    & .block_input_2__inputarea__header {
+        font-family: "Mulish-400";
+        font-size: 16px;
+        margin-bottom: 0 !important;
+    }
+
+    & .block_input_2__inputarea__input {
+        height: 50px;
+        width: 100% !important;
+        border: 2px solid $blue-1 !important;
+        font-family: "Mulish-300";
+        font-size: 20px;
+        padding-left: 19px;
+        padding-right: 19px;
+
+
+        &::placeholder {
+            font-family: "Mulish-300";
+            font-size: 18px;
+        }
+
+        &:focus, &:active, &:hover {
+            border: 2px solid $blue-1;
+            border-radius: 0;
+            outline: none ;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+

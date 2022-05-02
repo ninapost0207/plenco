@@ -1,0 +1,160 @@
+.body_runner-design-tips {
+    & .section_heading_top {        
+
+        @include respond-to(md) {
+            padding-top: 120px;
+        }
+        @include respond-to(sm) {
+            height: 430px;
+            padding-top: 248px;
+        }
+        
+    }
+    & .section_heading_top__center-block__cont {
+        flex-direction: column !important;        
+        height: 130px;
+        
+
+        @include respond-to(lg) {
+            height: 130px;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 600px;
+        }
+        @include respond-to(md) {
+            height: 130px;
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 500px !important;
+        }
+        @include respond-to(sm) {
+            height: 130px;
+            max-width: 420px !important;
+        }
+        @include respond-to(xs) {        
+            height: 130px;
+            width: 300px;
+        }
+
+
+        & .section_heading_top__center__header {
+            @include respond-to(md) {
+                font-size: 38px;
+                line-height: 44px;
+            }
+            @include respond-to(sm) {
+                font-size: 36px;
+                line-height: 36px;
+            }
+            @include respond-to(xs) {
+                font-size: 30px;
+                line-height: 32px;
+            }
+        }
+    }
+    & .section_heading_bottom {    
+        height: 533px;
+
+        
+        
+        @include respond-to(xs) {        
+            height: 519px;
+        }
+    
+        & .section_heading_bottom__content {
+            margin-top: 160px;    
+            
+            @include respond-to(lg) {
+                margin-top: 130px;
+                
+            }
+            @include respond-to(sm) {
+                margin-top: 50px;
+                
+            }
+            @include respond-to(xs) {
+                margin-top: 50px;
+                
+                
+            }
+        
+        
+        
+            & .section_heading_bottom__content__header {
+                font-family: "Almarai-700";
+                font-size: 34px;
+                line-height: 46px;
+        
+                @include respond-to(lg) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+        
+                @include respond-to(sm) {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+        
+                @include respond-to(xs) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+        
+            }    
+            & .section_heading_bottom__content__text {
+                font-family: "Mulish-400";
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 30px;
+                
+                
+                @include respond-to(xs) {
+                    font-size: 16px;
+                    line-height: 22px;                    
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+            }
+        }    
+    }
+    & .section_heading_top__bg_img {
+        
+        background-position: 60% 50% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 40% 100% !important;
+            background-size: 150% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 40% 100% !important;
+            background-size: 200% !important;
+        }
+    }
+
+
+    & .section_16 {
+        padding-top: 107px;
+        padding-bottom: 143px;
+
+        & .section_16__header {
+            font-family: "Mulish-600";
+            font-size: 20px;
+            line-height: 38px;
+            @include ls(25);
+        }
+
+        & .block_7__right {
+            min-height: 240px !important;
+        }
+
+        @include respond-to(sm) {
+            padding-top: 70px;
+            padding-bottom: 118px;
+        }
+    }
+
+    
+}

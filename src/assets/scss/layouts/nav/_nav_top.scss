@@ -1,0 +1,37 @@
+.navbar {
+    //position: fixed !important;
+    //overflow: hidden !important;
+    //z-index: 1000 !important;
+    height: 32px;
+
+    & .navbar-nav {
+        color: $black;
+        margin-bottom: 0;
+
+
+        & .nav-item {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 40px !important;
+
+            @include respond-to(md) {
+                margin-left: 32px !important;
+            }
+
+            & .nav-link {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+
+                & img {
+                    margin: 0;
+                    padding-left: 8px;
+                }
+            }
+        }
+
+
+    }
+
+
+
+}

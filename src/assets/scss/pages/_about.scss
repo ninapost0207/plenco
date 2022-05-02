@@ -1,0 +1,90 @@
+.body_about {
+    & .section_heading_bottom {    
+        height: 450px;
+
+        @include respond-to(lg) {        
+            height: 400px;
+        }
+        @include respond-to(sm) {        
+            height: 380px;
+        }
+        @include respond-to(xs) {        
+            height: 330px;
+        }
+    
+        .section_heading_bottom__content {
+            margin-top: 180px;    
+            
+            @include respond-to(lg) {
+                margin-top: 150px;
+                height: 400px;
+            }
+            @include respond-to(sm) {
+                margin-top: 100px;
+                height: 380px;
+            }
+            @include respond-to(xs) {
+                margin-top: 50px;
+                height: 330px;
+            }
+        
+        
+        
+            & .section_heading_bottom__content__header {
+                font-family: "Almarai-700";
+                font-size: 34px;
+                line-height: 46px;
+        
+                @include respond-to(lg) {
+                    font-size: 28px;
+                }
+        
+                @include respond-to(sm) {
+                    font-size: 26px;
+                }
+        
+                @include respond-to(xs) {
+                    font-size: 22px;
+                }
+        
+            }    
+            & .section_heading_bottom__content__text {
+                font-family: "Mulish-400";
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 30px;
+        
+                @include respond-to(xs) {
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-top: 0px;
+                }
+            }
+        }    
+    }
+
+    & .section_8__img-wrapper {
+        
+        @include respond-to(md) {
+            margin-top: 60px;
+        }
+    }
+
+    & .section_11 {
+        
+        margin-top: 138px;
+        @include respond-to(md) {
+            margin-top: 80px;
+        }
+    }
+
+    
+    & .section_12_bg {
+        
+        @include respond-to(sm) {
+            margin-top: 60px;
+        }
+    }
+
+
+}

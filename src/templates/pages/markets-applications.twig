@@ -1,0 +1,134 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Markets & Applications page' %}
+{% set pageClass = 'body_markets_applications' %}
+
+
+
+
+{% set page_markets_applications = {
+    heading: {
+        heading_top_text: "Markets & Applications",
+        bg_img: "./assets/img/pages/markets-applications/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_16: {
+        class: "page_facility overline-r overline_mob-r",
+        header: "Markets <em>& Applications</em>",
+        blocks: [
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/markets-applications/automotive.jpg",
+                alt: "Pic-automotive",
+                header: "Automotive",
+                text: "Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and 
+                    chemical resistance that makes them ideally suited for high-temperature applications in combination 
+                    with automotive fluids and electrical distribution.",
+                button: "automotive",
+                link_to: "#"
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/markets-applications/electrical.jpg",
+                alt: "Pic-Electrical-Insulation",
+                header: "Electrical Insulation",
+                text: "Plenco Thermoset materials provide an exceptional combination of electrical insulation, UL Flammability, 
+                    creep resistance and dimensional stability across the widest range of temperatures. This makes them ideal 
+                    materials to insulate electrical devices used in high and low voltage industrial power transmission, automotive 
+                    switches and relays, home appliance controls and many other areas where close tolerances must be maintained 
+                    for years across varying environmental conditions.",
+                button: "Electrical Insulation",
+                link_to: "#"
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/markets-applications/kitchen.jpg",
+                alt: "Pic-kitchen",
+                header: "Home & Commercial Kitchen",
+                text: "Plenco Thermoset materials provide a durable, high-gloss finish with industry leading thermal stability, 
+                    UL flammability, electrical insulation and chemical resistance. This makes them ideal for metal or thermoplastic 
+                    replacement in hot-zone, electrical device components.",
+                button: "Kitchen",
+                link_to: "#"
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/markets-applications/small_engine.jpg",
+                alt: "Pic-Small-Engine",
+                header: "Small Engine",
+                text: "Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and chemical resistance 
+                    that makes them ideally suited for outdoor power equipment.",
+                button: "Small engine",
+                link_to: "#"
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/markets-applications/lighting.jpg",
+                alt: "Pic-Lighting",
+                header: "Lighting",
+                text: "Plenco thermoset materials offer the thermal stability, electrical resistance, UL flammability ratings and 
+                    toughness needed for a range of lighting applications. From metalized automotive forward lighting and in-home 
+                    light baffles to electrical connectors, switches and mounting brackets, Plenco Thermosets will help your 
+                    lighting project shine.",
+                button: "Lighting",
+                link_to: "#"
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/markets-applications/oil.jpg",
+                alt: "Pic-Oil-Gas",
+                header: "Oil & Gas",
+                text: "Plenco Thermoset materials have been providing the oil and gas industry with dependable alternatives 
+                    to metal and thermoplastic for more than 30 years. Their proven property retention under extreme heat 
+                    and chemical exposure makes them ideal for a wide range of severe duty applications.",
+                button: "Oil & Gas",
+                link_to: "#"
+            },
+        
+        ]
+    },
+    section_13: {
+        class: "page_facility overline-r",
+        header: "Plenco’s <em>Products</em>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Products",
+        link_to: "#"
+    },
+}
+%}
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+
+    {% include '../components/sections/section_heading_top.twig' with {data: page_markets_applications.heading} %}
+    {% include '../components/sections/section_heading_bottom_markets-applications.twig' with {data: page_markets_applications.heading} %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_markets_applications.nav_side} %}
+    {% include '../components/sections/section_16.twig' with {data: page_markets_applications.section_16} %}
+
+    {% include '../components/sections/section_13.twig' with {data: page_markets_applications.section_13} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

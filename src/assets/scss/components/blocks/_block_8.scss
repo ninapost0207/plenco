@@ -1,0 +1,40 @@
+.block_8 {
+    background-color: $grey-2;
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 14px;
+    padding-left: 29px;
+    padding-right: 29px;    
+    position: relative;
+    left: -8px;
+
+
+
+    @include respond-to(sm) {
+
+    }
+
+    & .block_8__header {
+        font-family: "Mulish-800";
+        font-size: 16px;
+        line-height: 24px;
+        @include ls(25);
+        margin-bottom: 0;
+        margin-top: 16px;
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
+    & .block_8__text {
+        font-family: "Mulish-400";
+        font-size: 16px;
+        line-height: 24px;
+        @include ls(25);
+        margin-bottom: 0;
+        //margin-top: 5px;
+    }
+    
+}

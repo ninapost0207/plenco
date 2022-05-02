@@ -1,0 +1,11 @@
+.section_heading_bottom {
+    background-color: $dark-blue-1;
+    height: 450px;
+    //border: 2px solid red;
+
+    & .section_heading_bottom__content {
+        //border: 2px solid green;
+        color: $white;
+
+    }
+} 

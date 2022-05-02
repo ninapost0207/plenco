@@ -1,0 +1,48 @@
+.body_technical-service {
+    //border: 3px solid red;
+    & .section_heading_top_bg {        
+    
+        & .section_heading_top__bg_img-cont {            
+    
+            & .section_heading_top__bg_img {                
+                background-position: 10% 30%;                
+    
+                @include respond-to(sm) {
+                    background-position: 50% 70%;
+                    background-size: auto 100%;
+                }
+            }    
+        }    
+    }
+    &.section_8_bg {
+        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 54px;
+        background-position: 100% 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include respond-to(sm) {
+            padding-bottom: 35px;
+        }
+    }
+
+    & .section_8__img-wrapper {
+        @include respond-to(md) {
+            margin-top: 54px;
+        }
+        
+    }
+
+    & .section_13_bg {
+        @include respond-to(sm) { 
+            position: unset;
+        }
+
+        
+        & .section_13__button {
+            width: 250px;
+            
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+.block_tag_1 {
+    border: 1px solid $light-blue-3;
+    min-height: 26px;
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    //width: min-content; 
+
+    & .block_tag_1__text {
+        font-family: "Mulish-300";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+        margin-bottom: 0; 
+        color: $black;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,124 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'About page' %}
+{% set pageClass = 'body_about' %}
+
+{% set page_about = {
+    heading: {
+        heading_top_text: "About Plenco",
+        bg_img: "./assets/img/pages/about/heading.jpg",
+        class: ""
+    },
+    section_8: {
+        class: "page_about overline_mob-r",
+        img: "./assets/img/pages/about/quality.jpg",
+        block_left: "../blocks/_block_2.twig",
+        block_texts:
+            {
+                header: "Quality <em>Assurance/Philosophy</em>",
+                text_main: "Plenco’s mission is to respond to our customers’ needs by producing high-quality, 
+                    defect-free materials. This has been a cornerstone of the company’s philosophy since it was 
+                    founded in 1934. To accomplish this we strive to establish solid relationships with our 
+                    customers, recognizing that the quality of the products and services we provide is an integral 
+                    part of our customers’ success. Trained quality assurance personnel, following globally 
+                    recognized test methods, provide a high level of confidence in the uniform quality of our 
+                    products. State-of-the-art test equipment, supported by a statistically oriented, 
+                    computer-based calibration program, assures accurate, consistent, and reliable test data and 
+                    process control.",
+                text_add: "Quality plans are developed with input solicited from our customers and interdepartmental 
+                    teams at Plenco. In addition to the general certification assured by the Plenco trademark, products 
+                    can be certified to a number of standards including ISO, UL, JIS, CSA, and DOD. (Quality Assurance text)",
+                button: "Certifications",
+                link_to: "#"
+            }
+    },
+    section_9: {
+        class: "overline-r overline_mob-r"
+    },
+    section_10: {
+        class: "overline-r overline_mob-r"
+    },
+    nav_side: {
+        visible: false
+    },
+    section_11: {
+        class: "page_about overline-r overline_mob-r",
+        blocks: [
+            {
+                block: "../blocks/_block_3.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/about/customer-1.jpg",
+                alt: "Pic-1",
+                texts: [
+                    "Meeting or exceeding customers’ total expectations.", 
+                    "Participating in an exchange of knowledge and ideas to enhance our customers’ processing capabilities.",
+                    "Meeting periodically with our customers’ management, technical, and manufacturing personnel to review continuous improvement toward mutual goals.",
+                    "Constantly exploring options for cost containment. (Customer Relations text)"
+                ]
+            },
+            {
+                block: "../blocks/_block_3.twig",
+                pic_position: "right",
+                props: "margin-top: 72px",
+                img: "./assets/img/pages/about/customer-2.jpg",
+                alt: "Pic-2",
+                texts: [
+                    "Maximizing responsiveness to our customers through lead-time reduction and optimum delivery performance.", 
+                    "Optimizing material handling efficiencies with EDI, bar coding, and other electronic systems. (Customer Relations text)"
+                ]
+            },
+            {
+                block: "../blocks/_block_3.twig",
+                pic_position: "",
+                props: "margin-top: 72px",
+                img: "./assets/img/pages/about/customer-3.jpg",
+                img: "./assets/img/pages/page_about_customer-3.jpg",
+                alt: "Pic-3",
+                texts: [
+                    "Regularly exploring continuous improvements in processing techniques.", 
+                    "Providing prompt and thorough engineering support and technical service.",
+                    "Continually improving all levels of the supplier/customer relationship.(Customer Relations text)"
+                ]
+            }
+        
+        ]
+    },
+    section_12: {
+        class: "page_about overline",
+        style: "margin-top: 110px"
+    },
+    section_13: {
+        class: "page_about",
+        header: "Plenco’s <em>Products</em>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "products",
+        link_to: "#"
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_about.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_about.heading} %}
+    {% include '../components/sections/section_heading_bottom_about.twig' with {data: page_about.heading}  %}
+    {% include '../components/sections/section_8.twig' with {data: page_about.section_8} %}
+    {% include '../components/sections/section_9.twig' with {data: page_about.section_9} %}
+    {% include '../components/sections/section_10.twig' with {data: page_about.section_10} %}
+    {% include '../components/sections/section_11.twig' with {data: page_about.section_11} %}
+    {% include '../components/sections/section_12.twig' with {data: page_about.section_12} %}
+    {% include '../components/sections/section_13.twig' with {data: page_about.section_13} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

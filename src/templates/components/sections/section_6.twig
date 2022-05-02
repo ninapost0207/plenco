@@ -1,0 +1,22 @@
+<div class="row section_2_bg overflow-hidden overline_mob-r">
+    <div class="section_6 col">
+        <div class="container cont-site">
+            <h3 class="section_6__header text_bicolor col-lg-4">Markets & <em>Applications</em></h3>
+            <div class="section_6__gallery_1-wrapper col-md-12 d-flex flex-wrap justify-content-between">
+                
+                {% for item in data.gallery_data %}
+                    <div class="gallery_1__item offset-0 offset-md-1 offset-lg-0 col-6 col-md-5 col-lg-4 d-inline-block">
+                        <div class="d-none d-md-block gallery_1__item__img col-12 overflow-hidden" style="background-image: url({{ item.img }})">
+                        </div>
+                        <div class="gallery_1__item__descr-cont col d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between justify-content-md-start">
+                            <img src={{ item.icon }} alt="Automotive" class="gallery_1__item__icon col-6 col-md-2">
+                            <p class="gallery_1__item__text">{{ item.text }}</p>
+                            
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+</div>

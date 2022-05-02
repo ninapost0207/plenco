@@ -1,0 +1,29 @@
+<div class="block_7" style="{{ data.props }}">
+    <div class="block_7__left">
+        <img src={{ data.img }} alt={{ data.alt }} class="block_7__left__img">
+        {% if data.img_mob %}
+            <img src={{ data.img_mob }} alt={{ data.alt_mob }} class="block_7__left__img_mob">
+        {% else %}
+            <img src={{ data.img }} alt={{ data.alt }} class="block_7__left__img_mob">
+        {% endif %}
+
+
+    </div>
+        <div class="block_7__right  {{ data.pic_position }}">
+            <h4 class="block_7__header">{{ data.header }}</h4>
+            <p class="block_7__text">{{ data.text }}</p>
+            {% if data.points %}
+               <ul class="ul_1">
+                    {% for point in data.points %}
+                        <li class="ul_1__text">{{ point }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if data.button %}
+                <a href={{ data.link_to }} class="text-decoration-none">
+                    <button class="button_yellow block_7__button">{{ data.button }}</button>
+                </a>
+            {% endif %}
+        </div>
+</div>

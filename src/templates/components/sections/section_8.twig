@@ -1,0 +1,16 @@
+<div class="row section_8_bg overflow-hidden {{ data.class }}" style="{{ data.style }}">
+    <div class="section_8 col">
+        <div class="container cont-site">
+            <div class="section_8__data row d-flex align-items-center position-relative">
+                <div class="section_8__textarea col-12 col-lg-5 position-relative">
+                    {% include data.block_left with {data: data.block_texts} %}
+                </div>
+                <div class="section_8__img-wrapper" style="background-image:  url({{ data.img }})">
+                    <div class="section_8__img-cont">
+                        <img src={{ data.img }} alt="" class="section_8__image">
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,133 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Home page' %}
+{% set pageClass = 'body_home' %}
+
+
+{% set page_home = {
+    section_7: {
+        cards_data: [
+            {
+                text: "Phenolic Novolac and Resol",
+                category: "resins"
+            },   
+            {
+                text: "Phenolic Molding",
+                category: "Materials"
+            },   
+            {
+                text: "BMC/Thermoset Polyester Molding",
+                category: "Materials"
+            },   
+            {
+                text: "Melamine-Phenolic Molding",
+                category: "Materials"
+            } 
+        ]
+    },
+    section_6: {
+        gallery_data: [
+            {
+                img: "./assets/img/pages/home/gallery_1-1.jpg",
+                icon: "./assets/img/svg/tyre.svg",
+                text: "Automotive"
+            },   
+            {
+                img: "./assets/img/pages/home/gallery_1-2.jpg",
+                icon: "./assets/img/svg/bolt.svg",
+                text: "Electrical Insulation"
+            },   
+            {
+                img: "./assets/img/pages/home/gallery_1-3.jpg",
+                icon: "./assets/img/svg/v-engine.svg",
+                text: "Small Engine"
+            },   
+            {
+                img: "./assets/img/pages/home/gallery_1-4.jpg",
+                icon: "./assets/img/svg/pot.svg",
+                text: "Home & Commercial Kitchen"
+            },   
+            {
+                img: "./assets/img/pages/home/gallery_1-5.jpg",
+                icon: "./assets/img/svg/light-bulb.svg",
+                text: "Lighting"
+            },   
+            {
+                img: "./assets/img/pages/home/gallery_1-6.jpg",
+                icon: "./assets/img/svg/valve.svg",
+                text: "Oil & Gas"
+            },   
+        ]
+    },
+    section_2: {
+        products: [
+            {
+                img: "./assets/img/svg/schema_resins.svg",
+                header: "Phenolic Novolac and Resol Resins",
+                text: "Our extensive range of phenolic resins are used in applications to 
+                    impart a desirable combination of high hardness, long-term thermal and mechanical stability, 
+                    high fire and flame resistance, combined with good electrical insulating capability.",
+                category: "resins",
+                link_to: "#"
+            },
+            {
+                img: "./assets/img/svg/schema_phenolic.svg",
+                header: "Phenolic Molding Compounds",
+                text: "Highly engineered and custom formulated thermosets are used 
+                    across a number of industries including automotive, aerospace, industrial, electrical and more. See how 
+                    you can benefit from our composites.",
+                category: "phenolic",
+                link_to: "#"
+            },
+            {
+                img: "./assets/img/svg/schema_bmc.svg",
+                header: "BMC/Thermoset Polyester Molding Compounds",
+                text: "Bulk Molding Compounds are used for high-strength applications 
+                    that can be evaluated to replace steel, die cast aluminum or iron when reduction of weight and secondary operation c
+                    osts are important goals.",
+                category: "BMC/THERMOSET",
+                link_to: "#"
+            },
+            {
+                img: "./assets/img/svg/schema_melamine.svg",
+                header: "Melamine-Phenolic Molding Compounds",
+                text: "Our melamine-phenolic (MP) compounds add strength and electrical insulating characteristics to many applications. 
+                    MP molding compounds feature enhanced tracking resistance, arc resistance and surface abrasion during repetitive cycling.",
+                category: "MELAMINE",
+                link_to: "#"
+            },
+        
+        ]
+    },
+    section_3: {
+        img: "./assets/img/pages/home/reports.jpg",
+        block_left: "../blocks/_block_1.twig",
+        class: "page_home"
+    },
+    nav_side: {
+        visible: true
+    }
+}
+%}
+ 
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_home.nav_side} %}
+    {% include '../components/sections/section_7.twig' with {data: page_home.section_7} %}
+    {% include '../components/sections/section_6.twig' with {data: page_home.section_6} %}
+    {% include '../components/sections/section_1.twig' with {} %}
+    {% include '../components/sections/section_2.twig' with {data: page_home.section_2} %}
+    {% include '../components/sections/section_3.twig' with {data: page_home.section_3} %}
+    {% include '../components/sections/section_4.twig' with {} %}
+    {% include '../components/sections/section_5.twig' with {} %}
+{% endblock %}
+ 
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}
