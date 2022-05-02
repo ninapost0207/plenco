@@ -7,6 +7,7 @@
             & .section_heading_top__bg_img {                
                 background-position: 10% 30%;                
     
+                
                 @include respond-to(sm) {
                     background-position: 50% 70%;
                     background-size: auto 100%;
