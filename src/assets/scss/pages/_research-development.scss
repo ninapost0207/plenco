@@ -1,8 +1,8 @@
-.body_environmental-policy {
+.body_research-development {
 
     & .section_heading_top__bg_img {
         
-        background-position: 50% 20% !important;
+        background-position: 40% 50% !important;
         background-size: cover;
         opacity: 0;
         
@@ -13,41 +13,38 @@
         }
     }
 
-    
+    /*& .section_heading_top__center-block__cont {
+        width: 700px;
+        padding-left: 5px;
+        padding-right: 5px; 
+    }*/
+
     & .section_heading_bottom {    
-        height: 414px;
+        height: 496px;
 
         @include respond-to(lg) {        
-            height: 400px;
-        }
-        @include respond-to(md) {        
-            height: 380px;
+            height: 480px;
         }
         @include respond-to(sm) {        
-            height: 340px;
+            height: 470px;
         }
         @include respond-to(xs) {        
-            height: 293px;
+            height: auto;
         }
     
         & .section_heading_bottom__content {
-            margin-top: 130px;    
+           margin-top: 150px;    
             
             @include respond-to(lg) {
-                margin-top: 120px;
-                
-            }
-            @include respond-to(md) {
-                margin-top: 100px;
+                margin-top: 130px;
                 
             }
             @include respond-to(sm) {
-                margin-top: 70px;
+                margin-top: 50px;
                 
             }
             @include respond-to(xs) {
-                margin-top: 30px;
-                
+                margin-top: 50px;
             }
         
         
@@ -60,13 +57,12 @@
         
                 @include respond-to(lg) {
                     font-size: 28px;
-                    line-height: 40px;
+                    line-height: 36px;
                 }
         
                 @include respond-to(sm) {
                     font-size: 26px;
-                    line-height: 34px;
-                    margin-top: 30px;
+                    line-height: 32px;
                 }
         
                 @include respond-to(xs) {
@@ -77,55 +73,51 @@
             }    
             & .section_heading_bottom__content__text {
                 font-family: "Mulish-400";
-                font-size: 18px;
-                line-height: 24px;
-                margin-top: 50px;
+                font-size: 16px;
+                line-height: 22px;
+                //display: none;
                 @include ls(25);
-        
                 
-                @include respond-to(xs) {
+                /*@include respond-to(xs) {
+                    font-family: "Mulish-400";
                     font-size: 16px;
                     line-height: 22px;
-                    margin-top: 20px;
-                    
-                }
+                    //display: block;
+                    //margin-top: 20px;
+                    //margin-bottom: 50px;
+                }*/
             }
         }    
     }
 
-    & .section_15_bg {
-        padding-bottom: 201px !important;
 
-        @include respond-to(sm) {
-            padding-bottom: 117px !important;
-
-        }       
-
-        & .block_3 {
-            @include respond-to(sm) {
-                margin-top: 42px !important;
-            }
-        }
-
-        & .block_6 {
-            @include respond-to(xs) {
-                width: 100%;
-            }
-        }
-
+    & .section_105_bg {
+        height: 1240px;
+        background: linear-gradient(180deg, rgba(231,242,242,1) 60%, rgba(255,255,255,1) 40%);
     }
-
-    & .section_13_bg {
-        @include respond-to(sm) { 
-            position: unset;
-        }
-
-        
-        & .section_13__button {
-            width: 250px;
-            
-        }
-    }
-
     
+
+    .section_105 {
+
+        & .section_105__header {
+            font-family: "Almarai-700";
+            font-size: 28px;
+        }
+
+        & .section_105__text {
+            font-family: "Mulish-600";
+            font-size: 20px;
+            line-height: 28px; 
+            @include ls(25);
+        }
+
+        & .section_105__text_add {
+            font-family: "Mulish-400";
+            font-size: 16px; 
+            line-height: 24px; 
+            @include ls(25);
+        }
+    }
 }
+/*<div class="section_105__photo_container">
+                </div>*/

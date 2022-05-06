@@ -6,13 +6,13 @@
     heading: {
         heading_top_text: "Technical Service",
         bg_img: "./assets/img/pages/technical-service/heading.jpg",
-        class: ""
+        class: "page_technical-service"
     },
     section_8: {
         class: "page_technical-service overline-r overline_mob-r",
         img: "./assets/img/pages/technical-service/technical.jpg",
         block_left: "../blocks/_block_4.twig",
-        block_texts:
+        block_texts: 
             {
                 header: "Technical <em>Service</em>",
                 text_main: "Our knowledgeable technical representatives can help implement process improvements, 
@@ -54,6 +54,7 @@
         blocks: [
         {
             img: "./assets/img/pages/technical-service/example-1.jpg",
+            class: "mt-0",
             alt: "Img-1",
             text: "Plenco Assists Black & Decker™ with New Product Line",
             tags: [
@@ -75,6 +76,7 @@
         },
         {
             img: "./assets/img/pages/technical-service/example-2.jpg",
+            class: "mt-5 mt-md-0",
             alt: "Img-2",
             text: "Technical Service Example Heading Placeholder text text",
             tags: [
@@ -96,6 +98,7 @@
         },
         {
             img: "./assets/img/pages/technical-service/example-3.jpg",
+            class: "mt-5 mt-md-0",
             alt: "Img-3",
             text: "Technical Service Example Heading Placeholder text text",
             tags: [
@@ -135,7 +138,7 @@
 {% block content %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_technical_service.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
-    
+    {% include '../components/sections/section_heading_bottom_tech-service.twig' with {data: page_technical_service.heading} %}
     {% include '../components/sections/section_8.twig' with {data: page_technical_service.section_8} %}
     {% include '../components/sections/section_14.twig' with {data: page_technical_service.section_14} %}
     {% include '../components/sections/section_13.twig' with {data: page_technical_service.section_13} %}

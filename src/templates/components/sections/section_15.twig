@@ -1,23 +1,23 @@
 <div class="row section_15_bg overflow-hidden {{ data.class }}" style="{{ data.style }}">
-    <div class="section_15 col px-2">
+    <div class="section_15 col px-0">
         <div class="container cont-site">
-            <h3 class="section_15__header text_bicolor">Environmental <em>Policy</em></h3>
-            <p class="section_15__text">Ever since our founding, Plenco has been a good employer, 
+            <h3 class="section_15__header text-start mb-0 text_bicolor">Environmental <em>Policy</em></h3>
+            <p class="section_15__text mb-0">Ever since our founding, Plenco has been a good employer, 
                 supplier and neighbor when it comes to the environment. We have implemented 
                 sustainable processes that not only are respectful of our surroundings but make good 
                 business sense as well. (Basecamp - 10/07/21 Proofs - About - Environmental Policy)</p>
             {% include "../blocks/_block_3.twig" with {data: data.block_3} %}
-            <ul class="ul_1">
+            <ul class="ul_1 my-0">
                 {% for text in data.texts %}
                     <li class="ul_1__text">{{ text }}</li>
                 {% endfor %}
             </ul>
-            <p class="section_15__text_add">The vast majority of Plenco’s environmental practices and policies 
+            <p class="section_15__text_add mb-0">The vast majority of Plenco’s environmental practices and policies 
                 pre-date the existence of regulatory bodies such as the Environmental Protection Agency. 
                 Environmental stewardship and responsibility have been a part our identity as a company from 
                 the start. Nonetheless, Plenco is committed to continuous improvement as it relates to our 
                 environmental practices and policies.</p>
-            <h3 class="section_15__header section_15__header_2 text_bicolor">Plenco <em>Resources</em></h3>
+            <h3 class="section_15__header section_15__header_2 mb-0 text_bicolor">Plenco <em>Resources</em></h3>
             {% include "../blocks/_block_6.twig" with {data: data.block_6} %}
         </div>
     </div>

@@ -1,14 +1,14 @@
 <a href={{ data.link_to }} class="text-decoration-none">
-    <div class="block_5">
-        <img src={{ data.img }} alt={{ data.alt }} class="block_5__img">
-        <div class="block_5__content">
-            <h4 class="block_5__header">{{ data.text }}</h4>
-            <div class="block_5__tags">
+    <div class="block_5 position-relative col-12 col-sm-11 col-md-4  px-4  mx-auto {{ data.class }}">
+        <img src={{ data.img }} alt={{ data.alt }} class="block_5__img col-12 h-auto">
+        <div class="block_5__content position-relative">
+            <h4 class="block_5__header mb-0">{{ data.text }}</h4>
+            <div class="block_5__tags d-flex flex-wrap">
                 {% for tag in data.tags %}
                     {% include "../blocks/_block_tag_1.twig" with {data: tag} %} 
                 {% endfor %}
             </div>
-            <a href={{ data.link_to }} class="block_5__link_text text-decoration-none">{{ data.link_text }}</a>
+            <a href={{ data.link_to }} class="block_5__link_text d-block text-uppercase text-decoration-none">{{ data.link_text }}</a>
         </div>
     </div>    
 </a>

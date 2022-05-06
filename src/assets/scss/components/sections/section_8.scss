@@ -22,8 +22,10 @@
 
     @include respond-to(md) {
         background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
-        margin-bottom: 0;
-        padding-bottom: 0px;
+        //background-color: red;
+        //margin-bottom: 0;
+        //padding-bottom: 0px;
+
         //background: none;
     }
 
@@ -38,8 +40,8 @@
 .section_8 {
     min-height: 985px; 
     
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    //padding-left: 8px !important;
+    //padding-right: 8px !important;
 
 
     & .section_8__data {
@@ -48,8 +50,8 @@
         //padding-bottom: 227px;
 
         @include respond-to(md) {
-            padding-top: 0;
-            padding-bottom: 0;
+            //padding-top: 0;
+            //padding-bottom: 0;
 
             /*background-image: url("../img/section_8__bg_mobile.jpg");
             background-position: left 50%;
@@ -65,10 +67,7 @@
 */
         & .section_8__textarea {
 
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-
-            
+    /*      
             & .section_8__img_mobile {
                 display: none;
 
@@ -81,7 +80,7 @@
                     height: 100%;
                 }
             }
-
+*/
         }
 
 
@@ -117,7 +116,6 @@
     
             
             & .section_8__img-cont {
-                position: absolute;
                 height: 826px;
                 width: auto;
                 left: 50%;

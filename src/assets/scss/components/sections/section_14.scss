@@ -24,36 +24,39 @@
 .section_14 {
   
 
-    & .section_14__header {
-        text-align: center;
+    & .section_14__header {       
         font-family: "Almarai-700";
         font-size: 28px;
         line-height: 43px;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        
 
         @include respond-to(sm) {
             font-size: 24px;
-            line-height: 24px;
+            line-height: 24px; 
         }
     }
 
-    & .section_14__examples {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+    & .section_14__examples {        
         margin-top: 46px;
-
-        @include respond-to(md) {
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+        margin-left: -24px; 
+        margin-right: -24px; 
+              
 
         @include respond-to(sm) {
             margin-top: 21px;
         }
+/*
+        & .block_5 {
+            
+            @include respond-to(sm) {
+                margin-top: 0;    
+                
+                & ~ .block_5 {
+                    margin-top: 50px;
+                }
+            }
+        }
+*/
+        
     }
-    
-
-
 }

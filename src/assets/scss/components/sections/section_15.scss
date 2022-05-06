@@ -25,11 +25,11 @@
   
 
     & .section_15__header {
-        text-align: left;
+        //text-align: left;
         font-family: "Almarai-700";
         font-size: 28px;
         line-height: 43px;
-        margin-bottom: 0;
+        //margin-bottom: 0;
 
 
         @include respond-to(sm) {
@@ -48,7 +48,7 @@
         line-height: 28px;
         @include ls(25);
         margin-top: 22px;
-        margin-bottom: 0;
+        //margin-bottom: 0;
 
         @include respond-to(sm) {
             margin-top: 17px;
@@ -59,8 +59,8 @@
 
 
     & .ul_1 {
-        margin-bottom: 0;
-        margin-top: 0;
+        //margin-bottom: 0;
+        //margin-top: 0;
 
         & .ul_1__text {
             font-size: 16px;
@@ -68,8 +68,9 @@
             margin-top: 23px;
 
             
+            
             &:nth-child(1) {
-                margin-top: 62px;
+                margin-top: 20px;//??
 
                 @include respond-to(sm) {
                     margin-top: 10px;
@@ -85,7 +86,7 @@
         line-height: 24px;
         @include ls(25);
         margin-top: 40px;
-        margin-bottom: 0;
+        //margin-bottom: 0;
 
         @include respond-to(sm) {
             margin-top: 33px;

@@ -15,15 +15,95 @@
             }    
         }    
     }
-    &.section_8_bg {
+    & .section_heading_bottom {
+        height: 304px;        
+        
+        @include respond-to(md) {        
+            height: 350px;
+        }
+        @include respond-to(sm) {        
+            height: 400px;
+        }
+        @include respond-to(xs) {        
+            height: 430px;
+        }
+
+        & .section_heading_bottom__content {
+            margin-top: 80px; 
+            
+            @include respond-to(sm) {
+                margin-top: 90px;
+            }
+            @include respond-to(xs) {
+                margin-top: 100px;        
+            }
+        
+        
+        
+            & .section_heading_bottom__content__header {
+                font-family: "Play-700";
+                font-size: 44px;
+                line-height: 50px;  
+                @include ls(50);
+                        
+        
+                @include respond-to(lg) {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+        
+                @include respond-to(sm) {
+                    font-size: 36px;
+                    line-height: 44px;                    
+                }
+        
+                @include respond-to(xs) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }        
+            }
+            /*& .section_heading_bottom__content__text_regular {
+                font-family: "Mulish-400";
+                font-size: 14px;
+                line-height: 28px;
+                margin-top: 20px;
+                
+                @include respond-to(md) {                                
+                    margin-top: 40px;                    
+                }
+                @include respond-to(sm) {                                
+                    margin-top: 50px;                    
+                }
+                @include respond-to(xs) {
+                    font-size: 16px;
+                    line-height: 22px;                    
+                    margin-top: 70px;                    
+                }
+            }
+            & .section_heading_bottom__content__text_semibold {
+                font-family: "Mulish-600";
+                font-size: 16px;
+                line-height: 28px;                 
+            }*/
+                
+        }
+    }
+
+
+    & .section_8_bg {
         background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
         padding-bottom: 54px;
         background-position: 100% 0%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
+        @include respond-to(md) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        }
+
         @include respond-to(sm) {
             padding-bottom: 35px;
+            background: linear-gradient(180deg, rgba(255,255,255,1) 250px, rgba(231,242,242,1) 250px, rgba(231,242,242,1) 100%);
         }
     }
 

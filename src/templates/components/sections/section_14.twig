@@ -1,8 +1,8 @@
 <div class="row section_14_bg overflow-hidden {{ data.class }}" style="{{ data.style }}" id="section_14">
-    <div class="section_14 col px-2">
+    <div class="section_14 col px-0">
         <div class="container cont-site">
-            <h3 class="section_14__header text_bicolor">Technical Service <em>Examples</em></h3>
-            <div class="section_14__examples">
+            <h3 class="section_14__header mb-0 pb-0 text_bicolor text-center">Technical Service <em>Examples</em></h3>
+            <div class="section_14__examples d-flex justify-content-evenly flex-wrap justify-content-md-between flex-md-nowrap align-items-start">
                 {% for block in data.blocks %}
                     {% include "../blocks/_block_5.twig" with {data: block} %} 
                 {% endfor %}

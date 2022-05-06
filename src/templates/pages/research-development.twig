@@ -1,0 +1,47 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Research & Development' %}
+{% set pageClass = 'body_research-development' %}
+
+{% set page_research_development = {
+    heading: {
+        heading_top_text: "Research & Development",
+        bg_img: "./assets/img/pages/research-development/heading.jpg",
+        class: "body_research-development"
+    },
+    nav_side: {
+        visible: false
+    },
+    section_105: {
+        class: "body_research-development"
+    },
+    section_13: {
+        class: "page_research-development overline-r",
+        header: "Plenco’s <em>Facilities</em>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Facilities",
+        link_to: "#"
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_research_development.heading} %}
+    {% include '../components/sections/section_heading_bottom_research-development.twig' with {data: page_research_development.heading}  %}
+        
+    {% include '../components/sections/section_105.twig' with {data: page_research_development.section_105}  %}
+    {% include '../components/sections/section_13.twig' with {data: page_research_development.section_13} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

@@ -1,10 +1,5 @@
-.block_4 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+.block_4 {    
     min-height: 985px;
-
 
     @include respond-to(md) {
         min-height: auto;
@@ -16,11 +11,10 @@
         & .block_4__header {
             font-family: "Almarai-700";
             font-size: 28px;
-            line-height: 43px;
-            position: relative;
+            line-height: 43px;            
             z-index: 30;
             margin-top: 100px;
-            margin-bottom: 0;
+            
     
             @include respond-to(lg) {
                 font-size: 26px;
@@ -28,8 +22,7 @@
             }      
     
     
-            @include respond-to(md) {
-                text-align: center;
+            @include respond-to(md) {                
                 font-size: 24px;
                 margin-top: 53px;
             }
@@ -40,7 +33,7 @@
             }
     
             @include respond-to(xs) {
-                text-align: left;
+                text-align: left !important;
     
             }
             
@@ -50,28 +43,24 @@
             font-family: "Mulish-600";
             font-size: 20px;
             line-height: 28px;
-            @include ls(25);
-            position: relative;
+            @include ls(25);            
             z-index: 30;
             margin-top: 25px;
-            margin-bottom: 0;
+            
            
             @include respond-to(lg) {
                 font-size: 18px;
                 line-height: 25px;
             }
     
-            @include respond-to(md) {
-                text-align: center;
-            }
-    
+               
             @include respond-to(sm) {
                 font-size: 16px;
                 line-height: 22px;
             }
     
             @include respond-to(xs) {
-                text-align: left;
+                text-align: left !important;
             }
     
         }
@@ -81,19 +70,15 @@
             font-family: "Mulish-400";
             font-size: 16px;
             line-height: 24px;
-            @include ls(25);
-            position: relative;
+            @include ls(25);            
             z-index: 30;
-            margin-bottom: 0;
+            
            
             @include respond-to(lg) {
                 font-size: 16px;
                 line-height: 24px;
             }
-    
-            @include respond-to(md) {
-                text-align: center;
-            }
+                
     
             @include respond-to(sm) {
                 font-size: 16px;
@@ -101,7 +86,7 @@
             }
     
             @include respond-to(xs) {
-                text-align: left;
+                text-align: left !important;
             }
     
         }
@@ -110,8 +95,7 @@
     }
 
    
-    & .block_4__button {
-        text-transform: uppercase;
+    & .block_4__button {        
         font-family: "Play-700";
         font-size: 16px;
         line-height: 50px;
@@ -119,8 +103,7 @@
         @include ls(25);
         margin-top: 30px;
         width: 250px;
-        background-color: transparent;
-        position: relative;
+        background-color: transparent;        
         padding-left: 15px;
 
         @include respond-to(sm) {
@@ -141,10 +124,10 @@
 
 
         @include respond-to(md) {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 44px;
+            //text-align: center;
+            //margin-left: auto;
+            //margin-right: auto;
+           // margin-bottom: 44px;
 
         }
 
@@ -153,10 +136,7 @@
             margin-bottom: 35px;
 
         }
-
-        @include respond-to(xs) {
-
-        }
+        
     }
 
 }
