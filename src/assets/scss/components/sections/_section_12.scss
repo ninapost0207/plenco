@@ -1,0 +1,141 @@
+/*.section_12_bg {
+
+    background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    background-position:  100% 0%;
+    background-size:  100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    padding-bottom: 55px;
+    padding-top: 100px;
+    
+
+    @include respond-to(md) {
+        background: linear-gradient(270deg, rgba(255,255,255,1) 16%, rgba(231,242,242,1) 16%, rgba(231,242,242,1) 100%);
+    }
+
+    @include respond-to(sm) {
+        padding-top: 30px;
+        padding-bottom: 119px;
+        margin-bottom: 0;
+        background: url("../img/svg/mosaic_3.svg"), 
+            linear-gradient(270deg, rgba(255,255,255,1) 40%, rgba(231,242,242,1) 40%, rgba(231,242,242,1) 100%), 
+            linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(231,242,242,1) 40%, rgba(231,242,242,1) 100%);
+        background-size:  auto auto, 100% 200px, 100% 220px;
+        background-repeat: no-repeat;
+        background-position: 10px bottom, top center, 100% 90%;
+
+    }
+
+}
+
+.section_12 {
+
+    & .section_12__data {
+
+
+        & .section_12__textarea {
+
+
+            & .section_12__header {
+                font-family: "Almarai-700";
+                font-size: 28px;
+                line-height: 43px;
+            }
+
+            & .section_12__text {
+                font-family: "Mulish-600";
+                font-size: 20px;
+                line-height: 28px;
+                @include ls(25);
+                margin-top: 23px;
+            }
+
+            & .section_12__text_add {
+                margin-top: 18px;
+                font-family: "Mulish-400";
+                font-size: 16px;
+                line-height: 24px;
+                @include ls(25);
+            }
+
+            & .section_12__button {
+                max-width: 349px;
+                margin-top: 40px;
+            }
+
+        }
+
+        & .section_12__video {
+            height: 370px;
+            max-height: 400px;
+        }
+
+
+        & .section_12__video-descr {
+            margin-top: 59px;
+            font-family: "Play-400";
+            font-size: 24px;
+            @include ls(25);
+            line-height: 30px;
+        }
+
+    }
+
+    //--------------------- mob ----------------------------------
+
+    & .section_12__data_mob {
+
+        & .section_12__header {
+            font-family: "Almarai-700";
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        & .section_12__video {
+            margin-top: 20px;
+            height: calc(100vw / 2);
+        }
+
+        & .section_12__text {
+            font-family: "Mulish-600";
+            font-size: 16px;
+            line-height: 22px;
+            @include ls(25);
+            margin-top: 42px;
+        }
+
+
+        & .section_12__text_add {
+            font-family: "Mulish-400";
+            font-size: 16px;
+            line-height: 24px;
+            @include ls(25);
+            margin-top: 21px;
+        }
+
+        & .section_12__button {
+            margin-top: 23px;
+        }
+
+        & .section_12__video-descr {
+            margin-top: 70px;
+            font-family: "Play-400";
+            font-size: 20px;
+            line-height: 26px;
+            @include ls(25);
+        }
+    }
+
+}
+
+
+
+.section_12__bg-img_bottom {
+    height: 100px;
+    background-image: url('../img/svg/section_12__bg.svg');
+    background-repeat: no-repeat;
+    background-position: 25px bottom;
+    background-size: 602px 943px;
+    bottom: -100px;
+    z-index: -1;
+}*/

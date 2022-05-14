@@ -1,6 +1,41 @@
+.btn-yellow-1 {
+    height: 52px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    font-size: 20px !important;
+    color: black !important;
+    text-decoration: none;
+    border: none !important;
+    border-radius: 0 !important;
+    @include ls(75);
+    text-transform: uppercase;
+    font-family: "Mulish-800";
+    box-shadow: 0 !important;
+    width: $btn-standard-width;
+    outline: 0 !important;
+
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+    }
+    
+
+    @include respond-to(sm) {
+        font-size: 16px !important;
+        line-height: 20px;
+    }
+ }
+
+
+
+ /*
 .button_yellow {
-    @include button_yellow(0px, 52px, 100% );
+    @include button_yellow(0px, 52px, 100%);
+    @include ls(75);
 }
+*/
 
 .button_yellow_nav {
     height: 100%;
@@ -9,6 +44,7 @@
     font-family: "Mulish-800";
     font-size: 16px;
     white-space: nowrap;
+    background-color: $yellow-1;
 
     &::after {
         content: "";
@@ -37,6 +73,7 @@
     font-family: "Mulish-800";
     font-size: 14px;
     white-space: nowrap;
+    background-color: $yellow-1;
 
     &::after {
         content: "";
@@ -154,16 +191,22 @@
 
 
 
-.button_yellow_arrow_45 {
+.button_arrow_45_r {
     @include button_yellow(0px, 45px, 45px );
     background-image: url("../img/svg/arrow_right.svg");
     background-size: contain;
     background-position: center center;
     background-size: 70% 70%;
     background-repeat: no-repeat;
+    
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+        outline: 0;
+    }
 }
 
-.button_yellow_arrow_60 {
+.button_arrow_60_r {
     @include button_yellow(0px, 60px, 60px );
     min-width: 60px;
     min-height: 60px;
@@ -174,5 +217,11 @@
     background-repeat: no-repeat;
     display: inline-block;
     z-index: 30;
+
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+        outline: 0;
+    }
 }
 

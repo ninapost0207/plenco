@@ -1,0 +1,32 @@
+.body_terms-conditions {
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 70% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 70% 50% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 75% 50% !important;
+            background-size: 300% !important;
+        }
+    }
+    & .section_heading_bottom {
+        height: 364px;
+        
+        @include respond-to(md) {
+            height: 330px;
+        }
+        @include respond-to(sm) {
+            height: 270px;
+        }
+        @include respond-to(xs) {        
+            height: 220px;
+        }
+    }
+}
+

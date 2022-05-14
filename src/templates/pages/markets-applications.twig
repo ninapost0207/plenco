@@ -14,96 +14,9 @@
     nav_side: {
         visible: false
     },
-    section_16: {
-        class: "page_facility overline-r overline_mob-r",
-        header: "Markets <em>& Applications</em>",
-        blocks: [
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/pages/markets-applications/automotive.jpg",
-                alt: "Pic-automotive",
-                header: "Automotive",
-                text: "Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and 
-                    chemical resistance that makes them ideally suited for high-temperature applications in combination 
-                    with automotive fluids and electrical distribution.",
-                button: "automotive",
-                link_to: "#"
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/pages/markets-applications/electrical.jpg",
-                alt: "Pic-Electrical-Insulation",
-                header: "Electrical Insulation",
-                text: "Plenco Thermoset materials provide an exceptional combination of electrical insulation, UL Flammability, 
-                    creep resistance and dimensional stability across the widest range of temperatures. This makes them ideal 
-                    materials to insulate electrical devices used in high and low voltage industrial power transmission, automotive 
-                    switches and relays, home appliance controls and many other areas where close tolerances must be maintained 
-                    for years across varying environmental conditions.",
-                button: "Electrical Insulation",
-                link_to: "#"
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/pages/markets-applications/kitchen.jpg",
-                alt: "Pic-kitchen",
-                header: "Home & Commercial Kitchen",
-                text: "Plenco Thermoset materials provide a durable, high-gloss finish with industry leading thermal stability, 
-                    UL flammability, electrical insulation and chemical resistance. This makes them ideal for metal or thermoplastic 
-                    replacement in hot-zone, electrical device components.",
-                button: "Kitchen",
-                link_to: "#"
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/pages/markets-applications/small_engine.jpg",
-                alt: "Pic-Small-Engine",
-                header: "Small Engine",
-                text: "Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and chemical resistance 
-                    that makes them ideally suited for outdoor power equipment.",
-                button: "Small engine",
-                link_to: "#"
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/pages/markets-applications/lighting.jpg",
-                alt: "Pic-Lighting",
-                header: "Lighting",
-                text: "Plenco thermoset materials offer the thermal stability, electrical resistance, UL flammability ratings and 
-                    toughness needed for a range of lighting applications. From metalized automotive forward lighting and in-home 
-                    light baffles to electrical connectors, switches and mounting brackets, Plenco Thermosets will help your 
-                    lighting project shine.",
-                button: "Lighting",
-                link_to: "#"
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/pages/markets-applications/oil.jpg",
-                alt: "Pic-Oil-Gas",
-                header: "Oil & Gas",
-                text: "Plenco Thermoset materials have been providing the oil and gas industry with dependable alternatives 
-                    to metal and thermoplastic for more than 30 years. Their proven property retention under extreme heat 
-                    and chemical exposure makes them ideal for a wide range of severe duty applications.",
-                button: "Oil & Gas",
-                link_to: "#"
-            },
-        
-        ]
-    },
     section_13: {
         class: "page_facility overline-r",
-        header: "Plenco’s <em>Products</em>",
+        header: "Plenco’s <span class='text-blue-1'>Products</span>",
         text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
         text_button: "Products",
         link_to: "#"
@@ -119,10 +32,143 @@
 
 {% block content %}
 
-    {% include '../components/sections/section_heading_top.twig' with {data: page_markets_applications.heading} %}
-    {% include '../components/sections/section_heading_bottom_markets-applications.twig' with {data: page_markets_applications.heading} %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_markets_applications.nav_side} %}
-    {% include '../components/sections/section_16.twig' with {data: page_markets_applications.section_16} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_markets_applications.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Plastics Engineering Company offers high-performance material solutions and technical support across various industries. From industrial to energy and automotive to aerospace, we’ve been driving innovation through the use of <span class='text-blue-l2' >Infinite Chemistry for over eighty-five years</span>.</p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">Creating versatile solutions across a wide range of industries. Look and you’ll see a part of us there.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_16_bg overflow-hidden px-0">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <h2 class="section_16__header mb-0">Markets <span class="text-blue-1">& Applications</span></h2>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/markets-applications/automotive.jpg" alt="Pic-automotive" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/markets-applications/automotive.jpg" alt="Pic-automotive_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Automotive</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and 
+                                chemical resistance that makes them ideally suited for high-temperature applications in combination 
+                                with automotive fluids and electrical distribution.</p>
+                            <a href="#" class="btn btn-yellow-1 block_7__button mt-3 col">automotive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Electrical Insulation</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco Thermoset materials provide an exceptional combination of electrical insulation, UL Flammability, 
+                                creep resistance and dimensional stability across the widest range of temperatures. This makes them ideal 
+                                materials to insulate electrical devices used in high and low voltage industrial power transmission, automotive 
+                                switches and relays, home appliance controls and many other areas where close tolerances must be maintained 
+                                for years across varying environmental conditions.</p>
+                            <a href="#" class="btn btn-yellow-1 block_7__button mt-3 col-auto">Electrical Insulation</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/markets-applications/electrical.jpg" alt="Pic-Electrical-Insulation" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/markets-applications/electrical.jpg" alt="Pic-Electrical-Insulation_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/markets-applications/kitchen.jpg" alt="Pic-kitchen" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/markets-applications/kitchen.jpg" alt="Pic-kitchen_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Home & Commercial Kitchen</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco Thermoset materials provide a durable, high-gloss finish with industry leading thermal stability, 
+                                UL flammability, electrical insulation and chemical resistance. This makes them ideal for metal or thermoplastic 
+                                replacement in hot-zone, electrical device components.</p>
+                            <a href="#" class="btn btn-yellow-1 block_7__button mt-3 col">Kitchen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Small Engine</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and chemical resistance 
+                                that makes them ideally suited for outdoor power equipment.</p>
+                            <a href="#" class="btn btn-yellow-1 block_7__button mt-3 col">Small engine</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/markets-applications/engines.jpg" alt="Pic-Small-Engine" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/markets-applications/engines.jpg" alt="Pic-Small-Engine_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/markets-applications/lighting.jpg" alt="Pic-Lighting" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/markets-applications/lighting.jpg" alt="Pic-Lighting_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Lighting</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco thermoset materials offer the thermal stability, electrical resistance, UL flammability ratings and 
+                                toughness needed for a range of lighting applications. From metalized automotive forward lighting and in-home 
+                                light baffles to electrical connectors, switches and mounting brackets, Plenco Thermosets will help your 
+                                lighting project shine.</p>
+                            <a href="#" class="btn btn-yellow-1 block_7__button mt-3 col">Lighting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Oil & Gas</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco Thermoset materials have been providing the oil and gas industry with dependable alternatives 
+                                to metal and thermoplastic for more than 30 years. Their proven property retention under extreme heat 
+                                and chemical exposure makes them ideal for a wide range of severe duty applications.</p>
+                            <a href="#" class="btn btn-yellow-1 block_7__button mt-3 col">Oil & Gas</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/markets-applications/oil.jpg" alt="Pic-Oil-Gas" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/markets-applications/oil.jpg" alt="Pic-Oil-Gas_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     {% include '../components/sections/section_13.twig' with {data: page_markets_applications.section_13} %}
 

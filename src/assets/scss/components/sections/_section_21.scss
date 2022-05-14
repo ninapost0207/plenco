@@ -1,0 +1,106 @@
+.section_21_bg {
+    min-height: 182px;
+    background-image: url('../img/pages/polymer-rd-lab/heading.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+
+    @include respond-to(md) {
+        min-height: 254px;
+        overflow: visible;
+    }
+}
+
+
+.section_21 {
+    background-color: rgba($blue-1, 0.85);
+    //min-height: 182px;
+
+    @include respond-to(sm) {
+        //min-height: 254px;
+        //padding-bottom: 22px;
+    }
+
+
+    & .section_21__content {
+
+        & .section_21__left {
+    
+        
+            & .section_21__text {
+                font-family: "Muli-600";
+                @include ls(50);
+                line-height: 30px;
+                font-size: 24px;
+                margin-top: 7px;
+                
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 26px;
+                    margin-top: 15px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 7px;
+                width: 450px;
+                background-color: $light-blue-2;
+                left: -480px;
+                top: 27px;
+
+                
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+    
+        }
+
+        & .section_21__right {
+
+            & .section_21__button {
+                width: 331px;
+
+                @include respond-to(sm) {
+                    width: 251px;
+                    margin-top: 23px;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 7px;
+                width: 450px;
+                background-color: $light-blue-2;
+                right: -482px;
+                top: 22px;
+
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    &::before {
+
+        @include respond-to(md) {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -21px;
+            width: 7px;
+            height: 62px;
+            background-color: $light-blue-2;
+        }
+    }
+
+
+}
+

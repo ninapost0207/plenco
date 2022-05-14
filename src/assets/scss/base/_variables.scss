@@ -7,6 +7,21 @@ $screen-xl: 1450px;
 $nav-btn-change: 0.5s;
 $cookies-change: 0.5s;
 
+$yellow-1: #F9C80E;
+$green_el: #E7F2F2;
+$blue-1: #005498;
+$blue-2: #011E40;
+$dark-blue-1: #012F55;
+$white-1: #FFFFFF; 
+$black-1: #000000;
+$light-blue-1: #E7F2F2;
+$light-blue-2: #42BFDD;
+$light-blue-3: #BBE6E4;
+$grey-1: #707070;
+$grey-2: #EFEFEF;
+
+$white: #FFF; 
+$black: #000000;
 
 //-------------------BOOTSTRAP---------------------------
 
@@ -16,164 +31,42 @@ $container-max-widths: (
 sm: 100%,
 md: 100%,
 lg: 100%,
-xl: 1184px,
-xxl: 1185px
+xl: 1160px,
+xxl: 1161px
 );
 
 
-/*
-.cont-site {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-*/
+$site-themes: (
+    "yellow-1": $yellow-1,
+    "blue-1": $blue-1,
+    "blue-2": $blue-2,
+    "blue-3": $dark-blue-1,
+    "blue-l1": $light-blue-1,
+    "blue-l2": $light-blue-2,
+    "blue-l3": $light-blue-3,
+    "grey-1": $grey-1,
+    "grey-2": $grey-2,
+    "grey-3": $green_el,
+    "white-1": $white-1,
+    "black-1": $black-1,
+);
 
 
-$white: #FFF;
-$yellow-1: #F9C80E;
-$green_el: #E7F2F2;
-$blue-1: #005498;
-$blue-2: #011E40;
-$dark-blue-1: #012F55;
-$white: #FFFFFF;
-$black: #000000;
-$light-blue-1: #E7F2F2;
-$light-blue-2: #42BFDD;
-$light-blue-3: #BBE6E4;
-$grey-1: #707070;
-$grey-2: #EFEFEF;
+//-------------BUTTONS---------------------------------
+$btn-standard-width: 251px;
+$btn-small-width: 208px;
+
+
+//---------------CARDS--------------------------------
+$card-border-radius: 0;
 
 
 $nav-link-color: #000 !important;
 $nav-link-hover-color:#000 !important;
 
-.color-blue-1 {
-    color: $blue-1 !important;
-}
-
-.color-light-blue-2 {
-    color: $light-blue-2 !important;
-}
-
-.color-light-blue-3 {
-    color: $light-blue-3 !important;
-}
-
-.bg-light-blue-1 {
-    background-color: $light-blue-1 !important;
-}
-
-.bg-dark-blue-1 {
-    background-color: $dark-blue-1 !important;
-}
-
-
-.bg-blue-1 { 
-    background-color: $blue-1 !important;
-}
-
-
-
-
-
 
 .bx5-dark-blue-1 {
-    border-left: 5px solid $dark-blue-1;
+    border-left: 50px solid red;
     border-right: 5px solid $dark-blue-1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.mx-20px {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-}
-
-.text-black {
-    color: $black !important;
-}
-
-.h60 {
-    height: 60px !important;
-}
-
-.h84 {
-    height: 84px !important;
-}
-
-.h120{
-    height: 120px !important;
-}
-
-.h623 {
-    height: 623px !important;
-}
-
-.h830 {
-    height: 830px !important;
-}
-
-
-.h470 {
-    height: 470px !important;
-}
-
-
-.max-h470 {
-    max-height: 470px !important;
-}
-
-
-
-.min-h240{
-    min-height: 240px !important;
-}
-
-
-.min-h260{
-    min-height: 260px !important;
-}
-
-/*
-.site-container {
-    max-width: 1440px !important;
-}
-*/
-
-.t30 {
-    top: 30px !important;
-}
-
-.w60 {
-    width: 60px !important;
-}
-
-.min-w60 {
-    width: 60px !important;
-}
-
-.w350 {
-    width: 350px !important;
-}
-
-.w570 {
-    width: 570px !important;
-}
-
-
-
-
-/*
-    <script src='./assets/js/bootstrap.min.js'></script>
-
-    */

@@ -1,0 +1,323 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Injection Molding Guidelines (Two Stage Phenolic)' %}
+{% set pageClass = 'body_img-two-stage' %}
+
+{% set page_img_two_stage = {
+    heading: {
+        heading_top_text: "Two Stage Phenolic",
+        heading_top_subheader: "Injection Molding Guidelines",
+        bg_img: "./assets/img/pages/img-two-stage/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_img_two_stage.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_img_two_stage.heading} %}
+
+    <div class="row section_23_bg overflow-hidden px-0">
+        <div class="section_23 col px-0">
+            <div class="container cont-site">
+                <h2 class="section_23__header pb-2">Injection Molding Guidelines <span class="text-blue-1">PLENCO Two Stage Phenolic Molding Compound </span></h2>
+                <div class="section_23__blocks-cont border-start border-20 border-blue-1 mt-3 pt-4 pb-4">
+                    
+                    <div class="section_23__table position-relative">
+                        <div class="section_23_dt d-none d-md-block">
+                            <div class="row section_23__table__hero">
+                                <div class="section_23__block col-5 col-lg-4 position-relative bg-grey-2 py-1 px-4 d-flex align-items-center">
+                                    <span class="section_23__table__header mb-0">Parameter</span>
+                                </div>
+                                <div class="section_23__block col-7 col-lg-4 position-relative bg-yellow-1 py-10 px-4 d-flex align-items-center">
+                                    <span class="section_23__table__header mb-0">Suggested Press Settings</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Mold Temperatures</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">165° - 182°C (330° - 360°F)</p>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Front Barrel Temperature</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">82° - 99°C (180° - 210°F)</p>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Rear Barrel Temperature</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">66° - 82°C (150° - 180°F)</p>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Stock Temperature</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">104° - 115°C (220° - 240°F)</p>
+                            </div>                            
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Injection Time</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">3 - 8 seconds</p>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Clamp Tonnage</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">27.6 - 41.4 MPa (2 - 3 Tons/in2) of Projected Part Area</p>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Screw Back Pressure</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">0.21 - 0.69 MPa (30 - 100 psi)</p>
+                            </div>
+                            <div class="row">
+                                <p class="section_23__table__text text_add col-5 col-lg-4 pe-4 mb-0 ms-4 px-0 mt-2">Screw RPM</p>
+                                <p class="section_23__table__text text_add col mb-0 ms-0 px-0 mt-2">30 - 60 RPM</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="accordion accordion-flush section_23_accordion d-md-none" id="IMG-TS__accordion-1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="acc-1__header-1">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
+                                        <p class="d-block mb-0 ms-4">Mold Temperatures</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">165° - 182°C (330° - 360°F)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-2">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-2" aria-expanded="true" aria-controls="acc-1__body-2">
+                                        <p class="d-block mb-0 ms-4">Front Barrel Temperature</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-2" class="accordion-collapse collapse" aria-labelledby="acc-1__header-2" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">82° - 99°C (180° - 210°F)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-3">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-3" aria-expanded="true" aria-controls="acc-1__body-3">
+                                        <p class="d-block mb-0 ms-4">Rear Barrel Temperature</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-3" class="accordion-collapse collapse" aria-labelledby="acc-1__header-3" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">66° - 82°C (150° - 180°F)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-4">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-4" aria-expanded="true" aria-controls="acc-1__body-4">
+                                        <p class="d-block mb-0 ms-4">Stock Temperature</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-4" class="accordion-collapse collapse" aria-labelledby="acc-1__header-4" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">104° - 115°C (220° - 240°F)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-5">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-5" aria-expanded="true" aria-controls="acc-1__body-5">
+                                        <p class="d-block mb-0 ms-4">Injection Time</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-5" class="accordion-collapse collapse" aria-labelledby="acc-1__header-5" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">3 - 8 seconds</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-6">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-6" aria-expanded="true" aria-controls="acc-1__body-6">
+                                        <p class="d-block mb-0 ms-4">Clamp Tonnage</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-6" class="accordion-collapse collapse" aria-labelledby="acc-1__header-6" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">27.6 - 41.4 MPa (2 - 3 Tons/in2) of Projected Part Area</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-7">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-7" aria-expanded="true" aria-controls="acc-1__body-7">
+                                        <p class="d-block mb-0 ms-4">Screw Back Pressure</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-7" class="accordion-collapse collapse" aria-labelledby="acc-1__header-7" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">0.21 - 0.69 MPa (30 - 100 psi)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-2">
+                                <h2 class="accordion-header" id="acc-1__header-8">
+                                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-8" aria-expanded="true" aria-controls="acc-1__body-8">
+                                        <p class="d-block mb-0 ms-4">Screw RPM</p> 
+                                    </button>
+                                </h2>
+                                <div id="acc-1__body-8" class="accordion-collapse collapse" aria-labelledby="acc-1__header-8" data-bs-parent="#IMG-TS__accordion-1">
+                                    <div class="accordion-body ms-4 pb-2">
+                                        <p class="accordion__text-1 text-grey-1 text-uppercase mb-0">Suggested Press Settings</p>
+                                        <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">30 - 60 RPM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="section_23__subheader text-blue-1 mb-0">Additional Technical Information</h3>
+                <p class="section_23__subheader text-add text-black-1 mb-0 mt-4">A clean, highly polished, chrome plated mold is recommended. Use a mold release such as Carnauba Wax, being careful to coat the entire surface including the sprue bushing.  After several shots wipe off the excessive mold release using a clean, soft cloth.</p>
+                <p class="section_23__subheader text-add text-black-1 mb-0 mt-4">The orifice size of the nozzle should be 1 mm (1/32”) less than the sprue bushing orifice.  This will allow material to be pulled from the nozzle, which helps minimize nozzle freeze off.  The nozzle and sprue orifice should be of the same radius, to provide a leak free shut off.  In some cases, it may be necessary to have a smaller radius on the nozzle, to reduce the heat transfer from the sprue, which may be causing nozzle freeze off.</p>
+                <p class="section_23__subheader text-add text-black-1 mb-0 mt-4">A tapered, highly polished, D2 steel, sprue bushing, will provide easy release of the sprue from the sprue bushing.</p>
+                <p class="section_23__subheader text-add text-black-1 mb-0 mt-4">The shot weight (part  & runner volume) should be between 20% and 80% of the barrel capacity of the injection press. A Thermoset injection screw and barrel provides optimum performance when molding these materials.  A Thermoset screw is one with a 12:1 L/D (length/diameter) Ratio, a 1:1 Compression Ratio and a 40° included angle on the tip.</p>
+                <p class="section_23__subheader text-add text-black-1 mb-0 mt-4">A soft bulb of material on the end of the sprue, ensures that the nozzle is being evacuated of material every shot, which minimizes nozzle freeze off. </p>
+                <p class="section_23__subheader text-add text-black-1 mb-0 mt-4">Adding a cushion of 3 mm (1/8”) and switching to secondary or holding pressure at 6 mm – 10 mm (1/4” - 3/8”) before the screw bottoms out, will help maintain a part density that maximizes physical and electrical properties.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_24_bg overflow-hidden px-0 bg-blue-l1">
+        <div class="section_24 col px-0">
+            <div class="container cont-site">
+                <h2 class="section_24__header mb-0">Common Molding <span class="text-blue-1">Problems</span></h2>
+                <div class="section_24__blocks-cont mt-4">
+
+                    <div class="accordion accordion-flush section_24_accordion" id="IMG-TS__accordion-2">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 g-md-5 accordion-cont">
+
+                            <div class="acc__item-wrap col">
+                                <div class="accordion-item ">
+                                    <h2 class="accordion-header" id="acc-2__header-1">
+                                        <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-1" aria-expanded="true" aria-controls="acc-2__body-1">
+                                            <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Blistering</p> 
+                                        </button>
+                                    </h2>
+                                    <div id="acc-2__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-1" data-bs-parent="">
+                                        <div class="accordion-body ms-4 py-4">
+                                            <p class="accordion__text-1 text-grey-1 text-uppercase mb-0 mt-2">Potential Solutions</p>
+                                            <ul class="ul_2 accordion-list mt-8 mb-0">
+                                                <li class="ul_2__text mt-2">Increase mold temperature</li>
+                                                <li class="ul_2__text mt-1">Increase stock temperature</li>
+                                                <li class="ul_2__text mt-1 mb-2">Increase cure time</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="acc__item-wrap col">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="acc-2__header-2">
+                                        <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-2" aria-expanded="true" aria-controls="acc-2__body-2">
+                                            <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Short Parts</p> 
+                                        </button>
+                                    </h2>
+                                    <div id="acc-2__body-2" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-2" data-bs-parent="">
+                                        <div class="accordion-body ms-4 py-4">
+                                            <p class="accordion__text-1 text-grey-1 text-uppercase mb-0 mt-2">Potential Solutions</p>
+                                            <ul class="ul_2 accordion-list mt-8 mb-0">
+                                                <li class="ul_2__text mt-2">Increase shot length</li>
+                                                <li class="ul_2__text mt-1">Increase back pressure</li>
+                                                <li class="ul_2__text mt-1 mb-2">Lower mold temperature</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="acc__item-wrap col">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="acc-2__header-3">
+                                        <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-3" aria-expanded="true" aria-controls="acc-2__body-3">
+                                            <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Gas Burns</p> 
+                                        </button>
+                                    </h2>
+                                    <div id="acc-2__body-3" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-3" data-bs-parent="">
+                                        <div class="accordion-body ms-4 py-4">
+                                            <p class="accordion__text-1 text-grey-1 text-uppercase mb-0 mt-2">Potential Solutions</p>
+                                            <ul class="ul_2 accordion-list mt-8 mb-0">
+                                                <li class="ul_2__text mt-2">Slow injection time</li>
+                                                <li class="ul_2__text mt-1">Check for blocked vent(s)</li>
+                                                <li class="ul_2__text mt-1 mb-2">Lower stock temperature</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="acc__item-wrap col">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="acc-2__header-4">
+                                        <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-4" aria-expanded="true" aria-controls="acc-2__body-4">
+                                            <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Sticking Parts</p> 
+                                        </button>
+                                    </h2>
+                                    <div id="acc-2__body-4" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-4" data-bs-parent="">
+                                        <div class="accordion-body ms-4 py-4">
+                                            <p class="accordion__text-1 text-grey-1 text-uppercase mb-0 mt-2">Potential Solutions</p>
+                                            <ul class="ul_2 accordion-list mt-8 mb-0">
+                                                <li class="ul_2__text mt-2">Increase mold temperature</li>                                                
+                                                <li class="ul_2__text mt-1 mb-2">Increase cure time</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row section_25_bg overflow-hidden px-0">
+        <div class="section_25 px-0">
+            <div class="container cont-site">
+                <div class="section_25__content my-5 py-4">
+                    <p class="section_25__text mb-0">The listed parameters are suggested for use as a guide when setting up an injection molding machine for molding Plenco Thermoset materials. These parameters are for your evaluation and may or may not be compatible for all mold designs, runner systems, press configurations, and material rheology.  Please feel free to call Plenco and a Plenco Technical Service Representative will be happy to assist you. Revised 4-30-03</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% include '../components/sections/section_21.twig'  %}
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

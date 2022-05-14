@@ -1,5 +1,5 @@
 .body_facility {
-    
+
     & .section_heading_bottom {
         height: 362px;
         
@@ -8,43 +8,6 @@
         }
         @include respond-to(xs) {        
             height: 256px;
-        }
-
-        & .section_heading_bottom__content {
-            margin-top: 150px;    
-        
-            @include respond-to(lg) {
-                margin-top: 120px;
-            }
-            @include respond-to(sm) {
-                margin-top: 100px;
-            }
-            @include respond-to(xs) {
-                margin-top: 50px;        
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Almarai-700";
-                font-size: 34px;
-                line-height: 46px;            
-        
-                @include respond-to(lg) {
-                    font-size: 28px;
-                    line-height: 36px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 26px;
-                    line-height: 32px;
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 22px;
-                    line-height: 28px;
-                }        
-            }
         }
     } 
 
@@ -66,126 +29,284 @@
     }
 
 
+
+
+//-----------------------SECTION 8 --------------------
+
     & .section_8_bg {
         background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
         background-position:  100% 0%;
         background-size: 100% 100%;
 
-        
         @include respond-to(sm) {
-            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
+            background: linear-gradient(180deg, rgba($white,1) 200px, rgba($green_el,1) 200px, rgba($green_el,1) 100%);
         }
-
     }
 
-    & .section_8__img-wrapper {
+    & .section_8__data {
+        padding-top: 100px;
+
         @include respond-to(md) {
-            margin-top: 54px;
+            padding-top: 52px;
+         }
+
+         & .block_4__button {        
+            font-family: "Play-700";
+            font-size: 16px;
+            line-height: 50px;
+            @include ls(25);
+            width: 240px;
+    
+            @include respond-to(sm) {
+                padding-left: 0px;
+                padding-right: 10px;
+            }
+    
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0px;
+                height: 100%;
+                width: 25px;
+                background-image: url('../img/svg/arrow_down_1.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
         }
-        
+
+        & .section_8__image {
+            height: 826px;
+            width: auto;
+
+            @include respond-to(md) {
+                margin-left: 25%;
+                left: 20px;
+                height: auto;
+            }
+
+            @include respond-to(sm) {
+                width: 140%;
+            }
+        }
+    }
+
+
+
+//-----------------------SECTION 16 --------------------
+    
+    & .section_16_bg {
+        padding-top: 113px;
+    
+        @include respond-to(sm) {
+            padding-top: 46px;
+        }
     }
 
 
     
     & .section_16 {
-        padding-top: 113px;
-        padding-bottom: 148px;
+ 
 
+        & .block_7 {
 
-        @include respond-to(sm) {
-            padding-top: 46px;
-            padding-bottom: 144px;
-        }
-
-        & .block_7:nth-child(2) {
             margin-top: 44px;
-
-            @include respond-to(sm) {
-                margin-top: 26px;
-            }
-        }
-    }
-
-
-    & .section_8_2 {
-        //border: 2px solid red;
         
-        @include respond-to(sm) {
-            background: linear-gradient(180deg, rgba($green_el ,1) 250px, rgba($white,1) 250px, rgba($white,1) 100%);
-            background-size: 70% 100%;
-            background-repeat: no-repeat;
-        }
-
-        & .section_8 {
-            min-height: auto;
-            padding-bottom: 113px;
-
             @include respond-to(sm) {
-                padding-bottom: 0px;
+                margin-top: 23px;
             }
-            
-            & .section_8__img-wrapper {
-                overflow: hidden;
 
+            & .block_7__left {
+                max-height: 356px;
+        
                 @include respond-to(sm) {
-                    background-position: left center;
-                    //background-size: auto 100%;
-                }
-
-                @include respond-to(sm) {
-                    margin-top: 80px;
+                    max-height: none;
                 }
         
-                & .section_8__img-cont {
-                    height: 464px;
-                    overflow: hidden;
+                & .block_7__left__img {
+                    max-height: 356px;
                     
-
-                    & .section_8__image {
-                        position: relative;
-                        top: -130px;
-
-
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
                     }
                 }
             }
 
+            & ~ .block_7 {
+                margin-top: 120px;
 
-        }
-
-
-
-        & .block_2 {
-
-            min-height: auto !important;
-
-
-            & .block_2__header {
                 @include respond-to(sm) {
-                    position: absolute;
-                    top: -420px;
+                    margin-top: 80px;
                 }
             }
-
-            & .block_2__button {
-                width: 349px;
-
-                @include respond-to(xs) {
-                    width: 100%;
-                }
-            }
-
         }
+        
+
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
+
     }
 
-    & .section_18 {
-        margin-top: 169px;
+
+//-----------------------SECTION 8_2 --------------------
+
+
+& .section_8-2_bg {
+    background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
+    background-position:  100% 0%;
+    background-size: 100% 100%;
+    margin-top: 150px;
+    
+    @include respond-to(sm) {
+        background: linear-gradient(270deg, rgba($white,1) 0%, rgba($green_el,1) 0%, rgba($green_el,1) 100%);//$grey-3;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 60% 30%;
+    }
+
+}
+
+& .section_8-2__data {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+    @include respond-to(md) {
+        padding-top: 32px;
+     }
+
+
+
+
+    & .section_8-2__image {
+        height: 464px;
+        width: auto;
+
+        @include respond-to(md) {
+           height: auto;
+           left: 20%;
+        }
+
+    }
+}
+
+
+
+
+//---------------------SECTION 17----------------------
+
+    .section_17_bg {
+        background: url('../img/svg/section_17_bg.svg');
+        padding-top: 280px;
+        padding-bottom: 0px;
+        background-position: 0 -630px;
+        background-repeat: no-repeat;
+
+        @include respond-to(md) {
+            background-position: -70px -700px;
+            padding-top: 191px;
+        }
 
         @include respond-to(sm) {
-            margin-top: 71px;
+            background: none;
+            padding-top: 97px;
+        }
+
+    }
+
+    .section_17 {
+
+                & .section_17__header {
+                    text-transform: none;
+                }
+    }
+
+
+
+//-----------------------SECTION 18 --------------------
+
+    .section_18_bg {
+        background: url('../img/svg/section_18_bg.svg');
+        padding-top: 170px;
+        padding-bottom: 72px;
+        background-position: 25px 100%;
+        background-repeat: no-repeat;
+        background-size: 602px auto;
+
+
+        @include respond-to(sm) {
+            background: url('../img/svg/section_18_bg_mob.svg');
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+            padding-top: 70px;
+            padding-bottom: 123px;
+        }
+
+
+    }
+
+    .section_18 {
+
+        & .section_18__text {
+            font-family: "Mulish-600";
+            font-size: 16px;
+            line-height: 22px;
+            @include ls(25);
+
+            & b {
+                font-family: "Mulish-900";
+                font-style: normal;
+            }
+        }
+
+        & .section_18__blocks-cont {
+
+            
+
+            & .block_8 {
+                left: -8px;
+            
+                & .block_8__header {
+                    font-family: "Mulish-800";
+                    font-size: 16px;
+                    line-height: 24px;
+                    @include ls(25);
+                }
+            }
         }
     }
 
+
+    
+//-----------------------SECTION 13 --------------------
 
 
     & .section_13__button {

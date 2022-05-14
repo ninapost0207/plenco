@@ -1,0 +1,336 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Privacy Policy' %}
+{% set pageClass = 'body_priv-policy' %}
+
+{% set page_priv_policy = {
+    heading: {
+        heading_top_text: "Privacy Policy",        
+        bg_img: "./assets/img/pages/priv-policy/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_103: {
+        class: "page_priv-policy",
+        inputs: [{
+                    header: "Name*",
+                    placeholder: "Name",
+                    type: "text",
+                    required: true,
+                    
+                    id: "privPolicyName",
+                },
+                {
+                    header: "Email Address*",
+                    placeholder: "email@address.com",
+                    type: "email",
+                    required: true,
+                    
+                    id: "privPolicyEmail"
+                },
+                {
+                    header: "Message",
+                    placeholder: "Write your message",
+                    type: "text",
+                    required: false,
+                    inputarea_p: "width: 100% !important",
+                    id: "privPolicyMessage"
+                }
+            ],
+        checkboxes: [
+                {
+                    label: "Prohibit the sale of personal information",
+                    id: "privPolicyCheckboxFirst",
+                    name: "privPolicyCheckboxFirst"
+                },
+                {
+                    label: "Request copies of personal information",
+                    id: "privPolicyCheckboxSecond",
+                    name: "privPolicyCheckboxSecond"
+                },
+                {
+                    label: "Request deletion of personal information",
+                    id: "privPolicyCheckboxThird",
+                    name: "privPolicyCheckboxThird"
+                }
+            ],
+        form: "privPolicyForm"          
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_priv_policy.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_priv_policy.heading} %}
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">At Plenco, accessible from https://plenco.com, one of our main priorities is <span class='text-blue-l2'>the privacy of our visitors</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">This Privacy Policy document contains types of information that are collected and recorded by plenco.com and how we use it.</p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row bg-blue-l1 col-12 my-0">
+        <div class="col px-0">
+            <div class="container cont-site pt-5 pb-4 pb-md-5">
+                <h2 class="pt-2 pt-md-4 mb-1">Privacy Policy <span class="text-blue-1">for Plenco</span></h2>                
+                <div>
+                    <p class="text_main py-3 mb-1">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+                </div>
+                <div>
+                    <p class="text_add pb-2 mb-0">This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in plenco.com. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+    <div class="row col-12 my-0 px-0">    
+        <div class="container cont-site pt-4 d-none d-md-block ">
+            <h3 class="text-blue-1 text-uppercase pt-3">Consent</h3>                
+            <p class="text_add_small mb-0 pb-4">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+            <h3 class="text-blue-1 text-uppercase pt-3">Information we collect</h3>                
+            <p class="text_add_small mb-0 pb-4">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+            <p class="text_add_small mb-0 pb-4">If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+            <p class="text_add_small mb-0 pb-4">When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+            <p class="text_add_small mb-0 pb-4">You can opt-out of Google Analytics using Google Analytics Browser Extension: <a href="https://tools.google.com/dlpage/gaoptout/" class="text-black-1">https://tools.google.com/dlpage/gaoptout/</a></p>
+
+            <h3 class="text-blue-1 text-uppercase pt-3 mb-0">How we use your information</h3>
+            <p class="text_add_small mb-0 pb-4 pt-0">We use the information we collect in various ways, including:</p>                
+            <ul class="ul_3 mb-0 ps-4">
+                <li class="ul_3__text text_add_small my-0">Provide, operate, and maintain our website</li>
+                <li class="ul_3__text text_add_small my-0">Improve, personalize, and expand our website</li>
+                <li class="ul_3__text text_add_small my-0">Understand and analyze how you use our website</li>
+                <li class="ul_3__text text_add_small my-0">Develop new products, services, features, and functionality</li>
+                <li class="ul_3__text text_add_small my-0">Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+                <li class="ul_3__text text_add_small my-0">Send you emails</li>
+                <li class="ul_3__text text_add_small my-0 pb-4">Find and prevent fraud</li>                
+            </ul>
+
+            <h3 class="text-blue-1 text-uppercase pt-3">Log Files</h3>                
+            <p class="text_add_small mb-0 pb-4"> plenco.com follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.</p>
+            <h3 class="text-blue-1 text-uppercase pt-3">Cookies and web beacons</h3>                
+            <p class="text_add_small mb-0 pb-4">Like any other website, mersbergerfinancialgroup.com uses ‘cookies’. These cookies are used to store information including visitors’ preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users’ experience by customizing our web page content based on visitors’ browser type and/or other information.</p>
+            <h3 class="text-blue-1 text-uppercase pt-3">Advertising Partners Privacy Policies</h3>                
+            <p class="text_add_small mb-0 pb-4"> You may consult this list to find the Privacy Policy for each of the advertising partners of plenco.com.</p>
+            <p class="text_add_small mb-0 pb-4">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on plenco.com, which are sent directly to users’ browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+            <p class="text_add_small mb-0 pb-4">Note that plenco.com has no access to or control over these cookies that are used by third-party advertisers.</p>
+
+            <h3 class="text-blue-1 text-uppercase pt-3">Third-party Privacy polices</h3>                
+            <p class="text_add_small mb-0 pb-4">plenco.com’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
+            <p class="text_add_small mb-0 pb-4">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites.</p>
+            
+            <h3 class="text-blue-1 text-uppercase pt-3">CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>                
+            <p class="text_add_small mb-0 pb-4">Under the CCPA, among other rights, California consumers have the right to:</p>
+            <p class="text_add_small mb-0 pb-4">Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+            <p class="text_add_small mb-0 pb-4">Request that a business deletes any personal data about the consumer that a business has collected.</p>
+            <p class="text_add_small mb-0 pb-4">Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data.</p>
+            <p class="text_add_small mb-0 pb-4">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+            
+            <h3 class="text-blue-1 text-uppercase pt-3">GDPR Data Protection Rights</h3>                
+            <p class="text_add_small mb-0 pb-4">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+            <p class="text_add_small mb-0 pb-4">The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+            <p class="text_add_small mb-0 pb-4">The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+            <p class="text_add_small mb-0 pb-4">The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+            <p class="text_add_small mb-0 pb-4">The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+            <p class="text_add_small mb-0 pb-4">The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions. </p>
+            <p class="text_add_small mb-0 pb-4">The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions. </p>
+            <p class="text_add_small mb-0 pb-4">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+            
+            <h3 class="text-blue-1 text-uppercase pt-3">Children’s Information</h3>                
+            <p class="text_add_small mb-0 pb-4">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+            <p class="text_add_small mb-0 pb-4">plenco.com does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+        </div> 
+
+
+
+
+        <div class="accordion accordion-flush section_23_accordion d-md-none bg-blue-l1 pb-4" id="PP__accordion-1">
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-1">
+                    <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Consent</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-3">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+                    </div>
+                </div>
+            </div>       
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-2">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-2" aria-expanded="true" aria-controls="acc-1__body-2">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Information we collect</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-2" class=" accordion-collapse collapse" aria-labelledby="acc-1__header-2" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">You can opt-out of Google Analytics using Google Analytics Browser Extension: https://tools.google.com/dlpage/gaoptout/</p>
+                    </div>
+                </div>
+            </div>     
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-3">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-3" aria-expanded="true" aria-controls="acc-1__body-3">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">How we use your information</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-3" class="accordion-collapse collapse" aria-labelledby="acc-1__header-3" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">We use the information we collect in various ways, including:</p>
+                        <ul class="ul_1 mb-4">
+                            <li class="ul_1__text text_add_small my-1">Provide, operate, and maintain our website</li>
+                            <li class="ul_1__text text_add_small my-1">Improve, personalize, and expand our website</li>
+                            <li class="ul_1__text text_add_small my-1">Understand and analyze how you use our website</li>
+                            <li class="ul_1__text text_add_small my-1">Develop new products, services, features, and functionality</li>
+                            <li class="ul_1__text text_add_small my-1">Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+                            <li class="ul_1__text text_add_small my-1">Send you emails</li>
+                            <li class="ul_1__text text_add_small my-1">Find and prevent fraud</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-4">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-4" aria-expanded="true" aria-controls="acc-1__body-4">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Log Files</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-4" class="accordion-collapse collapse" aria-labelledby="acc-1__header-4" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">plenco.com follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.</p>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-5">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-5" aria-expanded="true" aria-controls="acc-1__body-5">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Cookies and web beacons</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-5" class="accordion-collapse collapse" aria-labelledby="acc-1__header-5" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">Like any other website, mersbergerfinancialgroup.com uses ‘cookies’. These cookies are used to store information including visitors’ preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users’ experience by customizing our web page content based on visitors’ browser type and/or other information.</p>
+                    </div>
+                </div>
+            </div>    
+
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-6">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-6" aria-expanded="true" aria-controls="acc-1__body-6">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Advertising Partners Privacy Policies</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-6" class="accordion-collapse collapse" aria-labelledby="acc-1__header-6" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">You may consult this list to find the Privacy Policy for each of the advertising partners of plenco.com.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on plenco.com, which are sent directly to users’ browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">Note that plenco.com has no access to or control over these cookies that are used by third-party advertisers.</p>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-7">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-7" aria-expanded="true" aria-controls="acc-1__body-7">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Third-party Privacy polices</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-7" class="accordion-collapse collapse" aria-labelledby="acc-1__header-7" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">plenco.com’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites.</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-8">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-8" aria-expanded="true" aria-controls="acc-1__body-8">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">CCPA Privacy Rights</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-8" class="accordion-collapse collapse" aria-labelledby="acc-1__header-8" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">Under the CCPA, among other rights, California consumers have the right to:</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">Request that a business deletes any personal data about the consumer that a business has collected.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header" id="acc-1__header-9">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-9" aria-expanded="true" aria-controls="acc-1__body-9">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">GDPR Data Protection Rights</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-9" class="accordion-collapse collapse" aria-labelledby="acc-1__header-9" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="accordion-item mb-5">
+                <h2 class="accordion-header" id="acc-1__header-10">
+                    <button class="collapsed accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-10" aria-expanded="true" aria-controls="acc-1__body-10">
+                        <h3 class="d-block mb-0 ms-4 text-blue-l3 text-uppercase">Children’s Information</h3> 
+                    </button>
+                </h2>
+                <div id="acc-1__body-10" class="accordion-collapse collapse" aria-labelledby="acc-1__header-10" data-bs-parent="#PP__accordion-1">
+                    <div class="accordion-body ms-4 pb-2 pe-3">                                        
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-0 mt-4">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+                        <p class="accordion__text-2 text_add_small text-black-1 mb-4 mt-4">plenco.com does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+
+        
+        </div>
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

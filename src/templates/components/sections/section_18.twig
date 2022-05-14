@@ -1,23 +1,27 @@
 <div class="row section_18_bg overflow-hidden {{ data.class }}" style="{{ data.style }}">
-    <div class="section_18 col">
+    <div class="section_18 col-12 px-0">
         <div class="container cont-site">
-            <div class="section_18__data">
-                <h3 class="section_18__header text_bicolor">{{ data.header }}</h3>
-                <div class="section_18__content">
-                    <div class="section_18__left">
-                        <p class="section_18__text">{{ data.block_left.text }}</p>
-                        <div class="section_18__blocks-cont">
-                            {% for block in data.block_left.blocks %}
-                                {% include data.block with {data: block} %} 
-                            {% endfor %}
+            <div class="section_18__data col-12">
+                <h3 class="section_18__header text_bicolor mb-0 text-start text-md-center">{{ data.header }}</h3>
+                <div class="section_18__content col-12 d-flex flex-column justify-content-between align-items-start flex-md-row">
+                    <div class="section_18__left col-12 col-md-6">
+                        <div class="section_18__wrap col-12 col-md-11">
+                            <p class="section_18__text mb-0">{{ data.block_left.text }}</p>
+                            <div class="section_18__blocks-cont">
+                                {% for block in data.block_left.blocks %}
+                                    {% include data.block with {data: block} %} 
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                    <div class="section_18__right">
-                        <p class="section_18__text">{{ data.block_right.text }}</p>
-                        <div class="section_18__blocks-cont">
-                            {% for block in data.block_right.blocks %}
-                                {% include data.block with {data: block} %} 
-                            {% endfor %}
+                    <div class="section_18__right col-12 col-md-6">
+                        <div class="section_18__wrap col-12 col-md-11 offset-md-1">
+                            <p class="section_18__text mb-0">{{ data.block_right.text }}</p>
+                            <div class="section_18__blocks-cont">
+                                {% for block in data.block_right.blocks %}
+                                    {% include data.block with {data: block} %} 
+                                {% endfor %}
+                            </div>
                         </div>
                     </div> 
                 </div>

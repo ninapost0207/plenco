@@ -1,0 +1,30 @@
+/*.section_11 {
+
+    & .section_11__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+        line-height: 43px;
+        @include ls(0);
+
+        @include respond-to(sm) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+   
+
+    & .section_11__text {
+        font-family: "Mulish-600";
+        font-size: 20px;
+        line-height: 28px;
+        @include ls(25);
+        margin-top: 22px;
+
+        @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 24px;
+            line-height: 22px;
+        }
+    }
+}
+*/

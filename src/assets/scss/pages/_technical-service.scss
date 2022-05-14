@@ -1,5 +1,4 @@
 .body_technical-service {
-    //border: 3px solid red;
     & .section_heading_top_bg {        
     
         & .section_heading_top__bg_img-cont {            
@@ -15,104 +14,170 @@
             }    
         }    
     }
+    
     & .section_heading_bottom {
         height: 304px;        
         
         @include respond-to(md) {        
-            height: 350px;
+            height: 280px;
         }
         @include respond-to(sm) {        
-            height: 400px;
+            height: 250px;
         }
         @include respond-to(xs) {        
-            height: 430px;
+            height: 226px;
         }
 
-        & .section_heading_bottom__content {
-            margin-top: 80px; 
-            
-            @include respond-to(sm) {
-                margin-top: 90px;
-            }
-            @include respond-to(xs) {
-                margin-top: 100px;        
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Play-700";
-                font-size: 44px;
-                line-height: 50px;  
-                @include ls(50);
-                        
-        
-                @include respond-to(lg) {
-                    font-size: 40px;
-                    line-height: 48px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 36px;
-                    line-height: 44px;                    
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 30px;
-                    line-height: 40px;
-                }        
-            }
-            /*& .section_heading_bottom__content__text_regular {
-                font-family: "Mulish-400";
-                font-size: 14px;
-                line-height: 28px;
-                margin-top: 20px;
-                
-                @include respond-to(md) {                                
-                    margin-top: 40px;                    
-                }
-                @include respond-to(sm) {                                
-                    margin-top: 50px;                    
-                }
-                @include respond-to(xs) {
-                    font-size: 16px;
-                    line-height: 22px;                    
-                    margin-top: 70px;                    
-                }
-            }
-            & .section_heading_bottom__content__text_semibold {
-                font-family: "Mulish-600";
-                font-size: 16px;
-                line-height: 28px;                 
-            }*/
-                
-        }
     }
+
+
+ //-------------------------SECTION 8 ----------------------
 
 
     & .section_8_bg {
-        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
-        padding-bottom: 54px;
-        background-position: 100% 0%;
+        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
+        background-position:  100% 0%;
         background-size: 100% 100%;
-        background-repeat: no-repeat;
-
-        @include respond-to(md) {
-            background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
-        }
 
         @include respond-to(sm) {
-            padding-bottom: 35px;
-            background: linear-gradient(180deg, rgba(255,255,255,1) 250px, rgba(231,242,242,1) 250px, rgba(231,242,242,1) 100%);
+            background: linear-gradient(180deg, rgba($white,1) 200px, rgba($green_el,1) 200px, rgba($green_el,1) 100%);
         }
     }
 
-    & .section_8__img-wrapper {
+    & .section_8__data {
+        padding-top: 100px;
+
         @include respond-to(md) {
-            margin-top: 54px;
+            padding-top: 52px;
         }
-        
+
+        & .block_4__button {        
+            font-family: "Play-700";
+            font-size: 16px;
+            line-height: 50px;
+            @include ls(25);
+            width: 240px;
+            padding-left: 20px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0px;
+                height: 100%;
+                width: 25px;
+                background-image: url('../img/svg/arrow_down_1.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+
+        & .section_8__image {
+            height: 826px;
+            width: auto;
+
+            @include respond-to(md) {
+                margin-left: 25%;
+                left: 20px;
+                height: auto;
+            }
+
+            @include respond-to(sm) {
+                width: 140%;
+            }
+        }
+
     }
+
+
+
+ //---------------------------SECTION 14 ----------------------------------
+
+    .section_14_bg {
+        padding-top: 89px;
+        padding-bottom: 176px;
+
+        background-image:  url("../img/svg/section_14__bg.svg");
+        background-repeat: no-repeat;
+        background-position: 25px bottom;
+        background-size: 602px auto;
+
+
+        @include respond-to(sm) {
+            padding-top: 58px;
+            padding-bottom: 80px;
+
+            background: url("../img/svg/mosaic_3.svg");
+            background-size:  auto auto;
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+        }
+    }
+
+
+
+    .section_14 {
+
+        & .section_14__examples {
+            margin-left: -24px !important; 
+            margin-right: -24px !important; 
+                
+            & .block_5 {
+
+                & .block_5__content {        
+                    top: -18px;
+                    padding-top: 36px;
+                    left: 14px;
+                    width: calc(100% - 13px);
+            
+                    & .block_5__header { 
+                        font-family: "Mulish-600";            
+                        font-size: 24px;
+                        line-height: 34px;
+                        @include ls(25);
+            
+            
+                        @include respond-to(md) {
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+                    }
+            
+                    & .block_5__tags {
+                    margin-left: -4px !important;
+                    margin-right: -4px !important;
+                    
+                    & .block_tag_1 {
+                            min-height: 26px;
+                            min-width: 77px;
+                    
+                            & .block_tag_1__text {
+                                font-family: "Mulish-300";
+                                font-size: 14px;
+                                line-height: 20px;
+                                @include ls(25);
+                            }
+                        }
+            
+            
+                    }
+            
+                    & .block_5__link_text {            
+                        font-family: "Play-700";                    
+                        font-size: 16px;
+                        @include ls(25);
+                    }
+                }
+            }
+
+
+        }
+    
+    }
+
+
+
+//---------------------------SECTION 13 ----------------------
+
 
     & .section_13_bg {
         @include respond-to(sm) { 

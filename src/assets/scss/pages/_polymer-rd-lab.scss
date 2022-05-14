@@ -1,5 +1,17 @@
 .body_polymer_rd_lab {
     
+    & .section_heading_top__bg_img {
+        
+        background-position: 50% 20% !important;
+        background-size: cover;
+        opacity: 0;
+
+        @include respond-to(sm) {
+            background-position: 40% 50% !important;
+            background-size: auto 150% !important;
+        }
+    }
+
     & .section_heading_bottom {    
         height: 545px;
 
@@ -7,91 +19,59 @@
         @include respond-to(xs) {        
             height: 559px;
         }
-    
-        & .section_heading_bottom__content {
-            margin-top: 160px;    
-            
-            @include respond-to(md) {
-                margin-top: 100px;
-                
-            }
-            @include respond-to(sm) {
-                margin-top: 70px;
-                
-            }
-            @include respond-to(xs) {
-                margin-top: 50px;
-                
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Almarai-700";
-                font-size: 34px;
-                line-height: 46px;
-                letter-spacing: 0.07rem;
-        
-                @include respond-to(lg) {
-                    font-size: 28px;
-                    line-height: 40px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 26px;
-                    line-height: 34px;
-                    letter-spacing: 0.02rem;
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 22px;
-                    line-height: 28px;
-                }
-        
-            }    
-            & .section_heading_bottom__content__text {
-                font-family: "Mulish-400";
-                font-size: 18px;
-                line-height: 24px;
-                margin-top: 30px;
-        
-                @include respond-to(xs) {
-                    font-size: 16px;
-                    line-height: 22px;                    
-                }
-            }
-        }    
+
     }
 
+//----------------------------SECTION 8-----------------------
 
-    & .section_8_bg {
-        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
-        background-position:  100% 0%;
-        background-size: 100% 100%;
+& .section_8_bg {
+    background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    padding-bottom: 120px;
+    background-position: 100% 0%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
-        
-        @include respond-to(sm) {
-            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
-        }
+    @include respond-to(md) {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 43px;
+    }
+    @include respond-to(sm) {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 24%, rgba(231,242,242,1) 24%, rgba(231,242,242,1) 100%);
+    }
+    @include respond-to(xs) {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 18%, rgba(231,242,242,1) 18%, rgba(231,242,242,1) 100%);
+    }
+}
 
+& .section_8__data {
+    padding-top: 100px;
+
+    @include respond-to(md) {
+        padding-top: 52px;
+    }
+
+    & .block_4__button {  
+        min-width: 260px;      
     }
 
     & .section_8__image {
-        position: relative;
-        left: -25%;
-    }
+        height: 826px;
+        width: auto;
 
-    & .section_8__img-wrapper {
         @include respond-to(md) {
-            margin-top: 54px;
+            margin-left: 25%;
+            left: 20px;
+            height: auto;
+            width: 75%;
         }
-        
+
+        @include respond-to(sm) {
+            width: 85%;
+        }
     }
 
-    & .section_8__button {
-        display: none;
-    }
-
+}
+//----------------------------SECTION 16-----------------------
 
     & .section_16_bg {
         background-image: url('../img/svg/section_16_bg_bottom.svg');
@@ -99,47 +79,96 @@
         background-position: 24px bottom;
         background-repeat: no-repeat;
         padding-bottom: 238px;
+        padding-top: 113px;
 
         @include respond-to(sm) {
             background: url('../img/svg/section_16_bg_bottom_mob.svg');
             background-repeat: no-repeat;
             background-position: 10px bottom;
-            padding-bottom: 0;
-
+            padding-top: 85px;
+            padding-bottom: 100px;
         }
-    
     }
+
+
+
+
 
 
     & .section_16 {
-        padding-top: 113px;
-        //padding-bottom: 148px;
 
+        & .block_7 {
 
-        & .block_7__right.right {
-            height: 100%;
-            min-height: 350px;
-
+            margin-top: 73px;
+        
             @include respond-to(sm) {
-                min-height: auto;
-                height: auto;
+                margin-top: 60px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
             }
         
-        }
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
+                    }
+                }
+            }
 
-        @include respond-to(sm) {
-            padding-top: 46px;
-            padding-bottom: 100px;
-        }
+            & ~ .block_7 {
+                margin-top: 120px;
 
-        & .block_7:nth-child(2) {
-            margin-top: 44px;
-
-            @include respond-to(sm) {
-                margin-top: 26px;
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
             }
         }
+        
+
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
+
     }
+
+
+
+//----------------------------SECTION 13-----------------------
+
 
     & .section_13__button {
         width: 251px;

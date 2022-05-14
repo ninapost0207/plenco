@@ -1,80 +1,26 @@
 .block_cookies {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: 84px;
-    background-color: $grey-2;
-    position: fixed;
+    min-height: 84px;
     z-index: 1000;
-    align-items: center;
-    justify-content: space-between;
     top: 116px;
-
 
     @include respond-to(sm) {
         top: 83px;
-        height: auto;
     }
 
 
     & .block_cookies__content {
-        display: flex;
-        padding-left: 20px;
-        padding-right: 20px;
-
-        @include respond-to(sm) {
-            flex-direction: column;
-        } 
-
-        & .block_cookies__text {
-            font-family: "Mulish-400";
-            font-size: 16px;
-            margin-bottom: 0;
-
-            @include respond-to(sm) {
-                margin-top: 20px;
-                font-size: 14px;
-                text-align: center;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-        }
-
-        & .block_cookies__link {
-            color: $black;
-        }
-    
     
         & .block_cookies__decisions {
-            margin-left: 115px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
     
-            @include respond-to(md) {
-                margin-left: 80px;
-            }
-
-            @include respond-to(sm) {
-                margin-left: 0px;
-                justify-content: center;
-                margin-top: 8px;
-                padding-bottom: 17px;
-            }
 
             & .block_cookies__btn_accept {
-                text-transform: uppercase;
                 font-family: "Play-700";
                 font-size: 20px;
-                color: $blue-1;
             }
 
             & .block_cookies__btn_close {
-                text-decoration: underline;
                 font-family: "Mulish-600";
                 font-size: 16px;
-                color: $black;
-                margin-left: 19px;
             }
     
     
@@ -83,7 +29,6 @@
     
 
     & .block_cookies__close {
-        position: absolute;
         height: 14px;
         width: 14px;
         top: 14px;

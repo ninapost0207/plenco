@@ -1,0 +1,92 @@
+/*.section_18_bg {
+    background: url('../img/svg/section_18_bg.svg');
+    padding-top: 0px;
+    padding-bottom: 72px;
+    background-position: 25px 100%;
+    background-repeat: no-repeat;
+    background-size: 602px auto;
+
+
+    @include respond-to(sm) {
+        background: url('../img/svg/section_18_bg_mob.svg');
+        background-position: 10px 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 123px;
+    }
+
+
+}
+
+.section_18 {
+
+    & .section_18__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+        line-height: 25px;
+        @include ls(0);
+        //text-align: center;
+        //margin-bottom: 0;
+
+        @include respond-to(sm) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    & .section_18__content {
+        margin-top: 34px;
+        //display: flex;
+        //justify-content: space-between;
+        //align-items: flex-start;
+
+        @include respond-to(sm) {
+            //flex-direction: column;
+            margin-top: 18px;
+        }
+    }
+
+    & .section_18__left {
+        //width: 47%;
+
+        @include respond-to(sm) {
+            //width: 100%;
+        }
+    }
+
+
+    & .section_18__right {
+
+        @include respond-to(sm) {
+            margin-top: 61px;
+        }
+    }
+
+    & .section_18__text {
+        font-family: "Mulish-700";
+        font-size: 16px;
+        line-height: 22px;
+        @include ls(25);
+
+        & b {
+            font-family: "Mulish-900";
+            font-style: normal;
+        }
+    }
+
+    & .section_18__blocks-cont {
+        border-left: 19px solid $blue-1;
+        padding-top: 1px;
+        margin-top: 17px;
+        padding-bottom: 10px;
+        
+        @include respond-to(sm) {
+            margin-top: 14px;
+        }
+
+    }
+
+
+
+}
+
+*/

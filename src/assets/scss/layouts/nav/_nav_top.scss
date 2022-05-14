@@ -3,28 +3,29 @@
     //overflow: hidden !important;
     //z-index: 1000 !important;
     height: 32px;
+    //background-color: red;
 
     & .navbar-nav {
-        color: $black;
-        margin-bottom: 0;
+        //color: $black;
+       // margin-bottom: 0;
 
 
         & .nav-item {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-left: 40px !important;
+            //padding-left: 0 !important;
+            //padding-right: 0 !important;
+            margin-left: 40px;
 
             @include respond-to(md) {
-                margin-left: 32px !important;
+                margin-left: 32px;
             }
 
             & .nav-link {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
+                //padding-left: 0 !important;
+                //padding-right: 0 !important;
 
                 & img {
-                    margin: 0;
-                    padding-left: 8px;
+                    //margin: 0;
+                    //padding-left: 8px;
                 }
             }
         }

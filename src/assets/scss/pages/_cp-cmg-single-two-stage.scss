@@ -1,0 +1,161 @@
+.body_cp-cmg-single-two-stage {
+    & .section_heading_top__center-block__cont {     
+        width: 600px;
+                
+        @include respond-to(sm) {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+            height: 150px;
+        }         
+    }
+
+//------------------------SECTION 23--------------------
+
+    & .section_23_bg {
+        padding-top: 120px;
+        padding-bottom: 50px;
+        
+        @include respond-to(sm) {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        & .section_23 {
+
+
+            & .section_23__table {
+
+                & .section_23__table__hero {
+                    margin-left: -8px !important;
+                }
+
+                & .section_23__table__header {
+                    font-family: "Mulish-700";
+                    font-size: 20px;
+                    line-height: 24px;
+                    @include ls(25);
+                }
+
+                & .section_23__block {
+                    min-height: 45px;
+                }
+
+                & .section_23_accordion {
+
+                    & .accordion-item {
+
+                        & .accordion-header {
+                            margin-left: -8px;
+
+                            & .accordion-button {
+                                font-family: "Mulish-700";
+                                font-size: 20px;
+                                line-height: 24px;
+                                @include ls(25);
+                                height: 54px;
+                            }
+
+                        }
+
+                        & .accordion__text-1 {
+                            font-family: "Mulish-800";
+                            font-size: 14px;
+                            @include ls(75);
+                        }
+
+                    }
+
+
+                }
+
+            }
+            
+            & .section_23__subheader {
+                margin-top: 69px;                
+            }
+            & .text-add {
+                margin-top: 21px; 
+                padding-bottom: 13px;               
+            }
+        }
+
+    }
+
+//------------------------SECTION 24--------------------
+
+    & .section_24_bg {
+        padding-top: 120px;
+        padding-bottom: 146px;
+        
+        @include respond-to(sm) {
+            padding-top: 52px;
+            padding-bottom: 64px;
+        }
+
+        & .section_24 {
+
+            & .section_24__table__header {
+                font-family: "Mulish-700";
+                font-size: 20px;
+                line-height: 24px;
+                @include ls(25);
+            }
+
+            & .section_24__blocks-cont{
+
+                & .section_24_accordion {
+
+                    & .accordion-cont {
+
+                        margin-left: -24px !important;
+                        margin-right: -24px !important;
+
+                        @include respond-to(sm) {
+                            margin-left: -12px !important;
+                            margin-right: -12px !important;
+                        }
+
+
+                        & .accordion-item {
+
+                            & .accordion-header {
+        
+                                & .accordion-button {
+                                    font-family: "Play-700";
+                                    font-size: 18px;
+                                    @include ls(25);
+                                
+                                    @include respond-to(sm) {
+                                        font-size: 16px;
+                                    }
+                                }
+        
+                            }
+        
+                            & .accordion__text-1 {
+                                font-family: "Mulish-800";
+                                font-size: 14px;
+                                @include ls(75);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+//------------------------SECTION 25--------------------
+
+    & .section_25_bg {
+
+        & .section_25__text {
+ 
+            font-family: "Mulish-Italic";
+            font-size: 14px;
+            line-height: 20px;
+            @include ls(25);
+        }
+    }
+}
+

@@ -52,8 +52,8 @@
 
 
 .footer {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    //padding-left: 8px !important;
+    //padding-right: 8px !important;
     
 
     & .footer__block_left {
@@ -71,7 +71,7 @@
             font-family: "Mulish-300";
             font-size: 14px;
             line-height: 22px;
-            margin-bottom: 0 !important;
+            margin-bottom: 0;
         }
 
         & .footer__logos_wrapper_left {
@@ -79,7 +79,7 @@
             height: 24px;
 
             & .footer__logo {
-                z-index: 30 !important;
+                //z-index: 30 !important; !!
 
                 &:nth-child(2) {
                     margin-left: 24px;
@@ -106,8 +106,8 @@
             }
 
             & .footer__logo {
-                z-index: 30 !important;
-                margin-left: 4px !important;
+                //z-index: 30 !important; !!
+                margin-left: 4px;
             }
         }
 
@@ -117,22 +117,22 @@
 
   
     & .footer__logos__cont  {
-        padding-top: 0 !important;
+        padding-top: 0;
         
         @include respond-to(sm) {
-            padding-top: 32px !important;
+            padding-top: 32px;
         }
 
         & .footer__logos_wrapper_middle {
-            height: 24px !important;
+            height: 24px;
 
             & .footer__logo_middle {
-                margin-left: 28px !important;
-                margin-right: 28px !important;
+                margin-left: 28px;
+                margin-right: 28px;
                 
                 @include respond-to(md) {
-                    margin-left: 0 !important;
-                    margin-right: 0 !important;
+                    margin-left: 0 ;
+                    margin-right: 0;
                 }
             }
         }
@@ -147,13 +147,13 @@
                     font-family: "Almarai-700";
                     font-size: 14px;
                     color: $white;
-                    margin-bottom: 0px !important;
-                    margin-top: 8px !important;
+                    margin-bottom: 0px;
+                    margin-top: 8px;
 
                     @include respond-to(sm) {
-                        padding-bottom: 8px !important;
-                        padding-top: 0 !important;
-                        margin-top: 0 !important;
+                        padding-bottom: 8px;
+                        padding-top: 0;
+                        margin-top: 0;
                     }
                 }
             
@@ -163,52 +163,53 @@
                     font-family: "Mulish-300";
                     font-size: 14px;
                     line-height: 22px;
-                    margin-bottom: 0 !important;
-                    margin-top: 8px !important;
+                    margin-bottom: 0;
+                    margin-top: 8px;
 
                     @include respond-to(sm) {
-                        padding-bottom: 8px !important;
-                        padding-top: 0 !important;
-                        margin-top: 0 !important;
+                        padding-bottom: 8px;
+                        padding-top: 0;
+                        margin-top: 0;
                     }
 
                 }
 
                 & .footer__text_spec {
-                    margin-top: 0 !important;
+                    margin-top: 0;
                 }
 
             }
 
             & .footer__website-by_wrapper {
-                margin-top: 80px !important;
-                height: 8px !important;
+                margin-top: 80px;
+                height: 8px;
 
                 @include respond-to(xs) {
-                    margin-top: 41px !important;
+                    margin-top: 41px;
                 }
     
                 & .footer__website-by {
                     font-family: "Mulish-300";
                     line-height: 22px;
-                    margin-bottom: 0 !important;
+                    margin-bottom: 0;
                     font-size: 12px;
                     line-height: auto;
                     color: $white;
                     margin-bottom: 0;
-                    margin-left: 4px !important;
                 }
     
                 & .footer__logo {
-                    z-index: 30 !important;
+                    z-index: 30;
+                    margin-left: 4px;
+
                 }
             }
 
             & .footer__desing {
-                width: 128px !important;
-                height: 44px !important;
-                bottom: 0 !important;
-                right: 0 !important;
+                width: 128px ;
+                height: 44px ;
+                bottom: 0 ;
+                right: 0 ;
 
                 & .footer__design_text {
                     color: $black;

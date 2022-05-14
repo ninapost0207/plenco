@@ -1,0 +1,61 @@
+/*.section_5_bg {
+    //background-color: $light-blue-1;
+
+    padding-top: 73px;
+    padding-bottom: 54px;
+
+    background-image:  url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+    background-repeat: no-repeat;
+    background-position: -14px 0%, 102% 100%, 0 0;
+    background-size: 642px auto, auto auto, 100% 100%;
+
+
+    @include respond-to(md) {
+        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+
+    }
+
+
+    @include respond-to(sm) {
+        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+        background-position: -195px 0%, 0 0;
+        background-size: 500px auto, 100% 100%;
+        padding-bottom: 64px;
+    }
+}
+
+
+
+.section_5 {
+  
+
+    & .section_5__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+
+    
+    & .section_5__text {
+        font-family: "Mulish-400";
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+
+        @include respond-to(xs) {
+            text-align: left;
+        }
+
+    }
+
+    & .section_5__input-block {
+        height: 60px;
+        margin-top: 24px;
+    }
+
+
+}*/

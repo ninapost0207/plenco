@@ -1,0 +1,272 @@
+/*.section_7_bg {
+    background-image:  url("../img/svg/homepage__heading_bottom_bg-image.svg");
+    background-color: $dark-blue-1;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto auto;
+    
+    @include respond-to(sm) {
+        background-image:  url("../img/svg/homepage__heading_bottom_bg-image_mob.svg");
+        
+    }
+
+
+    & .section_7__bg_img-cont {
+        top: 0;
+        left: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 640px;
+        background-color: $blue-1;
+        z-index: 110;
+
+
+        & .section_7__bg_img {
+            margin: 0 !important;
+            padding: 0 !important; 
+            height: 640px;
+            background-image:  url("../img/pages/home/heading.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: .5;
+        }
+
+    }
+
+}
+
+
+.section_7 {
+    
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 142px;
+    padding-bottom: 104px;
+
+    @include respond-to(sm) {
+        padding-top: 78px;
+        padding-bottom: 47px;
+    }
+
+    & .section_7__center-block__cont {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+
+        @include respond-to(lg) {
+        }
+
+
+        @include respond-to(md) {
+            max-width: 410px !important;
+        }
+
+        & .section_7__center-block {
+            background-color: $dark-blue-1;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include respond-to(lg) {
+                padding-left: 43px;
+                padding-right: 43px;
+            }
+
+            @include respond-to(sm) {
+                max-width: 400px !important;
+            }
+
+            @include respond-to(xs) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+    
+            & .section_7__center__header {
+                font-family: "Play-700";
+                font-size: 44px;
+                line-height: 48px;
+                letter-spacing: 0.1rem;
+                margin-bottom: 0 !important;
+                color: $white;
+
+                @include respond-to(md) {
+
+                }
+
+                @include respond-to(sm) {
+                    font-size: 40px;
+                    line-height: 46px;
+                }
+
+                @include respond-to(xs) {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+        
+            & .section_7__center__button {
+
+                margin-top: 26px;
+                
+
+
+                @include respond-to(lg) {
+                    font-size: 16px;
+                }
+
+                @include respond-to(sm) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    height: 66px;
+                    max-width: 270px;
+                }
+
+                @include respond-to(xs) {
+                    width: 90%;
+                }
+
+
+            }
+        } 
+
+
+
+    }
+
+
+
+
+    & .section_7__cards-wrap {
+        z-index: 120;
+        margin-top: 117px;
+
+        @include respond-to(sm) {
+            margin-top: 140px;
+        }
+
+        & .section_7__card {
+            padding-top: 24px;
+            padding-bottom: 12px;
+            background-color: $green_el;
+            height: 114px;
+            width: 23%;
+            margin-top: 0;
+            padding-left: 24px;
+            padding-right: 24px;
+
+            @include respond-to(lg) {
+ 
+            }
+            @include respond-to(md) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            @include respond-to(sm) {
+                padding-left: 12px;
+                padding-right: 12px;
+                
+                margin-top: 8px;
+                width: 49%;
+                min-width: 145px;
+            }
+            @include respond-to(xs) {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+            
+    
+    
+            & .section_7__card__highlighter {
+                position: absolute;
+                height: 20px;
+                width: 85%;
+                left: 15px;
+                background-color: #fff;
+                z-index: 0;
+            }
+    
+            & .section_7__card__text_header {
+                font-family: "Almarai-700";
+                font-size: 18px;
+                line-height: 23px;
+                z-index: 10;
+                color: $black;
+    
+                @include respond-to(md) {
+                    font-size: 16px;
+                }
+            }
+    
+            & .section_7__card__text_category {
+                font-family: "Play-700";
+                font-size: 18px;
+                color: $blue-1;
+                text-transform: uppercase;
+            }
+    
+    
+        }
+    }
+
+
+
+    & .section_7__text_bottom_main {
+        font-family: "Almarai-700";
+        font-size: 34px;
+        margin-top: 118px;
+        color: $white;
+
+
+        @include respond-to(md) {
+            font-size: 28px;
+        }
+
+        @include respond-to(sm) {
+            font-size: 22px;
+            margin-top: 50px;
+        }
+    }
+
+    & .section_7__text_bottom {
+        font-family: "Mulish-400";
+        font-size: 18px;
+
+        
+        @include respond-to(sm) {
+            font-size: 16px;
+        }
+    }
+
+    & .section_7__buttons-wrap {
+        width: 446px;
+        margin-top: 34px;
+
+        @include respond-to(md) {
+            justify-content: space-around;
+        }
+
+        @include respond-to(sm) {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        & button {
+            width: 208px;
+
+            @include respond-to(md) {
+                width: 180px;
+            }
+
+            @include respond-to(xs) {
+                width: 45%;
+
+            } 
+        }
+    }
+
+}*/

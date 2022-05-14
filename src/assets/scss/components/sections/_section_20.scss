@@ -1,0 +1,36 @@
+/*.section_20{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+
+    & .section_20__header {
+        font-family: "Mulish-600";
+        font-size: 20px;
+        line-height: 28px;
+        @include ls(25);
+        margin-bottom: 0;
+
+        @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+
+    & .section_20__text {
+        font-family: "Mulish-400";
+        font-size: 16px;
+        line-height: 24px;
+        @include ls(25);
+        margin-top: 25px;
+        margin-bottom: 0;
+
+        @include respond-to(sm) {
+            font-size: 16px;
+        }
+    }
+
+    
+   
+}
+*/

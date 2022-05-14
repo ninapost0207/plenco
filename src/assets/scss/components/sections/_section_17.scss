@@ -1,0 +1,85 @@
+/*.section_17_bg {
+    background: url('../img/svg/section_17_bg.svg');
+    padding-top: 291px;
+    padding-bottom: 0px;
+    background-position: 0 -630px;
+    background-repeat: no-repeat;
+
+    @include respond-to(md) {
+        background-position: -70px -700px;
+        padding-top: 191px;
+    }
+
+    @include respond-to(sm) {
+        background: none;
+        padding-top: 97px;
+    }
+
+
+}
+
+.section_17 {
+
+    & .section_17__data {
+
+        & .section_17__left {
+
+            @include respond-to(xs) {
+                text-align: left !important;
+            }
+
+            & .section_17__header {
+                font-family: "Play-700";
+                font-size: 30px;
+                line-height: 40px;
+                @include ls(100);
+                color: $blue-1;
+
+                @include respond-to(sm) {
+                    font-size: 26px;
+                    line-height: 34px;
+                }
+            }
+
+            & .section_17__text_main {
+                margin-top: 25px;
+                font-family: "Mulish-600";
+                font-size: 20px;
+                line-height: 28px;
+                @include ls(25);
+                color: $black;
+
+                @include respond-to(sm) {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    
+
+        & .section_17__right {
+
+            @include respond-to(sm) {
+                margin-top: 26px;
+            }
+
+            @include respond-to(xs) {
+                text-align: left !important;
+            }
+
+            & .section_17__text_add {
+                font-family: "Mulish-400";
+                font-size: 16px;
+                line-height: 24px;
+                @include ls(25);
+                color: $black;
+
+            }
+        }
+
+    }
+
+
+}
+
+*/

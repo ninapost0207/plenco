@@ -1,0 +1,97 @@
+/*.section_1 {
+    background-image: url('../img/pages/home/bg_1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 623px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &__sub-cont {
+        background-color: $dark-blue-1;
+        background-image: url('../img/svg/plenco_watermark.svg');    
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        max-height: 470px;
+        padding-top: 108px;
+        padding-bottom: 64px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        @include respond-to(md) {
+            padding-top: 108px;
+
+        }
+
+        @include respond-to(sm) {
+            padding-top: 64px;
+        }
+
+        & .justify-content-center {
+            width: 100%;
+            padding-left: 63px;
+            padding-right: 63px;
+
+            @include respond-to(lg) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            @include respond-to(md) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            @include respond-to(sm) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            @include respond-to(xs) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        &__header {
+            font-family: "Almarai-700";
+            font-size: 28px;
+            letter-spacing: 0.08rem;
+            line-height: 140%;
+            color: $white;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            @include respond-to(sm) {
+                font-size: 24px;
+                letter-spacing: 0.05rem;
+            }
+        }
+
+        &__text {
+            margin-top: 12px;
+            color: $white;
+            font-family: "Mulish-400";
+            font-size: 18px;
+            letter-spacing: 0.07rem;
+            line-height: 22px;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            @include respond-to(sm) {
+                font-size: 16px;
+                letter-spacing: 0.07rem;
+            }
+        }
+
+
+        & button {
+            font-size: 20px;
+            margin-top: 12px;
+
+
+            @include respond-to(xs) {
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+*/

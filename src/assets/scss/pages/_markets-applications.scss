@@ -1,82 +1,10 @@
 .body_markets_applications {
-    
-
-    & .section_heading_bottom {    
-        height: 533px;
-
-        
-        @include respond-to(sm) {        
-            height: 510px;
-        }
-        @include respond-to(xs) {        
-            height: 497px;
-        }
-    
-        & .section_heading_bottom__content {
-            margin-top: 160px;    
-            
-            @include respond-to(lg) {
-                margin-top: 130px;
-                
-            }
-            @include respond-to(sm) {
-                margin-top: 50px;
-                
-            }
-            @include respond-to(xs) {
-                margin-top: 50px;
-                
-                
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Almarai-700";
-                font-size: 34px;
-                line-height: 46px;
-        
-                @include respond-to(lg) {
-                    font-size: 28px;
-                    line-height: 36px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 26px;
-                    line-height: 32px;
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 22px;
-                    line-height: 28px;
-                }
-        
-            }    
-            & .section_heading_bottom__content__text {
-                font-family: "Mulish-400";
-                font-size: 18px;
-                line-height: 24px;
-                margin-top: 30px;
-                
-                
-                @include respond-to(xs) {
-                    font-size: 16px;
-                    line-height: 22px;                    
-                    margin-top: 20px;
-                    margin-bottom: 50px;
-                }
-            }
-        }    
-    }
-
-    
     & .section_heading_top__bg_img {
         
         background-position: 50% 50% !important;
         background-size: cover !important;
         opacity: .5;
         
-
         @include respond-to(sm) {
             background-position: 40% 100% !important;
             background-size: 150% !important;
@@ -86,7 +14,21 @@
             background-size: 200% !important;
         }
     }
+
+
+    & .section_heading_bottom {    
+        height: 533px;
+
+        @include respond-to(sm) {        
+            height: 510px;
+        }
+        @include respond-to(xs) {        
+            height: 497px;
+        }
     
+
+    }
+//------------------------------SECTION 16-----------------------
 
 
     & .section_16_bg {
@@ -101,33 +43,92 @@
             background: url('../img/svg/section_16_bg_bottom_mob.svg');
             background-repeat: no-repeat;
             background-position: 10px bottom;
-            padding-bottom: 142px;
+            padding-top: 60px;
+            padding-bottom: 118px;
 
         }
-    
     }
+
+
 
     & .section_16 {
-        margin-top: 0;
-        padding-bottom: 0;
 
-
-        @include respond-to(sm) {
-
-        }
-
-        & .block_7:nth-child(2) {
+        & .block_7 {
             margin-top: 44px;
-
+        
             @include respond-to(sm) {
-                margin-top: 26px;
+                margin-top: 60px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
+                    }
+
+                    & .block_7__button {
+                        height: 50px;
+                        min-width: 280px;
+                        max-width: 350px;
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
             }
         }
+        
+
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
+
     }
 
 
 
-
+//------------------------------SECTION 13-----------------------
 
 
     & .section_13__button {

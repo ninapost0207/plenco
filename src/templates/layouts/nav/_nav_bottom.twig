@@ -47,7 +47,7 @@
 
 {% set products = [
     {
-        link: "#",
+        link: "http://google.com",
         text: "Phenolic Novolac & Resol Resins"
     },   
     {
@@ -56,7 +56,7 @@
     },   
     {
         link: "#",
-        text: "BMC/Thermoset Polyester Molding Materials"
+        text: "BMC/ Thermoset Polyester Molding Materials"
     },   
     {
         link: "#",
@@ -66,41 +66,41 @@
     
 
 
-<div class="nav_bottom__btn position-absolute d-none d-xl-block">
-    <button class="button_yellow_nav">contact</button> 
+<div class="nav_bottom__btn position-absolute d-none d-xl-block end-0 p-0">
+    <a role="button" class="button_yellow_nav">contact</a> 
 </div>
 
 
 <div class="row nav_bottom">
-    <div class="nav_bottom_menu-wrap col">
-        <div class="nav_bottom_menu container cont-site d-flex align-items-center justify-content-between">
+    <div class="nav_bottom_menu-wrap col p-0 bg-white-1">
+        <div class="nav_bottom_menu container cont-site d-flex align-items-center justify-content-between px-0">
             <a href="home.html"><img class="nav_bottom__logo" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" ></a>
-            <div class="nav_bottom__links d-none d-md-flex align-items-center justify-content-between">
-                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn" role="button" id="nav_bottom__markets-btn" data-navbtn="markets">
-                    <p class="nav_bottom__link">Markets & Applications</p> 
+            <div class="nav_bottom__links d-none d-md-flex align-items-center justify-content-between ms-0 ms-xl-4">
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn text-center text-xl-start" role="button" id="nav_bottom__markets-btn" data-navbtn="markets">
+                    <p class="nav_bottom__link text-uppercase text-black-1 m-0">Markets & Applications</p> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn" id="nav_bottom__products-btn" role="button" data-navbtn="products" >
-                    <p class="nav_bottom__link" >products</p> 
+                    <p class="nav_bottom__link text-uppercase text-black-1 m-0" >products</p> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center">
-                    <a href="#" class="nav_bottom__link">Reports & Resources</a>    
+                    <a href="#" class="nav_bottom__link text-uppercase text-black-1 m-0">Reports & Resources</a>    
                 </div>
-                <div class="nav_bottom__btn_yellow d-inline-block d-xl-none">
-                    <button class="button_yellow_nav">contact</button> 
+                <div class="nav_bottom__btn_yellow d-inline-block d-xl-none p-0 ms-4">
+                    <a role="button" class="button_yellow_nav text-uppercase text-black-1">contact</a> 
                 </div>
 
             </div>
 
-            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtn" role="button" data-navbtn="mob_main">
+            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtn ms-4 p-0 h-100" role="button" data-navbtn="mob_main">
                 <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob">
-                    <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__middle position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__bottom_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__bottom_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
+                    <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__middle position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__bottom_left button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__bottom_right button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
                     <div class="button_yellow_nav_mob__text-cont d-block overflow-hidden">
-                        <span class="button_yellow_nav_mob__text_1 uppercase d-block">menu</span>
-                        <span class="button_yellow_nav_mob__text_2 uppercase d-block">exit</span>
+                        <span class="button_yellow_nav_mob__text_1 uppercase d-block text-black-1">menu</span>
+                        <span class="button_yellow_nav_mob__text_2 uppercase d-block text-black-1">exit</span>
                     </div>
                 </button> 
             </div>
@@ -109,37 +109,50 @@
     </div>
 
 
+    {# DROP #}
 
 
-    <div class="nav_bottom__drop__cont position-relative overflow-hidden">
-        <div class="nav_bottom__drop overflow-hidden position-relative collapse" id="nav_bottom__drop_main" data-bs-toggle="false">
-            <div class="nav_bottom__drop__cont-1 overflow-hidden">
-                <div class="nav_bottom__drop__input-block d-flex align-items-center position-relative">
-                    <div class="nav_bottom__drop__input-cont d-flex justify-content-between align-items-center">
-                        <input type="text" class="nav_bottom__drop__input col" placeholder="Search">
-                        <button class="nav_bottom__drop__input-btn"></button>
+    <div class="nav_bottom__drop__cont position-relative overflow-hidden mx-0 px-0 bg-transparent">
+        <div class="nav_bottom__drop overflow-hidden position-relative collapse px-0 top-0" id="nav_bottom__drop_main" data-bs-toggle="false">
+            <div class="nav_bottom__drop__cont-1 overflow-hidden cont-site bg-blue-l1">
+                <div class="nav_bottom__drop__input-block col-12 d-flex align-items-center position-relative">
+                    <div class="nav_bottom__drop__input-cont col-12 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-2">
+                        <input type="text" class="nav_bottom__drop__input h-100 ps-2 col bg-transparent" placeholder="Search">
+                        <button class="nav_bottom__drop__input-btn mx-3"></button>
                     </div>
                 </div>
 
-                <div class="nav_bottom__drop__block_1" id="nav_bottom__drop__block_1">
-                    <button class="nav_bottom__btn_1 nav_bottom__btn_resources navbtn"  id="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</button>
-                    <button class="nav_bottom__btn_1 nav_bottom__btn_products navbtn" id="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</button>
-                    <button class="nav_bottom__btn_1">Reports & Resources</button>
-                    <button class="nav_bottom__btn_1 nav_bottom__btn_1_spec position-relative d-flex align-items-center justify-content-center">Contact</button>
+                <div class="nav_bottom__drop__block_1 mb-3" id="nav_bottom__drop__block_1">
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_resources bg-blue-1 navbtn col-12 text-uppercase mt-2 text-white-1 d-flex align-items-center justify-content-center mt-2"  id="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</a>
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_products bg-blue-1 navbtn col-12 text-uppercase text-white-1 d-flex align-items-center justify-content-center mt-3" id="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</a>
+                    <a href="#" class="nav_bottom__btn_1 col-12 text-uppercase bg-blue-1 text-white-1 d-flex align-items-center justify-content-center mt-3">Reports & Resources</a>
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_1_spec bg-yellow-1 col-12 text-uppercase text-black-1 position-relative d-flex align-items-center justify-content-center text-black-1 mt-3">Contact</a>
                 </div>
             </div>
 
-            <div class="nav_bottom__drop__cont-2">
-                <div class="nav_bottom__drop__block_2 d-flex flex-wrap justify-content-around"  id="nav_bottom__drop__block-2">
-                    <button class="nav_bottom__btn_2 col-5">About</button>
-                    <button class="nav_bottom__btn_2 col-5">Facility</button>
-                    <button class="nav_bottom__btn_2 col-5">Research & Development</button>
-                    <button class="nav_bottom__btn_2 col-5">News</button>
-                    <button class="nav_bottom__btn_2 col-5">Certifications</button>
-                    <button class="nav_bottom__btn_2 col-5">Careers</button>
+            <div class="nav_bottom__drop__cont-2 cont-site bg-blue-3">
+                <div class="nav_bottom__drop__block_2 row row-cols-2 g-2 mt-0" id="nav_bottom__drop__block-2">
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">About</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Facility</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Research & Development</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">News</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Certifications</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Careers</a>
+                    </div>
                 </div>
             </div>
-            <div class="nav__drop__opacity-block" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
 
         </div>
 
@@ -147,48 +160,52 @@
 
 
         <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" id="nav_bottom__drop_markets">
-            <div class="nav_bottom__drop__back d-flex align-items-center navbtn" type="button" data-navbtn="mob_back">
-                <div class="nav_bottom__drop__back__arrow position-relative"></div>
-                <p class="nav_bottom__drop__back__text">Back to the Main Menu</p>    
+            <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0 bg-blue-l1" type="button" data-navbtn="mob_back">
+                <div class="nav_bottom__drop__back__arrow position-relative bg-blue-1"></div>
+                <p class="nav_bottom__drop__back__text my-0 ms-3 text-black-1">Back to the Main Menu</p>    
             </div>
-            <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__markets">
-                <h2 class="nav_bottom__drop__add-menu__header">Markets & Applications</h2>
-                <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
-                    {% for item in markets %}
-                    <a href={{ item.link }}>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-content-between align-items-center">
-                            <p class="nav_bottom__drop__add-menu__link_text">{{ item.text }}</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    {% endfor %}
+            <div class="nav_bottom__drop__cont-add-menu cont-site overflow-hidden m-0 bg-blue-3 pb-4" id="nav_bottom__markets">
+                <div class="nav_bottom__drop__cont-add-menu-wrap">
+                    <h2 class="nav_bottom__drop__add-menu__header text-white-1 mb-0">Markets & Applications</h2>
+                    <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
+                        {% for item in markets %}
+                        <a href={{ item.link }}>
+                            <div class="nav_bottom__drop__add-menu__link-cont col-12 py-2 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
+                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
+                                <div class="nav_bottom__drop__add-menu__arrow position-relative bg-yellow-1"></div>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
                 </div>
-                <button class="nav_bottom__drop__add-menu__button button_yellow" id="nav_bottom__view-markets">View All<br>Markets & Applications</button>
+                <a class="btn btn-yellow-1 nav_bottom__drop__add-menu__button w-100 p-3 h-auto" id="nav_bottom__view-markets">View All<br>Markets & Applications</a>
             </div>
-            <div class="nav__drop__opacity-block" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
         </div>
 
 
         <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" id="nav_bottom__drop_products">
-            <div class="nav_bottom__drop__back d-flex align-items-center navbtn" type="button" data-navbtn="mob_back">
-                <div class="nav_bottom__drop__back__arrow position-relative"></div>
-                <p class="nav_bottom__drop__back__text">Back to the Main Menu</p>    
+            <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0 bg-blue-l1" type="button" data-navbtn="mob_back">
+                <div class="nav_bottom__drop__back__arrow position-relative bg-blue-1"></div>
+                <p class="nav_bottom__drop__back__text my-0 ms-3 text-black-1">Back to the Main Menu</p>    
             </div>
-            <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__products">
-                <h2 class="nav_bottom__drop__add-menu__header">Plenco’s Products</h2>
-                <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
-                    {% for item in products %}
-                    <a href={{ item.link }}>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-content-between align-items-center">
-                            <p class="nav_bottom__drop__add-menu__link_text capitalize text-left">{{ item.text }}</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    {% endfor %}
+            <div class="nav_bottom__drop__cont-add-menu cont-site pb-4 bg-blue-3 overflow-hidden m-0 d-flex flex-column justify-content-between" id="nav_bottom__products">
+                <div class="nav_bottom__drop__cont-add-menu-wrap">
+                    <h2 class="nav_bottom__drop__add-menu__header mb-0 text-white-1">Plenco’s Products</h2>
+                    <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
+                        {% for item in products %}
+                        <a href={{ item.link }}>
+                            <div class="nav_bottom__drop__add-menu__link-cont py-2 col-12 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
+                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
+                                <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
                 </div>
-                <button class="nav_bottom__drop__add-menu__button nav_bottom__drop__add-menu__button_products button_yellow" id="nav_bottom__view-products">View All products</button>
+                <a class="btn btn-yellow-1 nav_bottom__drop__add-menu__button w-100 p-3 h-auto" id="nav_bottom__view-products">View All products</a>
             </div>
-            <div class="nav__drop__opacity-block" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
         </div>
 
         
@@ -218,65 +235,70 @@
 
     {# SECTIONS #}
 
-    <div class="nav-section_markets overflow-hidden collapse" id="nav-section_markets" data-bs-toggle="false">
+    <div class="nav-section_markets bg-blue-3 overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
         <div class="container">
-            <h2 class="nav-section_markets__header">Markets & Applications</h2>
-            <div class="nav-section_markets__items d-flex justify-content-between flex-wrap">
+            <h2 class="nav-section_markets__header mb-0 text-white-1">Markets & Applications</h2>
+            <div class="nav-section_markets__items row d-flex justify-content-between flex-wrap mt-4 gy-4">
                 {% for item in markets %}
-                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
-                        <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
-                        <p class="nav-section_markets__item__text">{{ item.text }}</p>
-                    </div>
-                {% endfor %}
-            </div>
-            <button class="nav-section_markets__button button_yellow col-6" id="nav-section_markets__view-all">View all Markets & Applications</button>
-        </div>
-    </div>
-
-
-    <div class="nav-section_products overflow-hidden collapse" id="nav-section_products"  data-bs-toggle="false">
-        <div class="container">
-            <h2 class="nav-section_products__header">Plenco’s Products</h2>
-            <div class="nav-section_products__items d-flex justify-content-between flex-wrap">
-                {% for item in products %}
-                    <div class="nav-section_products__item d-flex align-items-center cursor-pointer">
-                        <div class="nav-section_products__item__inner-cont d-flex align-items-center">
-                            <p class="nav-section_products__item__text">{{ item.text }}</p>
+                    <a href={{ item.link }} class="nav-section_markets__item-wrap col-4 px-3 text-white-1 ">
+                        <div class="nav-section_markets__item bg-blue-1 d-flex align-items-center cursor-pointer px-3 mb-0">
+                            <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
+                            <p class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}</p>
                         </div>
-                    </div>
+                    </a>
                 {% endfor %}
             </div>
-            <button class="nav-section_products__button button_yellow col-5" id="nav-section_products__view-all">View all Products</button>
+            <a href="http://google.com" class="btn btn-yellow-1 nav-section_markets__button col-6 mx-auto px-3" id="nav-section_markets__view-all">View all Markets & Applications</a>
         </div>
     </div>
 
 
-    <div class="nav-section_search position-fixed overflow-hidden collapse" id="nav-section_search" data-bs-toggle="false">
+    <div class="nav-section_products bg-blue-3 overflow-hidden collapse position-fixed col-12" id="nav-section_products"  data-bs-toggle="false">
         <div class="container">
-            <div class="container nav-section_search-cont">
-                <p class="nav-section_search__header">search the plenco website</p>
-                <div class="nav-section_search__input-cont">
-                    <input type="text" class="nav-section_search__input" placeholder="Search">
+            <h2 class="nav-section_products__header text-white-1 ">Plenco’s Products</h2>
+            <div class="nav-section_products__items d-flex justify-content-between flex-wrap mt-4">
+                {% for item in products %}
+                    <a href={{ item.link }} class="nav-section_products__item-wrap col-3 mx-0 px-3 text-white-1">
+                        <div class="nav-section_products__item bg-blue-1 d-flex flex-column align-items-center cursor-pointer px-2 py-4">
+                            <div class="nav-section_products__item__inner-cont d-flex align-items-center col-12 h-100 pb-1">
+                                <p class="nav-section_products__item__text ms-0 text-capitalize mb-0">{{ item.text }}</p>
+                            </div>
+                            <div class="border-5 border w-100 border-blue-l2"></div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+            <a href="http://google.com" class="btn btn-yellow-1 nav-section_products__button button_yellow col-5 mx-auto" id="nav-section_products__view-all">View all Products</a>
+        </div>
+    </div>
+
+
+    <div class="nav-section_search position-fixed overflow-hidden collapse bg-blue-1 bg-opacity-75" id="nav-section_search" data-bs-toggle="false">
+        <div class="container">
+            <div class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4 bg-blue-3">
+                <p class="nav-section_search__header text-blue-l2">search the plenco website</p>
+                <div class="nav-section_search__input-cont ps-0 border-bottom border-5 border-blue-l3">
+                    <input type="text" class="nav-section_search__input ps-0 col-100 text-white-1 bg-transparent" placeholder="Search">
                 </div>
-                <div class="nav-section_search__checkboxes d-flex">
-                    <div class="nav-section_search__checkbox-item">
-                        <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-1" name="nav__check">
-                        <label for="nav__filter-1" class="nav-section_search__label" >Filter1</label>
+                <div class="nav-section_search__checkboxes d-flex mt-4">
+                    <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-1" value="filter-1" name="nav__check">
+                        <label for="nav__filter-1" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-1" >Filter1</label>
                     </div>
-                    <div class="nav-section_search__checkbox-item">
-                        <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-2" name="nav__check">
-                        <label for="nav__filter-2" class="nav-section_search__label" >Filter2</label>
+                    <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-2" value="filter-2" name="nav__check">
+                        <label for="nav__filter-2" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-2" >Filter2</label>
                     </div>
-                    <div class="nav-section_search__checkbox-item">
-                        <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-3" name="nav__check">
-                        <label for="nav__filter-3" class="nav-section_search__label" >Filter3</label>
+                    <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-3" value="filter-3" name="nav__check">
+                        <label for="nav__filter-3" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-3" >Filter3</label>
                     </div>
-                    <div class="nav-section_search__checkbox-item">
-                        <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-4" name="nav__check">
-                        <label for="nav__filter-4" class="nav-section_search__label" >Filter4</label>
+                    <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-4" value="filter-4" name="nav__check">
+                        <label for="nav__filter-4" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-4" >Filter4</label>
                     </div>
                 </div>
-                <button class="button_yellow nav-section_search__button col-4 offset-4">search</button>
+                <button class="btn btn-yellow-1 nav-section_search__button col-4 offset-4 mt-4">search</button>
         </div>
     </div>
 

@@ -11,6 +11,7 @@
 @include useFont('Mulish-700', 'Mulish-Bold', 700);
 @include useFont('Mulish-800', 'Mulish-ExtraBold', 800);
 @include useFont('Mulish-900', 'Mulish-Black', 900);
+@include useFont('Mulish-Italic', 'Mulish-Italic', 400);
 
 @include useFont('Play-400', 'Play-Regular', 400);
 @include useFont('Play-700', 'Play-Bold', 700);
@@ -28,4 +29,5 @@
 
 @include useFont('Gotham-700', 'Gotham-Bold', 700);
 @include useFont('Gotham-book', 'Gotham-Book', 700);
+
 

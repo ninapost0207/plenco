@@ -7,54 +7,18 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
 
 
 .cont-site {
-    //box-sizing: border-box !important;
     max-width: 1184px !important; //1184-22-22=1140
-    //margin-left: auto;
-    //margin-right: auto;
     padding-left: 22px !important;
     padding-right: 22px !important;
 }
 
-.container-fluid {
-    //padding-left: 22px;
-    //padding-right: 22px;
-}
 
 
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
-    //padding-left: 0 !important;
-    //padding-right: 0 !important;
 }
 
-
-.text_bicolor {
-    color: $black;
-
-    & em {
-        color: $blue-1;
-        font-style: normal;
-    }
-}
-
-.text_bicolor_2 {
-    color: $black;
-
-    & em {
-        color: $light-blue-2;
-        font-style: normal;
-    }
-}
-
-.text_bicolor_3 {
-    color: $white;
-
-    & em {
-        color: $light-blue-2;
-        font-style: normal;
-    }
-}
 
 
 button {
@@ -80,7 +44,6 @@ input {
 
 
 .layout__line_center {
-    //position: relative;
     height: 300px;
     width: 7px;
     background-color: #FFF;
@@ -88,7 +51,6 @@ input {
     top: 210px;
     left: calc(50vw - 13px) ;
     z-index: 500 ;
-    //background-blend-mode:color;
     
     @include respond-to(sm) {
         width: 3px;
@@ -129,19 +91,14 @@ input {
 
 
 .ul_1 {
-    padding-left: 24px;
-    margin-top: 20px;
 
     & .ul_1__text {
         font-family: "Mulish-400";
         font-size: 14px;
         line-height: 20px;
         @include ls(25);
-        margin-bottom: 0;
-        position: relative;
         text-indent: -1.5em;
         list-style: none;
-        margin-top: 20px;
 
         &::before {
             content: "";
@@ -152,10 +109,216 @@ input {
             background-color: $light-blue-2;
         }
 
-        &:nth-child(1) {
-            margin-top: 0; //???
+    }
+
+}
+
+
+.ul_2 {
+
+    & .ul_2__text {
+        font-family: "Mulish-600";
+        font-size: 16px;
+        line-height: 20px;    
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-3;
         }
 
     }
 
+}
+
+.ul_3 {
+
+    & .ul_3__text {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-3;
+        }
+    }
+}
+
+h1 {                           //heading_top header
+    font-family: "Play-700";
+    font-size: 44px !important;
+    line-height: 50px;
+    text-transform: capitalize;
+    @include ls(100);
+
+    @include respond-to(lg) {
+        font-size: 40px !important;
+        line-height: 48px;    }
+
+    @include respond-to(sm) {
+        font-size: 36px !important;
+        line-height: 44px;                    
+    }
+    @include respond-to(sm) {
+        font-size: 32px !important;
+        line-height: 32px;
+    }
+}
+
+
+h2 {                            //header bicolor
+    font-family: "Almarai-700";
+    font-size: 28px !important;
+    @include ls(0);
+    text-transform: capitalize;
+    line-height: 43px;
+
+    @include respond-to(sm) {
+        font-size: 24px !important;
+        line-height: 24px;
+    }
+}
+
+
+h3 {                         //uppercase header
+    font-family: "Play-700";
+    font-size: 16px !important;
+    //line-height: 50px;
+    text-transform: uppercase;
+    @include ls(25);
+
+    @include respond-to(sm) {
+        line-height: 20px;
+    }
+}
+
+
+h4 {                          //list header small
+    font-family: "Play-700";
+    font-size: 14px !important;
+    line-height: 16px;    
+    @include ls(75);
+    text-transform: uppercase;
+}
+
+
+.text_heading_main {                         //bottom header
+    font-family: "Almarai-700";
+    font-size: 34px;
+    line-height: 46px;    
+    @include ls(50);
+
+    @include respond-to(sm) {
+        line-height: 34px;
+        font-size: 28px;
+    }
+    @include respond-to(sm) {
+        line-height: 28px;
+        font-size: 22px;
+    }
+}
+
+.text_heading_add {                       //bottom heading small
+    font-family: "Mulish-400";
+    font-size: 18px;
+    line-height: 24px;    
+    @include ls(25);
+
+    @include respond-to(sm) {
+        line-height: 22px;
+        font-size: 16px;
+    }
+}
+
+.text_main {                          //text bigger paragraph
+    font-family: "Mulish-600";
+    font-size: 20px;
+    line-height: 28px;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.text_add {                          //text small paragraph
+    font-family: "Mulish-400";
+    font-size: 16px !important;
+    line-height: 24px !important;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 16px !important;
+        line-height: 22px;
+    }
+}
+
+
+
+.text_li_item {                          //text link (home)
+    font-family: "Mulish-600";
+    font-size: 18px;
+    line-height: 30px;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.text-quote {                          //quote blue
+    font-family: "Play-700";
+    font-size: 30px;
+    line-height: 40px;    
+    @include ls(100);
+
+    @include respond-to(lg) {
+        font-size: 27px;
+        line-height: 36px;
+    }
+
+    @include respond-to(md) {
+        font-size: 27px;
+        line-height: 36px;        
+
+    }
+    @include respond-to(sm) {        
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+.text_quote_add {
+    font-family: "Play-400";
+    font-size: 24px;
+    line-height: 30px;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+.text_add_small {
+    font-family: "Mulish-400";
+    font-size: 14px;
+    line-height: 20px;    
+    @include ls(25);   
 }
