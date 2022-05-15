@@ -100,11 +100,16 @@ $input-transition:                      border-color .15s ease-in-out, box-shado
 
 $form-color-width:                      3rem;
 
+
+
+$enable-negative-margins: true;
+
+
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 
-
-
+//---
 
 
 .border-7 {

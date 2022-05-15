@@ -28,5 +28,52 @@
             height: 220px;
         }
     }
+
+    //--------------------------SECTION 100----------------
+    & .section_100 {        
+        height: 315px;
+
+        @include respond-to(md) {
+            height: 300px;
+        }
+        @include respond-to(sm) {
+            height: 280px;
+        }
+        @include respond-to(xs) {        
+            height: 263px;
+        }
+    }
+
+
+    //--------------------------SECTION 106----------------
+
+    & .section_106 {
+
+        & .section_106_accordion {
+
+            & .accordion-button {
+                height: 45px;
+
+                
+                &:after {
+                    height: 45px;
+                    width: 45px;
+                    margin-left: 20px;
+                    background-image: url('../img/svg/acc-arrow-down_45.svg');
+                    background-position: center center;
+                    background-size: contain;
+                }
+               
+                &:not(.collapsed)::after {
+                    //transform: rotate(180deg)!important;
+                    background-image: url('../img/svg/acc-arrow-up_45.svg');
+        
+                }
+            }
+
+        }
+
+    }
+
 }
 

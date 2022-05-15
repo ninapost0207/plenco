@@ -26,7 +26,7 @@
 
     & .section_23_bg {
         padding-top: 120px;
-        padding-bottom: 50px;
+        
         
         @include respond-to(sm) {
             padding-top: 60px;
@@ -38,9 +38,9 @@
 
             & .section_23__table {
 
-                & .section_23__table__hero {
+                /*& .section_23__table__hero {
                     margin-left: -8px !important;
-                }
+                }*/
 
                 & .section_23__table__header {
                     font-family: "Mulish-700";
@@ -94,68 +94,7 @@
 
     }
 
-//------------------------SECTION 24--------------------
 
-    & .section_24_bg {
-        padding-top: 120px;
-        padding-bottom: 146px;
-        
-        @include respond-to(sm) {
-            padding-top: 52px;
-            padding-bottom: 64px;
-        }
-
-        & .section_24 {
-
-            & .section_24__table__header {
-                font-family: "Mulish-700";
-                font-size: 20px;
-                line-height: 24px;
-                @include ls(25);
-            }
-
-            & .section_24__blocks-cont{
-
-                & .section_24_accordion {
-
-                    & .accordion-cont {
-
-                        margin-left: -24px !important;
-                        margin-right: -24px !important;
-
-                        @include respond-to(sm) {
-                            margin-left: -12px !important;
-                            margin-right: -12px !important;
-                        }
-
-
-                        & .accordion-item {
-
-                            & .accordion-header {
-        
-                                & .accordion-button {
-                                    font-family: "Play-700";
-                                    font-size: 18px;
-                                    @include ls(25);
-                                
-                                    @include respond-to(sm) {
-                                        font-size: 16px;
-                                    }
-                                }
-        
-                            }
-        
-                            & .accordion__text-1 {
-                                font-family: "Mulish-800";
-                                font-size: 14px;
-                                @include ls(75);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
 //------------------------SECTION 25--------------------
 
