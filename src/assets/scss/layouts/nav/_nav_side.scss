@@ -33,8 +33,6 @@
         & .contactUsModal__header-cont {
     
             & .contactUsModal__header {
-                font-family: "Almarai-700";
-                font-size: 28px;
                 margin: 82px 0 0 !important;
             }
 
@@ -62,13 +60,19 @@
                     @include ls(25);
                 }
 
+
+                & .modal-body__input::placeholder {
+                    color: $grey-1;
+                }
+
+
+                & .contactUsModal__add-text {
+                    font-family: "Muli-300";
+                    font-size: 12px;
+                    @include ls(25);
+                }
             }
     
-            & .contactUsModal__add-text {
-                font-family: "Muli-300";
-                font-size: 12px;
-                @include ls(25);
-            }
         
             & .contactUsModal__btn_submit {
                 width: $btn-small-width;

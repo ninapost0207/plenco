@@ -1,0 +1,198 @@
+.body_news-blog {
+    & .section_heading_top__bg_img {            
+        background-position: 30% 65% !important;
+        background-size: cover !important;
+        
+        @include respond-to(sm) {
+            background-position: 50% 100% !important;
+            background-size: 150% !important;
+        }
+
+        @include respond-to(xs) {
+            background-position: 60% 70% !important;
+            background-size: 200% !important;
+        }
+    }    
+    & .section_heading_top__center-block__cont {            
+        width: 426px;
+        
+        @include respond-to(xs) {
+            width: 350px;
+        }
+    }
+
+    
+
+//----------------------------SECTION 16-----------------------
+
+    & .section_16_bg {
+        background-image: url('../img/svg/section_16_bg_bottom.svg');
+        background-size: auto 231px;
+        background-position: 24px bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 238px;
+        padding-top: 113px;
+
+        @include respond-to(sm) {
+            background: url('../img/svg/section_16_bg_bottom_mob.svg');
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+            padding-top: 85px;
+            padding-bottom: 100px;
+        }
+        
+    }
+
+
+    & .section_16 {
+
+        & .block_7 {
+
+            margin-top: 73px;
+        
+            @include respond-to(sm) {
+                margin-top: 60px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 100%;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    & .block_7__header {
+                        font-family: "Mulish-600";
+                        font-size: 24px;
+                        line-height: 34px;
+                        @include ls(25);
+                    }
+
+                    & .block_tag_1 {
+                        min-width: 76px; 
+                        min-height: 26px;
+
+                    }
+
+                    & .block_7__link {
+                        width: 261px;
+                    }
+
+
+                }
+            }
+
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+        }
+        
+
+
+        & .news-categories {
+            & .news-category.selected {
+                color: $light-blue-2 !important; 
+                border-color: $light-blue-2 !important; 
+            }
+        }
+
+
+    }
+
+
+
+//----------------------------ACCORDION-----------------------
+
+    & .section_16_accordion {
+
+        & .accordion-button:after {
+           
+            background-image: url('../img/svg/accordion__arrow_light-blue_down.svg');
+            background-size: 50%;
+            background-position: center center;
+        }
+       
+        & .accordion-button:not(.collapsed)::after {
+            //transform: rotate(180deg)!important;
+            background-image: url('../img/svg/accordion__arrow_light-blue_up.svg');
+
+        }
+    }
+
+
+
+
+
+
+//----------------------------GALLERY NEWS-----------------------
+
+    & .gallery__news {
+
+        & .block_tag_1 {
+            min-width: 76px; 
+            min-height: 26px;
+        }
+
+        & .block_5__descr {
+            font-family: "Mulish-600";
+            font-size: 24px;
+            line-height: 34px;
+            @include ls(25);
+        }
+        
+    }
+    
+    & .gallery-pages {
+        height: 50px;
+        margin-top: 75px;
+
+        & .page {
+            width: 50px;
+            font-family: "Mulish-800";
+            font-size: 22px;
+            @include ls(25);
+            line-height: 24px;
+
+            &.selected {
+                background-color: $blue-1;
+                color: $white !important;
+            }
+        }
+    }
+//----------------------------SECTION 13-----------------------
+
+
+    & .section_13__button {
+        width: 251px;
+    }
+
+
+    
+
+
+    
+
+
+}

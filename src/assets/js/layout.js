@@ -10,7 +10,6 @@ let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("#nav_
 const menuMobButtons = document.querySelectorAll(".navbtn");
 
 
-
 //------------------------------desktop------------------------------------
 
 const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");

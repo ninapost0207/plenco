@@ -71,19 +71,41 @@
             }
         }
 
-        & .section_8__image {
-            height: 826px;
-            width: auto;
-
+        & .section_8__img-cont {
+            overflow: hidden;
+            left: 40%;  
+            margin-left: -40%;
+            
             @include respond-to(md) {
-                margin-left: 25%;
-                left: 20px;
-                height: auto;
+                left: 25%;  
+                margin-left: 0%;
+                width: 110%;
+                overflow: hidden;
             }
 
             @include respond-to(sm) {
-                width: 140%;
+                width: 100%;
+                height: 80vw;
             }
+
+            & .section_8__image {
+                max-height: 826px;
+                left: calc(50% - 530px);
+    
+                @include respond-to(md) {
+                    max-height: 587px;
+                    height: auto;
+                    left: calc(50% - 500px);
+
+                }
+    
+                @include respond-to(sm) {
+                    max-height: none;
+                    left:  0%;
+                    height: 100%;
+                }
+            }
+
         }
 
     }
@@ -118,8 +140,8 @@
     .section_14 {
 
         & .section_14__examples {
-            margin-left: -24px !important; 
-            margin-right: -24px !important; 
+            //margin-left: -24px !important; 
+            //margin-right: -24px !important; 
                 
             & .block_5 {
 
@@ -143,12 +165,12 @@
                     }
             
                     & .block_5__tags {
-                    margin-left: -4px !important;
-                    margin-right: -4px !important;
+                    //margin-left: -4px !important;
+                    //margin-right: -4px !important;
                     
                     & .block_tag_1 {
                             min-height: 26px;
-                            min-width: 77px;
+                            min-width: 76px;
                     
                             & .block_tag_1__text {
                                 font-family: "Mulish-300";

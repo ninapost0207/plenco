@@ -1,0 +1,510 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'News/Blog' %}
+{% set pageClass = 'body_news-blog' %}
+
+{% set page_news_blog = {
+    heading: {
+        heading_top_text: "BMC",
+        heading_top_subheader: "Compression Molding Guidelines",
+        bg_img: "./assets/img/pages/cmg-bmc/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_material_engineering_lab overline-r",
+        header: "Contact <span class='text-blue-1'>Plenco</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ",
+        text_button: "Contact Plenco",
+        link_to: "#"
+    },
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_news_blog.nav_side} %}
+
+    
+
+<div class="row section_16_bg overflow-hidden px-0">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 pt-5 pb-4 py-md-4">
+                        <div class="block_7__text-wrap col-10 col-md-11 ms-4 ms-md-5">
+                            <span class="block_7__header mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                            
+                            <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                                sed diam voluptua. At vero eos et accusam et justo</p>
+                            <a href="#" class="block_7__link btn btn-yellow-1 mt-4">read article</a>
+                        </div>
+                    </div>
+                </div>
+
+            
+
+
+
+                <div class="heading-line d-none d-md-block">
+                    <div class="news-categories mt-5 pt-5 col-12 d-flex">
+                            <h3 role="button" data-category="all-news" id="news-category_all-news" class="news-category d-inline-block text-blue-1 border-blue-1 border-bottom border-7 pe-2 me-0 selected pb-2">all news</h3><!--
+                         --><h3 role="button" data-category="white-paper" id="news-category_white-paper" class="news-category d-inline-block text-blue-1 border-blue-1 border-bottom border-7 ps-4 pe-2 ms-0 pb-2">White Papers & Research</h3><!--
+                         --><h3 role="button" data-category="case-studies" id="news-category_case-studies" class="news-category d-inline-block text-blue-1 border-blue-1 border-bottom border-7 ps-4 pe-2 pb-2">Case studies</h3><!--
+                         --><h3 role="button" data-category="our-history" id="news-category_our-history" class="news-category d-inline text-blue-1 border-blue-1 border-bottom border-7 ps-4 pe-2 col pb-2">Our history</h3>
+                    </div>
+    
+                    <div class="news-subcategories mt-2 col-12 d-flex">
+                        <span role="button" data-subcategory="all-news" id="news-subcategory_all-news" class="text_add news-subcategory">All News</span>
+                        <span role="button" data-subcategory="plenco-news" id="news-subcategory_plenco-news" class="text_add news-subcategory ps-4">Plenco in the News</span>
+                        <span role="button" data-subcategory="new-hires" id="news-subcategory_new-hires" class="text_add news-subcategory ps-4">New Hires</span>
+                        <span role="button" data-subcategory="company-expansions" id="news-subcategory_company-expansions" class="text_add news-subcategory ps-4">Company Expansions</span>
+                        <span role="button" data-subcategory="trade-show" id="news-subcategory_trade-show" class="text_add news-subcategory ps-4">Trade Show Attendance</span>
+                        <span role="button" data-subcategory="recent-certifications" id="news-subcategory_recent-certifications" class="text_add news-subcategory ps-4">Recent Certifications</span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="accordion accordion-flush section_16_accordion d-md-none mt-5" id="news-accordion-1">
+                    <div class="row row-cols-1">
+
+                        <div class="acc__item-wrap col px-0">
+                            <div class="accordion-item ">
+                                <h2 class="accordion-header border-bottom border-7 border-blue-1" id="acc-2__header-1">
+                                    <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative bg-white-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-1" aria-expanded="true" aria-controls="acc-2__body-1">
+                                        <h3 class="accordion-header d-block mb-0 text-uppercase text-blue-1">All News</h3> 
+                                    </button>
+                                </h2>
+                                <div id="acc-2__body-1" class="accordion-collapse collapse" aria-labelledby="acc-2__header-1" data-bs-parent="">
+                                    <div class="accordion-body pt-2 pb-0">
+                                        <a role="button" class="ul_2__text text-decoration-none text-blue-1" data-category="all-news">
+                                            <h3 class=" mt-3">All News</h3>
+                                        </a>
+                                        <a role="button" class="ul_2__text text-decoration-none text-blue-1" data-category="white-papers">
+                                            <h3 class="mt-3" >White Papers & Research</h3>
+                                        </a>
+                                        <a role="button" class="ul_2__text text-decoration-none text-blue-1" data-category="case-studies">
+                                            <h3 class="mt-3" >Case studies</h3>
+                                        </a>
+                                        <a role="button" class="ul_2__text text-decoration-none text-blue-1" data-category="our-history">
+                                            <h3 class="mt-3" >Our history</h3>
+                                        </a>    
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="gallery__news row row-cols-1 row-cols-md-3 g-5 mt-1 mx-n4">
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a href="#" class="block_5__link text-decoration-none pt-4">
+                        <div class="block_5 position-relative">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Expample-1" class="col-12 h-auto">
+                            <div class="block_5__content position-relative">
+                                <div class="block_5__tags tag-wrap_1 d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_tag_1-wrap px-1 py-1">
+                                        <div class="text-decoration-none"> 
+                                            <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                                <p class="block_tag_1__text tag-text text-black-1 text-center mb-0">tag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-decoration-none mt-2">
+                                    <span class="block_5__descr text-black-1 mb-0">Plenco Reaches 15% on Energy Savings from Better Plants Program</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+            
+                </div>
+
+
+                <div class="gallery-pages d-flex w-100 align-items-center justify-content-center">
+                        <img role="button" src="./assets/img/svg/arrow-pages-left.svg" alt="Back" class="page-arrow me-2" data-pager="back">
+                        <div role="button" class="page selected d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="1">1</div>
+                        <div role="button" class="page d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="2">2</div>
+                        <div role="button" class="page d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="3">3</div>
+                        <div role="button" class="page d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="4">4</div>
+                        <img role="button" src="./assets/img/svg/arrow-pages-right.svg" alt="Next" class="page-arrow ms-2" data-pager="next">
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% include '../components/sections/section_13.twig' with {data: page_news_blog.section_13} %}
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

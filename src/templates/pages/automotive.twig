@@ -1,0 +1,586 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Automotive' %}
+{% set pageClass = 'body_automotive' %}
+
+{% set page_automotive = {
+    heading: {
+        heading_top_text: "Automotive",
+        bg_img: "./assets/img/pages/automotive/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %} 
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_automotive.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_automotive.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and chemical resistance that makes them ideally suited for high-temperature applications in <span class='text-blue-l2'>combination with automotive fluids or electrical distribution</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1"></p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_27_bg bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_27 d-flex flex-column justify-content-center align-items-stretch">
+                <h2 class="section_27__header text-start mb-0">Industry <span class="text-blue-1">Applications</span></h2>
+
+                <div class="section_27__blocks row row-cols-sm-2 row-cols-lg-3 g-3 mx-n2 mt-1">
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Ignition system components, electric motor housings</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">                                
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 01581</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>                                         
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <a href="#" class="block_6__link position-absolute w-100 h-100"></a>
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Brake valve bodies</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 06310</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Pump impellers and housings</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 06401</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>                                          
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Brake caliper pistons</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 06553</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>                                           
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Starter solenoid covers</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">                                
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 07070</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>                                         
+                            </div>
+                        </div>    
+                    </div>  
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Pulleys</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">                                
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 07697</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>                                         
+                            </div>
+                        </div>    
+                    </div>  
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3 h-100">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Forward lighting, shrouds and covers, electrical systems</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">Plenco 06553, </h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">08218</h3>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_28 overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site col-12 d-flex ">
+                <div class="section_28__left col-3 py-4 pe-5 d-none d-md-block ">
+                    <div class="section_28__left__content-cont border-start border-7 border-blue-l2 ms-n3 ps-3 py-3">
+                        <a href="#case" class="section_28__left__link text-decoration-none d-flex">
+                            <h3 class="text-blue-1 mb-0">Case Study</h3>
+                        </a>
+                        <a href="#thermal" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Thermal Stability</h3>
+                        </a>
+                        <a href="#dma" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">DMA Comparison</h3>
+                        </a>
+                        <a href="#compressive" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Compressive Strength & Modulus</h3>
+                        </a>
+                        <a href="#thread" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Thread Strength Comparisons</h3>
+                        </a>
+                        <a href="#surface" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Surface Hardness<br>& Wear</h3>
+                        </a>
+                        <a href="#resistance" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Gasoline & Oil resistance</h3>
+                        </a>
+                        <a href="#" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <img src="./assets/img/svg/download_1.svg" alt="download" class="section_28__left__icon">
+                            <h3 class="text-blue-1 mb-0 ms-2">DOWNLOAD PDF</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section_28__right col-12 col-md-9 ps-md-5">
+                    <div class="section_28__data d-flex flex-column-reverse flex-lg-row position-relative align-items-center">
+                        <div class="section_28__textarea px-0 col-12 col-lg-6 position-relative">
+                            <div class="section_28__textarea-wrap col-12 col-md-11">
+                                <div class="block_4 d-flex flex-column justify-content-between">
+                                    <div class="block_4__text-cont pe-3">
+                                        <h2 class="block_4__header section_28__header-line position-relative mb-0 text-start d-none d-md-block mt-5 mt-lg-0" id="case">Automotive <span class='text-blue-1 font-normal'>Case Study</span></h2>
+                                        <p class="block_4__text position-relative mb-0  text-start mt-4 mt-md-5 d-none d-md-block">Case Study Heading text Line 2 Case Study Heading text Line 3</p>
+                                        <p class="block_4__text_add  position-relative mb-0 text-lg-start mt-3 d-none d-md-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                                        <p class="text_add position-relative mb-0 text-lg-start mt-4 d-none d-md-block">Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
+
+                                        <p class="block_4__text position-relative mb-0  text-start mt-4 mt-md-5 d-md-none pe-0">Engineered Solutions Through Material Technology</p>
+                                        <p class="text_add position-relative mb-0 text-lg-start mt-4 d-md-none">Plenco’s R&D center evaluates trends in the automotive industry and pioneers’ innovative solutions to create value and maintain its leading position in metal-to-plastic conversion.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-yellow-1 block_4__button mt-4 mx-auto ms-md-0">View Case Study</a>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="section_28__img-cont position-relative ">
+                            <img src="./assets/img/pages/automotive/case-study.jpg" alt="automotive" class="section_28__image position-relative">
+                        </div>
+                        <h2 class="block_4__header section_28__header-line position-relative mb-4 text-start mt-5 mt-lg-0 d-md-none align-self-start">Automotive <span class='text-blue-1 font-normal'>Case Study</span></h2>
+                    
+                        <div class="accordion accordion-flush section_28_accordion d-md-none mt-3 col-12" id="oil-accordion-nav">
+                            <div class="row ">
+        
+                                <div class="acc__item-wrap col-12 px-0">
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header border-bottom border-7 border-yellow-1" id="acc-nav__header-1">
+                                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-white-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-nav__body-1" aria-expanded="true" aria-controls="acc-nav__body-1">
+                                                <h3 class="accordion-header d-block mb-0 text-uppercase text-blue-1">Case Study</h3> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-nav__body-1" class="accordion-collapse collapse" aria-labelledby="acc-nav__header-1" data-bs-parent="">
+                                            <div class="accordion-body pt-2 pb-0">
+                                                <a href="#thermal" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Thermal Stability</h3>
+                                                </a>
+                                                <a href="#dma" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">DMA Comparison</h3>
+                                                </a>
+                                                <a href="#compressive" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Compressive Strength & Modulus</h3>
+                                                </a>
+                                                <a href="#thread" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Thread Strength Comparisons</h3>
+                                                </a>
+                                                <a href="#surface" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Surface Hardness<br>& Wear</h3>
+                                                </a>
+                                                <a href="#resistance" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Gasoline & Oil resistance</h3>
+                                                </a>
+                                                <a href="#" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <img src="./assets/img/svg/download_1.svg" alt="download" class="section_28__left__icon">
+                                                    <h3 class="text-blue-1 mb-0 ms-2">DOWNLOAD PDF</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h2 class="section_28__header-line mb-0 position-relative" id="thermal">Thermal <span class='text-blue-1 font-normal'>Stability</span></h2>
+                    <p class="text_add position-relative mb-0 text-start mt-2">The cross-linked chemical structure of Plenco Thermosets gives them a wider operating temperature range than many, more-costly thermoplastics. From external shrouds and heat shields to internal cam sprockets and pulleys, the right Plenco Thermoset can give you the most consistent, predictable performance from -40°F to +350°F. </p>
+
+                    <h2 class="section_28__header-line mb-0 position-relative"  id="dma">°C Scanning DMA Tg vs. <span class='text-blue-1 font-normal'>Modulus</span></h2>
+                    <p class="text_add position-relative mb-0 text-start mt-2">The Glass Transition Temperature (Tg) is where molecular mobility increases dramatically. Below their Tg, some thermoplastics become brittle. Above their Tg creep resistance and physical properties can decline rapidly.</p>
+                    <p class="text_add position-relative mb-0 text-start mt-4">Properly prepared Plenco Thermosets always operate below their Tg providing greater property retention at elevated temperatures.</p>
+                    <img src="./assets/img/pages/automotive/dma-comparison.jpg" alt="DMA comparison" class="w-100 h-auto mt-4">
+
+                    <h2 class="section_28__header-line mb-0 position-relative" id="compressive">Compressive Strength and <span class='text-blue-1 font-normal'>Modulus</span></h2>
+                    <p class="text_add position-relative mb-0 text-start mt-2">The compressive strength and modulus of Plenco Thermosets approach those of aluminum and zinc die castings.</p>
+                    <p class="text_add position-relative mb-0 text-start mt-4">This provides exceptional creep resistance, bolt torque retention and molded-in thread strength.</p>
+                    <table class="section_28__table-1 mt-4">
+                        <tbody>
+                            <tr>
+                                <td class="text_add extrabold pe-1">Compressive Strengths to </td>
+                                <td class="text_add extrabold">56,500 psi</td>
+                            </tr>
+                            <tr>
+                                <td class="text_add extrabold pe-3">Compressive Modulus</td>
+                                <td class="text_add extrabold">1.8MM psi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2 class="section_28__header-line mb-0 position-relative" id="thread">Thread Strength <span class='text-blue-1 font-normal'>Comparisons</span></h2>
+                    <p class="text_add position-relative mb-0 text-start mt-2">#10 - 5/8” coarse thread self tapping screw</p>
+                    <div class="section_28__table-2 mt-4">
+                        <div class="table-2__item col-12 row">
+                            <span class="text_add pt-1 col-12 col-md-6 px-0">06310 - glass/mineral reinforced phenolic</span>
+                            <span class="text_add col-12 col-md px-0 offset-md-2 offset-lg-1 offset-xl-0 pt-1">126.0 in•lbs torque</span>
+                        </div>
+                        <div class="table-2__item col-12 row mt-4 mt-md-0">
+                            <span class="text_add pt-1 col-12 col-md-6 px-0">06401 - glass/mineral reinforced phenolic</span>
+                            <span class="text_add col-12 col-md px-0 offset-md-2 offset-lg-1 offset-xl-0 pt-1">114.0 in•lbs torque</span>
+                        </div>
+                        <div class="table-2__item col-12 row mt-4 mt-md-0">
+                            <span class="text_add pt-1 col-12 col-md-6 px-0">03356 - mineral reinforced phenolic</span>
+                            <span class="text_add col-12 col-md px-0 offset-md-2 offset-lg-1 offset-xl-0 pt-1">76.8 in•lbs torque</span>
+                        </div>
+                        <div class="table-2__item col-12 row mt-4 mt-md-0">
+                            <span class="text_add pt-1 col-12 col-md-6 px-0">08218 - glass fiber reinforced polyester</span>
+                            <span class="text_add col-12 col-md px-0 offset-md-2 offset-lg-1 offset-xl-0 pt-1">53.0 in•lbs torque</span>
+                        </div>
+                    </div>
+
+                    <h2 class="section_28__header-line mb-0 position-relative" id="surface">Surface Hardness and <span class='text-blue-1 font-normal'>Wear</span></h2>
+                    <p class="text_add position-relative mb-0 text-start mt-2">The high surface hardness and smooth finish provided by Plenco Thermosets produce excellent cosmetic and wear surfaces.</p>
+                    <p class="text_add position-relative mb-0 text-start mt-4">Internal testing of cam lobes molded from Plenco 06401 showed no measurable wear after running against a steel cam follower under a 5# spring load for 2000 hours in 300°F oil.</p>
+
+                    <h2 class="section_28__header-line mb-0 position-relative"  id="resistance">Gasoline and Oil <span class='text-blue-1 font-normal'>Resistance</span></h2>
+                    <h3 class="mb-0 position-relative mt-3 text-blue-1">Plenco 06401</h3>
+
+
+                    <div class="section_28__accordions row d-flex flex-column flex-md-row justify-content-between">
+
+                        <div class="section_28__accordion-wrap px-0 col-12 col-md-6">
+                            <p class="text_add extrabold mb-0 position-relative text-black-1 mt-2 col-12 col-md-11">Gasoline at 22°C</p>
+                            <div class="section_28__blocks-cont border-start border-20 border-blue-1 mt-3 pt-3 pb-3 col-12 col-md-11">
+                                <div class="accordion accordion-flush section_28_accordion" id="oil-gas__accordion-1">
+                                    <div class="accordion-item mb-2">
+                                        <h2 class="accordion-header ms-n2" id="acc-1__header-1">
+                                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
+                                                <p class="d-block mb-0 ms-4">Hours: 0</p> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="#oil-gas__accordion-1">
+                                            <div class="accordion-body ms-3 pb-2 pt-0">
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Dimensional Stability %</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">0</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Barcol Hardness</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">54</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Flexural Strength MPa</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">130.5</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Flexural Modulus MPa</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">12245</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between mb-3">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Charpy Impact Strength J/m</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">31.1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item mb-2">
+                                        <h2 class="accordion-header ms-n2" id="acc-1__header-2">
+                                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-2" aria-expanded="true" aria-controls="acc-1__body-2">
+                                                <p class="d-block mb-0 ms-4">Hours: 168</p> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-1__body-2" class="accordion-collapse collapse" aria-labelledby="acc-1__header-2" data-bs-parent="#oil-gas__accordion-1">
+                                            <div class="accordion-body ms-3 pb-2 pt-0">
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between mb-3">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item mb-2">
+                                        <h2 class="accordion-header ms-n2" id="acc-1__header-3">
+                                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-3" aria-expanded="true" aria-controls="acc-1__body-3">
+                                                <p class="d-block mb-0 ms-4">Hours: 1000</p> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-1__body-3" class="accordion-collapse collapse" aria-labelledby="acc-1__header-2" data-bs-parent="#oil-gas__accordion-1">
+                                            <div class="accordion-body ms-3 pb-2 pt-0">
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between mb-3">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="section_28__accordion-wrap px-0 col-12 col-md-6 mt-5 mt-md-0">
+                            <p class="text_add extrabold mb-0 position-relative text-black-1 mt-2 col-12 col-md-11 offset-md-1">Motor oil at 150°C</p>
+                            <div class="section_28__blocks-cont border-start border-20 border-blue-1 mt-3 pt-3 pb-3 col-12 col-md-11 offset-md-1">
+                                <div class="accordion accordion-flush section_28_accordion" id="oil-gas__accordion-2">
+                                    <div class="accordion-item mb-2">
+                                        <h2 class="accordion-header ms-n2" id="acc-2__header-1">
+                                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-1" aria-expanded="true" aria-controls="acc-2__body-1">
+                                                <p class="d-block mb-0 ms-4">Hours: 0</p> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-2__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-1" data-bs-parent="#oil-gas__accordion-2">
+                                            <div class="accordion-body ms-3 pb-2 pt-0">
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Dimensional Stability %</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">0</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Barcol Hardness</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">54</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Flexural Strength MPa</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">130.5</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Flexural Modulus MPa</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">12245</p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between mb-3">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">Charpy Impact Strength J/m</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">31.1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item mb-2">
+                                        <h2 class="accordion-header ms-n2" id="acc-2__header-2">
+                                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-2" aria-expanded="true" aria-controls="acc-2__body-2">
+                                                <p class="d-block mb-0 ms-4">Hours: 168</p> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-2__body-2" class="accordion-collapse collapse" aria-labelledby="acc-2__header-2" data-bs-parent="#oil-gas__accordion-2">
+                                            <div class="accordion-body ms-3 pb-2 pt-0">
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between mb-3">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item mb-2">
+                                        <h2 class="accordion-header ms-n2" id="acc-2__header-3">
+                                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-3" aria-expanded="true" aria-controls="acc-2__body-3">
+                                                <p class="d-block mb-0 ms-4">Hours: 1000</p> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-2__body-3" class="accordion-collapse collapse" aria-labelledby="acc-2__header-2" data-bs-parent="#oil-gas__accordion-2">
+                                            <div class="accordion-body ms-3 pb-2 pt-0">
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                                <div class="accordion-body__item d-flex align-items-center justify-content-between mb-3">
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not provided</p>
+                                                    <p class="accordion__text-2 text_add text-black-1 mb-0 mt-2">not </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+ 
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row section_29_bg overflow-hidden">
+        <div class="container cont-site section_29 col-12 ">
+            <h2 class="px-0 mb-0">Questions? <span class="text-blue-1">We can help</span></h2>
+            <p class="text_add mt-5 mt-md-4 pt-2 mb-0">Select what your question is about…</p>
+            <form class="questions-form px-0 py-0 mt-2 col-md-8" id="questionsForm">
+
+                <!--
+                    <select class="questions-select w-100 ps-3 border-0 mb-3" aria-label="Default select example">
+                        <option class="questions-select__item" value="oil" selected>Oil & Gas Markets & Applications</option>
+                        <option class="questions-select__item" value="1">Question 1</option>
+                        <option class="questions-select__item" value="2">Question 2</option>
+                        <option class="questions-select__item text-wrap" value="42">What is the answer to life, the universe, and everything?</option>
+                    </select>
+
+                -->
+
+
+                <div class="accordion accordion-flush section_29_accordion" id="accordion-questions">
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header" id="acc-questions__header-1">
+                            <button id="accordion-questions__button" class="accordion-button d-flex align-items-center justify-content-between position-relative collapsed bg-blue-1 ps-4" type="button" data-bs-toggle="collapse" data-bs-target="#acc-questions__body-1" aria-expanded="true" aria-controls="acc-questions__body-1">
+                                <p class="d-block mb-0 text-white-1" id="accordion-questions__current">Automotive Markets & Applications</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-questions__body-1" class="accordion-collapse collapse" aria-labelledby="acc-questions__header-1" data-bs-parent="#accordion-questions">
+                            <div class="accordion-body pb-2 pt-0">
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3 hover">
+                                    <span role="button" class="accordion__text-2 accordion-questions__select mb-0 text-white-1">Automotive Markets & Applications</span>
+                                </div>
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+                                    <span role="button" class="accordion__text-2 accordion-questions__select mb-0 text-white-1">1</span>
+                                </div>
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+                                    <span role="button" class="accordion__text-2 accordion-questions__selectmb-0 text-white-1">2</span>
+                                </div>
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+                                    <span role="button" class="accordion__text-2 accordion-questions__select mb-0 text-white-1">What is the answer to life, the universe, and everything?</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <h3 class="questions__subheader text-blue-1 mt-4 pt-4">Contact Information</h3>
+
+                <div class="questions__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between mt-3 pb-3 mx-n3">
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_name-first">First Name*</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_name-first" placeholder="First Name" required>
+                      </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_name-last">Last Name*</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_name-last" placeholder="Last Name" required>
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_email">Email Address*</label>
+                        <input type="email" class="form-control questions__input validate col-12 px-3" id="questions-contact_email" placeholder="mail@adress.com" required>
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_phone">phone number</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_phone" placeholder="(000) 000-0000">
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_company">Company Name</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_company" placeholder="My Company’s Name">
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-0">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_message">message</label>
+                        <textarea type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_message" placeholder="Write your message" style="height: 119px"></textarea>
+                        <p class="form-text questions__add-text mb-0 w-100 px-0 mt-1">*fields are required. Our team will try to respond as soon as we can.</p> 
+                    </div> 
+                    <input type="text" class="form-control questions__input d-none" id="questions-contact_theme" placeholder="">
+                </div>
+                <button type="submit" form="questionsForm" class="btn btn-yellow-1 questions__btn_submit mx-auto position-relative mt-3" >Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}
+
+{% block scripts %}
+    <script src='./assets/js/questions.js'></script>
+{% endblock %}

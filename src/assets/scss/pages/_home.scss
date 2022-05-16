@@ -11,121 +11,171 @@
 
 //--------------------SECTION 7-----------------------
 
-& .section_7_bg {
-    background-image:  url("../img/svg/homepage__heading_bottom_bg-image.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: auto auto;
-    
-    @include respond-to(sm) {
-        background-image:  url("../img/svg/homepage__heading_bottom_bg-image_mob.svg");
-    }
+    & .section_7_bg {
+        background-image:  url("../img/svg/homepage__heading_bottom_bg-image.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: auto auto;
+        
+        @include respond-to(sm) {
+            background-image:  url("../img/svg/homepage__heading_bottom_bg-image_mob.svg");
+        }
 
-    & .section_7__bg_img-cont {
-        height: 640px;
-        z-index: 110;
-
-        & .section_7__bg_img {
+        & .section_7__bg_img-cont {
             height: 640px;
-            background-image:  url("../img/pages/home/heading.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            opacity: .5;
+            z-index: 110;
+
+            & .section_7__bg_img {
+                height: 640px;
+                background-image:  url("../img/pages/home/heading.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: .5;
+            }
         }
     }
-}
 
 
-& .section_7 {
+    & .section_7 {
 
-    padding-top: 142px;
-    padding-bottom: 104px;
-
-    @include respond-to(sm) {
-        padding-top: 78px;
-        padding-bottom: 47px;
-    }
-
-    & .section_7__center-block__cont {
-
-        & .section_7__center-block {
-
-            & .section_7__center__button {
-
-                @include respond-to(sm) {
-                    height: 66px;
-                } 
-            }
-        } 
-    }
-
-
-    & .section_7__cards-wrap {
-        z-index: 120;
-        margin-top: 117px;
-        margin-left: -12px !important;
-        margin-right: -12px !important;
+        padding-top: 142px;
+        padding-bottom: 104px;
 
         @include respond-to(sm) {
-            margin-top: 140px;
+            padding-top: 78px;
+            padding-bottom: 47px;
         }
 
-        & .section_7__card {
-            min-height: 114px;
-            width: 23%;
+        & .section_7__center-block__cont {
 
-            @include respond-to(sm) {
-                margin-top: 8px;
-                width: 49%;
-                min-width: 145px;
-            }
-    
-            & .section_7__card__highlighter {
-                height: 20px;
-                width: 85%;
-                left: 15px;
-                z-index: 0;
-            }
-    
-            & .section_7__card__text_header {
-                font-family: "Almarai-700";
-                font-size: 18px;
-                line-height: 23px;
-                z-index: 10;
-    
-                @include respond-to(md) {
-                    font-size: 16px;
+            & .section_7__center-block {
+
+                & .section_7__center__button {
+
+                    @include respond-to(sm) {
+                        height: 66px;
+                    } 
                 }
-            }
-    
-            & .section_7__card__text_category {
-                font-family: "Play-700";
-                font-size: 18px;
-            }
-        }
-    }
-
-    & .section_7__text_bottom_main {
-        margin-top: 120px;
-    }
-
-
-
-        & .section_7__button  {
-            max-width: $btn-small-width;
-
-            @include respond-to(md) {
-                width: 180px;
-            }
-
-            @include respond-to(xs) {
-                width: 45%;
             } 
         }
 
-}
 
+        & .section_7__cards-wrap {
+            z-index: 120;
+            margin-top: 117px;
+            margin-left: -12px !important;
+            margin-right: -12px !important;
+
+            @include respond-to(sm) {
+                margin-top: 140px;
+            }
+
+            & .section_7__card {
+                min-height: 114px;
+                width: 23%;
+
+                @include respond-to(sm) {
+                    margin-top: 8px;
+                    width: 49%;
+                    min-width: 145px;
+                }
+        
+                & .section_7__card__highlighter {
+                    height: 20px;
+                    width: 85%;
+                    left: 15px;
+                    z-index: 0;
+                }
+        
+                & .section_7__card__text_header {
+                    font-family: "Almarai-700";
+                    font-size: 18px;
+                    line-height: 23px;
+                    z-index: 10;
+        
+                    @include respond-to(md) {
+                        font-size: 16px;
+                    }
+                }
+        
+                & .section_7__card__text_category {
+                    font-family: "Play-700";
+                    font-size: 18px;
+                }
+            }
+        }
+
+        & .section_7__text_bottom_main {
+            margin-top: 120px;
+        }
+
+
+
+            & .section_7__button  {
+                max-width: $btn-small-width;
+
+                @include respond-to(md) {
+                    width: 180px;
+                }
+
+                @include respond-to(xs) {
+                    width: 45%;
+                } 
+            }
+
+    }
+
+
+//--------------------SECTION 6-----------------------
+
+    .section_6_bg {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-top: 135px;
+        padding-bottom: 125px;
+        
+        @include respond-to(sm) {
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+            padding-top: 75px;
+            padding-bottom: 45px;
+        }
+    }
+
+    .section_6 {
+
+        & .section_6__gallery_1-wrapper {
+            margin-left: -24px !important;
+            margin-right: -24px !important;
+
+            & .gallery_1__item {
+
+                & .gallery_1__item__descr-cont {
+        
+                    @include respond-to(sm) {
+                        min-height: 146px;
+                    }
+        
+                    & .gallery_1__item__icon {
+                        height: 63px;
+                
+                        @include respond-to(sm) {
+                            height: 50px;
+                        }
+                    }
+        
+                    & .gallery_1__item__text {
+                        font-family: "Almarai-700";
+                        font-size: 20px;
+                
+                        @include respond-to(sm) {
+                            font-family: "Gotham-700";
+                            font-size: 16px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
 
 
 //--------------------SECTION 1-----------------------
@@ -394,11 +444,6 @@
     }
 
 //-------------------------SECTION 13 ----------------------
-
-    & .section_13_bg {
-
-
-    }
 
 
 
