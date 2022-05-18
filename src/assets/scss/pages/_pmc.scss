@@ -35,14 +35,18 @@
 
 //---------------------SECTION 28---------------------------------
 
-    & .section_28 {
+    & .section_37 {
         margin-top: 108px;
 
         @include respond-to(sm) {
             margin-top: 25px;
         }
 
-        & .section_28__data {
+        & .section_37__left {
+            margin-top: 65px;
+        }
+
+        & .section_37__data {
 
 
             & .block_4__text {
@@ -52,6 +56,10 @@
                 @include ls(50);
             }
 
+            & .block_4__header {
+                margin-top: 65px;
+            }
+
             & .block_4__text_add  {
                 font-family: "Muli-300";
                 font-size: 16px;
@@ -59,48 +67,56 @@
                 @include ls(25);
             }
 
-            & .section_28__img-cont {
-                //border: 2px solid red;
-                overflow: hidden;
-                left: 40%;  
-                margin-left: -40%;
+            & .section_37__img-cont {
                 
                 @include respond-to(md) {
-                    left: 0%;  
-                    margin-left: 0%;
-                    width: 110%;
+                    width: 80%;
                     overflow: hidden;
                 }
 
                 @include respond-to(sm) {
                     width: 100%;
-                    left: 35%;
+                    right: -25px;
                 }
             }
 
-            & .section_28__image {
-                max-height: 587px;
-                left: calc(50% - 750px);
-
+            & .section_37__image {
+                
                 @include respond-to(md) {
+                    object-fit: contain;
                     width: 100%;
-                    left: 20px;
                     height: auto;
                 }
     
                 @include respond-to(sm) {
-                    left: calc(55vw - 480px);
-                    width: auto;
-                    max-height: 320px;
-                    //margin-left: 20%;
-                    //margin-right: 20%;
+                    width: 70vw;
+                }
+            }
 
+            & .mock {
+                height: 587px;
+                width: 330px;
+
+
+                & .section_37__img-cont_dt {
+                    height: 587px;
+                    width: 800px;
+                    //border: 3px solid red;
+                    overflow: hidden;
+    
+                    & .section_37__image_dt {
+                        @include respond-to(lg) {
+                            left: -150px;
+                        }
+                    }
+    
                 }
             }
 
 
 
-            & .section_28_accordion {
+
+            & .section_37_accordion {
 
                 & .accordion-button:after {
                     background-image: url('../img/svg/accordion__arrow_blue_down.svg');
@@ -121,7 +137,7 @@
         }
 
 
-        & .section_28__table-2  {
+        & .section_37__table-2  {
 
             & .table-2__item span:first-child {
                 @include respond-to(sm) {
@@ -131,7 +147,7 @@
         }
 
 
-        & .section_28__subheader {
+        & .section_37__subheader {
             font-family: "Play-700";
             font-size: 24px;
             @include ls(50);
@@ -139,11 +155,11 @@
         }
 
 
-        & .section_28__button {
+        & .section_37__button {
             min-width: 281px;
         }
 
-        & .section_28__header-line {
+        & .section_37__header-line {
 
             margin-top: 80px;
 
@@ -179,10 +195,10 @@
         }
 
 
-        & .section_28__accordions {
+        & .section_37__accordions {
             
             
-            & .section_28_accordion {
+            & .section_37_accordion {
     
                 & .accordion-item {
     
@@ -285,28 +301,44 @@
     
     & .section_30 {
 
-    
-    
+        & .section_30__card-wrap {
+
+            & .section_30__card {
+                min-height: 200px;
+
+                & .text_main {
+                    @include respond-to(sm) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                & .section_30__tags {
+                    
+                    & .block_tag_1 {
+                        min-height: 26px;
+                        min-width: 76px;
+                    
+                        & .block_tag_1__text {
+                            font-family: "Mulish-300";
+                            font-size: 14px;
+                            line-height: 20px;
+                            @include ls(25);
+                        }
+                    }
+            
+                }
+
+            }
+
+        }
+
+        & .section_30__button {
+            margin-top: 80px;
+        }
+
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -415,6 +447,10 @@
             
                 & .questions__btn_submit {
                     width: $btn-small-width;
+
+                    @include respond-to(sm) {
+                        width: $btn-standard-width;
+                    }
                 }
             }
 
@@ -422,21 +458,5 @@
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

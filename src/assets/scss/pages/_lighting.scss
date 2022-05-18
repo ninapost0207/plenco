@@ -99,44 +99,29 @@
             }
 
             & .section_28__img-cont {
-                //border: 2px solid red;
-                overflow: hidden;
-                left: 40%;  
-                margin-left: -40%;
                 
                 @include respond-to(md) {
-                    left: 0%;  
-                    margin-left: 0%;
-                    width: 110%;
+                    width: 80%;
                     overflow: hidden;
                 }
 
                 @include respond-to(sm) {
                     width: 100%;
-                    left: 35%;
+                    right: -25px;
                 }
             }
 
             & .section_28__image {
                 height: 587px;
-                width: 100% !important;////////////////////////////////////////////////////////////////////////////////////////
                 object-fit: contain;
-                
-                //left: 0px;
 
                 @include respond-to(md) {
                     width: 100%;
-                    left: 20px;
                     height: auto;
                 }
     
                 @include respond-to(sm) {
-                    left: calc(25vw - 210px);
-                    width: auto;
-                    max-height: 320px;
-                    //margin-left: 20%;
-                    //margin-right: 20%;
-
+                    width: 70vw;
                 }
             }
 
@@ -156,9 +141,6 @@
         
                 }
             }
-
-
-
         }
 
 
@@ -240,22 +222,12 @@
                                 //transform: rotate(180deg)!important;
                                 background-image: url('../img/svg/acc-arrow-up_45.svg');
                     
-                            }
+                            }   
     
-    
-                        }
-    
+                        }    
                     }
-    
-    
-                }
-    
-    
+                }  
             }
-
-
-
-
         }
 
 
