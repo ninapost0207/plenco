@@ -59,10 +59,11 @@
         
                 @include respond-to(sm) {
                     max-height: none;
+                    width: 100%;
                 }
         
                 & .block_7__left__img {
-                    max-height: 100%;
+                    max-height: 356px;
                     
                     @include respond-to(sm) {
                         max-height: none;
@@ -148,7 +149,7 @@
 
 //----------------------------GALLERY NEWS-----------------------
 
-    & .gallery__news {
+    & .gallery_news {
 
         & .block_tag_1 {
             min-width: 76px; 
@@ -164,11 +165,11 @@
         
     }
     
-    & .gallery-pages {
+    & .gallery_news__pages {
         height: 50px;
         margin-top: 75px;
 
-        & .page {
+        & .gallery_news__control {
             width: 50px;
             font-family: "Mulish-800";
             font-size: 22px;

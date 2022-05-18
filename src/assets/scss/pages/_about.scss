@@ -161,6 +161,15 @@
         
                 @include respond-to(sm) {
                     max-height: none;
+                    width: 100%;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
                 }
             }
         }
