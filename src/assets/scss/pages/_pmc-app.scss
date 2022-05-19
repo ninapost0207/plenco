@@ -1,19 +1,21 @@
-.body_pmc {
+.body_pmc-app {
 
-    & .section_heading_top__bg_img {        
-        background-position: 10% 50% !important;
-        background-size: cover !important;
-        opacity: .5;
+    & .section_heading_top__center-block__cont {               
+        height: 150px;        
+
+        @include respond-to(lg) {            
+            padding-left: 0px;
+            padding-right: 0px;            
+        }
+        @include respond-to(md) {            
+            max-width: 600px !important;            
+        }
         
+        @include respond-to(sm) {            
+            width: 100% !important;
+            height: 140px;
+        }        
 
-        @include respond-to(sm) {
-            background-position: 45% 50% !important;
-            background-size: 200% !important;
-        }
-        @include respond-to(xs) {
-            background-position: 50% 50% !important;
-            background-size: 300% !important;
-        }
     }
     & .section_heading_bottom {
         height: 459px;        
@@ -26,10 +28,8 @@
         }
         @include respond-to(xs) {        
             height: 430px;
-        }      
+        }   
     }
-
-
 
 
 

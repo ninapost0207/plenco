@@ -23,9 +23,12 @@
     }
 
 
-//---------------------SECTION 28---------------------------------
 
-    & .section_28 {
+
+    
+//---------------------SECTION 37---------------------------------
+
+    & .section_37 {
         margin-top: 108px;
         margin-bottom: 107px;
 
@@ -34,32 +37,28 @@
             margin-bottom: 59px;
         }
 
-        & .section_28__data {
+        & .section_37__left {
+            margin-top: 65px;
+        }
 
+        & .section_37__data {
 
-            & .block_4__text {
-                font-family: "Muli-600";
-                font-size: 24px;
-                line-height: 30px;
-                @include ls(50);
-
-                @include respond-to(sm) {
-                    font-size: 22px;
-                }
-            }
-
-            & .block_4__text_add  {
-                font-family: "Muli-300";
+            & .text_heading_add {
+                font-family: "Mulish-700";
                 font-size: 16px;
-                line-height: 18px;
+                line-height: 28px;    
                 @include ls(25);
-
-                @include respond-to(sm) {
-                    font-size: 14px;
-                }
             }
 
-            & .section_28__img-cont {
+            
+
+            & .block_4__header {
+                margin-top: 65px;
+            }
+
+            
+
+            & .section_37__img-cont {
                 
                 @include respond-to(md) {
                     width: 80%;
@@ -72,35 +71,50 @@
                 }
             }
 
-            & .section_28__image {
-                height: 587px;
-                object-fit: contain;
-
+            & .section_37__image {
+                
                 @include respond-to(md) {
+                    object-fit: contain;
                     width: 100%;
                     height: auto;
                 }
-    
+
                 @include respond-to(sm) {
                     width: 70vw;
                 }
             }
-            
-            & .text_heading_add {
-                font-family: "Mulish-700";
-                font-size: 16px;
-                line-height: 28px;    
-                @include ls(25);
+
+            & .mock {
+                height: 587px;
+                width: 330px;
+
+
+                & .section_37__img-cont_dt {
+                    height: 587px;
+                    width: 800px;
+                    //border: 3px solid red;
+                    overflow: hidden;
+
+                    & .section_37__image_dt {
+                        @include respond-to(lg) {
+                            left: -150px;
+                        }
+                    }
+
+                }
             }
 
-            & .section_28_accordion {
+
+
+
+            & .section_37_accordion {
 
                 & .accordion-button:after {
                     background-image: url('../img/svg/accordion__arrow_blue_down.svg');
                     background-size: 45%;
                     background-position: center center;
                 }
-               
+            
                 & .accordion-button:not(.collapsed)::after {
                     //transform: rotate(180deg)!important;
 
@@ -114,17 +128,20 @@
         }
 
 
-        & .section_28__table-2  {
 
-            & .table-2__item span:first-child {
-                @include respond-to(sm) {
-                    font-family: "Mulish-700";
-                }
-            }
+        & .section_37__subheader {
+            font-family: "Play-700";
+            font-size: 24px;
+            @include ls(50);
+            line-height: 30px;
         }
 
 
-        & .section_28__header-line {
+        & .section_37__button {
+            min-width: 281px;
+        }
+
+        & .section_37__header-line {
 
             margin-top: 80px;
 
@@ -137,10 +154,7 @@
                 width: 27px;
                 background-color: $light-blue-2;
             }
-         /*      
-            @include respond-to(sm) {
-                margin-left: 30px;
-            }*/
+
 
 
             @include respond-to(sm) {
@@ -158,61 +172,12 @@
             }
         }
 
-        & .extrabold {
-            font-family: "Mulish-900";
-        }
-
-
-        & .section_28__accordions {
-            
-            
-            & .section_28_accordion {
-    
-                & .accordion-item {
-    
-                    & .accordion-header {
-    
-                        & .accordion-button {
-                            font-family: "Mulish-700";
-                            font-size: 20px;
-                            line-height: 24px;
-                            @include ls(25);
-                            height: 45px;
-    
-                            &:after {
-                                height: 45px;
-                                width: 45px;
-                                margin-left: 20px;
-                                background-image: url('../img/svg/acc-arrow-down_45.svg');
-                                background-position: center center;
-                                background-size: contain;
-                            }
-                           
-                            &:not(.collapsed)::after {
-                                //transform: rotate(180deg)!important;
-                                background-image: url('../img/svg/acc-arrow-up_45.svg');
-                    
-                            }
-    
-    
-                        }
-    
-                    }
-    
-    
-                }
-    
-    
-            }
-
-
-
-
-        }
-
-
+        
 
     }
+
+
+
 
 //---------------------SECTION 107---------------------------------
 
