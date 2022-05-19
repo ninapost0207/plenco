@@ -1,0 +1,179 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Resol Resins' %}
+{% set pageClass = 'body_resol-resins' %}
+
+{% set page_resol_resins = {
+    heading: {
+        heading_top_text: "Resol Resins",
+        bg_img: "./assets/img/pages/resol-resins/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %} 
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_resol_resins.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_resol_resins.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">A basic (alkaline) catalyst and, usually but not necessarily, a molar excess of formaldehyde is used to make resol resins. The following two stages <span class='text-blue-l2'>describe a simplified view of the reaction</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1"></p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="row section_28 overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site col-12 d-flex flex-column flex-md-row">
+                <div class="section_28__left col-3 py-4 pe-5 d-none d-md-block ">
+                    <div class="section_28__left__content-cont border-start border-7 border-blue-l2 ms-n3 ps-3">
+                        <a href="#main" class="section_28__left__link text-decoration-none d-flex">
+                            <h3 class="text-blue-1 mb-0">Phenolic Novolac & Resol Resins Main Page</h3>
+                        </a>
+                        <a href="#novolac" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Novolac Resins</h3>
+                        </a>
+                        <a href="#resol" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-l2 mb-0">Resol Resins</h3>
+                        </a>
+                        <a href="#app" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Resin Applications</h3>
+                        </a>
+                        <a href="#resoures" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Resources</h3>
+                        </a>                        
+                    </div>
+                </div>
+
+
+
+                        <div class="accordion accordion-flush section_28_accordion d-md-none col-12" id="oil-accordion-nav">
+                            <div class="row ">
+        
+                                <div class="acc__item-wrap col-12 px-0">
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header border-bottom border-7 border-yellow-1" id="acc-nav__header-1">
+                                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-white-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-nav__body-1" aria-expanded="true" aria-controls="acc-nav__body-1">
+                                                <h3 class="accordion-header d-block mb-0 text-uppercase text-blue-1">Resol Resins</h3> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-nav__body-1" class="accordion-collapse collapse" aria-labelledby="acc-nav__header-1" data-bs-parent="">
+                                            <div class="accordion-body pt-2 pb-0">
+                                                <a href="#performance" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Phenolic Novolac & Resol Resins Main Page</h3>
+                                                </a>                                                
+                                                <a href="#compressive" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Novolac Resins</h3>
+                                                </a>
+                                                <a href="#thread" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Resin Applications</h3>
+                                                </a>
+                                                <a href="#surface" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Resources</h3>
+                                                </a>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+
+
+
+
+
+                <div class="section_28__right col-12 col-md-9 ps-md-5 mt-5 mt-md-0 pt-4 pt-md-0">
+                    <div class="section_28__data d-flex flex-column position-relative">
+                        <h2 class="block_4__header section_28__header-line position-relative mb-0 text-start" id="chemistry">Resol Resin <span class='text-blue-1 font-normal'>Chemistry</span></h2>
+                        <p class="text_add position-relative mb-0 text-lg-start mt-4">A basic (alkaline) catalyst and, usually but not necessarily, a molar excess of formaldehyde is used to make resol resins. The following two stages describe a simplified view of the reaction: First, phenol reacts with methylene glycol to form methylol phenol: (Phenolic Novolac & Resol Resins text - Resol Resins)</p>
+                        
+                        <div class="section_28__img-cont position-relative mt-4 ms-0">
+                            <img src="./assets/img/pages/resol-resins/elements-1.jpg" alt="resol-resins" class="section_28__image position-relative mt-0 col-12 col-md-8">
+                        </div>
+                        
+                        <p class="text_add position-relative mb-0 text-lg-start mt-5">Methylol phenol can react with itself to form a longer chain methylol phenolic:</p>
+                        
+
+
+                        <div class="section_28__img-cont position-relative mt-4 ms-0">
+                            <img src="./assets/img/pages/resol-resins/elements-2.jpg" alt="resol-resins" class="section_28__image position-relative mt-0 col-12 col-md-9">
+                        </div>
+                        
+                        
+                                                
+                        <p class="text_add position-relative mb-0 text-lg-start mt-5">or form dibenzyl ether:</p>
+                        
+
+
+                        <div class="section_28__img-cont position-relative mt-4 ms-0">
+                            <img src="./assets/img/pages/resol-resins/elements-3.jpg" alt="resol-resins" class="section_28__image position-relative mt-0 col-6 col-md-5">
+                        </div>
+
+
+                        <p class="text_add position-relative mb-0 text-lg-start mt-5">or react with phenol to form a methylene bridge.</p>
+
+
+                        <div class="section_28__img-cont position-relative mt-4 ms-0">
+                            <img src="./assets/img/pages/resol-resins/elements-4.jpg" alt="resol-resins" class="section_28__image position-relative mt-0 col-6 col-md-5">
+                        </div>
+
+                        <p class="text_add position-relative mb-0 text-lg-start mt-5">The most important point in resol resin chemistry is that, when an excess of formaldehyde is used, a sufficient number of methylol and dibenzyl ether groups remain reactive to complete the polymerization and cure the resin without incorporation of a cure agent such as hexa. For this reason, the industry commonly refers to resol resins as “single-stage” or “one-step” type products. Resol resin manufacture includes polymerizing to the desired extent, distilling off excess water and quenching or tempering the polymerization reaction by rapid cooling. Because resol resins continue the polymerization reaction at even ambient temperatures, albeit at much slower rates than during manufacturing, they demonstrate limited shelf lives dependent on the resin character, storage conditions and application.</p>
+                        <p class="text_add position-relative mb-0 text-lg-start mt-5 mt-md-4">By manipulating the phenolic to aldehyde monomer ratio, pH, catalyst type, reaction temperature, reaction time, and amount of distillation, a variety of resin structures demonstrating a wide range of properties are possible. The typical number average molecular weight (Mn) of a straight phenol resol resin is between 200 and 450. Plastics Engineering Company supplies resol resins as liquids or in solvents with viscosities from 50 to 50,000 cps, or as solids in the form of lumps, granules, or fine powders. Organic solvents and the amount of water or phenol monomer left in the resin control the viscosity of the liquid resin products. Resol resins are usually water-soluble to a certain degree. (Phenolic Novolac & Resol Resins text - Resol Resins)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_107_bg h-100 p-0 m-0 overline-r overline_mob-r"> 
+        <div class="section_107 col-12 px-0 d-flex align-items-start align-items-md-center pt-5 pb-4 pb-lg-5">
+            <div class="container cont-site section_107__content col-md-12 d-flex flex-column flex-lg-row justify-content-start justify-content-md-between align-items-center mt-3 mt-md-0">
+                <div class="section_107__left col-auto position-relative">
+                    <h1 class="section_107__header text-center text-lg-start text-blue-l3 mb-0">Learn More</h1>
+                    <p class="section_107__text text-center text-lg-start text-white-1 mb-0">About Resol Resin</p>
+                </div>
+                <div class="section_107__right col-auto position-relative align-self-center align-self-lg-end">
+                    <a class="btn btn-yellow-1 section_107__button ms-0 ms-md-4 mt-4 mt-lg-0">Contact Plenco</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    
+
+
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}
+
+{% block scripts %}
+    <script src='./assets/js/questions.js'></script>
+{% endblock %}
