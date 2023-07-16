@@ -1,0 +1,31 @@
+{% if data.pic_position == 'right' %}
+    <div class="block_3 d-flex flex-column flex-md-row align-items-center" style="{{ data.props }}">
+        <div class="block_3__right col-12 col-md-6 d-flex justify-content-center align-items-start flex-column">
+            <ul class="ul_1 mb-0">
+                {% for text in data.texts %}
+                    <li class="ul_1__text mb-0 my-0">{{ text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="block_3__left col-12 col-md-6 order-sm-first order-md-0">
+            <div class="block_3__img-wrapper col-12 col-md-11 offset-md-1">
+                <img src={{ data.img }} alt="Customer-1" class="block_3__left__img">
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="block_3 d-flex flex-column flex-md-row align-items-center" style="{{ data.props }}">
+        <div class="block_3__left col-12 col-md-6">
+            <div class="block_3__img-wrapper col-12 col-md-11">
+                <img src={{ data.img }} alt="Customer-1" class="block_3__left__img">
+            </div>
+        </div>
+        <div class="block_3__right col-12 col-md-6 d-flex justify-content-center align-items-start flex-column">
+            <ul class="ul_1 mb-0">
+                {% for text in data.texts %}
+                    <li class="ul_1__text my-0">{{ text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,50 @@
+/*.section_14_bg {
+    padding-top: 89px;
+    padding-bottom: 176px;
+
+    background-image:  url("../img/svg/section_14__bg.svg");
+    background-repeat: no-repeat;
+    background-position: 25px bottom;
+    background-size: 602px auto;
+
+
+    @include respond-to(sm) {
+        padding-top: 58px;
+        padding-bottom: 80px;
+
+        background: url("../img/svg/mosaic_3.svg");
+        background-size:  auto auto;
+        background-repeat: no-repeat;
+        background-position: 10px bottom;
+    }
+}
+
+
+
+.section_14 {
+  
+
+    & .section_14__header {       
+        font-family: "Almarai-700";
+        font-size: 28px;
+        line-height: 43px;
+        
+
+        @include respond-to(sm) {
+            font-size: 24px;
+            line-height: 24px; 
+        }
+    }
+
+    & .section_14__examples {        
+        margin-top: 46px;
+        margin-left: -24px; 
+        margin-right: -24px; 
+              
+
+        @include respond-to(sm) {
+            margin-top: 21px;
+        }
+        
+    }
+}*/

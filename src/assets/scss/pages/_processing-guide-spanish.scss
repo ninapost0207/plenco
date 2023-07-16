@@ -1,0 +1,165 @@
+.body_processing-guide-spanish {
+
+    & .section_heading_bottom {    
+        height: 533px;
+
+        @include respond-to(md) {        
+            height: 570px;
+        }
+        @include respond-to(sm) {        
+            height: 530px;
+        }
+        @include respond-to(xs) {        
+            height: 630px;
+        }
+    }
+    
+
+//---------------------------SECTION 20------------------------------------
+
+
+
+    .section_20{
+        padding-top: 80px;
+        padding-bottom: 150px;
+
+        @include respond-to(sm) {
+            padding-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        & .section_20__header {
+            font-family: "Mulish-600";
+            font-size: 20px;
+            line-height: 28px;
+            @include ls(25);
+    
+            @include respond-to(sm) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    
+    
+        & .section_20__text {
+            font-family: "Mulish-400";
+            font-size: 16px;
+            line-height: 24px;
+            @include ls(25);
+    
+            @include respond-to(sm) {
+                font-size: 16px;
+            }
+        }
+    
+
+
+
+
+
+        & .block_7 {
+
+            margin-top: 90px;
+        
+            @include respond-to(sm) {
+                margin-top: 75px;
+            }
+
+            
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                    width: 100%;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+        
+            }
+        
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 25px);
+                    }
+        
+        
+            
+                    & .block_7__link {
+                        font-family: "Mulish-600";
+                        font-size: 16px;
+                        line-height: 20px;
+                        @include ls(25);
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 75px;
+                }
+            }
+
+
+        }
+        
+       
+    }
+    
+
+
+
+
+
+//---------------------------SECTION 22------------------------------------
+
+
+    & .section_22_bg {
+        margin-bottom: 112px;
+    }
+
+
+    .section_22{
+
+        & .section_22__header {
+            font-family: "Play-700";
+            font-size: 16px;
+            @include ls(25);
+        }
+    
+    
+    
+        & .section_22__link {
+            font-family: "Mulish-600";
+            font-size: 16px;
+            line-height: 18px;
+            @include ls(25);
+        }
+    }
+    
+    
+}

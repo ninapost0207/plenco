@@ -1,0 +1,25 @@
+.body_link_site {
+
+    & .link__content {
+        height: calc(100vh - 226px);
+        top: 226px;
+
+        & .block_back {
+            min-height: 110px;
+            top: 116px;
+    
+            & .link_page-back {
+                font-family: "Almarai-700";
+                font-size: 24px;
+            }
+        }
+    
+        & .link__header {
+            font-family: "Almarai-700";
+            font-size: 37px;
+            line-height: 24px;
+        }
+    }
+
+
+}

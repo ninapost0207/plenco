@@ -1,0 +1,11 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Plenco Preloader' %}
+{% set pageClass = 'body_preloader' %}
+
+
+{% block content %}
+    <div class="preloader__content h-100 w-100 position-absolute left-0 top-0 bg-blue-3 d-flex align-items-center justify-content-center">
+        <img src="./assets/img/svg/logo_plenco_white.svg" alt="Our Logo" class="preloader__logo">
+        <a href="home.html" class="stretched-link"></a>
+    </div>
+{% endblock %}

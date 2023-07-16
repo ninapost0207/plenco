@@ -1,0 +1,130 @@
+@import './base/global';
+@import './components/global';
+@import './layouts/global';
+@import './pages/global';  
+//@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: map-merge($theme-colors, $site-themes);
+//$colors: map-merge($colors, $site-colors);
+
+$theme-colors: map-merge($theme-colors, $site-themes);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+ 
+
+
+
+
+$accordion-padding-y:                     1rem;
+$accordion-padding-x:                     0;
+$accordion-color:                         $body-color;
+$accordion-bg:                            $body-bg;
+$accordion-border-width:                  0;
+$accordion-border-color:                  rgba($black, .125);
+$accordion-border-radius:                 0;
+$accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width);
+
+$accordion-body-padding-y:                $accordion-padding-y;
+$accordion-body-padding-x:                $accordion-padding-x;
+
+$accordion-button-padding-y:              0;
+$accordion-button-padding-x:              $accordion-padding-x;
+$accordion-button-color:                  $black-1;
+$accordion-button-bg:                     $grey-2;
+$accordion-transition:                    $btn-transition, border-radius .15s ease;
+$accordion-button-active-bg:              $grey-2;
+$accordion-button-active-color:           $black-1;
+
+$accordion-button-focus-border-color:     none;
+$accordion-button-focus-box-shadow:       none;
+
+$accordion-icon-width:                    54px;
+$accordion-icon-color:                    $black-1;
+$accordion-icon-active-color:             $black-1;
+$accordion-icon-transition:               transform .2s ease-in-out;
+$accordion-icon-transform:                none;//rotate(-180deg);
+
+
+$accordion-button-icon:         url("../img/svg/acc-arrow-down.svg");
+$accordion-button-active-icon:  url("../img/svg/acc-arrow-up.svg");
+
+//---------------------------
+
+
+$input-padding-y:                       16px;
+$input-padding-x:                       30px;
+$input-font-family:                     "Mulish-300";
+$input-font-size:                       18px;
+$input-font-weight:                     $font-weight-base;
+$input-line-height:                     24px;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-btn-padding-x-sm;
+$input-font-size-sm:                    $input-btn-font-size-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-btn-padding-x-lg;
+$input-font-size-lg:                    $input-btn-font-size-lg;
+
+$input-bg:                              $body-bg;
+$input-disabled-bg:                     $gray-200;
+$input-disabled-border-color:           null;
+
+$input-color:                           $black-1;
+$input-border-color:                    $blue-1;
+$input-border-width:                    2px;
+$input-box-shadow:                      $box-shadow-inset;
+
+$input-border-radius:                   0;
+$input-border-radius-sm:                0;
+$input-border-radius-lg:                0;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              $blue-1;
+$input-focus-color:                     $input-color;
+$input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow:                none;
+
+$input-placeholder-color:               $black-1;
+$input-plaintext-color:                 $black-1;
+
+$input-height-border:                   0;
+
+
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$form-color-width:                      3rem;
+
+
+
+$enable-negative-margins: true;
+
+
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import "./base/defaults";
+
+
+//---
+
+
+.border-7 {
+    border-width: 7px !important;
+}
+
+.border-8 {
+    border-width: 8px !important;
+}
+
+.border-11 {
+    border-width: 11px !important;
+}
+
+.border-20 {
+    border-width: 20px !important;
+}

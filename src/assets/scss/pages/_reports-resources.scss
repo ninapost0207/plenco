@@ -1,0 +1,345 @@
+.body_reports-resources {
+
+    & .section_heading_top__bg_img {
+        
+        background-position: 50% 30% !important;
+        background-size: cover !important;
+        opacity: .5;        
+
+        @include respond-to(sm) {
+            background-position: 70% 30% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 70% 80% !important;
+            background-size: 250% !important;
+        }
+    }  
+
+
+//------------------------SECTION 33--------------------
+    & .section_33_bg {
+
+    }
+
+    & .section_33 {
+        padding-top: 110px;
+        padding-bottom: 90px;
+
+        @include respond-to(sm) {
+            padding-top: 51px;
+            padding-bottom: 58px;
+        }
+
+        & .section_33_button {
+            @include respond-to(sm) {
+                line-height: 24px;
+                font-size: 20px !important;
+                //min-width: 430px;
+            }
+
+        }
+    }
+
+    //------------------------SECTION 34--------------------
+    & .section_34_bg {
+
+    }
+
+    & .section_34 {
+        padding-top: 120px;
+        padding-bottom: 140px;
+
+        @include respond-to(sm) {
+            padding-top: 51px;
+            padding-bottom: 0px;
+        }
+
+        & .block_input_1__searcharea {
+
+            .block_input_1__input {
+                font-family: "Mulish-300";
+                font-size: 18px;
+                z-index: 30;
+                @include ls(25);
+                height: 50px;
+                min-width: 285px;
+                
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+            }
+
+            & .block_input_1__button {
+                height: 50px;
+                font-size: 20px !important;
+            }
+        }
+
+        & .section_34_accordion {
+
+            & .accordion-button {
+                height: 45px;
+
+                &::after {
+                    height: 100%;
+                    width: 45px;
+                    background-position: center center;
+                    background-size: 100%;
+                }
+            }
+
+
+            & .text_method {
+                font-family: "Mulish-800";
+                font-size: 14px;
+                @include ls(75);
+            }
+
+
+            & .accordion-body {
+
+                @include respond-to(sm) {
+                    background-color: $light-blue-1;
+                }
+
+                & .accordion__item__link {
+                    font-family: "Mulish-600";
+                    font-size: 16px;
+                    line-height: 20px;
+                    @include ls(25);
+                }
+
+                & .acc__button {
+                    @include respond-to(sm) {
+                        line-height: 24px;
+                        font-size: 20px !important;
+                        padding-left: 70px !important;
+                        padding-right: 70px !important;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
+//---------------------SECTION 27---------------------------------
+
+    & .section_27_bg {
+        padding-top: 128px;
+        padding-bottom: 105px;
+
+        @include respond-to(sm) {
+            padding-top: 90px;
+            padding-bottom: 70px;
+        }
+
+    }
+
+    & .section_27 {
+
+
+
+        & .block_6 {
+            min-height: 212px;
+
+            & .block_6__header {
+                font-family: "Muli-600";
+                font-size: 24px;
+                line-height: 30px;
+                @include ls(50);
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+            }
+
+            & .block_6__text {
+                font-family: "Mulish-600";
+                font-size: 16px;
+                line-height: 22px;
+                @include ls(25);
+
+                @include respond-to(sm) {
+                    font-size: 18px;
+                    //line-height: 16px;
+                }
+
+            }
+
+        }
+    }
+
+
+
+    
+//---------------------SECTION 35---------------------------------
+
+    & .section_35_bg {
+        padding-top: 105px;
+        padding-bottom: 110px;
+
+        @include respond-to(sm) {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+    }
+
+    & .section_35 {
+
+
+        & .acc-2__header {
+            font-family: "Mulish-800";
+            font-size: 14px;
+            @include ls(75);
+        }
+
+        & .acc-body__link {
+            font-family: "Mulish-600";
+            font-size: 16px;
+            line-height: 20px;
+            @include ls(25);
+        }
+    }
+
+
+
+    //------------------------SECTION 36--------------------
+    & .section_36_bg {
+
+    }
+
+    & .section_36 {
+        padding-top: 105px;
+        padding-bottom: 100px;
+
+        @include respond-to(sm) {
+            padding-top: 75px;
+            padding-bottom: 45px;
+        }
+
+
+        & .block_6 {
+            min-height: 136px;
+
+            & .block_6__header {
+                font-family: "Muli-600";
+                font-size: 24px;
+                line-height: 30px;
+                @include ls(50);
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+            }
+
+            & .block_6__text {
+                font-family: "Mulish-600";
+                font-size: 16px;
+                line-height: 22px;
+                @include ls(25);
+
+                @include respond-to(sm) {
+                    font-size: 18px;
+                    //line-height: 16px;
+                }
+            }
+        }
+
+        & .section_36_button {
+            @include respond-to(sm) {
+                line-height: 24px;
+                font-size: 20px !important;
+            }
+        }
+    }
+
+
+
+
+
+    
+//---------------------SECTION 30---------------------------------
+
+    & .section_30_bg {
+        padding-top: 72px;
+        padding-bottom: 114px;
+        background: url('../img/svg/section_18_bg.svg');
+        background-position: 25px 100%;
+        background-repeat: no-repeat;
+        background-size: 602px auto;
+
+        @include respond-to(sm) {
+            padding-top: 58px;
+            padding-bottom: 67px;
+            background: none;
+            /*
+            background: url('../img/svg/section_18_bg_mob.svg');
+            background-position: 10px 100%;
+            background-repeat: no-repeat;*/
+        }
+
+    }
+
+
+
+
+
+
+
+    & .section_30 {
+
+        & .section_30__card-wrap {
+
+            & .section_30__card {
+                min-height: 200px;
+
+                & .text_main {
+                    @include respond-to(sm) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                & .section_30__tags {
+                    
+                    & .block_tag_1 {
+                        min-height: 26px;
+                        min-width: 76px;
+                    
+                        & .block_tag_1__text {
+                            font-family: "Mulish-300";
+                            font-size: 14px;
+                            line-height: 20px;
+                            @include ls(25);
+                        }
+                    }
+            
+                }
+
+            }
+
+        }
+
+        & .section_30__button {
+            margin-top: 80px;
+            font-size: 20px !important;
+        }
+
+    }
+
+
+
+
+}
+
+
+

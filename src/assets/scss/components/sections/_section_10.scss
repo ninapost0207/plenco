@@ -1,0 +1,77 @@
+/*.section_10 {
+    background-image: url('../img/pages/about/policy.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 623px;
+    padding-left: 8px;
+    padding-right: 8px;       
+
+    & .section_10__sub-cont {
+        background-color: $dark-blue-1;
+        background-image: url('../img/svg/plenco_watermark_2.svg');    
+        background-repeat: no-repeat;
+        background-size: 99% auto;
+        background-position: center 5px;
+        min-height: 360px;
+        padding-top: 78px;
+        padding-bottom: 38px;
+
+        @include respond-to(md) {
+            padding-top: 108px;
+        }
+
+        @include respond-to(sm) {
+            padding-top: 78px;
+            padding-bottom: 47px;
+        }
+
+        & .section_10__data {
+
+            & .section_10__header {
+                font-family: "Almarai-700";
+                font-size: 28px;
+                line-height: 140%;
+                color: $white;
+                line-height: 38px;
+                @include ls(50);
+    
+                @include respond-to(sm) {
+                    font-size: 24px;
+                    line-height: 30px;
+                    @include ls(0);
+                }
+            }
+    
+            & .section_10__text {
+                margin-top: 12px;
+                margin-bottom: 28px;
+                color: $white;
+                font-family: "Mulish-400";
+                font-size: 18px;
+                @include ls(25);;
+                line-height: 24px;
+    
+                @include respond-to(sm) {
+                    line-height: 22px;
+                    font-size: 16px;
+                    margin-top: 24px;
+                    margin-bottom: 37px;
+                }
+            }
+    
+    
+            & .section_10__button {
+                max-width: 349px;
+    
+                @include respond-to(xs) {
+                    font-size: 16px;
+                }
+            }
+
+
+        }
+
+
+    }
+}
+*/

@@ -1,0 +1,422 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Certifications' %}
+{% set pageClass = 'body_certifications' %}
+
+{% set page_certifications = {
+    heading: {
+        heading_top_text: "Certifications",
+        bg_img: "./assets/img/pages/certifications/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+}%}
+ 
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig'  with {data: page_certifications.nav_side} %}
+
+    {% include '../components/sections/section_heading_top.twig' with {data: page_certifications.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">At Plastics Engineering Company, we conform to a set of 
+                        specialized standards that help our company and products achieve expected results and 
+                        <span class='text-blue-l2'>continually improve all of our business processes</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">We believe that having a consistent process will produce 
+                        dependable, homogeneous products all of the time that will perform in its application.</p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row bg-blue-l1 col-12 my-0 py-5">
+        <div class="col px-0">
+            <div class="container cont-site py-4 py-md-5 d-flex flex-column">
+                <h2 class="pt-2 pt-md-5 mb-0">ISO <span class="text-blue-1">9001</span></h2>                
+                <p class="text_main pt-3 mb-0 mt-1">ISO 9001 sets out the criteria for a quality management system and is the only standard in the family 
+                    that can be certified to (although this is not a requirement).</p>
+                <p class="text_add pt-3 mb-0 mt-1 pb-3 pb-md-0">It can be used by any organization, large or small, regardless of its field of activity. 
+                    In fact, there are over one million companies and organizations in over 170 countries certified to ISO 9001.</p>
+                <a href="link_document.html" class="btn btn-yellow-1 section_13__button mx-auto overline-r overline_mob-r mt-4 mt-md-5 px-4 px-md-5 col-12 col-sm-auto">
+                    <img src="./assets/img/svg/icon_pdf.svg" alt="" class="me-3 ms-md-4">
+                    <p class="mb-0 me-md-4">Iso Certificate</p>
+                </a>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+    <div class="row section_32_bg position-relative d-flex align-items-center">
+        <img src="./assets/img/svg/section_32__bg.svg" alt="" class="section_32__bg-img position-absolute  d-none d-md-block">
+        <img src="./assets/img/svg/section_32__bg_mob.svg" alt="" class="section_32__bg-img_mob position-absolute d-md-none">
+        <div class="col px-0">
+            <div class="container cont-site section_32 d-flex flex-column-reverse flex-md-row align-items-center">
+                <div class="section_32_left col-12 col-md-6 pe-0 pe-md-5 d-flex flex-column">
+                    <img src="./assets/img/svg/ul-isting_logo.svg" alt="ul-logo" class="section_32__logo d-md-none my-5 mx-auto">
+                    <h2 class="section_32__header mb-0">UL <span class="text-blue-1">Listing</span></h2>
+                    <p class="text_add mt-4 mb-0">UL Yellow Card lists multiple safety- and performance-related properties for a polymeric 
+                        material tested by us to appropriate standards. It can also include additional performance credentials, e.g., 
+                        Restriction of Hazardous Substances (RoHS) or Non-Halogenated (non-Hal), which verify industry requirements. Our 
+                        card substantiates that a material is appropriate for defined applications and helps provide assurance that you are 
+                        using a tested and certified material, which will be monitored at regular intervals by an independent test laboratory.</p>
+                    <div class="section_32__logo-button d-flex align-items-center mt-4 flex-column flex-lg-row">
+                        <img src="./assets/img/svg/ul-isting_logo.svg" alt="ul-logo" class="section_32__logo align-self-end pe-4 me-md-0 d-none d-md-block">
+                        <a href="link_document.html" class="btn btn-yellow-1 section_13__button mx-auto overline-r overline_mob-r px-5 col-12 col-sm-auto mt-0 mt-md-5 mt-lg-0">UL Listing</a>
+                    </div>
+                </div>
+                <div class="section_32_right col-12 col-md-6">
+                    <img src="./assets/img/pages/certifications/listing.jpg"  alt="Plenco’s 08000 Series" class="section_32__image position-relative">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row col-12 my-0 pt-4 pb-5 pt-md-5">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column mb-5 mt-md-5">
+                <h2 class="pt-0 mb-0">CSA <span class="text-blue-1">Group</span></h2>                
+                <p class="text_main pt-3 mb-0 mt-1">For a century, CSA Group has relentlessly led the drive for a better, safer, more sustainable world. </p>
+                <p class="text_add pt-3 mb-0 mt-1 pb-3 pb-md-0">Today, CSA achieves this vision through standards development, supported by technical 
+                    research and training. CSA Group is a recognized third-party certification body and testing agency with specialized expertise in many 
+                    industries. As a leading solutions-based standards organization, providing standards and codes development, application products, 
+                    training and selected advisory services. CSA Group aims to enhance public safety, improve quality of life, preserve the environment 
+                    and facilitate trade.</p>
+                <a href="link_document.html" class="btn btn-yellow-1 section_13__button mx-auto overline-r overline_mob-r mt-4 mt-md-4 px-4 px-md-5 col-12 col-sm-auto">CSA Group Certification</a>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="row section_27_bg bg-blue-l1">
+        <div class="col px-0">
+            <div class="container section_27 d-flex flex-column justify-content-center">
+                <h2 class="section_37__header-line mb-0 position-relative mt-0">Statements & <span class='text-blue-1 font-normal'>Certifications</span></h2>
+
+                <div class="section_27__blocks row row-cols-sm-2 row-cols-md-3 g-3 mx-n2 mt-1">
+
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Reach Statement</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">View Statement</h3>
+                                </div> 
+                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="link_document.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Reach Document</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">View Document</h3>
+                                </div> 
+                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="link_document.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">RoHS Document</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">View Document</h3>
+                                </div> 
+                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="link_document.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Conflict Minerals Act Document</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">View Document</h3>
+                                </div> 
+                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="link_document.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+    <div class="row section_30_bg overflow-hidden">
+        <div class="container cont-site section_30 col-12 d-flex flex-column">
+            <h2 class="section_30__header">Plenco’s <span class="text-blue-1">Resources & Latest News</span> </h2>
+            <div class="section_30__cards row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5 mx-n4 align-items-stretch">
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading Placeholder text text</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">White Paper</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading consetetur sadipscing elitr</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Phenolic Molding</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">Watch Video</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div  class="section_37__left__link text-decoration-none mt-3 d-flex align-items-center">
+                                <img src="./assets/img/svg/download_1.svg" alt="download" class="section_37__left__icon">
+                                <h3 class="text-blue-1 mb-0 ms-2">DOWNLOAD PDF</h3>
+                            </div>
+
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading consetetur sadipscing elitr</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">Watch Video</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div  class="section_37__left__link text-decoration-none mt-3 d-flex align-items-center">
+                                <img src="./assets/img/svg/download_1.svg" alt="download" class="section_37__left__icon">
+                                <h3 class="text-blue-1 mb-0 ms-2">DOWNLOAD PDF</h3>
+                            </div>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="news-blog.html" class="section_30__button btn btn-yellow-1 section_37__button d-inline-flex w-auto px-4 px-md-3 align-self-center">View all Resources</a>
+
+        </div>
+    </div>
+
+    
+
+
+
+    
+    <div class="row section_29_bg overflow-hidden">
+        <div class="container cont-site section_29 col-12 ">
+            <h2 class="px-0 mb-0">Questions? <span class="text-blue-1">We can help</span></h2>
+            <p class="text_add mt-5 mt-md-4 pt-2 mb-0">Select what your question is about…</p>
+            <form class="questions-form px-0 py-0 mt-2 col-md-8" id="questionsForm">
+
+                <div class="accordion accordion-flush section_29_accordion" id="accordion-questions">
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header" id="acc-questions__header-1">
+                            <button id="accordion-questions__button" class="accordion-button d-flex align-items-center justify-content-between position-relative collapsed bg-blue-1 ps-4" type="button" data-bs-toggle="collapse" data-bs-target="#acc-questions__body-1" aria-expanded="true" aria-controls="acc-questions__body-1">
+                                <p class="d-block mb-0 text-white-1" id="accordion-questions__current">Oil & Gas Markets & Applications</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-questions__body-1" class="accordion-collapse collapse" aria-labelledby="acc-questions__header-1" data-bs-parent="#accordion-questions">
+                            <div class="accordion-body pb-2 pt-0">
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3 hover">
+                                    <span role="button" class="accordion__text-2 accordion-questions__select mb-0 text-white-1">Oil & Gas Markets & Applications</span>
+                                </div>
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+                                    <span role="button" class="accordion__text-2 accordion-questions__select mb-0 text-white-1">1</span>
+                                </div>
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+                                    <span role="button" class="accordion__text-2 accordion-questions__selectmb-0 text-white-1">2</span>
+                                </div>
+                                <div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+                                    <span role="button" class="accordion__text-2 accordion-questions__select mb-0 text-white-1">What is the answer to life, the universe, and everything?</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="questions__subheader text-blue-1 mt-4 pt-4">Contact Information</h3>
+
+                <div class="questions__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between mt-3 pb-3 mx-n3">
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_name-first">First Name*</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_name-first" placeholder="First Name" required>
+                      </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_name-last">Last Name*</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_name-last" placeholder="Last Name" required>
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_email">Email Address*</label>
+                        <input type="email" class="form-control questions__input validate col-12 px-3" id="questions-contact_email" placeholder="mail@adress.com" required>
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_phone">phone number</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_phone" placeholder="(000) 000-0000">
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_company">Company Name</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_company" placeholder="My Company’s Name">
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-0">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_message">message</label>
+                        <textarea type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_message" placeholder="Write your message" style="height: 119px"></textarea>
+                        <p class="form-text questions__add-text mb-0 w-100 px-0 mt-1">*fields are required. Our team will try to respond as soon as we can.</p> 
+                    </div> 
+                    <input type="text" class="form-control questions__input d-none" id="questions-contact_theme" placeholder="">
+                </div>
+                <button type="submit" form="questionsForm" class="btn btn-yellow-1 questions__btn_submit mx-auto position-relative mt-3" >Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

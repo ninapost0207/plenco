@@ -1,0 +1,130 @@
+.body_markets_applications {
+    & .section_heading_top__bg_img {
+        
+        background-position: 50% 50% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+        @include respond-to(sm) {
+            background-position: 40% 100% !important;
+            background-size: 150% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 40% 100% !important;
+            background-size: 200% !important;
+        }
+    }
+
+
+    & .section_heading_bottom {    
+        height: 533px;
+
+        @include respond-to(sm) {        
+            height: 510px;
+        }
+        @include respond-to(xs) {        
+            height: 497px;
+        }
+    
+
+    }
+//------------------------------SECTION 16-----------------------
+
+
+    & .section_16_bg {
+        background-image: url('../img/svg/section_16_bg_bottom.svg');
+        background-size: auto 231px;
+        background-position: 24px bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 168px;
+        padding-top: 107px;
+
+        @include respond-to(sm) {
+            background: url('../img/svg/section_16_bg_bottom_mob.svg');
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+            padding-top: 60px;
+            padding-bottom: 118px;
+
+        }
+    }
+
+
+
+    & .section_16 {
+
+        & .block_7 {
+            margin-top: 44px;
+        
+            @include respond-to(sm) {
+                margin-top: 60px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                    width: 100%;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 25px);
+                    }
+
+                    & .block_7__button {
+                        height: 50px;
+                        min-width: 280px;
+                        max-width: 350px;
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+        }
+        
+
+    }
+
+
+
+//------------------------------SECTION 13-----------------------
+
+
+    & .section_13__button {
+    }
+    
+}
+
+    
+

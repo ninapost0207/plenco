@@ -1,0 +1,337 @@
+.nav_side__btn-msg {
+    top: 640px;
+    width: 130px !important;
+    height: 114px !important;
+    z-index: 100;
+
+    & .nav_side__btn-msg__icon {
+        height: 43px;
+        width: 43px;
+    }
+
+    & .nav_side__btn-msg__text_1 {
+        font-family: "Gotham-700";
+        font-size: 14px;
+    }
+
+    & .nav_side__btn-msg__text_2 {
+        font-family: "Gotham-book";
+        font-size: 14px;
+    }
+}
+
+
+
+// --------------------- ContactUs modal-----------------------------
+.contactUsModal-cont {
+    width: 837px !important;
+    max-width: none !important;
+
+    @include respond-to(md) {
+        width: 100% !important;
+    }
+
+    .contactUsModal {
+        padding-bottom: 62px;
+
+        @include respond-to(sm) {
+            padding-bottom: 25px;
+        }
+    
+        & .contactUsModal__header-cont {
+    
+
+            & .contactUsModal__btn_close {
+                background-image: url("../img/svg/close.svg");
+                background-size: 25px 25px;
+
+                &:focus, &:active, &:checked {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+            }
+        }
+    
+    
+        & .contactUsModal__body {
+
+            @include respond-to(md) {
+                border-left: none !important;
+            }
+
+            & .contactUsModal__body__inputs-wrap {
+
+                & .modal-body__header {
+                    font-family: "Mulish-400";
+                    font-size: 16px;
+                    @include ls(25);
+                }
+
+                & .modal-body__input {
+
+                    height: 50px;
+                    
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+                }
+
+
+
+                & .contactUsModal__add-text {
+                    font-family: "Muli-300";
+                    font-size: 12px;
+                    @include ls(25);
+                }
+            }
+    
+        
+            & .contactUsModal__btn_submit {
+                width: $btn-small-width;
+                top: 26px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+}
+
+.modal-backdrop {
+    background-color: $dark-blue-1 !important;
+    opacity: 0.8 !important;
+ }
+
+
+
+
+ 
+
+// --------------------- emailSignUp modal-----------------------------
+.emailSignUpModal-cont {
+    width: 837px !important;
+    max-width: none !important;
+
+    @include respond-to(md) {
+        width: 100% !important;
+    }
+
+    .emailSignUpModal {
+        padding-bottom: 62px;
+
+        @include respond-to(sm) {
+            padding-bottom: 25px;
+        }
+    
+        & .emailSignUpModal__header-cont {
+    
+            & .modal_logo {
+                max-width: 280px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
+            & .emailSignUpModal__btn_close {
+                background-image: url("../img/svg/close.svg");
+                background-size: 25px 25px;
+
+                &:focus, &:active, &:checked {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+            }
+        }
+    
+    
+        & .emailSignUpModal__body {
+
+            @include respond-to(md) {
+                border-left: none !important;
+            }
+
+            & .emailSignUpModal__body__inputs-wrap {
+
+                & .modal-body__header {
+                    font-family: "Mulish-400";
+                    font-size: 16px;
+                    @include ls(25);
+                }
+
+                & .modal-body__input {
+
+                    height: 50px;
+                    
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+                }
+
+
+            }
+            
+            & .emailSignUpModal__add-text {
+                font-family: "Mulish-Italic";
+                font-size: 12px;
+                @include ls(25);
+                line-height: 16px;
+
+                & a {
+                    font-family: "Mulish-Italic";
+                    font-size: 12px;
+                    @include ls(25);
+                    line-height: 16px;
+                }
+            }
+
+            & .modal_link {
+                font-family: "Mulish-Semibold-Italic";
+            }
+
+    
+        
+            & .emailSignUpModal__btn_submit {
+                width: $btn-small-width;
+                top: 26px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+// --------------------- emailDownload modal-----------------------------
+.emailDownloadModal-cont {
+    width: 837px !important;
+    max-width: none !important;
+
+    @include respond-to(md) {
+        width: 100% !important;
+    }
+
+    & a {
+
+    }
+
+    .emailDownloadModal {
+        padding-bottom: 62px;
+
+        @include respond-to(sm) {
+            padding-bottom: 25px;
+        }
+    
+        & .emailDownloadModal__header-cont {
+    
+            & .modal_logo {
+                max-width: 280px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
+            & .emailDownloadModal__btn_close {
+                background-image: url("../img/svg/close.svg");
+                background-size: 25px 25px;
+
+                &:focus, &:active, &:checked {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+            }
+        }
+    
+    
+        & .emailDownloadModal__body {
+
+            @include respond-to(md) {
+                border-left: none !important;
+            }
+
+            & .emailDownloadModal__body__inputs-wrap {
+
+                & .modal-body__header {
+                    font-family: "Mulish-400";
+                    font-size: 16px;
+                    @include ls(25);
+                }
+
+                & .modal-body__input {
+
+                    height: 50px;
+                    
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+                }
+            }
+            
+            & .emailDownloadModal__add-text {
+                font-family: "Mulish-Italic";
+                font-size: 12px;
+                @include ls(25);
+                line-height: 16px;
+
+                & a {
+                    font-family: "Mulish-Italic";
+                    font-size: 12px;
+                    @include ls(25);
+                    line-height: 16px;
+                }
+            }
+
+            & .modal_link {
+                font-family: "Mulish-Semibold-Italic";
+            }
+        
+            & .emailDownloadModal__btn_submit {
+                width: $btn-small-width;
+                top: 26px;
+            }
+        }
+
+        & .emailDownloadModal_accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button {
+                        font-family: "Mulish-800";
+                        font-size: 18px;
+                        line-height: 24px;
+                        @include ls(25);
+                        height: 50px;
+
+                        &::after {
+                            width: 50px ;
+                            height: 50px;
+                            background-position: center center;
+                            background-size:  cover;
+                        }
+
+                        & * {
+                            pointer-events: none;
+                        }
+                    }
+                }
+
+                & .accordion-body__item {
+                    font-family: "Mulish-800";
+                    font-size: 18px;
+                    line-height: 24px;
+                    @include ls(25);
+                    height: 50px;
+
+                    &:hover {
+                        background-color: $light-blue-2 !important;
+                    }
+
+                    & * {
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+

@@ -1,0 +1,102 @@
+/*.section_6 {
+  
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 135px;
+    padding-bottom: 125px;
+
+    & .section_6__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & .section_6__gallery_1-wrapper {
+       
+        margin-top: 31px;
+
+        @include respond-to(sm) {
+           justify-content: space-around !important; 
+        }
+
+        @include respond-to($screen-xs) {
+            justify-content: space-between !important; 
+         }
+    }
+    
+    & .gallery_1__item {
+        max-width: 30%; 
+        background-color: $blue-1;
+        margin-bottom: 50px;
+
+        @include respond-to(md) {
+            max-width: none;
+        }
+
+        @include respond-to(sm) {
+            width: 148px; 
+            margin-left: 30px;
+            margin-right: 30px;
+
+        }
+
+        @include respond-to(xs) {
+            max-width: 45%;
+            min-width: 145px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    } 
+
+
+
+
+    & .gallery_1__item__img {
+        width: 100%;
+        height: 187px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    & .gallery_1__item__descr-cont {
+        height: 91px;
+        padding-bottom: 0;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        padding-top: 0;
+
+        @include respond-to(sm) {
+            height: 150px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-top: 12px;
+        }
+
+
+        & .gallery_1__item__icon {
+            max-height: 56px;
+    
+            @include respond-to(sm) {
+                max-height: 50px;
+            }
+        }
+
+        & .gallery_1__item__text {
+            font-family: "Almarai-700";
+            font-size: 20px;
+            color: $white;
+            margin-bottom: 0;
+            margin-left: 16px;
+            margin-right: 16px;
+    
+            @include respond-to(sm) {
+                font-family: "Gotham-700";
+                font-size: 16px;
+                margin-left: 0;
+            }
+        }
+    
+
+    }
+
+}*/

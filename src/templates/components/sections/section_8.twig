@@ -1,0 +1,21 @@
+<div class="row section_8_bg pb-4 pb-md-5 position-relative {{ data.class }}" style="{{ data.style }}">
+    <div class="section_8 col px-0 overflow-hidden">
+        <div class="container cont-site">
+            <div class="section_8__data row d-flex align-items-center position-relative py-0">
+                <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                    <div class="section_8__textarea-wrap col-12 col-md-11">
+                        {% include data.block_left with {data: data.block_texts} %}
+                    </div>
+                </div>
+                <div class="section_8__img-wrapper" style="background-image:  url({{ data.img }})">
+                    <div class="section_8__img-cont position-absolute">
+                        <img src={{ data.img }} alt="" class="section_8__image">
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </div>
+    {% if data.img_bg %}
+        <img src={{ data.img_bg }} alt="" class="section_8_bg__img d-none d-lg-block position-absolute ">
+    {% endif %}
+</div>

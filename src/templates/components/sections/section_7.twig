@@ -1,0 +1,38 @@
+<div class="row section_7_bg overflow-hidden position-relative">
+    <div class="section_7__bg_img-cont position-absolute">
+        <div class="section_7__bg_img w-100">
+        </div>
+    </div>
+    <div class="section_7 col">
+        <div class="container cont-site">
+            <div class="section_7__center-block__cont position-relative col-10 col-md-7 col-lg-5 align-items-center overline overline_mob">
+                <div class="section_7__center-block d-flex flex-column align-items-center position-relative">
+                    <h2 class="section_7__center__header text-center">Innovative <br class="d-md-none">Products & <br class="d-md-none">Solutions</h2>
+                    <button class="section_7__center__button button_yellow">Markets & Applications</button>
+                </div>
+            </div>
+
+            <div class="section_7__cards-wrap col-md-12 d-flex justify-content-between position-relative flex-wrap flex-md-nowrap">
+                {% for card in data.cards_data %}
+                    <div class="section_7__card col-12 col-md-3 d-flex flex-column justify-content-between position-relative">
+                        <div class="section_7__card__highlighter col-2"></div>
+                        <p class="section_7__card__text_header col-12 mb-0">{{ card.text }}</p>
+                        <p class="section_7__card__text_category col-12 mb-0">{{ card.category }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <p class="section_7__text_bottom_main text_bicolor_2 ">Plastics Engineering Company is a leading North American 
+                manufacturer of phenolic resins and thermoset molding materials, <em>selling products 
+                under its trademark Plenco</em>.</p>
+            <p class="section_7__text_bottom text-white">If you have a phenolic resin or thermoset molding material project, chances 
+                are, the Plenco team can make it work. We’ve been doing it for over 80 years.</p>
+            <p class="section_7__text_bottom text-white">Come and benefit from the Plenco difference.</p>
+            <div class="section_7__buttons-wrap col-lg-5 d-flex justify-content-between justify-content-sm-around">
+                <button class="button_yellow">about</button>
+                <button class="button_yellow">facilities</button>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+@mixin respond-to($media) {
+    @if $media == xs {
+        @media (max-width: ($screen-xs)) { @content }
+    };
+    @if $media == sm {
+        @media (max-width: ($screen-sm - 1)) { @content }
+    };
+    @if $media == md {
+        @media (max-width: ($screen-md - 1)) { @content }
+    };
+    @if $media == lg {
+        @media (max-width: ($screen-lg - 1)) { @content }
+    };
+    @if $media == xl {
+        @media (max-width: ($screen-xl - 1)) { @content }
+    };
+    @if $media == xxl {
+        @media (min-width: ($screen-xl)) { @content }
+    }
+};
+
+@mixin ls($spacing) {
+    letter-spacing: ($spacing / 1000) * 1em;
+}
+
+//letter-spacing: calc(-1em * 0.001 * <XDCharacterSpacing>);
+
+@mixin useFont($family, $fileName, $fontWeight) {
+    @font-face {
+        font-family: $family;
+        src: url('../fonts/#{$fileName}.woff2') format('woff2'), url('../fonts/#{$fileName}.woff') format('woff');
+        font-weight: $fontWeight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@mixin button_yellow($paddings-lr, $height, $width) {
+        width: $width;
+        height: $height;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding-left: $paddings-lr;
+        padding-right: $paddings-lr;
+        //background-color: $yellow-1 !important;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        border: none;
+        border-radius: 0 !important;
+        @include ls(75);
+        text-transform: uppercase;
+        font-family: "Mulish-800";
+        box-shadow: 0;
+
+        &:hover, &:focus {
+            color: $black;
+            border: none !important;
+        }
+        
+
+        @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+}
+
+
+
+@mixin containers() {
+
+    
+    max-width: 1184px !important; //1184-22-22=1140
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+

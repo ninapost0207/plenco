@@ -1,0 +1,209 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Molding Method Guide' %}
+{% set pageClass = 'body_molding-method-guide' %}
+
+{% set page_molding_method_guide = {
+    heading: {
+        heading_top_text: "Molding <br>Method Guide",
+        bg_img: "./assets/img/pages/molding-method-guide/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_42: [
+        {
+            name: 1,
+            header: "Phenolic",
+            headers: [
+                "Cold Powder Compression",
+                "Preheat Compression",
+                "Transfer",
+                "Injection"
+            ],
+            values: [
+                "See #1",
+                "See #3",
+                "See #3",
+                "None"
+            ],
+        },
+        {
+            name: 2,
+            header: "Melamine-Phenolic",
+            headers: [
+                "Cold Powder Compression",
+                "Preheat Compression",
+                "Transfer",
+                "Injection"
+            ],
+            values: [
+                "See #1",
+                "None",
+                "None",
+                "See #6"
+            ],
+        },
+        {
+            name: 3,
+            header: "Granular Polyester",
+            headers: [
+                "Cold Powder Compression",
+                "Preheat Compression",
+                "Transfer",
+                "Injection"
+            ],
+            values: [
+                "See #2",
+                "See #4",
+                "See #4",
+                "None"
+            ],
+        },
+        {
+            name: 4,
+            header: "BMC",
+            headers: [
+                "Cold Powder Compression",
+                "Preheat Compression",
+                "Transfer",
+                "Injection"
+            ],
+            values: [
+                "None",
+                "See #5",
+                "None",
+                "None"
+            ],
+        },
+        
+    ]
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_molding_method_guide.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_molding_method_guide.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Plenco thermoset molding compounds can and are being successfully molded by cold powder compression, preheat compression, <span class='text-blue-l2'>transfer and injection molding methods</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">However, in some instances, there can be problems associated with the processing of some compounds by a particular molding method. The following table summaries these problems by compound and molding method. (Molding Method text)</p> 
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+    <div class="row section_42_bg overflow-hidden bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_42 d-flex flex-column">
+                <div class="section_42__hero d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
+                    <h2 class="section_42__header mb-0">Molding Method <span class="text-blue-1">Guide</span></h2>                    
+                </div>
+                
+
+                {% for item in page_molding_method_guide.section_42 %}
+                <div class="accordion accordion-flush section_42_accordion h-100" id="data-glossary__acc-{{ item.name }}">
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-{{ item.name }}__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-{{ item.name }}__body-1" aria-expanded="true" aria-controls="acc-{{ item.name }}__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">{{ item.header }}</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-{{ item.name }}__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-{{ item.name }}__header-1" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column col-12 ">
+                                <div class="desktop d-none d-md-block">
+                                    <div class="accordion-body__headers d-flex flex-row align-items-stretch col-12">
+                                        <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[0] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[1] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[2] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[3] }}</span>
+                                    </div>
+                                    <div class="accordion-body__values d-flex flex-row align-items-stretch col-12">
+                                        <span class="item-value ms-0 mt-1 pe-4">{{ item.values[0] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[1] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[2] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[3] }}</span>
+                                    </div>
+                                </div>
+
+                                <div class="mobile d-flex flex-column d-md-none col-12">
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[0] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[0] }}</span>
+                                    {% if item.values[1] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[1] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[1] }}</span>
+                                    {% if item.values[2] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[2] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[2] }}</span>
+                                    {% if item.values[3] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[3] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[3] }}</span>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container_white container cont-site">
+        <ol class="text_add ps-3">
+            <li class="text_add ps-2">Plenco does not typically recommend cold powder compression molding of our phenolic and melamine-phenolic molding compounds for some applications, due to the potential problems associated with this molding method. The following list outlines them.
+                <ul class="ul_3 mt-3 ps-4">
+                    <li class="ul_3__text mt-3 mt-md-2">The material does not fill out the cavity as well as a preheated charge.</li>
+                    <li class="ul_3__text mt-3 mt-md-2">It is more difficult to consistently obtain a dense, well packed out part.</li>
+                    <li class="ul_3__text mt-3 mt-md-2">It is more difficult to insure that the volatiles are removed before the part cures.</li>
+                    <li class="ul_3__text mt-3 mt-md-2">It requires a longer cycle time to cure the part.</li>
+                    <li class="ul_3__text mt-3 mt-md-2">Parts tend to have lower physical and electrical properties than those molded with a preheated charge.</li>
+                </ul>
+            </li>
+            <li class="text_add ps-2 mt-5 mt-md-4">Plenco does not typically recommend cold powder compression molding of our granular polyester molding compounds due to the poor surface appearance it generally produces with this material.</li>
+            <li class="text_add ps-2 mt-5 mt-md-4">Some of Plenco’s <strong>nodular</strong> or <strong>briquetted</strong> phenolic molding compounds do not preform very well. A screw preplasticizer is the preferred method of preheating these compounds for compression or transfer molding. Plenco can identify for you which compounds fall into this category.</li>
+            <li class="text_add ps-2 mt-5 mt-md-4">Plenco does not typically recommend preforming our granular polyester molding compounds, since preheated preforms generally produce a poor surface appearance. A screw preplasticizer is the preferred method of preheating these compounds for compression or transfer molding.</li>
+            <li class="text_add ps-2 mt-5 mt-md-4">Plenco BMC can be preheated but generally is not since the material molds well at low stock temperatures. When preheated, the form will always be a “log” of customer specified weight and diameter or a “slug” of bulk material. BMC is not generally preformed or screw preplasticized.</li>
+            <li class="text_add ps-2 mt-5 mt-md-4">Plenco does not typically recommend injection molding our melamine-phenolic compounds since they exhibit the typical single stage resin problem of having a very narrow processing window.</li>
+        </ol>
+        <p class="text_spec mt-5">This information is suggested as a guide to those interested in processing Plenco Thermoset molding materials. The information presented is for your evaluation and may or may not be compatible for all mold designs, runner systems, press configurations, and material rheology. Please feel free to call Plenco with any questions about PLENCO molding materials or processing and a Technical Service Representative will assist you.</p>
+    </div>
+
+    {% include '../components/sections/section_21.twig' with {data: page_molding_method_guide.section_21} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

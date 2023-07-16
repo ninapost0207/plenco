@@ -1,0 +1,124 @@
+/*.block_7 {
+    margin-top: 120px;
+
+    @include respond-to(sm) {
+        margin-top: 80px;
+    }
+
+
+    & .block_7__left {
+        max-height: 356px;
+
+        @include respond-to(sm) {
+            max-height: none;
+        }
+
+
+
+        & .block_7__left__img {
+            max-height: 356px;
+            
+            @include respond-to(sm) {
+                max-height: none;
+            }
+
+        }
+
+
+        & .block_7__left__img_mob {
+
+            @include respond-to(sm) {
+                max-height: none;
+            }
+
+        }
+    }
+
+
+    & .block_7__right {
+        padding-top: 28px;
+        padding-bottom: 28px;
+
+        @include respond-to(sm) {
+            //margin-left: 24px;
+            top: -20px;
+            padding-right: 10px;
+            padding-top: 54px;
+            padding-bottom: 34px;
+            min-height: 176px;
+        }
+
+
+        & .block_7__text-wrap {
+
+            @include respond-to(sm) {
+                margin-left: 15px;
+                width: calc(100% - 17px);
+            }
+
+
+            & .block_7__header {
+                font-family: "Play-700";
+                font-size: 16px;
+                line-height: 24px;
+                @include ls(25);
+                color: $blue-1;
+            }
+    
+            & .block_7__text {
+                font-family: "Mulish-400";
+                font-size: 16px;
+                line-height: 24px;
+                @include ls(25);
+                color: $black;
+                margin-top: 21px;
+            }
+    
+    
+            & .block_7__button {
+                min-width: 281px;
+                margin-top: 24px;
+
+                @include respond-to(md) {
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    font-size: 16px;
+                }
+
+
+                @include respond-to(sm) {
+                    min-width: auto;
+                }
+            }
+            
+    
+
+
+        }
+
+        &.right { //if pictute is on the right
+            order: -1; 
+            margin-left: 24px !important;  
+
+
+            @include respond-to(sm) {
+                order: 0; 
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+
+            & .block_7__text-wrap {
+                width: calc(92% - 24px - 7px - 24px);
+
+                @include respond-to(sm) {
+                    width: calc(100% - 17px);
+                }
+            }
+        }
+
+    }
+
+    
+}
+*/

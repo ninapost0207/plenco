@@ -1,0 +1,42 @@
+.body_accessibility {
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 40% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 70% 50% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 50% 50% !important;
+            background-size: 250% !important;
+        }
+    }
+    
+    & .section_heading_bottom {
+        height: 403px;
+        
+        @include respond-to(lg) {
+            height: 380px;
+        }
+        @include respond-to(md) {
+            height: 350px;
+        }
+        @include respond-to(sm) {
+            height: 330px;
+        }
+        @include respond-to(xs) {        
+            height: 314px;
+        }        
+    }     
+
+    & > .section_106 > div > p:nth-last-child(1)  {
+        margin-top: 50px;
+    }
+
+
+
+}

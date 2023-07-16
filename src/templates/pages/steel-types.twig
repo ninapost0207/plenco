@@ -1,0 +1,163 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Steel Types Used in Thermoset Molds' %}
+{% set pageClass = 'body_steel-types' %}
+
+{% set page_steel_types = {
+    heading: {
+        heading_top_text: "Steel Types Used in Thermoset Molds",
+        bg_img: "./assets/img/pages/steel-types/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_42: [
+        {
+            name: 1,
+            header: "A-2",
+            header_2: "59-61",
+            subheader: "Suggested Use",
+            value: "Preform Punches, Press Nozzles and Transfer Cylinders",
+        },
+        {
+            name: 2,
+            header: "CPM-10V",
+            header_2: "60-62",
+            subheader: "Suggested Use",
+            value: "Nozzle, Gate and Vent Inserts",
+        },
+        {
+            name: 3,
+            header: "D-2",
+            header_2: "57-59",
+            subheader: "Suggested Use",
+            value: "Sprue Bushing, Runner Blocks, Gate Inserts, Preform Sleeves and other high wear areas",
+        },
+        {
+            name: 4,
+            header: "D-5",
+            header_2: "61-63",
+            subheader: "Suggested Use",
+            value: "Nozzle Inserts",
+        },
+        {
+            name: 5,
+            header: "H-13",
+            header_2: "52-54",
+            subheader: "Suggested Use",
+            value: "Cavities and Cores",
+        },
+        {
+            name: 6,
+            header: "L-6",
+            header_2: "51-53",
+            subheader: "Suggested Use",
+            value: "Threaded Cores and Rising Islands",
+        },
+        {
+            name: 7,
+            header: "P-20",
+            header_2: "42-44",
+            subheader: "Suggested Use",
+            value: "Prototype Cavities and Cores",
+        },
+        {
+            name: 8,
+            header: "S-7",
+            header_2: "55-56",
+            subheader: "Suggested Use",
+            value: "Cavities and Cores",
+        },
+    ]
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_steel_types.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_steel_types.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">PLENCO’s years of experience in the thermoset molding industry have given us some insight into what steel to use in <span class='text-blue-l2'>various components of the mold and press</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">We offer to share these tips with our molding compound customers, for whatever value they may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe that they are generally accurate and we hope you find them helpful. (Steel Types Used in Thermoset Molds text)</p> 
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+    <div class="row section_42_bg overflow-hidden bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_42 d-flex flex-column">
+                <div class="section_42__hero d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
+                    <h2 class="section_42__header mb-0">Suggestions for Steel Types to be Used in <span class="text-blue-1">Thermoset Mold Construction</span></h2>
+                    
+                </div>
+                
+
+                {% for item in page_steel_types.section_42 %}
+                <div class="accordion accordion-flush section_42_accordion h-100" id="data-glossary__acc-{{ item.name }}">
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-{{ item.name }}__header-1">
+                            <button class="accordion-button d-flex flex-row align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-{{ item.name }}__body-1" aria-expanded="true" aria-controls="acc-{{ item.name }}__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3 col-5 col-lg-6">{{ item.header }}</p> 
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3 col-md-5 col-lg-4 d-none d-md-block"><span class="text-white-1 me-4">Hardness (RockWell C):</span>{{ item.header_2 }}</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-{{ item.name }}__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-{{ item.name }}__header-1" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column col-12 ">
+                                <div class="desktop d-none d-md-block">                                
+                                    <div class="accordion-body__headers d-flex flex-row align-items-stretch col-12">   
+                                        <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.subheader }}</span>                                        
+                                    </div>
+                                    <div class="accordion-body__values d-flex flex-row align-items-stretch col-12">
+                                        <span class="item-value ms-0 mt-1 pe-4">{{ item.value }}</span>                                        
+                                    </div>
+                                </div>
+
+                                <div class="mobile d-flex flex-column d-md-none col-12">
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">Hardness (RockWell C):</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.header_2 }}</span> 
+                                    <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.subheader }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.value }}</span>  
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container_white container cont-site">
+        <p class="text_add">This is not a complete listing of the steel that can be used in the construction of a mold to process thermoset materials, but these are some of the more commonly used grades. If you have any further questions about steel types or some other aspect of designing for or processing with thermoset materials, please contact Plastics Engineering Company, Technical Service Department.</p>
+    </div>
+
+    {% include '../components/sections/section_21.twig' with {data: page_steel_types.section_21} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

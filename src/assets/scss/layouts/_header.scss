@@ -1,0 +1,30 @@
+.header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    //overflow: hidden; //!!!
+    margin-bottom: 500x;
+
+    .navbar {
+        font-family: "Almarai-700";
+        font-size: 14px;
+    }
+
+    .nav_bottom {
+        font-family: "Mulish-800";
+        font-size: 16px;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+
+        & a {
+            text-decoration: none;
+            color: $black;
+            text-align: center;
+        }
+
+        & .space_for_logo {
+            min-width: 300px !important ;
+        }
+    }
+}

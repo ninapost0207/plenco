@@ -1,0 +1,46 @@
+.navbar {
+    //position: fixed !important;
+    //overflow: hidden !important;
+    //z-index: 1000 !important;
+    height: 32px;
+    //background-color: red;
+
+    & .navbar-nav {
+        //color: $black;
+       // margin-bottom: 0;
+
+
+        & .nav-item {
+            //padding-left: 0 !important;
+            //padding-right: 0 !important;
+            margin-left: 60px;
+
+            &::before {
+                content: "";
+                display: none;
+            }
+
+            @include respond-to(md) {
+                margin-left: 50px;
+            }
+
+            & .nav-link {
+                //padding-left: 0 !important;
+                //padding-right: 0 !important;
+                font-family: "Almarai-700";
+                font-size: 14px !important;
+
+
+                & img {
+                    //margin: 0;
+                    //padding-left: 8px;
+                }
+            }
+        }
+
+
+    }
+
+
+
+}

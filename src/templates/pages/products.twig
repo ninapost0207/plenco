@@ -1,0 +1,147 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Products' %}
+{% set pageClass = 'body_products' %}
+
+{% set page_products = {
+    heading: {
+        heading_top_text: "Products",
+        bg_img: "./assets/img/pages/products/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },    
+    section_13: {
+        class: "page_technical-service overline-r",
+        header: "Markets <span class='text-blue-1'>& Applications</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Markets & Applications",
+        link_to: "markets-applications.html"
+    },
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_products.nav_side} %}
+
+    {% include '../components/sections/section_heading_top.twig' with {data: page_products.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Phenolics are the recommended choice over 
+                        all other resin systems with respect to their exceptionally good <span class='text-blue-l2'>thermal 
+                            behavior, low smoke density and high flame resistance</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">Molding compounds engineered with either Resol or Novolac 
+                        resin systems exhibit good electrical and mechanical properties and can be used across all industry.</p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row section_40_bg overflow-hidden">
+        <div class="container cont-site section_40 col-12 d-flex flex-column">
+            <h2 class="mb-0">Plenco’s <span class="text-blue-1">Products</span></h2>
+            <div class="section_40__content row row-cols-1 row-cols-md-2 mx-n4 gx-5 align-items-stretch mt-4 mt-md-5">
+                <div class="section_40__card-wrap">
+                    <div class="card border-0 h-100 position-relative">
+                        <img src="./assets/img/pages/products/pnrs.jpg" class="card-img-top" alt="Phenolic Novolac & Resol Resins">
+                        <div class="card-body pb-0 px-0 d-flex flex-column justify-content-between">
+                            <div class="card__text-cont">
+                                <p class="card-title mt-4">Phenolic Novolac & Resol Resins</p>
+                                <p class="card-text">Our extensive range of phenolic resins are used in applications to impart a desirable 
+                                    combination of high hardness, long-term thermal and mechanical stability, high fire and flame resistance, 
+                                    combined with good electrical insulating capability.</p>
+                            </div>
+                            <div class="card_bottom-cont d-flex align-items-center border-top border-11 border-blue-l2 col-9 col-md-9 col-lg-10 mt-4">
+                                <h3 class="card__title_bottom text-blue-1 mb-0">Novolac & Resol Resins</h3>
+                            </div>
+                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                        </div>
+                        <a href="pn-rr.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="section_40__card-wrap">
+                    <div class="card border-0 h-100 position-relative">
+                        <img src="./assets/img/pages/products/pmc.jpg" class="card-img-top" alt="Phenolic Molding Compounds">
+                        <div class="card-body pb-0 px-0 d-flex flex-column justify-content-between">
+                            <div class="card__text-cont">
+                                <p class="card-title mt-4">Phenolic Molding Compounds</p>
+                                <p class="card-text">Highly engineered and custom formulated thermosets are used across a number of 
+                                    industries including automotive, aerospace, industrial, electrical and more. See how you can benefit 
+                                    from our composites.</p>
+                            </div>
+                            <div class="card_bottom-cont d-flex align-items-center border-top border-11 border-blue-l2 col-9 col-md-9 col-lg-10 mt-4">
+                                <h3 class="card__title_bottom text-blue-1 mb-0">Phenolic Molding Compounds</h3>
+                            </div>
+                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                        </div>
+                        <a href="pmc.html" class="stretched-link"></a>
+                    </div>
+                </div>
+
+                <div class="section_40__card-wrap">
+                    <div class="card border-0 h-100 position-relative">
+                        <img src="./assets/img/pages/products/bmc.jpg" class="card-img-top" alt="Phenolic Novolac & Resol Resins">
+                        <div class="card-body pb-0 px-0 d-flex flex-column justify-content-between">
+                            <div class="card__text-cont">
+                                <p class="card-title mt-4">BMC/Thermoset Polyester Molding Compounds</p>
+                                <p class="card-text">Bulk Molding Compounds are used for high-strength applications that can be evaluated 
+                                    to replace steel, die cast aluminum or iron when reduction of weight and secondary operation costs are 
+                                    important goals.</p>
+                            </div>
+                            <div class="card_bottom-cont d-flex align-items-center border-top border-11 border-blue-l2 col-9 col-md-9 col-lg-10  mt-4">
+                                <h3 class="card__title_bottom text-blue-1 mb-0">Polyester Molding Compounds</h3>
+                            </div>
+                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                        </div>
+                        <a href="bmc.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="section_40__card-wrap">
+                    <div class="card border-0 h-100 position-relative">
+                        <img src="./assets/img/pages/products/mpmc.jpg" class="card-img-top" alt="Phenolic Molding Compounds">
+                        <div class="card-body pb-0 px-0 d-flex flex-column justify-content-between">
+                            <div class="card__text-cont">
+                                <p class="card-title mt-4">Melamine-Phenolic Molding Compounds</p>
+                                <p class="card-text">Our melamine-phenolic (MP) compounds add strength and electrical insulating 
+                                    characteristics to many applications. MP molding compounds feature enhanced tracking resistance, 
+                                    arc resistance and surface abrasion during repetitive cycling.</p>
+                            </div>
+                            <div class="card_bottom-cont d-flex align-items-center border-top border-11 border-blue-l2 col-9 col-md-9 col-lg-10  mt-4">
+                                <h3 class="card__title_bottom text-blue-1 mb-0">Melamine-Phenolic Molding Compounds</h3>
+                            </div>
+                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                        </div>
+                        <a href="mp-mm.html" class="stretched-link"></a>
+                    </div>
+                </div>
+
+            </div>
+        
+        
+        </div>
+    </div>
+
+    {% include '../components/sections/section_13.twig' with {data: page_products.section_13} %}
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

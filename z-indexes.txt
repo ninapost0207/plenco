@@ -1,0 +1,19 @@
+nav_side:		100
+section_7__bg_img-cont:	110
+section_7__cards-wrap: 	120
+
+layout__line_center: 	500
+
+overline: 		1000	600
+header: 			1000
+
+
+layout__line_bottom(sm): 1500	800
+
+overline_mob: 		2000	900
+overline_mob-r: 	2000	900
+
+layout__line_bottom: 	5000
+block_cookies:		1000
+
+

@@ -1,0 +1,10 @@
+<div class="row section_16_bg overflow-hidden {{ data.class }} px-0" style="{{ data.style }}" id="section_16">
+    <div class="section_16 col px-0">
+        <div class="container cont-site">
+            <h3 class="section_16__header mb-0">{{ data.header }}</h3>
+            {% for block in data.blocks %}
+                {% include block.block with {data: block} %} 
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="block_10 {{ data.block_class }} col flex-column flex-md-row d-flex align-items-center" style="{{ data.props }}">
+    <div class="block_10__left col col-md-6">
+        <div class="block_10__img-wrap col col-md-11">
+            <img src={{ data.img }} alt={{ data.alt }} class="block_10__left__img">
+        </div>
+    </div>
+    <div class="block_10__right {{ data.line_height }} position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center">
+        <div class="block_10__text-wrap col-11 col-md-11 offset-md-1 ">
+            <h4 class="block_10__header">{{ data.header }}</h4>
+            {% for sub_block in data.sub_blocks %}
+                <div class="block_10__block-links">
+                    {% for link in sub_block %}
+                        <a href={{ link.link_to }} class="block_10__link">{{ link.text }}</a>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>                
+    </div>
+</div>

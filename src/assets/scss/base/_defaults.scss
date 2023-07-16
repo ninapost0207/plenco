@@ -1,0 +1,193 @@
+h1 {                           //heading_top header
+    font-family: "Play-700";
+    font-size: 44px !important;
+    line-height: 50px;
+    text-transform: capitalize;
+    @include ls(100);
+
+    @include respond-to(lg) {
+        font-size: 40px !important;
+        line-height: 48px;    }
+
+    @include respond-to(sm) {
+        font-size: 36px !important;
+        line-height: 44px;                    
+    }
+    @include respond-to(sm) {
+        font-size: 32px !important;
+        line-height: 32px; 
+    }
+}
+
+
+h2 {                            //header bicolor
+    font-family: "Almarai-700";
+    font-size: 28px;
+    @include ls(0);
+    text-transform: capitalize;
+    line-height: 43px;
+    margin-bottom: 0;
+    /*margin-top: 60px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;*/
+
+    @include respond-to(sm) {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    & span {
+        color: $blue-1;
+    }
+}
+
+
+h3 {                         //uppercase header
+    font-family: "Play-700";
+    font-size: 16px;
+    //line-height: 50px;
+    text-transform: uppercase;
+    @include ls(25); 
+    color: $blue-1;
+    margin-bottom: 0;
+    /*margin-top: 45px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;*/
+
+    @include respond-to(sm) {
+        line-height: 20px;
+    } 
+}
+
+
+h4 {                          //list header small
+    font-family: "Play-700";
+    font-size: 14px;
+    line-height: 16px;    
+    @include ls(75);
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+}
+
+
+h5 {                          //list header small
+    font-family: "Mulish-700";
+    font-size: 16px;
+    line-height: 28px;    
+    @include ls(25);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+a {
+    font-family: "Mulish-700";
+    font-size: 16px;
+    line-height: 24px;      
+    @include ls(25);
+    //margin-top: 24px;
+    /*margin-top: 15px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;*/
+    color: $black !important;
+    margin-bottom: 0;
+}
+
+
+
+p {
+    font-family: "Mulish-400";
+    font-size: 16px;
+    line-height: 24px;    
+    @include ls(25);
+    margin-bottom: 0;
+    //margin-top: 24px; 
+    /*margin-top: 15px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;*/
+}
+
+
+blockquote {
+    font-family: "Play-700";
+    font-size: 24px;
+    line-height: 30px;    
+    @include ls(25);
+    margin-bottom: 0; 
+    color: $blue-1;
+}
+
+
+
+ul {
+    margin-bottom: 0;
+    //margin-top: 15px !important;
+    & li {
+        font-family: "Mulish-400";
+        font-size: 16px;
+        line-height: 24px;    
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+        //margin-top: 25px !important;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-2;
+        }
+    }
+}
+
+
+ol {
+    /*margin-top: 15px !important;
+    padding-left: 16px !important;*/
+    margin-bottom: 0;
+
+    & li {
+        font-family: "Mulish-400";
+        font-size: 16px !important;
+        line-height: 24px;    
+        @include ls(25);
+        //margin-top: 24px;
+        /*margin-top: 15px !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;*/
+
+    }
+}
+
+
+.subheader {
+    font-family: "Mulish-600";
+    font-size: 20px;
+    line-height: 28px;
+    @include ls(25);
+    //margin-top: 24px;
+
+    @include respond-to(sm) {
+        font-size: 16px;
+    }
+
+    & a {
+        font-family: "Mulish-600";
+        font-size: 20px;
+        line-height: 28px;
+        @include ls(25);
+    }
+} 
+
+
+
+

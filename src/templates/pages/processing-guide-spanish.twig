@@ -1,0 +1,319 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Processing Guide (Spanish)' %}
+{% set pageClass = 'body_processing-guide-spanish' %}
+
+{% set page_technical_service = {
+    heading: {
+        heading_top_text: "Procesamiento <br>de la guida",
+        bg_img: "./assets/img/pages/processing-guide-spanish/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_21: {
+        class: "overline-r overline_mob-r",
+        header: "Reports & Resources CTA",
+        text: "Plenco’s Reports & Resources",
+        bg_img: "./assets/img/pages/polymer-rd-lab/heading.jpg",
+        button: "Reports & Resources",
+        link_to: "#",
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_technical_service.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
+    
+    
+    <div class="row section_heading_bottom bg-blue-3 {{ page_processing_guide_spanish.heading.class }}" style="{{ page_processing_guide_spanish.heading.style }}">
+        <div class="col px-0">
+            <div class="container cont-site  d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">El propósito de este manual es servir como una guía de información para los diseñadores de <span class='text-blue-l2'>productos termostáticos, diseñadores de moldeos, fabricantes de moldeos y modelistas</span></p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">Ha sido compilado por el Grupo de Servicio Técnico de Plenco a través de muchos años de experiencia en la industria de moldeo termoendurecido. Ofrecemos compartir esta información con nuestros clientes de compuestos de moldeo, sea cual sea el valor que pueda tener. Como sucede con todas las sugerencias, pueden no aplicarse necesariamente a todas las circunstancias, pero creemos que son generalmente correctas y esperamos que las encuentren útiles. (Processing Guide Spanish text)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container cont-site">
+        <div class="row section_20_bg overflow-hidden">
+            <div class="section_20 col px-0">
+                <p class="section_20__header mb-0 text_main">El manual está organizado en secciones que pertenecen al moldeo por inyección, moldeo 
+                    por compresión, moldeo por transferencia, diseño de pieza termostática, mantenimiento 
+                    preventivo de las prensas y moldes y un glosario de términos.</p>
+                <p class="section_20__text mb-0 mt-4 text_add">Aunque hemos intentado ser tan completos como ha sido posible al preparar cada sección, este 
+                    manual es un documento vivo. Por lo tanto, damos la bienvenida a cualquier comentario, o 
+                    pregunta que puedan tener cuando lo usen. (Processing Guide Spanish text)</p>
+
+                
+                <div class="block_7 col flex-column flex-md-row align-items-center d-none d-md-flex">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Introduction & Part Design tips</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Introducción</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Glosario de Términos de Moldeo Termoendurecido</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Almacenamiento de Materiales de Moldeo Termoendurecido</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Sugerencias Básicas para el Diseño de Piezas Termoendurecidas</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Moldeo por Inyección Termoendurecida</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de la Unidad de Inyección</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de Moldes de Inyección Termoendurecida</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Fenólicos y Melaminofnólicos de Moldeo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row align-items-center ms-0 ms-md-4 d-none d-md-flex">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Preforming & Preheating</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Poliésteres Granulares de Moldeo</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_7 col flex-column flex-md-row align-items-center d-none d-md-flex">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Preventative Maintenance</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Poliésteres Granulares de Moldeo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row align-items-center ms-0 ms-md-4 d-none d-md-flex">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Injection</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR INYECCIÓN.para Compuestos Fenólicos y Poliésteres Granulares</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR INYECCIÓN PARA COMPUESTOS FENÓLICOS, MELAMINOFENÓLICOS Y POLI?STERES GRANULARES</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR INYECCI?N.para Compuestos Poliésteres en Masa (BMC)</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GU?A DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR INYECCIÓN PARA COMPUESTOS POLIÉSTERES EN MASA (BMC) DE MOLDEO</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-24 d-block text-black-1">Moldeo por Compresi?n</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de Moldes de Compresión Termoendurecida</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="block_7 col flex-column flex-md-row align-items-center d-flex d-md-none">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Introduction & Part Design tips</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Introducción</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Glosario de Términos de Moldeo Termoendurecido</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Almacenamiento de Materiales de Moldeo Termoendurecido</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Sugerencias Básicas para el Diseño de Piezas Termoendurecidas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row  align-items-center ms-0 ms-md-4 d-flex d-md-none">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Preforming, Preheating & PREVENTATIVE CARE</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Preformar y Precalentar</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Mantenimiento Preventivo</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_7 col flex-column flex-md-row align-items-center d-flex d-md-none">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Injection</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Moldeo por Inyección Termoendurecida</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de la Unidad de Inyección</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de Moldes de Inyección Termoendurecida</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Fenólicos y Melaminofnólicos de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Poliésteres Granulares de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR INYECCIÓN.para Compuestos Fenólicos y Poliésteres Granulares</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR INYECCIÓN PARA COMPUESTOS FENÓLICOS, MELAMINOFENÓLICOS Y POLIESTERES GRANULARES</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Inyección para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR INYECCION. Para Compuestos Poliésteres en Masa (BMC)</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUIA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR INYECCIÓN PARA COMPUESTOS POLIÉSTERES EN MASA (BMC) DE MOLDEO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row  align-items-center ms-0 ms-md-4 d-flex d-md-none">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Compression</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Moldeo por Compresion</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de Moldes de Compresión Termoendurecida</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Compresión con Polvo Frío para Compuestos Fenólicos y Melaminofenólicos de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Compresión de Precalentar para Compuestos Fenólicos y Melaminofenólicos de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Compresion de Precalentar para Compuestos Poliésteres Granulares de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR COMPRESION. Para Compuestos Fenólicos y Poliésteres Granulares</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR COMPRESIÓN PARA COMPUESTOS FENÓLICOS, MELAMINOFENÓLICOS Y POLIÉSTERES GRANULARES</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Compresion con Polvo Frío para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Compresion de Precalentar para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR COMPRESIÓN.para Compuestos Poliésteres en Masa (BMC)</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUIA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR COMPRESIÓN PARA COMPUESTOS POLIÉSTERES EN MASA</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row align-items-center d-flex d-md-none">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-5" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-5_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Transfer</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Moldeo por Transferencia</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Consejos para el Diseño de Moldeo de Transferencia Termoendurecidaa</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Transferencia para Compuestos Fenólicos y Melaminofenólicos de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Transferencia para Compuestos Poliésteres Granulares de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR TRANSFERENCIA para Compuestos Fenólicos y Poliésteres Granulares</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR TRANSFERENCIA PARA COMPUESTOS FENÓLICOS, MELAMINOFENÓLICOS Y POLIÉSTERES GRANULARES DE MOLDEO</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Procedimiento de Arranque para Moldeo por Transferencia para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Guía de Soluciones de Problemas para el MOLDEO POR TRANSFERENCIA.para Compuestos Poliésteres en Masa (BMC)</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR TRANSFERENCIA PARA COMPUESTOS POLIÉSTERES EN MASA</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row section_22_bg overflow-hidden {{ data.class }} d-none d-md-block">
+        <div class="col">
+            <div class="container cont-site section_22 col-12 d-flex justify-content-between align-items-start">
+                <div class="section_22__left col-6 border-start border-7 border-blue-l2 pb-0 pt-4 ms-4">
+                    <div class="section_22__content-wrap col-md-10 offset-md-1">
+                        <h3 class="section_22__header mb-0 text-uppercase text-blue-1">Compression</h3>
+                        <div class="section_22__link-group mt-0">
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Preformar y Precalentar</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Procedimiento de Arranque para Moldeo por Compresión con Polvo Frío para Compuestos Fenólicos y Melaminofenólicos de Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Procedimiento de Arranque para Moldeo por Compresión de Precalentar para Compuestos Fenólicos y Melaminofenólicos de Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Procedimiento de Arranque para Moldeo por Compresi?n de Precalentar para Compuestos Poliésteres Granulares de Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Guía de Soluciones de Problemas para el MOLDEO POR COMPRESI?N.para Compuestos Fenólicos y Poliésteres Granulares</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR COMPRESIÓN PARA COMPUESTOS FENÓLICOS, MELAMINOFENÓLICOS Y POLIÉSTERES GRANULARES</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Procedimiento de Arranque para Moldeo por Compresi?n con Polvo Frío para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Procedimiento de Arranque para Moldeo por Compresi?n de Precalentar para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Guía de Soluciones de Problemas para el MOLDEO POR COMPRESIÓN.para Compuestos Poliésteres en Masa (BMC)</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-2">Filosofía de Soluciones de Problemas en Moldeo</a>
+                            <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">ÍNDICE DE LA GU?A DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR COMPRESIÓN PARA COMPUESTOS POLIÉSTERES EN MASA</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section_22__right col-6 border-start border-7 border-blue-l2 pb-5 pt-4">
+                    <div class="section_22__content-wrap col-md-10 offset-md-1">
+                        <h3 class="section_22__header mb-0 text-uppercase text-blue-1">Transfer</h3>
+                            <div class="section_22__link-group mt-0">
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Moldeo por Transferencia</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Consejos para el Diseño de Moldeo de Transferencia Termoendurecidaa</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Procedimiento de Arranque para Moldeo por Transferencia para Compuestos Fenólicos y Melaminofenólicos de Moldeo/a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Procedimiento de Arranque para Moldeo por Transferencia para Compuestos Poliésteres Granulares de Moldeo</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Guía de Soluciones de Problemas para el MOLDEO POR TRANSFERENCIA para Compuestos Fenólicos y Poliésteres Granulares</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Filosofía de Soluciones de Problemas en Moldeo</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR TRANSFERENCIA PARA COMPUESTOS FENÓLICOS, MELAMINOFENÓLICOS Y POLIÉSTERES GRANULARES DE MOLDEO</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Procedimiento de Arranque para Moldeo por Transferencia para Compuestos Poliésteres en Masa (BMC) de Moldeo</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Guía de Soluciones de Problemas para el MOLDEO POR TRANSFERENCIA.para Compuestos Poliésteres en Masa (BMC)</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">Filosofía de Soluciones de Problemas en Moldeo</a>
+                                <a href="link_document.html" class="section_22__link d-block mb-0 text-black-1 mt-4">ÍNDICE DE LA GUÍA DE SOLUCIONES DE PROBLEMAS EN MOLDEO POR TRANSFERENCIA PARA COMPUESTOS POLIÉSTERES EN MASA</a>
+                                <a  class="section_22__link d-block mb-0 text-black-1 mt-4">Mantenimiento Preventivo</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    {% include '../components/sections/section_21.twig' with {data: page_technical_service.section_21} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

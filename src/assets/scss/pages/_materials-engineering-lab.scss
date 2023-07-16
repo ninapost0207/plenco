@@ -1,0 +1,273 @@
+.body_material_engineering_lab {
+    
+    & .section_heading_bottom {    
+        height: 503px;
+
+        @include respond-to(lg) {        
+            height: 400px;
+        }
+        @include respond-to(sm) {        
+            height: 350px;
+        }
+        @include respond-to(xs) {        
+            height: 400px;
+        }
+        
+    }
+
+
+//----------------------------SECTION 8-----------------------
+& .section_8_bg {
+    background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
+    background-position:  100% 0%;
+    background-size: 100% 100%;
+
+    @include respond-to(sm) {
+        background: linear-gradient(180deg, rgba($white,1) 200px, rgba($green_el,1) 200px, rgba($green_el,1) 100%);
+    }
+}
+
+& .section_8__data {
+    padding-top: 100px;
+
+    @include respond-to(md) {
+        padding-top: 52px;
+    }
+
+    & .block_4__button {        
+        font-family: "Play-700";
+        font-size: 16px;
+        line-height: 50px;
+        @include ls(25);
+        width: 240px;
+        padding-left: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            height: 100%;
+            width: 25px;
+            background-image: url('../img/svg/arrow_down_1.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    & .section_8__img-cont {
+        overflow: hidden;
+        left: 40%;  
+        margin-left: -40%;
+        
+        @include respond-to(md) {
+            left: 25%;  
+            margin-left: 0%;
+            width: 110%;
+            overflow: hidden;
+        }
+
+        @include respond-to(sm) {
+            width: 100%;
+            height: 80vw;
+        }
+
+        & .section_8__image {
+            max-height: 826px;
+            left: calc(50% - 530px);
+
+            @include respond-to(md) {
+                max-height: 587px;
+                height: auto;
+                left: calc(50% - 500px);
+
+            }
+
+            @include respond-to(sm) {
+                max-height: none;
+                left:  0%;
+                height: 100%;
+            }
+        }
+
+    }
+
+}
+
+
+//---------------------SECTION 17----------------------
+
+.section_17_bg {
+    background: url('../img/svg/section_17_bg.svg');
+    padding-top: 291px;
+    padding-bottom: 0px;
+    background-position: 0 -630px;
+    background-repeat: no-repeat;
+
+    @include respond-to(md) {
+        background-position: -70px -700px;
+        padding-top: 191px;
+    }
+
+    @include respond-to(sm) {
+        background: none;
+        padding-top: 97px;
+    }
+
+
+}
+
+.section_17 {
+
+            & .section_17__header {
+                text-transform: none;
+            }
+    
+}
+
+
+
+
+// ----------------------SECTION 16 ------------------
+
+    & .section_16_bg {
+        background-image: none;
+
+        @include respond-to(sm) {
+            background: url('../img/svg/section_16_bg_bottom_mob.svg');
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+            padding-bottom: 142px;
+        }
+    
+    }
+
+
+      & .section_16 {
+        margin-top: 140px;
+
+        @include respond-to(sm) {
+            margin-top: 67px;
+        }
+
+        & .block_7 {
+
+            margin-top: 44px;
+        
+            @include respond-to(sm) {
+                margin-top: 25px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                    width: 100%;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 25px);
+                    }
+
+                    & .ul_1__text::before {
+                        background-color: $light-blue-3;
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+        }
+        
+    }
+
+
+
+//----------------------------SECTION 19-----------------------
+    
+    .section_19_bg {
+        background: url('../img/svg/section_18_bg.svg');
+        padding-bottom: 262px;
+        padding-top: 184px;
+        background-position: 25px 100%;
+        background-repeat: no-repeat;
+        background-size: 602px auto;
+
+
+            @include respond-to(sm) {
+                display: none;
+
+            }
+
+        }
+    
+
+    & .section_19 {
+
+
+        .block_9 {
+
+            & .block_9__name {
+                font-family: "Mulish-600";
+                font-size: 20px;
+            }
+
+        
+            & .block_9__img_phone {
+                margin-left: 6px;
+            }
+        
+            & .block_9__text {
+                font-family: "Mulish-300";
+                font-size: 14px;
+                @include ls(25);
+                margin-left: 10px;
+            }
+            
+        }
+        
+    }
+        
+    
+
+//----------------------------SECTION 13-----------------------
+
+
+    & .section_13__button {
+    }
+
+
+    
+}
+
+    
+

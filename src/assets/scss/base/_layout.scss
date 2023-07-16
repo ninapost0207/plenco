@@ -1,0 +1,315 @@
+html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer, section, nav, img, a, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+
+
+.cont-site {
+    max-width: 1184px !important; //1184-22-22=1140
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+
+
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+
+button {
+    border: none;
+}
+
+input {
+    border: none;
+}
+
+
+
+
+.layout__line_bottom {
+    top: 98.8%;
+    left: 30%;
+    width: 40%;
+    height: 5px;
+    background-color: $black;
+    border-radius: 3px;
+    z-index: 5000; 
+}
+
+
+.layout__line_center {
+    height: 300px;
+    width: 7px;
+    background-color: #FFF;
+    opacity: 0.5;
+    top: 210px;
+    left: calc(50vw - 13px) ;
+    z-index: 500 ;
+    
+    @include respond-to(sm) {
+        width: 3px;
+        top: 283px;
+        height: 182px;
+        left: calc(50vw - 10px);
+        z-index: 700;
+
+    }
+}
+
+
+
+.overline {
+    z-index: 600;
+}
+
+
+.overline-r {
+    z-index: 600;
+    position: relative;
+}
+
+.overline_mob {
+    @include respond-to(sm) {
+        z-index: 800 !important;
+    }
+}
+
+.overline_mob-r {
+    @include respond-to(sm) {
+        position: relative;
+        z-index: 800 !important;
+    }
+}
+
+
+.ul_1 {
+
+    & .ul_1__text {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-2;
+        }
+
+    }
+
+}
+
+
+.ul_2 {
+
+    & .ul_2__text {
+        font-family: "Mulish-600";
+        font-size: 16px;
+        line-height: 20px;    
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-3;
+        }
+
+    }
+
+}
+
+.ul_3 {
+
+    & .ul_3__text {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-3;
+        }
+    }
+}
+
+
+
+.ul_4 {
+
+    & .ul_4__text {
+        font-family: "Mulish-600";
+        font-size: 14px;
+        line-height: 28px;
+        @include ls(25);
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 7px;
+            width: 7px;
+            margin-right: 8px;
+            background-color: $yellow-1;
+        }
+    }
+}
+
+
+
+
+.text_heading_main {                         //bottom header
+    font-family: "Almarai-700";
+    font-size: 34px !important;
+    line-height: 46px;    
+    @include ls(50);
+
+    @include respond-to(sm) {
+        line-height: 34px;
+        font-size: 28px !important;
+    }
+    @include respond-to(sm) {
+        line-height: 28px;
+        font-size: 22px !important;
+    }
+}
+
+.text_heading_add {                       //bottom heading small
+    font-family: "Mulish-400";
+    font-size: 18px;
+    line-height: 24px;    
+    @include ls(25);
+
+    @include respond-to(sm) {
+        line-height: 22px;
+        font-size: 16px;
+    }
+}
+
+.text_main {                          //text bigger paragraph
+    font-family: "Mulish-600";
+    font-size: 20px;
+    line-height: 28px;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.text_add {                          //text small paragraph
+    font-family: "Mulish-400";
+    font-size: 16px !important; //!!!
+    line-height: 24px !important; //!!!     
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 16px !important; //!!!
+        line-height: 22px;
+    }
+}
+
+
+
+.text_li_item {                          //text link (home)
+    font-family: "Mulish-600";
+    font-size: 18px;
+    line-height: 30px;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.text-quote {                          //quote blue
+    font-family: "Play-700";
+    font-size: 30px;
+    line-height: 40px;    
+    @include ls(100);
+
+    @include respond-to(lg) {
+        font-size: 27px;
+        line-height: 36px;
+    }
+
+    @include respond-to(md) {
+        font-size: 27px;
+        line-height: 36px;        
+
+    }
+    @include respond-to(sm) {        
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+.text_quote_add {
+    font-family: "Play-400";
+    font-size: 24px;
+    line-height: 30px;    
+    @include ls(25);
+
+    @include respond-to(sm) {        
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+
+.tag-text {
+    font-family: "Mulish-300";
+    font-size: 14px;
+    @include ls(25);
+    //line-height: 34px;
+}
+
+
+.text_add_small {
+    font-family: "Mulish-400";
+    font-size: 14px;
+    line-height: 20px;    
+    @include ls(25);   
+}
+
+
+.text_add-2 {
+    font-family: "Play-700";
+    font-size: 18px;
+    line-height: 25px;    
+    @include ls(25); 
+    
+    @include respond-to(sm) {        
+        font-size: 16px;
+    }
+
+}

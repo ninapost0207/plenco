@@ -1,0 +1,107 @@
+.body_environmental-policy {
+
+    & .section_heading_top__bg_img {
+        
+        background-position: 50% 20% !important;
+        background-size: cover;
+        opacity: 0;
+        
+
+        @include respond-to(sm) {
+            background-position: 40% 100% !important;
+            background-size: auto 115% !important;
+        }
+    }
+
+    
+    & .section_heading_bottom {    
+        height: 414px;
+
+        @include respond-to(lg) {        
+            height: 400px;
+        }
+        @include respond-to(md) {        
+            height: 380px;
+        }
+        @include respond-to(sm) {        
+            height: 340px;
+        }
+        @include respond-to(xs) {        
+            height: 293px;
+        }
+    
+        
+    }
+
+//----------------------------SECTION 15----------------------
+    & .section_15_bg {
+        padding-top: 84px;
+        padding-bottom: 176px;
+
+        background-image:  url("../img/svg/section_14__bg.svg");
+        background-repeat: no-repeat;
+        background-position: 25px bottom;
+        background-size: 602px auto;
+
+
+        @include respond-to(sm) {
+            padding-top: 45px;
+            padding-bottom: 117px;
+
+            background: url("../img/svg/mosaic_3.svg");
+            background-size:  auto auto;
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+        }
+
+
+
+        & .block_7 {
+
+            margin-top: 62px;
+        
+            @include respond-to(sm) {
+                margin-top: 42px;
+            }
+            
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+            }
+        }
+
+
+        .block_6 {
+            max-width: 370px;
+            
+            & .block_6__text {
+                font-family: "Mulish-600";
+                font-size: 16px;
+                line-height: 22px;
+                @include ls(25);
+            }
+
+        }
+    }
+
+
+
+
+//-----------------SECTION 13----------------------------
+
+    & .section_13_bg {
+        @include respond-to(sm) { 
+            position: unset;
+        }
+
+        
+        & .section_13__button {
+            
+        }
+    }
+
+    
+}

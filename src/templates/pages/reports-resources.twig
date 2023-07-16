@@ -1,0 +1,605 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Reports & Resources' %}
+{% set pageClass = 'body_reports-resources' %}
+
+{% set page_reports_resources = {
+    heading: {
+        heading_top_text: "Reports & Resources",
+        bg_img: "./assets/img/pages/reports-resources/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_facility overline-r",
+        header: "Plenco’s <span class='text-blue-1'>Products</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Products",
+        link_to: "products.html"
+    },
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig'  with {data: page_reports_resources.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_reports_resources.heading} %}
+    
+    
+    <div class="row section_33_bg overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site section_33 ">
+                <h2 class="section_33__header mb-0">Plenco <span class="text-blue-1">Processing Guide</span></h2>
+                <div class="section_33__buttons d-flex flex-column flex-md-row mt-4">
+                    <a href="processing-guide.html" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 w-auto h-auto">English Processing Guide</a>
+                    <a href="processing-guide-spanish.html" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 ms-md-5 w-auto h-auto mt-3 mt-md-0">Procesamiento de la guida</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_34_bg overflow-hidden bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_34">
+                <div class="section_34__hero d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
+                    <h2 class="section_34__header mb-0">Plenco Products <span class="text-blue-1">by Series</span></h2>
+                    <div class="section_34__search-cont mt-3 mt-md-0 col-12 col-sm-auto ms-md-4">
+                        <span class="text_add section_34__search-header d-block">Search Plenco Products</span>
+                        <form class="block_input_1__searcharea d-flex flex-column flex-sm-row align-items-center mt-1" id="reports-resources__form-1">
+                            <input class="block_input_1__input form-control position-relative w-100 px-3" type="text" placeholder="Keyword or Number">
+                            <button type="submit" class="btn btn-yellow-1 block_input_1__button p-0  col-12 col-sm-auto mt-3 mt-sm-0 px-4">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush section_34_accordion h-100 mt-4" id="rep-res__accordion-1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc-1__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">00700 Products</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="#rep-res__accordion-1">
+                            <div class="accordion-body pt-0 pb-3 d-flex flex-column">
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">00714 Melamine-Phenolic</span>
+                                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1"></div>
+
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="link_document.html" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="link_document.html" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-sm-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4 mt-2 mt-sm-0">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">00755 Melamine-Phenolic</span>
+                                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1 "></div>
+
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="link_document.html" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="link_document.html" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+
+                                <a href="series-00700.html" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 00700 Series Details</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-1__header-2">
+                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-2" aria-expanded="true" aria-controls="acc-1__body-2">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">01500 Products</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-1__body-2" class="accordion-collapse collapse" aria-labelledby="acc-1__header-2" data-bs-parent="#rep-res__accordion-1">
+                            <div class="accordion-body pt-0 pb-3 d-flex flex-column">
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">01501 Melamine-Phenolic</span>
+                                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1"></div>
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="link_document.html" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="link_document.html" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-sm-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4 mt-2 mt-sm-0">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">01555 Melamine-Phenolic</span>
+                                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1 "></div>
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="link_document.html" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="link_document.html" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+                                <a href="series-01500.html" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 01500 Series Details</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    {% for i in 2..8 %}
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-1__header-{{ i }}">
+                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-{{ i }}" aria-expanded="true" aria-controls="acc-1__body-{{ i }}">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">0{{ i }}000 Products</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-1__body-{{ i }}" class="accordion-collapse collapse" aria-labelledby="acc-1__header-{{ i }}" data-bs-parent="#rep-res__accordion-1">
+                            <div class="accordion-body pt-0 pb-3 d-flex flex-column">
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">02100 Melamine-Phenolic</span>
+                                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1"></div>
+
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="link_document.html" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="link_document.html" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-sm-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4 mt-2 mt-sm-0">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">0XXXXX Not provided</span>
+                                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Not provided</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1 "></div>
+
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="link_document.html" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="link_document.html" class="accordion__item__link text-black-1">Method 1</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Method 2</a>
+                                            <a href="link_document.html" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Method 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+                                <a href="series-0{{ i }}000.html" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 0{{ i }}000 Series Details</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_27_bg">
+        <div class="col px-0">
+            <div class="container cont-site section_27 d-flex flex-column justify-content-center">
+                <h2 class="section_27__header text-start mb-0">Technical <span class="text-blue-1">Tips</span></h2>
+
+                <div class="section_27__blocks row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mx-n2 mt-1">
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3">
+                            <div class="d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__header mb-0 text-blue-l3">Runner Design Tips</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                            <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-l3 d-inline-block">Runner Design</h3>
+                                </div> 
+                                <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="runner-design-tips.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3">
+                            <div class="d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__header mb-0 text-blue-l3">Mold Vent Tips</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                            <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-l3 d-inline-block">Mold Vent</h3>
+                                </div> 
+                                <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="mold-vent-tips.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3">
+                            <div class="d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__header mb-0 text-blue-l3">Steel Types Used in Thermoset Molds</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                            <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-l3 d-inline-block">Steel Types</h3>
+                                </div> 
+                                <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                            </div>
+                            <a href="steel-types.html" class="stretched-link "></a>
+                        </div>    
+                    </div>
+                </div>
+
+                <h4 class="mt-5 mb-0">Other Tips</h4>
+                <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                    <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                    <span class="text_li_item text-black-1 text-decoration-underline">Phenolic Post Bake Detail (PDF)</span>
+                </a>
+                <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                    <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                    <span class="text_li_item text-black-1 text-decoration-underline">Phenolic Post Bake Summary (PDF)</span>
+                </a>
+                <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                    <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                    <span class="text_li_item text-black-1 text-decoration-underline">Mold Shrinkage (PDF)</span>
+                </a>
+                <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                    <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                    <span class="text_li_item text-black-1 text-decoration-underline">Converting and Injection Press to Thermoplastic to Thermoset Molding (PDF)</span>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="row section_35_bg overflow-hidden bg-grey-2">
+        <div class="col px-0">
+            <div class="container cont-site section_35">
+                <h2 class="section_35__header mb-0">Molding Product <span class="text-blue-1">Guidelines</span></h2>
+                
+
+                <div class="accordion accordion-flush section_35_accordion h-100" id="rep-res__accordion-2">
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-2__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-1" aria-expanded="true" aria-controls="acc-2__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Compression Molding Guidelines</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-2__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-1" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column">
+                                <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
+                                <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
+                                    <a href="cmg-bmc.html" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
+                                    <a href="cmg-granular-polyester.html" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
+                                    <a href="cmg-single-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
+                                    <a href="cmg-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-2__header-2">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-2" aria-expanded="true" aria-controls="acc-2__body-2">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">CP Compression Molding Guidelines</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-2__body-2" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-2" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column">
+                                <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
+                                <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
+                                    <a href="cp-cmg-single-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
+                                    <a href="cp-cmg-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-2__header-3">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-3" aria-expanded="true" aria-controls="acc-2__body-3">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Transfer Molding Guidelines</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-2__body-3" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-3" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column">
+                                <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
+                                <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
+                                    <a href="tmg-bmc.html" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
+                                    <a href="tmg-granular-polyester.html" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
+                                    <a href="tmg-single-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
+                                    <a href="tmg-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-2__header-4">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2__body-4" aria-expanded="true" aria-controls="acc-2__body-4">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Injection Molding Guidelines</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-2__body-4" class="accordion-collapse collapse show" aria-labelledby="acc-2__header-4" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column">
+                                <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
+                                <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
+                                    <a href="img-bmc.html" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
+                                    <a href="img-granular-polyester.html" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
+                                    <a href="img-single-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single Stage Phenolic</a>
+                                    <a href="img-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Two Stage Phenolic</a>
+                                    <a href="img-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row section_36_bg overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site section_36 border-bottom border-1 border-blue-l2">
+                <h2 class="section_36__header mb-0">Plenco <span class="text-blue-1">Resources</span></h2>
+
+                <div class="section_36__central d-flex flex-column flex-md-row mt-4 align-items-stretch pb-md-4">
+
+                    <div class="block_6 position-relative bg-grey-2 d-flex flex-column justify-content-between py-3 me-md-5 col-sm-8 col-md-4 ">
+                        <div class="block_6__header d-flex align-items-center ps-4 pe-5 flex-grow-1">
+                            <p class="block_6__text mb-0 text-black-1">Plenco’s Glossary of Databook Tests</p>
+                        </div>
+                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                        <div class="block_6__links mt-2 ps-4 pe-5">
+                            <div class="block_6__link text-decoration-none">
+                                <h3 class="mb-0 text-blue-1 d-inline-block">Data Glossary</h3>
+                            </div> 
+                            <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                        </div>
+                        <a href="data-glossary.html" class="stretched-link "></a>
+                    </div>    
+
+                    <div class="section_36__links d-flex flex-column ms-md-5 justify-content-between col-12 col-md-6 mt-4 mt-md-0">
+                        <h4 class="section_36__links__header">Other Resourcesdg</h4>
+                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                            <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                            <span class="text_li_item text-black-1 text-decoration-underline">Convert Inches to Decimals (PDF)</span>
+                        </a>
+                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                            <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                            <span class="text_li_item text-black-1 text-decoration-underline">Convert Specific Gravity (PDF)</span>
+                        </a>
+                        <a href="link_document.html" class="accordion__item__download d-flex align-items-center mt-3">
+                            <img src="./assets/img/svg/icon_download.svg" class="h-100 me-2" alt="">
+                            <span class="text_li_item text-black-1 text-decoration-underline">Weight of 1,000 Pieces (PDF)</span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="section_36__buttons d-flex flex-column flex-md-row mt-5">
+                    <a href="storage-therm-materials.html" class="btn btn-yellow-1 section_36_button align-self-sm-center px-4 py-3 col-12 col-sm-8 col-md-4 h-auto me-md-5">Storage of Materials</a>
+                    <a href="materials-engineering-lab.html" class="btn btn-yellow-1 section_36_button align-self-sm-center px-4 py-3 ms-md-5  col-12 col-sm-8 col-md-4 h-auto mt-3 mt-md-0">Engineering Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row section_30_bg overflow-hidden">
+        <div class="container cont-site section_30 col-12 d-flex flex-column">
+            <h2 class="section_30__header">Plenco’s White Papers<span class="text-blue-1">White Papers</span> </h2>
+            <div class="section_30__cards row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5 mx-n4 align-items-stretch">
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading Placeholder text text</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">White Paper</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading consetetur sadipscing elitr</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Resol Resin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">Watch Video</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading Placeholder text text</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">White Paper</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading consetetur sadipscing elitr</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">Resol Resin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">Watch Video</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+
+                <div class="section_30__card-wrap pt-sm-5">
+                    <div class="section_30__card border-start border-7 border-yellow-1 px-3 d-flex flex-column justify-content-evenly h-100 py-5 py-sm-4 position-relative">
+                        <p class="text_main mb-0 text-black-1">Resources Example Heading Placeholder text text</p>
+                        <div class="section_30__tags d-flex flex-wrap mx-n1 mt-3">
+                            <div class="block_tag_1-wrap px-1 py-1">
+                                <div class="text-decoration-none"> 
+                                    <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                        <p class="block_tag_1__text text-black-1 text-center mb-0">White Paper</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="news-blog.html" class="section_30__button btn btn-yellow-1 section_28__button col-12 col-sm-auto px-2 px-sm-4 align-self-center">View all White Papers</a>
+
+        </div>
+    </div>
+
+    {% include '../components/sections/section_13.twig' with {data: page_reports_resources.section_13} %}
+
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

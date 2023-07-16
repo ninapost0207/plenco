@@ -1,0 +1,242 @@
+.body_mold-vent-tips {
+    
+    & .section_heading_top__bg_img {
+        
+        background-position: 60% 100% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 40% 70% !important;
+            background-size: 150% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 40% 50% !important;
+            background-size: 200% !important;
+        }
+    }
+    & .section_heading_bottom {    
+        height: 506px;
+
+        @include respond-to(md) {        
+            height: 520px;
+        }
+        
+        @include respond-to(xs) {        
+            height: 532px;
+        }    
+    }
+
+//----------------------------SECTION 8-----------------------
+    & .section_8_bg {
+        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 120px;
+        background-position: 100% 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include respond-to(md) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+            padding-bottom: 43px;
+        }
+        @include respond-to(sm) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 24%, rgba(231,242,242,1) 24%, rgba(231,242,242,1) 100%);
+        }
+        @include respond-to(xs) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 18%, rgba(231,242,242,1) 18%, rgba(231,242,242,1) 100%);
+        }
+    }
+
+    & .section_8__data {
+        padding-top: 100px;
+
+        @include respond-to(md) {
+            padding-top: 52px;
+        }
+
+        & .block_4__button {  
+            min-width: 260px;      
+        }
+
+
+
+        & .section_8__img-cont {
+            overflow: hidden;
+            left: 40%;  
+            margin-left: -40%;
+            
+            @include respond-to(md) {
+                left: 25%;  
+                margin-left: 0%;
+                width: 110%;
+                overflow: hidden;
+            }
+
+            @include respond-to(sm) {
+                width: 100%;
+                height: 80vw;
+            }
+
+            & .section_8__image {
+                max-height: 826px;
+                left: calc(50% - 950px);
+    
+                @include respond-to(md) {
+                    max-height: 587px;
+                    height: auto;
+                    left: calc(50% - 650px);
+                }
+    
+                @include respond-to(sm) {
+                    max-height: none;
+                    left:  -45%;
+                    height: 100%;
+                }
+            }
+
+        }
+
+
+
+    }
+
+//------------------------------------------------------------
+    
+    & .container_grey {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-top: 65px;
+
+        @include respond-to(sm) {
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        & .text-add-italic {
+            font-family: "Mulish-Italic";
+            font-size: 16px !important; //!!!
+            line-height: 24px !important; //!!!     
+            @include ls(25);    
+        }
+    }
+//----------------------------SECTION 13-----------------------
+
+
+    //& .section_13__button {
+   // }
+
+
+//---------------------------SECTION 21--------------------------
+
+
+.section_21_bg {
+    min-height: 182px;
+    background-image: url('../img/pages/polymer-rd-lab/heading.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+
+    @include respond-to(md) {
+        min-height: 254px;
+        overflow: visible;
+    }
+}
+
+
+.section_21 {
+    background-color: rgba($blue-1, 0.85);
+    //min-height: 182px;
+
+    @include respond-to(sm) {
+        //min-height: 254px;
+        //padding-bottom: 22px;
+    }
+
+
+    & .section_21__content {
+
+        & .section_21__left {
+    
+        
+            & .section_21__text {
+                font-family: "Muli-600";
+                @include ls(50);
+                line-height: 30px;
+                font-size: 24px;
+                margin-top: 7px;
+                
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 26px;
+                    margin-top: 15px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 7px;
+                width: 450px;
+                background-color: $light-blue-2;
+                left: -480px;
+                top: 27px;
+
+                
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+    
+        }
+
+        & .section_21__right {
+
+            & .section_21__button {
+                width: 331px;
+
+                @include respond-to(sm) {
+                    width: 251px;
+                    margin-top: 23px;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 7px;
+                width: 450px;
+                background-color: $light-blue-2;
+                right: -482px;
+                top: 22px;
+
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    &::before {
+
+        @include respond-to(md) {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -21px;
+            width: 7px;
+            height: 62px;
+            background-color: $light-blue-2;
+        }
+    }
+
+
+}
+
+}
+
+    
+

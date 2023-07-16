@@ -1,0 +1,127 @@
+.section_heading_top_bg {
+    padding-top: 0 !important;
+
+    & .section_heading_top__bg_img-cont {
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 305px;
+        background-color: $blue-1;
+        //z-index: 110;
+
+        @include respond-to(sm) {
+            height: 430px;
+        }
+
+        & .section_heading_top__bg_img {
+            margin: 0s;
+            padding: 0; 
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            opacity: .5;
+
+            @include respond-to(sm) {
+                background-position: 35% 100%;
+                background-size: auto 130%;
+            }
+        }
+
+    }
+
+}
+
+
+.section_heading_top {
+    height: 305px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 142px;
+
+    @include respond-to(sm) {
+        height: 430px;
+        padding-top: 248px;
+        padding-bottom: 0;
+    }
+
+    & .section_heading_top__center-block__cont {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        
+        
+        background-color: $dark-blue-1;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include respond-to(lg) {
+            width: 500px;
+            padding-left: 43px;
+            padding-right: 43px;
+        }
+
+        
+        @include respond-to(md) {
+            max-width: 400px;
+            width: auto;
+        }
+
+        @include respond-to(sm) {
+            max-width: 400px !important;
+            height: 93px;
+        }
+
+        @include respond-to(xs) {
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 286px;
+        }
+        & .section_heading_top__center__subheader {
+            font-family: "Play-700";
+            font-size: 16px;
+            line-height: 30px;
+            @include ls(25);
+            color: $light-blue-2;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0 !important;
+
+            @include respond-to(md) {
+                line-height: 20px;
+            }
+        }
+
+        & .section_heading_top__center__header {
+            font-family: "Play-700";
+            font-size: 44px;
+            line-height: 48px;
+            @include ls(100);
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+            color: $white;
+
+
+            @include respond-to(sm) {
+                font-size: 38px;
+                line-height: 35px;
+            }
+
+            @include respond-to(xs) {
+                font-size: 30px;
+                line-height: 32px;
+            }
+        }
+    
+
+        @include respond-to(md) {
+            max-width: 410px !important;
+        }
+
+
+    }
+
+}

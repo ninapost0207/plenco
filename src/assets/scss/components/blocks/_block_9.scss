@@ -1,0 +1,36 @@
+/*.block_9 {
+
+
+    & .block_9__name {
+        font-family: "Mulish-600";
+        font-size: 20px;
+        color: $black;
+    }
+
+    & .block_9__title {
+        font-family: "Play-700";
+        font-size: 16px;
+        @include ls(25);
+        color: $blue-1;
+        margin-top: 10px;
+    }
+
+    & .block_9__item {
+        margin-top: 9px;
+
+        & .block_9__img_phone {
+            margin-left: 6px;
+        }
+
+        & .block_9__text {
+            font-family: "Mulish-300";
+            font-size: 14px;
+            @include ls(25);
+            color: $black;
+            margin-left: 10px;
+        }
+    
+    }
+
+}
+*/

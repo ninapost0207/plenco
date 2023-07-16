@@ -1,0 +1,454 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Careers' %}
+{% set pageClass = 'body_careers' %}
+
+{% set page_careers = {
+    heading: {
+        heading_top_text: "Careers at Plenco",
+        bg_img: "./assets/img/pages/careers/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_technical-service overline-r",
+        header: "About <span class='text-blue-1'>Plenco</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "about",
+        link_to: "about.html"
+    },
+}%} 
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig'  with {data: page_careers.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_careers.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0 d-none d-md-block">Explore careers that will help define <span class='text-blue-l2'>a new era of thermoset polymers</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1 d-none d-md-block">Our vision is to create a world that utilizes material science to advance technical projects in many areas including the energy, automotive, and aerospace industries.</p> 
+                </div>
+
+
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0 d-md-none">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna  <span class='text-blue-l2'>aliquyam erat, sed diam voluptua</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1 d-md-none">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <div class="row section_12_bg col-12 overline_mob-r position-relative">
+        <div class="section_12 col-12 px-0">
+            <div class="container cont-site">
+                <div class="section_12__data d-none d-md-flex align-items-start justify-content-between flex-nowrap position-relative">
+                    <div class="section_12__textarea col-12 col-md-5 position-relative">
+                        <div class="section_12__textarea-wrap col-md-11 px-0">
+                            <h2 class="section_12__header mb-0">Commitment to <span class="text-blue-1">Our Team</span></h2>
+                            <p class="section_12__text text_main mb-0 mt-3">Our diverse team of employees bring their collective passions for 
+                                chemistry, engineering, technology and design to deliver on this future vision. Every role at Plenco offers the 
+                                opportunity to make a difference. From developing new chemistry to manufacturing high-quality products for our 
+                                customers, everyone has an important role to play. Plenco offers enriching opportunities for everyone. </p>
+                            <p class="section_12__text_add text_add mb-0 mt-3">Are you ready for a rewarding career where you can contribute 
+                                to building a better future? Check out Joining the Plenco team.</p>
+                        </div>
+                    </div>
+                    <div class="section_12__videoarea px-0 col-md-7">
+                        <iframe class="section_12__video col-12" src="https://www.youtube.com/embed/hS5CfP8n_js" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        <p class="section_12__video-descr text_quote_add mb-0 col-11 offset-1 mt-5 pt-2 text-blue-3">“Placeholder pulled quote: Lorem ipsum dolor sit amet, 
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
+                            dolore magna aliquyam erat, sed diam voluptua.”</p>
+                    </div> 
+                </div>
+    
+                <div class="section_12__data_mob position-relative d-flex flex-column d-md-none">
+                    <h2 class="section_12__header mb-0">Commitment to <span class="text-blue-1">Our Team</span></h2>
+                    <iframe class="section_12__video col-12 mt-4" src="https://www.youtube.com/embed/hS5CfP8n_js" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    <p class="section_12__text text_main mb-0 mt-5">About Plenco’s commitment to their employees placeholder. Lorem ipsum dolor sit amet, 
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                    <p class="section_12__text_add text_add mb-0 mt-4 pt-2 mb-0">About Plenco’s commitment to their employees placeholder. Lorem ipsum 
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                    <div class="section_12__quote-cont bg-blue-l1 mt-5 mx-n4 py-4 px-4">
+                        <p class="section_12__video-descr text_quote_add mb-0 text-end text-blue-3 ">“Thank you for your interest in Plastics 
+                            Engineering Company. We would like to tell you more about our company, products, people and philosophy. Building mutually 
+                            beneficial relationships built on respect, honesty, integrity and creativity is our mission.”<br> – Mike Brotz President & CEO”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_12__bg-img_bottom col-12 position-absolute d-none d-md-block"></div>
+    </div>
+
+
+
+
+    <div class="row section_28_bg col-12 overline_mob-r position-relative">
+        <div class="row section_28 overflow-hidden">
+            <div class="col px-0">
+                <div class="container cont-site col-12 d-flex ">
+                    <div class="section_28__left col-3 py-4 pe-5 d-none d-md-block ">
+                        <div class="section_28__left__content-cont border-start border-7 border-blue-l2 ms-n3 ps-3 py-3">
+                            <a href="#case" class="section_28__left__link text-decoration-none d-flex">
+                                <h3 class="text-blue-l2 mb-0">All Jobs</h3>
+                            </a>
+                            <a href="#thermal" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                <h3 class="text-blue-1 mb-0">Operations</h3>
+                            </a>
+                            <a href="#dma" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                <h3 class="text-blue-1 mb-0">Research &<br>Development</h3>
+                            </a>
+                            <a href="#compressive" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                <h3 class="text-blue-1 mb-0">Engineering</h3>
+                            </a>
+                            <a href="#thread" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                <h3 class="text-blue-1 mb-0">Office</h3>
+                            </a>
+                            <a href="#surface" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                <h3 class="text-blue-1 mb-0">Production</h3>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="section_28__right col-12 col-md-9 ps-md-5">
+                        <div class="section_28__data d-flex flex-column position-relative">
+     
+                            <div class="accordion accordion-flush section_28_accordion d-md-none mt-5 col-12 mb-3" id="oil-accordion-nav">
+                                <div class="row ">
+                                    <div class="acc__item-wrap col-12 px-0">
+                                        <div class="accordion-item ">
+                                            <h2 class="accordion-header border-bottom border-7 border-yellow-1" id="acc-nav__header-1">
+                                                <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-white-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-nav__body-1" aria-expanded="true" aria-controls="acc-nav__body-1">
+                                                    <h3 class="accordion-header d-block mb-0 text-uppercase text-blue-1">All Jobs</h3> 
+                                                </button>
+                                            </h2>
+                                            <div id="acc-nav__body-1" class="accordion-collapse collapse" aria-labelledby="acc-nav__header-1" data-bs-parent="">
+                                                <div class="accordion-body pt-2 pb-0">
+                                                    <a href="#thermal" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                        <h3 class="text-blue-1 mb-0">Operations</h3>
+                                                    </a>
+                                                    <a href="#dma" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                        <h3 class="text-blue-1 mb-0">Research & Development</h3>
+                                                    </a>
+                                                    <a href="#compressive" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                        <h3 class="text-blue-1 mb-0">Engineering</h3>
+                                                    </a>
+                                                    <a href="#thread" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                        <h3 class="text-blue-1 mb-0">Office</h3>
+                                                    </a>
+                                                    <a href="#surface" class="section_28__left__link text-decoration-none mt-4 d-flex">
+                                                        <h3 class="text-blue-1 mb-0">Production</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+    
+                            <div class="gallery_jobs row row-cols-1 row-cols-sm-2 row-cols-lg-3 mx-n3 g-4 mt-n2 align-items-stretch">
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                            <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Maintenance Technician</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a href="job-opening.html" class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Quality Control Lab Technician</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a  class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">SHE (Safety, Health & Environment) Manager</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a  class="stretched-link block__link"></a>
+                                            <a class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">R&D Principal Chemist</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Quality Control Lab Technician</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Maintenance Technician</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="block_6-wrap">
+                                    <div class="block_6 position-relative bg-blue-3 d-flex flex-column justify-content-between py-3 h-100">
+                                        <div class="d-flex align-items-start px-4 flex-grow-1 flex-column justify-content-center">
+                                            <p class="block_6__header mb-0 text-blue-l3">Placeholder</p>
+                                            <p class="block_6__subheader text-white-1 mb-0">Sheboygan, WI</p>
+                                        </div>
+                                        <div class="block_6__line h-0 w-50 border-bottom border-1 border-white-1 ms-4"></div>
+                                        <div class="block_6__links mt-3 mb-1 ps-4 pe-5">
+                                            <div class="block_6__link text-decoration-none">
+                                                <h3 class="mb-0 text-blue-l3 d-inline-block">View Opening</h3>
+                                            </div> 
+                                            <a class="stretched-link block__link"></a>
+                                            <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0 "></div>
+                                        </div>
+                                    </div>       
+                                </div>
+                            </div>
+            
+            
+                            <div class="allery_jobs__pages d-flex w-100 align-items-center justify-content-center">
+                                    <div role="button" class="gallery_jobs__control d-flex align-items-center justify-content-center h-100" data-pager="back">
+                                        <img src="./assets/img/svg/arrow-pages-left.svg" alt="Back" class="page-arrow me-2" data-pager="back">
+                                    </div>
+    
+                                    <div role="button" class="gallery_jobs__control d-flex align-items-center justify-content-center h-100 text-blue-3 selected" data-pager="2">1</div>
+                                    <div role="button" class="gallery_jobs__control d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="2">2</div>
+                                    <div role="button" class="gallery_jobs__control d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="3">3</div>
+                                    <div role="button" class="gallery_jobs__control d-flex align-items-center justify-content-center h-100 text-blue-3" data-pager="4">4</div>
+    
+                                    <div role="button" class="gallery_jobs__control d-flex align-items-center justify-content-center h-100" data-pager="next">
+                                        <img src="./assets/img/svg/arrow-pages-right.svg" alt="Next" class="page-arrow me-2"  data-pager="next">
+                                    </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include '../components/sections/section_13.twig' with {data: page_careers.section_13} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

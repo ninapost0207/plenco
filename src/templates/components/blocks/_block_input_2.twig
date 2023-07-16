@@ -1,0 +1,8 @@
+<div class="block_input_2__inputarea d-flex flex-column align-items-start w-100 mb-4">
+    <p class="block_input_2__inputarea__header mb-2">{{ param.header }}</p>
+    {% if param.required == true %}
+        <input type="{{ param.type }}" class="block_input_2__inputarea__input border border-2 border-blue-1 validate col-12 px-3" {{ param.add }} placeholder="{{ param.placeholder }}" required>
+    {% else %}
+        <input type="{{ param.type }}" class="block_input_2__inputarea__input border border-2 border-blue-1 col-12 px-3" {{ param.add }} placeholder="{{ param.placeholder }}">
+    {% endif %}
+</div> 

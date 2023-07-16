@@ -1,0 +1,242 @@
+.btn-yellow-1 {
+    height: 52px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    font-size: 20px !important;
+    color: black !important;
+    text-decoration: none;
+    border: none !important;
+    border-radius: 0 !important;
+    @include ls(75);
+    text-transform: uppercase;
+    font-family: "Mulish-800";
+    box-shadow: 0 !important;
+    width: $btn-standard-width;
+    outline: 0 !important;
+
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+    }
+    
+
+    @include respond-to(sm) {
+        font-size: 16px !important;
+        line-height: 20px;
+    }
+ }
+
+
+
+ /*
+.button_yellow {
+    @include button_yellow(0px, 52px, 100%);
+    @include ls(75);
+}
+*/
+
+.button_yellow_nav {
+    height: 100%;
+    @include button_yellow(70px, 100%, 215px );
+    position: relative;
+    font-family: "Mulish-800";
+    font-size: 16px;
+    white-space: nowrap;
+    background-color: $yellow-1;
+
+    &::after {
+        content: "";
+        height: 2px;
+        width: 45px;
+        position: absolute;
+        background-color: $blue-1;
+        margin-left: 170px;
+    }
+
+    &::before {
+        content: "";
+        height: 2px;
+        width: 65px;
+        position: absolute;
+        background-color: $blue-1;
+        margin-right: 190px;
+    }
+} 
+
+
+.button_yellow_nav_mob {
+    height: 100%;
+    @include button_yellow(0px, 84px, 84px );
+    position: relative;
+    font-family: "Mulish-800";
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: $yellow-1;
+
+    &::after {
+        content: "";
+        top: 42px;
+        height: 1px;
+        width: 17px;
+        position: absolute;
+        background-color: $blue-1;
+        margin-left: 66px;
+    }
+
+    &::before {
+        content: "";
+        height: 1px;
+        top: 42px;
+        width: 42px;
+        position: absolute;
+        background-color: $blue-1;
+        margin-right: 90px;
+    }
+
+    & .button_yellow_nav_mob_anim {
+        transition: $nav-btn-change;
+        width: 16px;
+        height: 3px;
+    }
+
+    & .button_yellow_nav_mob__top_left {
+        top: 30px;
+        left: 26px;
+    }
+
+    & .button_yellow_nav_mob__top_right {
+        top: 30px;
+        right: 26px;
+    }
+
+    & .button_yellow_nav_mob__middle {
+        transition: $nav-btn-change;
+        top: 40px;
+        left: 26px;
+        width: 32px;
+        height: 3px;
+    }
+
+    & .button_yellow_nav_mob__bottom_left {
+        top: 50px;
+        left: 26px;
+    }
+
+    & .button_yellow_nav_mob__bottom_right {
+        top: 50px;
+        right: 26px;
+    }
+
+
+    & .button_yellow_nav_mob__text-cont {
+
+        & .button_yellow_nav_mob__text_1 {
+            transition: $nav-btn-change;
+        }
+
+    }
+    
+
+    &.opened {
+
+        & .button_yellow_nav_mob_anim {
+            transition: $nav-btn-change;
+            width: 15px;
+        }
+         
+        & .button_yellow_nav_mob__top_left {
+            transform-origin: 0 0;
+            transform:  translate(7px,0px) rotate(45deg);
+        }
+
+        & .button_yellow_nav_mob__top_right {
+            transform-origin: 100% 0;
+            transform: translate(-7px,0px) rotate(-45deg);
+        }
+    
+        & .button_yellow_nav_mob__middle {
+            transition: $nav-btn-change;
+            opacity: 0;
+        }
+
+        & .button_yellow_nav_mob__bottom_left {
+            transform-origin: 0 100%;
+            transform: translate(6px,0px) rotate(-45deg);
+        }  
+    
+        & .button_yellow_nav_mob__bottom_right {
+            transform-origin: 100% 100%;
+            transform: translate(-6px,0px) rotate(45deg);
+        }
+
+        & .button_yellow_nav_mob__text-cont {
+
+            & .button_yellow_nav_mob__text_1 {
+                transition: $nav-btn-change;
+                margin-top: -21px;
+            }
+
+        }
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+.button_arrow_45_r {
+    @include button_yellow(0px, 45px, 45px );
+    background-image: url("../img/svg/arrow_right.svg");
+    background-size: contain;
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+        outline: 0;
+    }
+}
+
+.button_arrow_60_r {
+    @include button_yellow(0px, 60px, 60px );
+    min-width: 60px;
+    min-height: 60px;
+    background-image: url("../img/svg/arrow_right.svg");
+    background-size: contain;
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    z-index: 30;
+
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+        outline: 0;
+    }
+}
+
+
+
+
+.btn_ylw {
+    @extend .btn;
+    @extend .btn-yellow-1;
+    margin-top: 28px;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    height: auto !important;
+    min-height: 52px;
+    white-space: nowrap;
+    width: auto !important;
+    min-width: 252px;
+}

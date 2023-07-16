@@ -1,0 +1,648 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Data Glossary' %}
+{% set pageClass = 'body_data-glossary' %}
+
+{% set page_data_glossary = {
+    heading: {
+        heading_top_text: "Data Glossary",
+        bg_img: "./assets/img/pages/data-glossary/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_42: [
+        {
+            name: 1,
+            header: "Apparent Density",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The weight of the loose powder per unit volume including voids inherent in the powder as tested.",
+                "ASTM<br>D1895",
+                "g/cc",
+                "lb/ft3",
+                "62.43"
+            ],
+        },
+        {
+            name: 2,
+            header: "Specific Gravity",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "The density of a material in the molded form compared to the density of water.",
+                "ASTM<br>D792",
+                "",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 3,
+            header: "Mold Shrinkage",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                ""
+            ],
+            values: [
+                "The difference in dimension between the mold cavity when at room temperature and the molded test specimen after it has cooled to room temperature.",
+                "ASTM<br>D955",
+                "m/m",
+                "in/in",
+                ""
+            ],
+        },
+        {
+            name: 4,
+            header: "Post Shrinkage",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "",
+                ""
+            ],
+            values: [
+                "The additional shrinkage of the molded test specimen when subjected to a given environment or condition over a period of time, expressed as a percent change in dimension.",
+                "PLENCO",
+                "%",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 5,
+            header: "Izod Impact Strength",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The energy necessary for a pendulum hammer to fracture a standard notched bar held vertically in a cantilever position.",
+                "ASTM<br>D256",
+                "J/m",
+                "ft*lb/in",
+                "0.01873"
+            ],
+        },
+        {
+            name: 6,
+            header: "Charpy impact Strength",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The energy necessary for a pendulum hammer to fracture a standard notched bar that is positioned horizontally, supported at the ends, and struck in the center.",
+                "ASTM D",
+                "J/m",
+                "ft*lb/in",
+                "0.01873"
+            ],
+        },
+        {
+            name: 7,
+            header: "Drop Ball",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The energy necessary to fracture a 1/8” x 4” diameter molded disc supported on its circumference when subjected to the repeated drops of a ball of specified weight from ever increasing heights. ",
+                "PLENCO",
+                "J/m",
+                "ft*lb/in",
+                "0.01873"
+            ],
+        },
+        {
+            name: 8,
+            header: "Tensile Strength",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The maximum tensile stress or pull required to break a standard test specimen.",
+                "ASTM<br>D638",
+                "MPa",
+                "psi",
+                "145.04"
+            ],
+        },
+        {
+            name: 9,
+            header: "Tensile Modulus",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "Tensile Modulus, or modulus of elasticity, or Young’s modulus represents a material’s ability to deform elastically when a force is applied to it. The elastic modulus of an object is defined as the slope of its stress-strain curve in the elastic deformation region.",
+                "ASTM<br>D638",
+                "MPa",
+                "psi",
+                "145.04"
+            ],
+        },
+        {
+            name: 10,
+            header: "Tensile Elongation",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "",
+                ""
+            ],
+            values: [
+                "A measure of a material’s ductility and represents the amount that a standard specimen stretches within a specific gage length before it fractures; it is expressed as a percent change in gage length.",
+                "ASTM<br>D638",
+                "%",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 11,
+            header: "Poisson’s Ratio in tensile",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "Poisson’s Ratio is the ratio of the longitudinal elastic deformation produced by a simple tensile test to the lateral deformation that must simultaneously occur.",
+                "ASTM<br>D638",
+                "",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 12,
+            header: "Flexural Strength",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The ability of a material to withstand a bending force calculated from the load required to break a standard test specimen when tested in a three point loading situation.",
+                "ASTM<br>D790",
+                "MPa",
+                "psi",
+                "145.04"
+            ],
+        },
+        {
+            name: 13,
+            header: "Compressive Strength",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The ability to resist a crushing force, calculated from the load at failure and the original cross sectional area of the specimen.",
+                "ASTM<br>D695",
+                "MPa",
+                "psi",
+                "145.04"
+            ],
+        },
+        {
+            name: 14,
+            header: "Heat Resistance",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The temperature at which a molded test specimen can retain 75% of its original flexural strength after 7 days of exposure to that temperature.",
+                "ASTM<br>D794",
+                "ºC",
+                "°F",
+                "(ºC+1.8)+32"
+            ],
+        },
+        {
+            name: 15,
+            header: "Deflection Temperature",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The oil temperature at which a submerged test specimen is deflected 0.010” under a fiber stress of 264 psi applied as a three point load over a 4” span.",
+                "ASTM<br>D648",
+                "ºC",
+                "°F",
+                "(ºC+1.8)+32"
+            ],
+        },
+        {
+            name: 16,
+            header: "Water Absorption",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "",
+                ""
+            ],
+            values: [
+                "The amount of water absorbed by a standard test specimen after immersion for 24 hours at 23º, calculated as a percent gain in weight.",
+                "ASTM<br>D570",
+                "%",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 17,
+            header: "Rockwell Hardness",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "A measure of a material’s surface hardness. Rockwell Hardness is measured using different scales which correspond to different indenter diameters and loads. Comparisons between scales should be avoided. ",
+                "ASTM<br>D785",
+                "",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 18,
+            header: "Dielectric Strength short time",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The ratio of the dielectric breakdown voltage required to cause a puncture of the specimen, to the thickness of an insulating material. The short time test is conducted using a continuous ramp up of electrical voltage.",
+                "ASTM<br>D149",
+                "kV/mm",
+                "V/mil",
+                "25.4"
+            ],
+        },
+        {
+            name: 19,
+            header: "Dielectric Strength step by step",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The ratio of the dielectric breakdown voltage required to cause a puncture of the specimen, to the thickness of an insulating material. The step by step test is conducted using a series of incremental voltage increases after a specified application time.",
+                "ASTM<br>D149",
+                "kV/mm",
+                "V/mil",
+                "25.4"
+            ],
+        },
+        {
+            name: 20,
+            header: "Dissipation Factor (Power Factor)",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "The ratio of the power loss in a dielectric material to the total power transmitted through the dielectric.",
+                "ASTM<br>D150",
+                "",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 21,
+            header: "Permittivity (Dielectric Constant)",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "The ratio of the capacitance of a given configuration of electrodes with a plastic insulating material as the dielectric, to the capacitance of the same electrode configuration with a vacuum (or air for most practical purposes) as the dielectric.",
+                "ASTM<br>D150",
+                "",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 22,
+            header: "Volume Resistivity",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "The ratio of the potential gradient parallel to the current in the material, to the current density.",
+                "ASTM<br>D257",
+                "ohm*cm",
+                "ohm*cm",
+                "0.3974"
+            ],
+        },
+        {
+            name: 23,
+            header: "Arc Resistance",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                ""
+            ],
+            values: [
+                "A measure of the ability of an insulating material to withstand the formation of a conducting path when subjected to an interrupting arc on or near the surface at high voltage, low current arcing conditions.",
+                "ASTM<br>D495",
+                "sec",
+                "sec",
+                ""
+            ],
+        },
+        {
+            name: 24,
+            header: "Comparative tracking Index (CTI)",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "",
+                ""
+            ],
+            values: [
+                "A measure of the ability of an insulating material to withstand the formation of a conducting path >when subjected to a constant current flow through a conductive film on the surface.",
+                "ASTM<br>D3638",
+                "V",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 25,
+            header: "Flammability rating",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "The relative rating of the burning characteristics of the material in various orientations and thicknesses. Flammability is most commonly expressed using the following Underwriters Laboratory Classifications, (in order from least to highest flame resistant) HB, V1, or V0 along with the test specimen thickness.",
+                "UL 94",
+                "",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 26,
+            header: "Oxygen Index",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "",
+                ""
+            ],
+            values: [
+                "The minimum oxygen concentration, in an oxygen and nitrogen environment, required to sustain ignition of a standard test sample.",
+                "ASTM<br>D2863",
+                "%",
+                "",
+                ""
+            ],
+        },
+        {
+            name: 27,
+            header: "Coefficient of thermal Expansion",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "Linear thermal expansion is a onedimensional length change with respect to temperature. It is expressed as the fractional change in length per degree temperature change.",
+                "ASTM<br>E831",
+                "1/°C",
+                "1/°F",
+                "1.8"
+            ],
+        },
+        {
+            name: 28,
+            header: "Thermal Conductivity",
+            headers: [
+                "Description",
+                "Test Method",
+                "SI Units",
+                "US Customary",
+                "SI to US Conversion Multiply by:"
+            ],
+            values: [
+                "A measure of a materials’ ability to conduct heat.",
+                "ASTM<br>E1461",
+                "W/m/°C",
+                "BTU/hr/ft/°F",
+                "0.5778"
+            ],
+        },
+    ]
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_data_glossary.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_data_glossary.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">This glossary is intended to assist plastic professionals in the better understanding of <span class='text-blue-l2'>technical thermoset terminology</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">The following definitions represent the meanings understood and shared by the majority of the thermoset plastics industry.</p> 
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+    <div class="row section_42_bg overflow-hidden bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_42 d-flex flex-column">
+                <div class="section_42__hero d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
+                    <h2 class="section_42__header mb-0">Glossary of <span class="text-blue-1">Databook Tests</span></h2>
+                    <div class="section_42__search-cont mt-3 mt-md-0 col-12 col-sm-auto ms-md-4">
+                        <span class="text_add section_42__search-header d-block mt-3 mt-md-0">Search Data Glossary</span>
+                        <form class="block_input_1__searcharea d-flex flex-column flex-sm-row align-items-center mt-1" id="data-glossary__form-1">
+                            <input class="block_input_1__input form-control position-relative w-100 px-3" type="text" placeholder="Keyword">
+                            <button type="submit" class="btn btn-yellow-1 block_input_1__button p-0  col-12 col-sm-auto mt-3 mt-sm-0 px-4 mb-4 mb-md-0">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
+
+                {% for item in page_data_glossary.section_42 %}
+                <div class="accordion accordion-flush section_42_accordion h-100" id="data-glossary__acc-{{ item.name }}">
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-{{ item.name }}__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-{{ item.name }}__body-1" aria-expanded="true" aria-controls="acc-{{ item.name }}__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">{{ item.header }}</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-{{ item.name }}__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-{{ item.name }}__header-1" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column col-12 ">
+                                <div class="desktop d-none d-md-block">
+                                    <div class="accordion-body__headers d-flex flex-row align-items-stretch col-12">
+                                        <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[0] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[1] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[2] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[3] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[4] }}</span>
+                                    </div>
+                                    <div class="accordion-body__values d-flex flex-row align-items-stretch col-12">
+                                        <span class="item-value ms-0 mt-1 pe-4">{{ item.values[0] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[1] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[2] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[3] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[4] }}</span>
+                                    </div>
+                                </div>
+
+                                <div class="mobile d-flex flex-column d-md-none col-12">
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[0] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[0] }}</span>
+                                    {% if item.values[1] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[1] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[1] }}</span>
+                                    {% if item.values[2] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[2] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[2] }}</span>
+                                    {% if item.values[3] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[3] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[3] }}</span>
+                                    {% if item.values[4] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[4] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[4] }}</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+
+                <a href="link_document.html" class="btn btn-yellow-1 section_13__button mx-auto overline-r overline_mob-r mt-5 px-4 px-md-5 col-12 col-sm-auto">
+                    <img src="./assets/img/svg/icon_pdf.svg" alt="" class="me-3 ms-md-4">
+                    <p class="mb-0 me-md-4">Download PDF</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% include '../components/sections/section_21.twig' with {data: page_data_glossary.section_21} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

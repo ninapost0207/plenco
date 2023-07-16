@@ -1,0 +1,11 @@
+/*.block_tag_1 {
+    min-height: 26px;
+    min-width: 77px;
+
+    & .block_tag_1__text {
+        font-family: "Mulish-300";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+    }
+}*/

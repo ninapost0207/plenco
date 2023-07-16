@@ -1,0 +1,70 @@
+/*.block_1 {
+
+    & .block_1__header {
+        margin-top: 216px;
+        font-family: "Almarai-700";
+        font-size: 28px;
+        position: relative;
+        z-index: 30;
+
+        @include respond-to(md) {
+            margin-top: 0;
+
+            font-size: 24px;
+            text-align: center;
+        }
+        
+    }
+    
+    & .block_1__text {
+        font-family: "Mulish-400";
+        font-size: 18px;
+        position: relative;
+        z-index: 30;
+
+        @include respond-to(md) {
+            text-align: center;
+        }
+    }
+
+
+    & .block_input_1__searcharea {
+        height: 60px;
+        margin-top: 24px;
+    }
+
+
+    & .block_1__span {
+        font-family: "Play-700";
+        font-size: 14px;
+        display: inline-block;
+        position: relative;
+        z-index: 30;
+        margin-top: 67px;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+
+
+    & .block_1__link {
+        font-family: "Muli-600";
+        font-size: 18px;
+        display: block;
+        color: $black;
+        position: relative;
+        z-index: 30;
+        margin-top: 17px;
+        @include respond-to(md) {
+            font-size: 16px;
+        }
+    }
+
+
+    & .block_1__button {
+        margin-top: 57px;
+    }
+
+}
+
+*/
+

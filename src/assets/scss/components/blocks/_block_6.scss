@@ -1,0 +1,38 @@
+/*.block_6 {
+    //width: 370px;
+    padding-top: 43px;
+    padding-left: 25px;
+    padding-right: 31px;
+    //position: relative;
+    background-color: $grey-2;
+
+    & .block_6__text {
+        color: $black;
+        font-family: "Mulish-600";
+        font-size: 16px;
+        line-height: 22px;
+        @include ls(25);
+        //margin-bottom: 0;
+    }
+
+
+    & .block_6__line {
+        height: 0;
+        width: 142px;
+        margin-top: 27px;
+        border-bottom: 1px solid $light-blue-2;
+    }
+
+    & .block_6__link {
+        color: $blue-1;
+        font-family: "Play-700";
+        font-size: 16px;
+        line-height: 50px;
+        @include ls(25);
+        //margin-bottom: 0;
+    }
+
+    /*& .block_6__button {        
+        bottom: 0;
+        right: 0;
+    }*/

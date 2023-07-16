@@ -1,0 +1,419 @@
+.nav_bottom__btn {
+    height: 84px;
+}
+
+.nav_bottom {
+
+    & .nav_bottom_menu-wrap {
+        height: 84px;
+
+        & .nav_bottom_menu {
+           height: 83px !important;
+
+            & .nav_bottom__logo {
+                margin-right: 50px;
+                margin-left: 10px !important;
+                max-height: 65px;
+
+                @include respond-to(lg) {
+                    margin-right: 20px;
+                    margin-left: 0px;
+                }
+
+                @include respond-to(md) {
+                    margin-right: 7px;
+                    margin-left: 10px;
+                    width: 157px;
+                }
+
+                @include respond-to(sm) {
+                    width: 208px !important;
+                    max-height: 64px !important;
+                }
+            }
+
+
+            & .nav_bottom__links {
+                padding-right: calc(270px - ((100vw - 1160px) / 2));
+
+                @include respond-to(lg) {
+                    padding-right: 0;
+                    
+                }
+        
+                & .nav_bottom__link-cont {
+                    padding: 13px 24px;
+                    max-height: 62px;
+
+                    @include respond-to(md) {
+                        padding: 8px 10px;
+                    }
+        
+                    &.opened {
+                        border: 2px solid $yellow-1;
+                    }
+        
+                    & .nav_bottom__link {
+                        font-size: 16px;
+                        font-family: "Mulish-800"; 
+                        white-space: nowrap;
+                        @include ls(75);
+                
+                        @include respond-to(xl) {
+                            white-space: normal;
+                        }
+                
+                        @include respond-to(md) {
+                            font-size: 14px;
+                            letter-spacing: 0;
+                        }
+                
+                        &:hover {
+                            color: $black;
+                
+                        }
+                    }
+                }
+        
+                & .nav_bottom__btn_yellow {
+                    height: 84px;
+                }
+            }
+
+            & .nav_bottom__btn_mob {
+                & .button_yellow_nav_mob__text-cont {
+                    height: 23px;
+                }
+            }
+        }
+    }
+
+    //---------------------Section Markets -------------------
+    
+    & .nav-section_markets {
+        top: 116px;
+
+
+        & .nav-section_markets__header {
+            margin-top: 84px;
+            font-family: "Mulish-800";
+            font-size: 22px;
+            @include ls(75);
+        }
+
+        & .nav-section_markets__items {
+ 
+            & .nav-section_markets__item{
+                height: 142px;
+
+                & .nav-section_markets__item__icon {
+                    max-width: 60px;
+                    max-height: 60px;
+                }
+
+                & .nav-section_markets__item__text {
+                    font-family: "Almarai-700";
+                    font-size: 24px;
+                    @include ls(25);
+
+                    @include respond-to(md) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        & .nav-section_markets__button  {
+            margin-top: 80px;
+            height: 70px;
+            margin-bottom: calc(100vh - 730px);
+        }
+    }
+
+//-----------------Section Products -------------------
+
+    & .nav-section_products {
+        top: 116px;
+
+        & .nav-section_products__header {
+            margin-top: 84px;
+            font-family: "Mulish-800";
+            font-size: 22px;
+            @include ls(75);
+
+        }
+
+        & .nav-section_products__items {
+
+            & .nav-section_products__item{
+                height: 170px;
+
+                & .nav-section_products__item__inner-cont {
+
+                    & .nav-section_products__item__text {
+                        font-family: "Almarai-700";
+                        font-size: 24px;
+                        @include ls(25);
+        
+                        @include respond-to(lg) {
+                            font-size: 20px;
+                        }
+
+                        @include respond-to(md) {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .nav-section_products__button  {
+            height: 70px;
+            margin-top: 80px;
+            margin-bottom: calc(100vh - 570px);
+        }
+    }
+
+//---------------------Section SEARCH----------------------------------
+
+
+    & .nav-section_search {
+        top: 116px;
+
+        & .nav-section_search-cont {
+            margin-bottom: calc(100vh - 374px);
+
+
+            & .nav-section_search__header {
+                font-size: 12px;
+                @include ls(250)
+            }
+
+            & .nav-section_search__input-cont {
+
+
+                & .nav-section_search__input {
+                    height: 30px;
+                    font-family: "Almarai-700";
+                    font-size: 22px;
+
+                    &:active, &:hover, &:focus {
+                        outline: 0 !important;
+                        outline-offset: 0 !important;
+                    }
+        
+                    &::placeholder {
+                        color: $white-1;
+                        font-family: "Almarai-700";
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            & .nav-section_search__checkboxes {
+
+                & .nav-section_search__checkbox-item {
+
+                    & .nav-section_search__checkbox {
+                        z-index: -1;
+
+                        &:checked+.nav-section_search__label::before {
+                                background-color: $light-blue-2;
+                                background-image: url("../img/svg/checkmark.svg");
+                        }
+                    }
+                    
+                    & .nav-section_search__label {
+                        user-select: none;
+                        font-family: "Mulish-800";
+                        font-size: 14px; 
+                        @include ls(75);                          
+
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            border: 2px solid $light-blue-2;
+                            margin-right: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 80% 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//---------------------------DROP------------------------------
+
+.nav_bottom__drop__cont {
+
+    & .nav__drop__opacity-block {
+        height: calc(100vh - 580px) !important;
+    }
+
+    & .nav_bottom__drop__back {
+        height: 71px;
+        font-family: "Mulish-300";
+        font-size: 18px;
+        text-transform: none;
+
+        & .nav_bottom__drop__back__arrow {
+            width: 27px;
+            height: 3px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 15px;
+                width: 15px;
+                border-right: 3px solid $blue-1;
+                border-top: 3px solid $blue-1;
+                transform: rotate(-135deg);
+                top: -6px;
+                left: 1px;
+            }
+        }
+    }
+}
+
+
+.nav_bottom__drop__input-block {
+    height: 71px;
+
+
+    & .nav_bottom__drop__input-cont {
+        height: 33px;
+        left: 200px;
+
+        & .nav_bottom__drop__input {
+            font-family: "Mulish-300";
+            font-size: 18px;
+
+            &:active, &:hover, &:focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+
+            &::placeholder {
+                color: $black;
+            }
+        }
+
+        & .nav_bottom__drop__input-btn {
+            background-image: url("../img/svg/nav_top__search-icon.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+
+
+.nav_bottom__drop__block_1 {
+
+    & .nav_bottom__btn_1 {
+        font-family: "Mulish-800";
+        font-size: 18px;
+        @include ls(75);
+        height: 64px;
+    }
+
+    & .nav_bottom__btn_1_spec {
+        &::after {
+            content: "";
+            height: 1px;
+            width: 50%;
+            left: calc(50% + 60px);
+            position: absolute;
+            background-color: $blue-1;
+            margin-left: 0px;
+        }
+    
+        &::before {
+            content: "";
+            height: 1px;
+            width: 350px;
+            right: calc(50% - 125px);
+            position: absolute;
+            background-color: $blue-1;
+            margin-right: 190px;
+        }
+    }
+}
+
+.nav_bottom__drop__cont-2 {
+
+    & .nav_bottom__drop__block_2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include respond-to(xs) {
+        }
+
+        & .nav_bottom__btn_2 {
+            font-family: "Almarai-700";
+            font-size: 16px;
+            line-height: 16px;
+            height: 50px;
+            @include ls(50);
+            height: 48px;
+        }
+    }
+}
+
+
+.nav_bottom__drop__cont-add-menu {
+    padding-top: 30px;
+
+    & .nav_bottom__drop__add-menu__header {
+        font-family: "Mulish-800";
+        font-size: 18px;
+        @include ls(75);
+    }
+    & .nav_bottom__drop__add-menu__links {
+        & .nav_bottom__drop__add-menu__link-cont {
+            min-height: 53px;
+
+            & .nav_bottom__drop__add-menu__link_text {
+                font-family: "Almarai-700";
+                font-size: 18px;
+                @include ls(50);
+            }
+    
+            & .nav_bottom__drop__add-menu__arrow {
+                width: 27px;
+                height: 3px;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    border-right: 3px solid $yellow-1;
+                    border-top: 3px solid $yellow-1;
+                    transform: rotate(45deg);
+                    top: -6px;
+                    right: 1px;
+                }
+            }
+        }
+    }
+    
+    & .nav_bottom__drop__add-menu__button {
+        margin-top: 32px;
+        font-size: 18px !important;
+        line-height: 22px;
+        @include ls(75);
+    }
+}    
+

@@ -1,0 +1,154 @@
+.body_molding-method-guide {
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 70% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 45% 50% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 50% 50% !important;
+            background-size: 300% !important;
+        }
+    }
+    & .section_heading_top__center-block__cont {               
+        @include respond-to(xs) { 
+            width: 100%;      
+            height: 130px;   
+        }
+    }
+    & .section_heading_bottom {    
+        height: 472px;
+
+        @include respond-to(md) {        
+            height: 480px;
+        }
+        
+        @include respond-to(xs) {        
+            height: 489px;
+        }      
+    }
+    
+    
+//---------------------SECTION 35---------------------------------
+
+    & .section_42_bg {
+        padding-top: 118px;
+        padding-bottom: 70px;
+
+        @include respond-to(sm) {
+            padding-top: 45px;
+            padding-bottom: 34px;
+        }
+
+    }
+
+    & .section_42 {
+
+
+        & .block_input_1__searcharea {
+
+            .block_input_1__input {
+                font-family: "Mulish-300";
+                font-size: 18px;
+                z-index: 30;
+                @include ls(25);
+                height: 50px;
+                min-width: 285px;
+                
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+            }
+
+            & .block_input_1__button {
+                height: 50px;
+                font-size: 20px !important;
+            }
+        }
+
+
+        & .section_42_accordion {
+
+            & .accordion-button {
+                height: 45px;
+
+                &::after {
+                    height: 45px;
+                    width: 45px;
+                    background-position: center center;
+                    background-size: 100%;
+                }
+            }
+
+            & .accordion-body {
+
+
+                & .item-header {
+                    font-family: "Mulish-800";
+                    font-size: 14px;
+                    @include ls(75);
+                }
+
+                & .item-value {
+                    font-family: "Mulish-600";
+                    font-size: 16px;
+                    @include ls(25);
+                    line-height: 20px;
+                }
+
+
+                & .desktop .item-header, .desktop .item-value {
+
+         
+                    &:nth-child(5n+1) {
+                        width: 30%;
+                    } 
+                    &:nth-child(5n+2) {
+                        width: 30%;
+                    }    
+                    &:nth-child(5n+3) {
+                        width: 20%;
+                    }    
+                    &:nth-child(5n+4) {
+                        width: 20%;
+                    }    
+                    
+
+                    & .item-value {
+                        font-family: "Mulish-600";
+                        font-size: 16px;
+                        line-height: 20px;
+                        @include ls(25);
+                    }
+                }
+               
+
+            }
+    
+
+        }
+
+
+    }
+//------------------------------------------------------------
+    & .container_white {
+        padding-top: 65px;
+        padding-bottom: 75px;
+
+        @include respond-to(sm) {
+            padding-top: 40px;            
+        }
+    }
+    & .text_spec {
+        font-family: 'Mulish-Italic';
+        font-size: 14px;
+        line-height: 20px;    
+        @include ls(25); 
+    }
+}
+

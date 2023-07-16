@@ -1,0 +1,252 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Material Engineering Lab page' %}
+{% set pageClass = 'body_material_engineering_lab' %}
+
+
+
+
+{% set page_material_engineering_lab = {
+    heading: {
+        heading_top_text: "Materials <br> Engineering Lab",
+        bg_img: "./assets/img/pages/materials-engineering-lab/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_material_engineering_lab overline-r",
+        header: "Plenco’s <span class='text-blue-1'>Products</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Products",
+        link_to: "products.html"
+    },
+}
+%}
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_material_engineering_lab.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_material_engineering_lab.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3 {{ page_material_engineering_lab.heading.class }}" style="{{ page_material_engineering_lab.heading.style }}">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Plenco’s Material Engineering Laboratory (MEL) promotes innovation and supports industry competitiveness by<span class='text-blue-l2'> advancing polymer composite research through formulation, testing and modeling techniques</span>.</p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">This is completed for engineered components in ways that enhance and improve the overall system and quality of product.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_8_bg pb-md-5 position-relative pb-5 ">
+        <div class="section_8 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row position-relative">
+                    
+                    <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">The Materials <span class='text-blue-1 font-normal'>Engineering Lab</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">Plenco’s Materials Engineering Laboratory, with a staff of experienced technicians and engineers, utilizes a broad range of equipment and test instrumentation to provide technical support for our customers. Compounding capabilities include laboratory equipment for materials formulation development. Additional pilot plant equipment is used for sampling and scale-up evaluation.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Compression, transfer, injection, and injection-compression process capabilities are used for molding test specimens, customer prototyping, and trouble-shooting molds. Also available is auxiliary equipment such as preformers, preplasticizers, and preheaters.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Testing capabilities measure flammability, color-matching, and environmental exposure. Dynamic fatigue, short-term creep, Poisson’s ratio, and other material characterizations are tested per ASTM, ISO, JIS, and UL standards.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Plenco’s Materials Engineering Laboratory has established quality programs for proficiency training, continuous improvement, and instrument calibration. (Materials Engineering Lab text)</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <img src="./assets/img/pages/materials-engineering-lab/materials.jpg" alt="Materials Lab" class="section_8__image position-relative">
+
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+    <div class="row section_17_bg overflow-hidden">
+        <div class="section_17 col px-0">
+            <div class="container cont-site">
+                <div class="section_17__data col-12 flex-column flex-md-row d-flex justify-content-between align-items-start">
+                    <div class="section_17__left col-12 col-md-5 text-start text-sm-center text-md-start">
+                        <p class="section_17__header text-quote mb-0 text-blue-1">Early and ongoing engineering support discussions with customers have become a Plenco hallmark.</p>
+                        <p class="section_17__text text_main mb-0 mt-3">In this process, careful consideration is given to part design, material selection, tooling 
+                            concepts, processing methods, and equipment capabilities.</p>
+                    </div>
+                    <div class="section_17__right col-12 col-md-6 text-start text-sm-center text-md-start">
+                        <p class="section_17__text text_add mb-0 mt-3 mt-md-0">Compression, transfer, injection, and injection-compression process capabilities are used 
+                            for molding test specimens, customer prototyping, and trouble-shooting molds. Also available is 
+                            auxiliary equipment such as preformers, preplasticizers, and preheaters.</p>
+                        <p class="section_17__text text_add mb-0 mt-3">The value of close teamwork between the design engineer, toolmaker, material supplier, and molder is 
+                            realized in better product design, mold design, and processing. Plenco’s experienced engineers and technical 
+                            personnel are supported by sophisticated research, design, and testing facilities and are available to 
+                            review projects from original concept to finished product.</p>
+                        <p class="section_17__text text_add mb-0 mt-3">Attentive support from Plenco engineers can make a significant difference by helping to assure that the part 
+                            design, tooling, and method of processing are most cost-effective. It is another value-added service from 
+                            Plenco that helps customers achieve top performance. (Engineering Support text)</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    
+
+    <div class="row section_16_bg overflow-hidden px-0 pb-md-0 mb-0">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <h3 class="section_16__header mb-0">Plenco <span class="text-blue-1">Equipment</span></h3>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Top Equipment Name</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Placeholder: Lorem ipsum dolor sit amet, consetetur 
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. </p>
+                                <ul class="ul_1 block_7-ul ps-4 mt-4 mb-0">
+                                    <li class="ul_1__text mb-0 position-relative">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</li>
+                                    <li class="ul_1__text mb-0 position-relative mt-3">Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor </li>
+                                    <li class="ul_1__text mb-0 position-relative mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Top Equipment Name</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Placeholder: Lorem ipsum dolor sit amet, consetetur 
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. </p>
+                            <ul class="ul_1 block_7-ul ps-4 mt-4 mb-0">
+                                <li class="ul_1__text mb-0 position-relative">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</li>
+                                <li class="ul_1__text mb-0 position-relative mt-3">Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit</li>
+                                <li class="ul_1__text mb-0 position-relative mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Top Equipment Name</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Placeholder: Lorem ipsum dolor sit amet, consetetur 
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. </p>
+                                <ul class="ul_1 block_7-ul ps-4 mt-4 mb-0">
+                                    <li class="ul_1__text mb-0 position-relative">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</li>
+                                    <li class="ul_1__text mb-0 position-relative mt-3">Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</li>
+                                    <li class="ul_1__text mb-0 position-relative mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Top Equipment Name</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Placeholder: Lorem ipsum dolor sit amet, consetetur 
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. </p>
+                            <ul class="ul_1 block_7-ul ps-4 mt-4 mb-0">
+                                <li class="ul_1__text mb-0 position-relative">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</li>
+                                <li class="ul_1__text mb-0 position-relative mt-3">Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>
+                                <li class="ul_1__text mb-0 position-relative mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-5" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-5_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Top Equipment Name</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3 mb-0">Placeholder: Lorem ipsum dolor sit amet, consetetur 
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. </p>
+                                <ul class="ul_1 block_7-ul ps-4 mt-4">
+                                    <li class="ul_1__text mb-0 position-relative">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                    <li class="ul_1__text mb-0 position-relative mt-3">Kasd gubergren, no sea takimata sanctus est Lorem ipsum </p>
+                                    <li class="ul_1__text mb-0 position-relative mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_19_bg overflow-hidden">
+        <div class="section_19 col">
+            <div class="container cont-site">
+                <div class="section_19__data">
+                    <h2 class="section_19__header mb-0">Engineering Support <span class="text-blue-1">Contacts</span></h2>
+                    
+                    <div class="block_9 py-3 border-start border-7 border-blue-l2 ps-3 mt-4">
+                        <p class="block_9__name mb-0 text-capitalize text-black-1">Name First Last</p>
+                        <h3 class="block_9__title mb-0 text-uppercase mt-2 text-blue-1">title</h3>
+                        <div class="block_9__item d-flex align-items-center mt-2">
+                            <img src="./assets/img/svg/phone_1.svg" alt="phone" class="block_9__img_phone">
+                            <p class="block_9__text mb-0 text-black-1">(000) 000-0000 ext. 000</p>
+                        </div>
+                        <div class="block_9__item d-flex align-items-center mt-2">
+                            <img src="./assets/img/svg/email_1.svg" alt="phone" class="block_9__img block_9__img_email">
+                            <p class="block_9__text mb-0 text-black-1">email@plenco.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    {% include '../components/sections/section_13.twig' with {data: page_material_engineering_lab.section_13} %}
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

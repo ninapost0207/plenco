@@ -1,0 +1,211 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Technical Service page' %}
+{% set pageClass = 'body_technical-service' %}
+
+{% set page_technical_service = {
+    heading: {
+        heading_top_text: "Technical Service",
+        bg_img: "./assets/img/pages/technical-service/heading.jpg",
+        class: "page_technical-service"
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_technical-service overline-r",
+        header: "Contact <span class='text-blue-1'>Plenco</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Contact Plenco",
+        link_to: "contact.html"
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_technical_service.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
+
+
+    <div class="row section_heading_bottom bg-blue-3 col-12 ">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 text-start mb-0">Plenco prides itself on the technical service provided customers to assure <span class="text-blue-l2">optimum production levels</span>.</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="row section_8_bg pb-md-5 position-relative pb-5 ">
+        <div class="section_8 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row position-relative">
+                    
+                    <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">Technical <span class='text-blue-1 font-normal'>Service</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">Our knowledgeable technical representatives can help 
+                                        implement process improvements, optimize efficiencies and create innovative solutions to manufacturing challenges. </p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">They are backed by, and work 
+                                        closely with, our engineering and scientific support staff to help our customers achieve their goals of consistent high quality and 
+                                        smooth production. The scope of their knowledge of materials and resins includes our entire line of thermoset.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0 text-start text-sm-center text-lg-start mt-4 pt-3">In today’s highly competitive 
+                                        marketplace our customers must make proper choices from concept to final production. Plenco technical representatives are trained in the 
+                                        latest processing techniques. They work with customers to discuss material or resin characteristics and processing techniques. Close 
+                                        attention to the best match of material or resin for the process can help reduce the potential for process variations and downtime. If 
+                                        processing difficulties do arise, prompt “hands on” response by Plenco technical representatives can help resolve processing issues.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Other important activities 
+                                        facilitated by our technical representatives include laboratory tests, material selection, certifications, inventory management 
+                                        concepts, and alternate packaging.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Plenco will gladly arrange 
+                                        a visit by one of our technical representatives to discuss which of our products will best serve your needs. (Technical Service text)</p>
+                                </div>
+                                
+                                <a href="#technical_service_section_14" class="block_4__button text-uppercase text-blue-1 text-decoration-none position-relative text-center bg-transparent mt-5 ">Solution examples</a>
+                            </div>    
+                        </div>
+                    </div>
+                    <img src="./assets/img/pages/technical-service/technical.jpg" alt="TEchnical Service" class="section_8__image position-relative">
+
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    
+    <div class="row section_14_bg overflow-hidden" id="technical_service_section_14">
+        <div class="section_14 col px-0">
+            <div class="container cont-site">
+                <h2 class="mb-0 pb-0 text-center">Technical Service <span class='text-blue-1'>Examples</span></h2>
+                <div class="section_14__examples row row-cols-1 row-cols-md-3 g-5 mt-1 mx-n4">
+                    <div class="block_5 position-relative">
+                        <img src="./assets/img/pages/technical-service/example-1.jpg" alt="Expample-1" class="col-12 h-auto">
+                        <div class="block_5__content position-relative border-start border-7 border-blue-l2 pb-3 ps-3">
+                            <p class="block_5__header text_li_item mb-0 text-black-1">Plenco Assists Black & Decker™ with New Product Line</p>
+                            <div class="block_5__tags d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">Technical Service</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">Plenco 07000 Series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">Tooling and Material Engineering Support</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-decoration-none">
+                                <h3 class="block_5__link_text text-blue-1 mt-3 mb-0">Read Article</h3>
+                            </div>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link"></a>
+                    </div>    
+
+                    <div class="block_5 position-relative">
+                        <img src="./assets/img/pages/technical-service/example-2.jpg" alt="Expample-2" class="col-12 h-auto">
+                        <div class="block_5__content position-relative border-start border-7 border-blue-l2 pb-3 ps-3">
+                            <p class="block_5__header text_li_item mb-0 text-black-1">Technical Service Example Heading Placeholder text text</p>
+                            <div class="block_5__tags d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-decoration-none">
+                                <h3 class="block_5__link_text text-blue-1 mt-3 mb-0">Read Case Study</h3>
+                            </div>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link"></a>
+                    </div>    
+
+                    <div class="block_5 position-relative">
+                        <img src="./assets/img/pages/technical-service/example-3.jpg" alt="Expample-3" class="col-12 h-auto">
+                        <div class="block_5__content position-relative border-start border-7 border-blue-l2 pb-3 ps-3">
+                            <p class="block_5__header text_li_item mb-0 text-black-1">Technical Service Example Heading Placeholder text text</p>
+                            <div class="block_5__tags d-flex flex-wrap mx-auto mt-3 mx-n1">
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_tag_1-wrap px-1 py-1">
+                                    <div class="text-decoration-none"> 
+                                        <div class="block_tag_1 px-2 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
+                                            <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-decoration-none">
+                                <h3 class="block_5__link_text text-blue-1 mt-3 mb-0">Read Case Study</h3>
+                            </div>
+                        </div>
+                        <a href="news-blog-detail.html" class="stretched-link"></a>
+                    </div>    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    
+
+    {% include '../components/sections/section_13.twig' with {data: page_technical_service.section_13} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

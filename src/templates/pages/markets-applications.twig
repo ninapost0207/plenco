@@ -1,0 +1,116 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Markets & Applications page' %}
+{% set pageClass = 'body_markets_applications' %}
+
+
+
+
+{% set page_markets_applications = {
+    heading: {
+        heading_top_text: "Markets & Applications",
+        bg_img: "./assets/img/pages/markets-applications/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_facility overline-r",
+        header: "Plenco’s <span class='text-blue-1'>Products</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Products",
+        link_to: "products.html"
+    },
+}
+%}
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_markets_applications.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_markets_applications.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Plastics Engineering Company offers high-performance material solutions and technical support across various industries. From industrial to energy and automotive to aerospace, we’ve been driving innovation through the use of <span class='text-blue-l2' >Infinite Chemistry for over eighty-five years</span>.</p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">Creating versatile solutions across a wide range of industries. Look and you’ll see a part of us there.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_16_bg overflow-hidden px-0">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <h2 class="section_16__header mb-0">Markets <span class="text-blue-1">& Applications</span></h2>
+
+
+                <div class="block_206 lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/markets-applications/automotive.jpg" alt="Pic-automotive">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Automotive</h3>
+                            <p>Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and 
+                                chemical resistance that makes them ideally suited for high-temperature applications in combination 
+                                with automotive fluids and electrical distribution.</p>
+                            <a href="automotive.html" class="block_button button_yel"> <!--button_yel-->
+                                <img src="./assets/img/svg/arrow_down_1.svg" alt="">
+                                <h3>automotive</h3> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="block_206  image_left lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/markets-applications/electrical.jpg" alt="Pic-Electrical-Insulation">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Electrical Insulation</h3>
+                            <p>Plenco Thermoset materials provide an exceptional combination of electrical insulation, UL Flammability, 
+                                creep resistance and dimensional stability across the widest range of temperatures. This makes them ideal 
+                                materials to insulate electrical devices used in high and low voltage industrial power transmission, automotive 
+                                switches and relays, home appliance controls and many other areas where close tolerances must be maintained 
+                                for years across varying environmental conditions.</p>
+                            <a href="electrical-insulation.html" class="block_button button_yel"> <!--button_yel-->
+                                <img src="./assets/img/svg/arrow_down_1.svg" alt="">
+                                <h3>Electrical Insulation</h3> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    {% include '../components/sections/section_13.twig' with {data: page_markets_applications.section_13} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

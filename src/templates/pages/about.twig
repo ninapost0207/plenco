@@ -1,0 +1,259 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'About page' %}
+{% set pageClass = 'body_about' %}
+
+{% set page_about = {
+    heading: {
+        heading_top_text: "About Plenco",
+        bg_img: "./assets/img/pages/about/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_about",
+        header: "Plenco’s <span class='text-blue-1'>Products</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "products",
+        link_to: "products.html"
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_about.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_about.heading} %}
+    
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0"> Infinite <span class='text-blue-l2'>chemistry</span></p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1"> For over 85 years Plastics Engineering Company has been developing new phenolic chemistries and performance materials. These advanced materials connect our world together to create a safer and cleaner world in which we live. Come and benefit from the Plenco difference.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row section_8_bg position-relative">
+        <div class="section_8 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row position-relative align-items-center">
+                    
+                    <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">Quality <span class='text-blue-1 font-normal'>Assurance/Philosophy</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">Plenco’s mission is to respond 
+                                        to our customers’ needs by producing high-quality, defect-free materials. This has been a cornerstone of the company’s philosophy since 
+                                        it was founded in 1934. To accomplish this we strive to establish solid relationships with our customers, recognizing that the quality 
+                                        of the products and services we provide is an integral part of our customers’ success. Trained quality assurance personnel, following 
+                                        globally recognized test methods, provide a high level of confidence in the uniform quality of our products. State-of-the-art test equipment, 
+                                        supported by a statistically oriented, computer-based calibration program, assures accurate, consistent, and reliable test data and process control.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Quality plans are developed with input 
+                                        solicited from our customers and interdepartmental teams at Plenco. In addition to the general certification assured by the Plenco trademark, 
+                                        products can be certified to a number of standards including ISO, UL, JIS, CSA, and DOD. (Quality Assurance text)</p>
+                                </div>
+                                
+                                <a href="certifications.html" class="block_4__button btn btn-yellow-1 mt-5 mx-auto ms-lg-0 col-12 col-sm-5">Certifications</a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="section_8__img-cont position-relative">
+                        <img src="./assets/img/pages/about/quality.jpg" alt="Quality Assurance" class="section_8__image position-relative">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+    <div class="row section_9_bg overflow-hidden overline_mob-r">
+        <div class="section_9 col px-0">
+            <div class="container cont-site">
+                <div class="section_9__data col-12 row position-relative flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="section_9__left col-12 col-md-6 px-0">
+                        <p class="section_9__left_text text-quote col-12 col-sm-12 col-md-9 mb-0 pe-md-3 text-blue-1">Plenco believes the quality of its products 
+                            is second to none, but more importantly that the search for quality 
+                            improvement never ends.</p>
+                    </div>
+                    <div class="section_9__right col-12 col-md-6 px-0 mt-3 mt-md-0">
+                        <p class="section_9__right_text text_add mb-0 col-12 pb-3">Formal corrective and preventive action 
+                            procedures drive our continuous improvement program. These procedures have 
+                            kept Plenco products in step with the increasing expectations of our 
+                            customers in today’s market where consistent quality is a key ingredient 
+                            of success. (Quality Assurance text)</p>
+                        <a href="research-development.html" class="btn btn-yellow-1 section_9__button mx-auto mx-md-0 mt-4">Research & Development</a>
+                        <a href="technical-service.html" class="btn btn-yellow-1 section_9__button mx-auto mx-md-0 mt-3">Technical Service</a>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div> 
+
+
+
+    <div class="section_10 px-0 col-12 align-items-center d-flex">
+        <div class="container cont-site">
+            <div class="row">
+                <div class="section_10__sub-cont col-12 d-flex flex-column px-0 py-5 bg-blue-3">
+                    <div class="section_10__data d-flex flex-column col-10 offset-1 h-100">
+                        <h2 class="section_10__header mb-0 text-start text-sm-center text-white-1 mt-5 pt-4">Environmental Policy</h2>
+                        <p class="section_10__text text_heading_add text-white-1 pb-0 mt-3">The environment in which we live and work is of utmost importance 
+                            to Plenco. The principle and process are clear. Ever since our founding, Plenco has been 
+                            a good employer, supplier and neighbor when it comes to the environment.</p>
+                        <a href="environmental-policy.html" class="btn btn-yellow-1 section_10__button mx-auto w-100 mt-4">Read full Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_11_bg overflow-hidden">
+        <div class="section_11 col-12 px-0">
+            <div class="container cont-site">
+                <h2 class="section_11__header mb-0">Customer <span class="text-blue-1">Relations</span></h2>
+                <p class="section_11__text text_main mb-0 mt-3">At Plenco we are committed to building strategic relationships 
+                    with our customers. To achieve this goal, Plenco is dedicated to the following principles of doing 
+                    business: Consistently manufacturing quality molding materials and resins. (Customer Relations text)</p>
+                    
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center mt-5 pt-md-4">
+                    <div class="block_7__left col col-md-6 overflow-hidden">
+                        <div class="block_7__img-wrap col col-md-12">
+                            <img src="./assets/img/pages/about/customer-1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/about/customer-1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <ul class="ul_1 mb-0 ps-3">
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-5 mt-md-0">Meeting or exceeding customers’ total expectations.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Participating in an exchange of knowledge and ideas to enhance our customers’ processing capabilities.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Meeting periodically with our customers’ management, technical, and manufacturing personnel to review continuous improvement toward mutual goals.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Constantly exploring options for cost containment. (Customer Relations text)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center mt-5 pt-md-4">
+                    <div class="block_7__right d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center order-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-0">
+                            <ul class="ul_1 mb-0 ps-3">
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-5 mt-md-0">Maximizing responsiveness to our customers through lead-time reduction and optimum delivery performance.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Optimizing material handling efficiencies with EDI, bar coding, and other electronic systems.<br>(Customer Relations text)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden order-0 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11 offset-md-1">
+                            <img src="./assets/img/pages/about/customer-2.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/about/customer-2.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center mt-5 pt-md-4">
+                    <div class="block_7__left col col-md-6 overflow-hidden">
+                        <div class="block_7__img-wrap col col-md-12">
+                            <img src="./assets/img/pages/about/customer-3.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/about/customer-3.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <ul class="ul_1 mb-0 ps-3">
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-5 mt-md-0">Regularly exploring continuous improvements in processing techniques.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Providing prompt and thorough engineering support and technical service.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Continually improving all levels of the supplier/customer relationship.<br>  (Customer Relations text)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_12_bg col-12 overline_mob-r position-relative">
+        <div class="section_12 col-12 px-0">
+            <div class="container cont-site">
+                <div class="section_12__data d-none d-md-flex align-items-start justify-content-between flex-nowrap position-relative">
+                    <div class="section_12__textarea col-12 col-md-5 position-relative">
+                        <div class="section_12__textarea-wrap col-md-11 px-0">
+                            <h2 class="section_12__header mb-0">Plenco’s <span class="text-blue-1">History</span></h2>
+                            <p class="section_12__text text_main mb-0 mt-3">Plastics Engineering Company, a family owned and managed business founded 
+                                in 1934, established as its corporate mission a sincere desire to respond efficiently to the 
+                                needs of our customers through development, manufacture, and servicing of useful, high-value 
+                                products. </p>
+                            <p class="section_12__text_add text_add mb-0 mt-3">Our mission is accomplished by an uncompromising adherence to customer
+                                requirements and safety in manufacturing, with consideration given to our environment and 
+                                surrounding community, and with sensitivity to the needs of our employees. (Company Information 
+                                text)</p>
+                            <a href="news-blog-detail.html" class="btn btn-yellow-1 section_12__button button_yellow mr-auto mt-5">Continue reading</a>
+                        </div>
+                    </div>
+                    <div class="section_12__videoarea px-0 col-md-6">
+                        <iframe class="section_12__video col-12" src="https://www.youtube.com/embed/hS5CfP8n_js" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        <p class="section_12__video-descr text_quote_add mb-0 col-11 offset-1 mt-5 pt-2 text-blue-3">“Placeholder pulled quote: Lorem ipsum dolor sit amet, 
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
+                            dolore magna aliquyam erat, sed diam voluptua.”</p>
+                    </div> 
+                </div>
+    
+                <div class="section_12__data_mob position-relative d-flex flex-column d-md-none">
+                    <h2 class="section_12__header mb-0">Plenco’s <span class="text-blue-1">History</span></h2>
+                    <iframe class="section_12__video col-12 mt-4" src="https://www.youtube.com/embed/hS5CfP8n_js" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    <p class="section_12__text text_main mb-0 mt-5">Plastics Engineering Company, a family owned and managed business founded 
+                        in 1934, established as its corporate mission a sincere desire to respond efficiently to the 
+                        needs of our customers through development, manufacture, and servicing of useful, high-value 
+                        products. </p>
+                    <p class="section_12__text_add text_add mb-0 mt-4 pt-2 mb-0">Our mission is accomplished by an uncompromising adherence to customer
+                        requirements and safety in manufacturing, with consideration given to our environment and 
+                        surrounding community, and with sensitivity to the needs of our employees. (Company Information 
+                        text)</p>
+                    <a href="news-blog-detail.html" class="btn btn-yellow-1 section_12__button mb-0 col-12 col-sm-6 mx-auto mt-4">Continue reading</a>
+                    <p class="section_12__video-descr text_quote_add mb-0 text-end mt-5 pt-3 text-blue-3">“Placeholder pulled quote: Lorem ipsum dolor sit amet, 
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
+                        dolore magna aliquyam erat, sed diam voluptua.”</p>
+                </div>
+            </div>
+        </div>
+        <div class="section_12__bg-img_bottom col-12 position-absolute d-none d-md-block"></div>
+    </div>
+    
+
+
+
+    {% include '../components/sections/section_13.twig' with {data: page_about.section_13} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

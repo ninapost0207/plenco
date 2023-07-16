@@ -1,0 +1,153 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Job Opening Subpage' %}
+{% set pageClass = 'body_job-opening' %}
+
+{% set page_job_opening = {
+    heading: {
+        heading_top_text: "Maintenance <br>Technician",
+        bg_img: "./assets/img/pages/job-opening/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %} 
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_job_opening.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_job_opening.heading} %}
+    
+   <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">At Plenco placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna<span class='text-blue-l2'> aliquyam erat, sed diam voluptua</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p> 
+                </div> 
+                <a href="#" class="btn btn-yellow-1 mt-4 mt-md-5 col-12 col-sm-auto mx-auto align-self-center px-5">Apply Now</a>                              
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont-site">
+        <h2 class="mt-5 pt-4 pt-lg-5 mb-0">Position <span>Overview</span></h2>
+        <div class="subheader">We are looking for an experienced Mechanical Technician with good problem-solving and strong interpersonal skills to join our team. You will be responsible for providing service and repairing equipment in our industry.</div>
+        <p class="text_add mt-3 mt-lg-4 mb-0">If you have a high level of initiative to recognize, analyze and solve problems, then we are waiting for your application. (Text copied from Allnex’s job opening)</p>
+    </div>
+    
+
+
+    <div class="row section_28 overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site col-12 d-flex flex-column flex-md-row">
+                <div class="section_28__left col-6 col-md-3  pe-5">
+                    <div class="section_28__left__content-cont border-start border-7 border-blue-l2 ms-md-n3 ps-3 py-3">
+                        <a class="section_28__left__link text-decoration-none d-flex flex-column">
+                            <h3 class="text-blue-l2 mb-0">Location</h3>
+                            <p class="text_add_small text-black-1 mt-1">Sheboygan, WI</p>
+                        </a>
+                        <a class="section_28__left__link text-decoration-none mt-5 d-flex flex-column">
+                            <h3 class="text-blue-1 mb-0">Hours/Shift</h3>
+                            <p class="text_add_small text-black-1 mt-1 mb-0">3rd Shift <br>00:00 - 00:00</p>
+                        </a>                                             
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="section_28__right col-12 col-md-9 ps-md-5 mt-5 mt-md-0 pt-4 pt-md-0">
+                    <div class="section_28__data d-flex flex-column position-relative">
+                        <h2 class="block_4__header section_28__header-line position-relative mb-0 text-start" id="responsibilities">Job <span>Responsibilities </span></h2>
+                        <ul class="ul_3 ps-4">
+                            <li class="ul_3__text text_add mt-3">Support, coordinate and control of all aspects of engineering projects</li>
+                            <li class="ul_3__text text_add mt-3">Conduct detailed root cause analysis on failures to prevent reoccurrence  </li>
+                            <li class="ul_3__text text_add mt-3">Repair equipment to ensure equipment integrity and production availability while minimizing cost</li>
+                            <li class="ul_3__text text_add mt-3">Support Mechanical Integrity program and ensure compliance with all regulatory activities</li>
+                            <li class="ul_3__text text_add mt-3">Plan and coordinate activities related to emergency equipment breakdown or failure</li>
+                            <li class="ul_3__text text_add mt-3">Manage the use of contract service providers for maintenance activities on-site as needed</li>
+                            <li class="ul_3__text text_add mt-3">Effectively manage plant shutdowns with detailed plans</li>
+                            <li class="ul_3__text text_add mt-3">Evaluate outside contractors/vendors. Make optimal decisions on when to outsource</li>
+                            <li class="ul_3__text text_add mt-3">Participate in or lead small capital project execution teams in partnership with Engineering</li>
+                            <li class="ul_3__text text_add mt-3">Evaluate and negotiate supplier quotes</li>
+                        </ul>
+
+
+                        <h2 class="block_4__header section_28__header-line position-relative mb-0 text-start mt-5" id="skills">Required Skills and <span class='text-blue-1 font-normal'>Experience</span></h2>
+                        <ul class="ul_3 ps-4">
+                            <li class="ul_3__text text_add mt-3">3-7 years of experience in chemical, manufacturing or related industry</li>
+                            <li class="ul_3__text text_add mt-3">Experience with local technical standards related to process piping, heat exchangers, pressure vessels and storage tanks</li>
+                            <li class="ul_3__text text_add mt-3">Ability to prepare clear and accurate documentation and instructions for others</li>
+                            <li class="ul_3__text text_add mt-3">Ability to work independently and meet deadlines on a multitude of tasks</li>
+                            <li class="ul_3__text text_add mt-3">Ability to quickly assess problems and able to process workable solutions</li>
+                        </ul>
+
+                        <h2 class="block_4__header section_28__header-line position-relative mb-0 text-start mt-5" id="skills">Job <span class='text-blue-1 font-normal'>Qualifications</span></h2>
+                        <ul class="ul_3 ps-4">
+                            <li class="ul_3__text text_add mt-3">High School graduate with Associate degree in electronics, electrical, electro-mechanical technologies or equivalent technical training</li>                            
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <div class="container cont-site d-flex flex-column">
+                <a href="#" class="btn btn-yellow-1 mt-5 col-12 col-sm-auto mx-auto align-self-center px-5">Apply Now</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container_grey bg-grey-2">
+        <div class="container cont-site">
+            <h2 class="mb-0 d-none d-md-block">Plenco <span class='text-blue-1'>Offers</span></h2>
+            <h2 class="mb-0 d-md-none">Position <span class='text-blue-1'>Overview</span></h2>
+            <p class="text_main mt-4 mb-0">We are proud to offer an international working experience with a tight-knit network of employees, making it easy to connect and learn from people all across our different functions. On top of that we are a truly innovative company with a strong team spirit, openness to new ideas, and great opportunities to grow and develop your career. (Text from Allnex’s job openings)</p>
+            
+            <h3 class='text-blue-1 mt-5 mb-0'>Equal Employment Opportunity</h3>
+            <p class="text_add mt-4 mb-0">Plenco is proud to be an equal opportunity employer. We celebrate diversity and are committed to an environment where all colleagues contribute for the benefit of our employees, our products, and our communities.</p>
+        
+            <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between mt-5 col-md-9 col-lg-6">
+                <span class="text-decoration-none"><h3 class="text-blue-1 mb-0 ">Share Job opening</h3></span>
+                <div class="d-flex flex-row align-items-center justify-content-center position-relative mt-3 mt-md-0">                        
+                    <img src="./assets/img/svg/icon_facebook_blue.svg" alt="facebook">
+                    <p class="text_add_small mb-0 ps-2">Facebook</p>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-center position-relative mt-3 mt-md-0">                        
+                    <img src="./assets/img/svg/icon_envelope_blue.svg" alt="email">
+                    <p class="text_add_small mb-0 ps-2">Email Article</p>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-center position-relative mt-3 mt-md-0">                        
+                    <img src="./assets/img/svg/icon_linkedin_blue.svg" alt="linkedin">
+                    <p class="text_add_small mb-0 ps-2">LinkedIn</p>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont-site link-container">
+        <h2 class="mb-0 text-center">Job Application - Need fields or link to Indeed, etc. </h2>
+    </div>               
+                    
+
+
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

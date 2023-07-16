@@ -1,0 +1,55 @@
+<div class="block_7 {{ data.block_class }} col flex-column flex-md-row d-flex align-items-center" style="{{ data.props }}">
+    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+        <div class="block_7__img-wrap col col-md-11">
+            <img src={{ data.img }} alt={{ data.alt }} class="block_7__left__img w-100 h-100 d-none d-md-block">
+            {% if data.img_mob %}
+                <img src={{ data.img_mob }} alt={{ data.alt_mob }} class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+            {% else %}
+                <img src={{ data.img }} alt={{ data.alt }} class="block_7__left__img_mob">
+            {% endif %}
+        </div>
+    </div>
+
+    {% if data.pic_position == "right" %}
+        <div class="block_7__right_right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center">
+            <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                <h4 class="block_7__header text-uppercase mb-0">{{ data.header }}</h4>
+                <p class="block_7__text mb-0">{{ data.text }}</p>
+                {% if data.points %}
+                    <ul class="ul_1">
+                        {% for point in data.points %}
+                            <li class="ul_1__text mb-0">{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {% if data.button %}
+                    <a href={{ data.link_to }} class="text-decoration-none">
+                        <button class="button_yellow block_7__button col-11  offset-md-0 col-md-auto">{{ data.button }}</button>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-4 border-blue-l2 ms-4 ms-md-0">
+            <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+
+                <h4 class="block_7__header text-uppercase mb-0">{{ data.header }}</h4>
+                <p class="block_7__text mb-0">{{ data.text }}</p>
+                {% if data.points %}
+                    <ul class="ul_1">
+                        {% for point in data.points %}
+                            <li class="ul_1__text mb-0">{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {% if data.button %}
+                    <a href={{ data.link_to }} class="text-decoration-none">
+                        <a class="btn btn-yellow-1 block_7__button col-11 px-4 mt-3 offset-md-0 col-md-auto">{{ data.button }}</a>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>

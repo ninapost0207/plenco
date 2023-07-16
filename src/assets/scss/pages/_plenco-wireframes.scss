@@ -1,0 +1,48 @@
+.body_plenco_wireframes {
+
+
+
+    .section_43 {
+        height: 100vh;
+        width: 100vw;
+        z-index: 1000;
+        background-color: $dark-blue-1;
+
+
+        & .header-image {
+            opacity: 0.5;
+            min-width: 600px;
+        }
+
+
+        & .plenco-logo {
+            width: 460px;
+            @include respond-to(sm) {
+                width: 80%;
+                margin-top: calc(115px - 20%);
+            }
+    
+        }
+
+        & .content {
+            z-index: 1100;
+            margin-top: -110px;
+            height: calc(50% + 110px);
+
+
+            & .section_43__header {
+
+            }
+
+            & .section_43__button {
+            }
+
+            & .section_43__version {
+            }
+        }
+    
+    }
+    
+
+}
+

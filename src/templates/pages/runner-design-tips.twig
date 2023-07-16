@@ -1,0 +1,116 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Runner Design Tips' %}
+{% set pageClass = 'body_runner-design-tips' %}
+
+
+{% set page_runner_design_tips = {
+    heading: {
+        heading_top_text: "Runner Design Tips",
+        bg_img: "./assets/img/pages/runner-design-tips/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_21: {
+        class: "overline-r overline_mob-r",
+        header: "Reports & Resources CTA",
+        text: "Plenco’s Reports & Resources",
+        bg_img: "./assets/img/pages/polymer-rd-lab/heading.jpg",
+        button: "Reports & Resources",
+        link_to: "#",
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_runner_design_tips.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_runner_design_tips.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3 {{page_runner_design_tips.heading.class }}" style="{{ page_runner_design_tips.heading.style }}">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">PLENCO’s years of experience in the thermoset molding industry have given us some insight into designing of runners when molding <span class='text-blue-l2'>PLENCO phenolic and polyester materials</span>.</p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">We offer to share these tips with our molding compound customers, for whatever value they may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. We offer these ideas for you to use at your own discretion. (Runner Design Tips text)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="row section_16_bg overflow-hidden px-0">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <p class="section_16__header text_main mb-0">When designing runners for molds, there are a number of possible approaches. These include the standard full round 
+                    with a center parting line.</p>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/runner-design-tips/full-round-runner.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/runner-design-tips/full-round-runner_mob.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Full Round Runner</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">This is the most efficient runner, but in some cases it is necessary for the runner to be in only one half of the mold.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Standard Trapezoid Runner</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">A standard trapezoid runner is often used in situations that require the runner to be only in one mold half. 
+                                The effective runner size is shown in the figure above. The four corners become “dead” areas with nearly no material movement.</p>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/runner-design-tips/standard-trapezoid-runner.jpg" alt="Pic-2" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/runner-design-tips/standard-trapezoid-runner_mob.jpg" alt="Pic-2_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/runner-design-tips/modified-trapezoid-runner.jpg" alt="Pic-3" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/runner-design-tips/modified-trapezoid-runner_mob.jpg" alt="Pic-3_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Modified Trapezoid Runner</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">To reduce the amount of scrap in the runner we suggest the use of a modified trapezoid. In our experience this 
+                                design reduces the dead areas without a significant change to the effectiveness of the runner. See the figure 
+                                above (left). (Runner Design Tips text)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {% include '../components/sections/section_21.twig' with {data: page_runner_design_tips.section_21} %}
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Link to External Site' %}
+{% set pageClass = 'body_link_site' %}
+
+{% set page_link_site = {
+    nav_side: {
+        visible: false
+    }
+}%}
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+{% block content %}
+
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_link_site.nav_side} %}
+
+    <div class="link__content w-100 position-absolute left-0 bg-blue-3 d-flex flex-column align-items-center justify-content-center">
+        <div class="block_back position-fixed left-0 bg-white-1 w-100 d-flex align-items-center">
+            <div class="container cont-site">
+                <a href="javascript:history.back();" class="link_page-back text-black-1 text-decoration-none" rel="external nofollow">&lt Back</a>
+            </div>
+        </div>  
+        <span class="link__header text-blue-l2 mb-5">Links to external website</span>
+        <img src="./assets/img/svg/logo_plenco_white.svg" alt="Our Logo" class="link__logo mt-5">
+
+        <a type="button" class="navbtn" data-navbtn="email-singup_modal">email sign-up pop-up</a>
+        <a type="button" class="navbtn" data-navbtn="email-download_modal">email download pop-up</a>
+
+    </div>
+{% endblock %}
+

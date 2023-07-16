@@ -1,0 +1,162 @@
+<a type="button" class="nav_side__btn-msg d-none d-md-flex flex-column navbtn position-fixed align-items-center justify-content-center px-0 bg-blue-l3 end-0 text-decoration-none text-black-1 {{ data.visible ? '' : 'd-md-none'}}" data-navbtn="contact_modal"> 
+    <img src="./assets/img/svg/chat.svg" alt="Chat" class="nav_side__btn-msg__icon">
+    <span class="nav_side__btn-msg__text_1 text-uppercase">Message</span>
+    <span class="nav_side__btn-msg__text_2">Plenco</span>
+</a>
+
+
+
+
+<!-- Modal ContactUs-->
+<div class="modal fade needs-validation novalidate" data-obj="contactUsModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered contactUsModal-cont mx-0 mx-sm-auto">
+    <div class="modal-content contactUsModal rounded-0 bg-blue-l1 px-4 px-md-5">
+      	<div class="modal-header contactUsModal__header-cont m-0 p-0 border-0">
+			<h2 class="modal-title contactUsModal__header p-0 mt-4 mt-md-5" id="exampleModalLabel">Contact <span class="text-blue-1">Plenco</span></h2>
+			<button type="button" class="btn-close contactUsModal__btn_close button_arrow_60_r position-absolute top-0 end-0 p-0 m-0 bg-yellow-1 opacity-100 border-0" data-bs-dismiss="modal" aria-label="Close" data-obj="contactUsModal__btn_close"></button>
+    	</div>
+      	<form class="modal-body contactUsModal__body border-start border-5 border-blue-l2 ps-0 ps-md-4 pe-0 py-0 mt-2" id="contactUsModalForm">
+            <div class="contactUsModal__body__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between mx-n3">
+                <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_name-first">First Name*</label>
+                    <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_name-first" placeholder="First Name" required data-validate data-obj="modal-body__input">
+                  </div> 
+                <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_name-last">Last Name*</label>
+                    <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_name-last" placeholder="Last Name" required data-validate data-obj="modal-body__input">
+                </div> 
+                <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_email">Email Address*</label>
+                    <input type="email" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_email" placeholder="mail@adress.com" required data-validate data-obj="modal-body__input">
+                </div> 
+                <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_phone">phone number</label>
+                    <input type="tel" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_phone" placeholder="(000) 000-0000" data-validate data-obj="modal-body__input">
+                </div> 
+                <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_company">Company Name</label>
+                    <input type="text" class="form-control modal-body__input col-12 px-3" id="modal-contact_company" placeholder="My Company’s Name" data-validate data-obj="modal-body__input">
+                </div> 
+                <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-0">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_message">message</label>
+                    <textarea type="text" class="form-control modal-body__input col-12 px-3" id="modal-contact_message" placeholder="Write your message" style="height: 119px"  data-obj="modal-body__input"></textarea>
+                    <p class="form-text contactUsModal__add-text mb-0 w-100 px-0 mt-1">*fields are required. Our team will try to respond as soon as we can.</p> 
+                </div> 
+            </div>
+            <button type="submit" form="contactUsModalForm" class="btn btn-yellow-1 contactUsModal__btn_submit mx-auto position-relative" data-obj="contactUsModal__btn_submit">Submit</button>
+      	</form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal emailSignUp-->
+<div class="modal fade needs-validation novalidate" data-obj="emailSignUpModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered emailSignUpModal-cont mx-0 mx-sm-auto">
+    <div class="modal-content emailSignUpModal rounded-0 bg-blue-l1 px-4 px-md-5">
+      	<div class="modal-header emailSignUpModal__header-cont m-0 p-0 border-0 d-flex flex-column mt-5 mb-md-3">
+			<img src="./assets/img/svg/logo_plenco_blue.svg" alt="Plenco Logo" class="modal_logo mt-3">
+			<h2 class="modal-title emailSignUpModal__header p-0 mt-4 mt-md-5 align-self-start" id="exampleModalLabel">Email Sign-Up <span class="text-blue-1">Pop-Up</span></h2>
+        	<button type="button" class="btn-close emailSignUpModal__btn_close button_arrow_60_r position-absolute top-0 end-0 p-0 m-0 bg-yellow-1 opacity-100 border-0" data-bs-dismiss="modal" aria-label="Close" data-obj="emailSignUpModal__btn_close"></button>
+      	</div>
+      	<form class="modal-body emailSignUpModal__body border-start border-5 border-blue-l2 ps-0 ps-md-4 pe-0 py-0 mt-2 pt-3" id="emailSignUpModalForm">
+            <div class="emailSignUpModal__body__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between mx-n3">
+				<p class="text_add px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+				<div class="block_input_2__inputarea col-12 col-md-12 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-email-signup_email">Email Address*</label>
+                    <input type="email" class="form-control modal-body__input validate col-12 px-3" id="modal-email-signup_email" placeholder="mail@adress.com" required data-obj="modal-body__input" data-validate>
+                </div> 
+				<div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-email-signup_name-first">First Name*</label>
+                    <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-email-signup_name-first" placeholder="First Name" required data-obj="modal-body__input" data-validate>
+                  </div> 
+                <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-email-signup_name-last">Last Name*</label>
+                    <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-email-signup_name-last" placeholder="Last Name" required data-obj="modal-body__input" data-validate>
+                </div> 
+            </div>
+			<p class="form-text emailSignUpModal__add-text mb-0 w-100 px-0 mt-n2">By signing up, you agree to Plenco’s <a class="text-black-1 modal_link" href="priv-policy.html">Privacy Policy</a> and <a class="text-black-1 modal_link" href="terms-conditions.html">Terms and Conditions</a>.</p> 
+			<div class="btn-container d-flex flex-column flex-md-row align-items-center justify-content-center mt-4">
+				<div class="mock me-5 opacity-0 d-none d-md-block">No Thanks</div>
+				<button type="submit" form="emailSignUpModalForm" class="btn btn-yellow-1 emailSignUpModal__btn_submit mt-2 mt-md-0" data-obj="emailSignUpModal__btn_submit">Sign Up</button>
+				<a type="button" class="position-relative text-black-1 ms-md-5 mt-3 mt-md-0" data-bs-dismiss="modal" aria-label="Close">No Thanks</a>
+			</div>
+		</form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal emailDownload-->
+<div class="modal fade needs-validation novalidate" data-obj="emailDownloadModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered emailDownloadModal-cont mx-0 mx-sm-auto">
+	  <div class="modal-content emailDownloadModal rounded-0 bg-blue-l1 px-4 px-md-5">
+			<div class="modal-header emailDownloadModal__header-cont m-0 p-0 border-0 d-flex flex-column mt-5 mb-md-3">
+			  <h2 class="modal-title emailDownloadModal__header p-0 mt-4 mt-md-5 align-self-start" id="exampleModalLabel">Download Resource Email Capture <span class="text-blue-1">Heading</span></h2>
+			  <button type="button" class="btn-close emailDownloadModal__btn_close button_arrow_60_r position-absolute top-0 end-0 p-0 m-0 bg-yellow-1 opacity-100 border-0" data-bs-dismiss="modal" aria-label="Close" data-obj="emailDownloadModal__btn_close"></button>
+			</div>
+			<form class="modal-body emailDownloadModal__body border-start border-5 border-blue-l2 ps-0 ps-md-4 pe-0 py-0 mt-2 pt-3" id="emailDownloadModalForm">
+			  <div class="emailDownloadModal__body__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between mx-n3">
+				  <p class="text_add px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+				  <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+					  <label class="modal-body__header mb-2 text-capitalize" for="modal-email-download_name-first">First Name*</label>
+					  <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-email-download_name-first" placeholder="First Name" required data-obj="modal-body__input" data-required>
+					</div> 
+				  <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+					  <label class="modal-body__header mb-2 text-capitalize" for="modal-email-download_name-last">Last Name*</label>
+					  <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-email-download_name-last" placeholder="Last Name" required data-obj="modal-body__input" data-required>
+				  </div> 
+				  <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+					<label class="modal-body__header mb-2 text-capitalize" for="modal-email-download_email">Email Address*</label>
+					<input type="email" class="form-control modal-body__input validate col-12 px-3" id="modal-email-download_email" placeholder="mail@adress.com" required data-obj="modal-body__input" data-required>
+				</div> 
+				<div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-email-download_company">Company Name</label>
+                    <input type="text" class="form-control modal-body__input col-12 px-3" id="modal-email-download_company" placeholder="My Company’s Name"  data-obj="modal-body__input">
+                </div> 
+				<div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-2">
+                    <label class="modal-body__header mb-2 text-capitalize" for="modal-email-download_company">Industry</label>
+					
+					<div class="accordion accordion-flush emailDownloadModal_accordion col-12" id="accordion-emailDownloadModal" data-obj="accordion-emailDownloadModal">
+						<div class="accordion-item mb-2">
+							<h2 class="accordion-header" id="acc-emailDownloadModal__header-1">
+								<button data-obj="accordion-emailDownloadModal__button" class="accordion-button d-flex align-items-center justify-content-between position-relative collapsed bg-blue-1 ps-4" type="button" data-bs-toggle="collapse" data-bs-target="#acc-emailDownloadModal__body-1" aria-expanded="true" aria-controls="acc-emailDownloadModal__body-1">
+									<p class="d-block mb-0 text-white-1 pe-4" id="accordion-emailDownloadModal__current">Select industry</p> 
+								</button>
+							</h2>
+							<div id="acc-emailDownloadModal__body-1" class="accordion-collapse collapse" aria-labelledby="acc-emailDownloadModal__header-1" data-bs-parent="#accordion-emailDownloadModal" data-obj="acc-emailDownloadModal__body-1">
+								<div class="accordion-body pb-2 pt-0">
+									<div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3 hover">
+										<span role="button" class="accordion__text-2 accordion-emailDownloadModal__select mb-0 text-white-1">Select industry</span>
+									</div>
+									<div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+										<span role="button" class="accordion__text-2 accordion-emailDownloadModal__select mb-0 text-white-1">1</span>
+									</div>
+									<div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+										<span role="button" class="accordion__text-2 accordion-emailDownloadModal__selectmb-0 text-white-1">2</span>
+									</div>
+									<div role="button" class="accordion-body__item d-flex align-items-center bg-blue-1 px-4 border border-1 border-blue-3">
+										<span role="button" class="accordion__text-2 accordion-emailDownloadModal__select mb-0 text-white-1">3</span>
+									</div>  
+								</div>
+							</div>
+						</div>
+					</div>
+
+                </div>
+				<input type="text" class="form-control modal-body__input d-none" data-obj="emailDownloadModal-industry-input" placeholder=""  data-obj="modal-body__input">
+
+				<div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4 mt-md-4 h-100">
+					<p class="form-text emailDownloadModal__add-text mb-0 w-100 px-0 col-12 col-md-6 mt-0 mt-md-3">By signing up, you agree to Plenco’s <a class="text-black-1 modal_link" href="priv-policy.html">Privacy Policy</a> and <a class="text-black-1 modal_link" href="terms-conditions.html">Terms and Conditions</a>.</p> 
+				</div>
+			  </div>
+			  <div class="btn-container d-flex flex-column flex-md-row align-items-center justify-content-center mt-md-4">
+				  <div class="mock me-5 opacity-0 d-none d-md-block">No Thanks</div>
+				  <button type="submit" form="emailDownloadModalForm" class="btn btn-yellow-1 emailDownloadModal__btn_submit mt-2 mt-md-0" data-obj="emailDownloadModal__btn_submit">Download</button>
+				  <a type="button" class="position-relative text-black-1 ms-md-5 mt-3 mt-md-0" data-bs-dismiss="modal" aria-label="Close">No Thanks</a>
+			  </div>
+		  </form>
+	  </div>
+	</div>
+  </div>
+  

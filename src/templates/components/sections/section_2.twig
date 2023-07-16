@@ -1,0 +1,31 @@
+<div class="row section_2_bg overline_mob-r">
+    <div class="section_2 col px-2 ">
+        <div class="container cont-site pt-28 pb-0">
+            <div class="row">
+                <h3 class="text_bicolor text-center">Plenco <em>Products</em></h3>
+                <div class="section_2__cards-cont col-12 row px-0 d-flex justify-content-between">
+                {% for product in data.products %}
+                    <div class="section_2__card col-sm-5 col-lg-5 col-xl px-0">
+                        <div class="section_2__card__img-cont col-auto">
+                            <img class="d-block mx-auto" src={{ product.img }} alt="RESINS">
+                        </div>
+                        <a href={{ product.link_to }} class="text-decoration-none"> 
+                            <div class="section_2__card__content-cont col">
+                                <div class="section_2__card__header-cont col-10 offset-1 d-flex align-items-center">
+                                    <h4 class="section_2__card__header">{{ product.header }}</h4>
+                                </div>
+                                <p class="section_2__card__text col-10 offset-1">{{ product.text }}</p>
+                                <div class="section_2__card__line col-7 offset-1"></div>
+                                <div class="section_2__card__bottom-block d-flex align-items-center justify-content-between col-12">
+                                    <span class="section_2__card__bottom-block__text offset-1">{{ product.category }}</span>
+                                    <button class="button_yellow_arrow_60"></button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

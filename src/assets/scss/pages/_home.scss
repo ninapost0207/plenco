@@ -1,0 +1,450 @@
+.body_home {
+
+    & .layout__line_center {
+        height: 360px;
+        
+        @include respond-to(sm) {
+            top: 115px;
+            height: 410px; 
+        }
+    }
+
+//--------------------SECTION 7-----------------------
+
+    & .section_7_bg {
+        background-image:  url("../img/svg/homepage__heading_bottom_bg-image.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: auto auto;
+        
+        @include respond-to(sm) {
+            background-image:  url("../img/svg/homepage__heading_bottom_bg-image_mob.svg");
+        }
+
+        & .section_7__bg_img-cont {
+            height: 640px;
+            z-index: 110;
+
+            & .section_7__bg_img {
+                height: 640px;
+                background-image:  url("../img/pages/home/heading.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: .5;
+            }
+        }
+    }
+
+
+    & .section_7 {
+
+        padding-top: 142px;
+        padding-bottom: 104px;
+
+        @include respond-to(sm) {
+            padding-top: 78px;
+            padding-bottom: 47px;
+        }
+
+        & .section_7__center-block__cont {
+
+            & .section_7__center-block {
+
+                & .section_7__center__button {
+
+                    @include respond-to(sm) {
+                        height: 66px;
+                    } 
+                }
+            } 
+        }
+
+
+        & .section_7__cards-wrap {
+            z-index: 120;
+            margin-top: 117px;
+            margin-left: -12px !important;
+            margin-right: -12px !important;
+
+            @include respond-to(sm) {
+                margin-top: 140px;
+            }
+
+            & .section_7__card {
+                min-height: 114px;
+                width: 23%;
+
+                @include respond-to(sm) {
+                    margin-top: 8px;
+                    width: 49%;
+                    min-width: 145px;
+                }
+        
+                & .section_7__card__highlighter {
+                    height: 20px;
+                    width: 85%;
+                    left: 15px;
+                }
+        
+                & .section_7__card__text_header {
+                    font-family: "Almarai-700";
+                    font-size: 18px;
+                    line-height: 23px;
+                    z-index: 1;
+        
+                    @include respond-to(md) {
+                        font-size: 16px;
+                    }
+                }
+        
+                & .section_7__card__text_category {
+                    font-family: "Play-700";
+                    font-size: 18px;
+                }
+            }
+        }
+
+        & .section_7__text_bottom_main {
+            margin-top: 120px;
+        }
+
+
+
+            & .section_7__button  {
+                max-width: $btn-small-width;
+
+                @include respond-to(md) {
+                    width: 180px;
+                }
+
+                @include respond-to(xs) {
+                    width: 45%;
+                } 
+            }
+
+    }
+
+
+//--------------------SECTION 6-----------------------
+
+    .section_6_bg {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-top: 135px;
+        padding-bottom: 125px;
+        
+        @include respond-to(sm) {
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+            padding-top: 75px;
+            padding-bottom: 45px;
+        }
+    }
+
+    .section_6 {
+
+        & .section_6__gallery_1-wrapper {
+            margin-left: -24px !important;
+            margin-right: -24px !important;
+
+            & .gallery_1__item {
+
+                & .gallery_1__item__descr-cont {
+        
+                    @include respond-to(sm) {
+                        min-height: 146px;
+                    }
+        
+                    & .gallery_1__item__icon {
+                        height: 63px;
+                
+                        @include respond-to(sm) {
+                            height: 50px;
+                        }
+                    }
+        
+                    & .gallery_1__item__text {
+                        font-family: "Almarai-700";
+                        font-size: 20px;
+                
+                        @include respond-to(sm) {
+                            font-family: "Gotham-700";
+                            font-size: 16px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+
+//--------------------SECTION 1-----------------------
+
+    .section_1 {
+        background-image: url('../img/pages/home/bg_1.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 623px;
+    
+        &__sub-cont { 
+            background-image: url('../img/svg/plenco_watermark.svg');    
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top center;
+            max-height: 470px;
+            padding-top: 108px;
+            padding-bottom: 64px;
+    
+            @include respond-to(md) {
+                padding-top: 108px;
+            }
+    
+            @include respond-to(sm) {
+                padding-top: 64px;
+            }
+        }
+    }
+
+
+
+
+
+//--------------------SECTION 2-----------------------
+
+    .section_2_bg {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 95px; 
+        
+        @include respond-to(sm) {
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+            padding-bottom: 69px; 
+        }
+    }
+
+    .section_2 {
+
+        & .container {
+            padding-bottom: 94px; 
+            padding-top: 112px;
+        }
+
+        & .section_2__cards-cont {
+            margin-left: -12px !important;
+            margin-right: -12px !important;
+
+            & .section_2__card-wrap {
+
+                & .section_2__card {
+    
+                    & .section_2__card__img-cont {
+                        height: 128px;
+                    }
+    
+                    & .section_2__card__content-cont {
+                        
+                        & .section_2__card__header {
+                            font-family: "Muli-700";
+                            font-size: 22px;
+                            @include ls(50);
+                            min-height: 100px;
+
+                            @include respond-to(lg) {
+                                min-height: 135px;
+                            }
+
+                            @include respond-to(md) {
+                                min-height: 100px;
+                            }
+
+                            @include respond-to(sm) {
+                                min-height: 135px;
+                            }
+
+                            @include respond-to(xs) {
+                                min-height: auto;
+                            }
+                        }
+    
+                        & .section_2__card__text {
+                            font-family: "Muli-300";
+                            font-size: 16px;
+                            min-height: 240px;
+
+                            @include respond-to(lg) {
+                                min-height: 340px;
+                            }
+
+                            @include respond-to(md) {
+                                min-height: 170px;
+                            }
+
+                            @include respond-to(sm) {
+                                min-height: 270px;
+                            }
+
+                            @include respond-to(xs) {
+                                min-height: auto;
+                            }
+                        }
+    
+                        & .section_2__card__bottom-block {
+    
+                            & .section_2__link {
+                                left: 24px;
+                            }
+                        }
+    
+                    }
+    
+                }
+            }
+        }
+    }
+
+
+
+
+//-------------------------SECTION 8 ----------------------
+
+    & .section_8_bg {
+        margin-top: 90px;
+        padding-top: 100px;
+        padding-bottom: 90px;
+        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        background-position: 100% 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include respond-to(sm) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+            background-position: 0% 40% !important;
+            background-size: 55% 20% !important;
+            background-repeat: no-repeat;
+        }
+    }
+
+    & .section_8__data {
+
+        & .block_input_1__searcharea {
+
+            height: 60px;
+
+            .block_input_1__input {
+                font-family: "Mulish-300";
+                //font-size: 18px;
+                z-index: 30;
+                @include ls(25);
+                
+                    &::placeholder {
+                        color: black;
+                    }
+            }
+
+            & .block_input_1__button {
+                width: 60px;
+            }
+        }
+
+        & .block_1__link {
+            font-family: "Muli-600";
+            font-size: 18px;
+            display: block;
+            color: $black;
+            position: relative;
+            z-index: 30;
+            margin-top: 17px;
+            @include respond-to(md) {
+                font-size: 16px;
+            }
+        }
+
+        & .block_4__button {  
+            min-width: 260px;      
+        }
+
+        & .section_8__image {
+            height: 826px;
+            width: auto;
+
+            @include respond-to(md) {
+                margin-left: 25%;
+                left: 20px;
+                height: auto;
+            }
+
+            @include respond-to(sm) {
+                width: 120%;
+            }
+        }
+
+    }
+
+
+
+
+//-------------------------SECTION 4 ----------------------
+    
+    .section_4_bg {
+        background-image: url("../img/svg/section_4__bg.svg");
+        background-position: 25px center;
+        background-size: 601px;
+        background-repeat: no-repeat;
+        padding-bottom: 145px;
+        padding-top: 187px;
+        margin-bottom: 0;
+    
+        @include respond-to(md) {
+            margin-top: 80px !important;
+            background-image: none;
+            padding-top: 80px;
+        }
+    
+    
+        @include respond-to(sm) {
+            background-image: url("../img/svg/mosaic_3.svg");
+            background-position: 10px bottom;
+            background-size: auto auto;
+            padding-bottom: 80px;
+            padding-top: 0px;
+        }
+    
+    }
+    
+    & .section_4 {
+    
+        & .section_4__content {
+    
+            & .section_4__item {
+    
+                & .section_4__item__header {
+                    font-family: "Mulish-600";
+                    font-size: 24px;
+    
+                    @include respond-to(md) {
+                        max-width: 70%;
+                    }
+    
+                    @include respond-to(sm) {
+                        font-size: 22px;
+                        max-width: 100%;
+                    }
+                }
+    
+                & .section_4__item__line {
+                    left: -40px;
+                    top: 48px;
+                    width: 55px;
+    
+                    @include respond-to(sm) {
+                        top: 43px;
+                    }
+                }
+            }
+        }
+    }
+
+//-------------------------SECTION 13 ----------------------
+
+
+
+
+}

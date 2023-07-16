@@ -1,0 +1,395 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Phenolic Molding Compounds Applications' %}
+{% set pageClass = 'body_pmc-app' %}
+
+{% set page_pmc_app = {
+    heading: {
+        heading_top_text: "Phenolic Molding Compounds Applications",
+        bg_img: "./assets/img/pages/pmc-app/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    block_7__headers: [
+        "Cookware handles and knobs",
+        "Electrical terminal strips",
+        "Drive train components",
+        "Small appliance parts",
+        "Gas meter parts",
+        "Bottle and container  covers and closures",
+        "Electrical applications",
+        "automotive interiors Parts"
+    ]
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+ 
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_pmc_app.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_pmc_app.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0 d-none d-md-block">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero <span class='text-blue-l2'>eos et accusam et justo</span>.</p>
+                </div> 
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0 d-md-none">Common products and applications that are made from thermoset plastics include electrical housings and components, insulators, heat shields, circuit breakers, gas meter parts, motor components, and disc brake pistons. See <span class='text-blue-l2'>more applications below</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1"></p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row section_37 overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site col-12 d-flex ">
+                <div class="section_37__left col-3 pe-5 d-none d-md-block ">
+                    <div class="section_37__left__content-cont border-start border-7 border-blue-l2 ms-n3 ps-3 py-3">
+                        <a href="pmc.html" class="section_37__left__link text-decoration-none d-flex">
+                            <h3 class="text-blue-1 mb-0">Phenolic Molding Compounds</h3>
+                        </a>
+                        <a href="pmc-envir-details.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Environmental Details</h3>
+                        </a>
+                        <a  class="section_37__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-l2 mb-0">Applications</h3>
+                        </a>
+                        <a href="pmc-cost-param.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Cost Parameters</h3>
+                        </a>
+                        <a href="#product-series" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Product Series</h3>
+                        </a>
+                        <a href="pmc.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                            <h3 class="text-blue-1 mb-0">Resources</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section_37__right col-12 col-md-9 ps-md-5">
+                    <div class="section_37__data d-flex flex-column flex-lg-row position-relative align-items-center">
+
+                        <div class="accordion accordion-flush section_37_accordion d-md-none mt-5 col-12" id="oil-accordion-nav">
+                            <div class="row ">
+        
+                                <div class="acc__item-wrap col-12 px-0">
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header border-bottom border-7 border-yellow-1" id="acc-nav__header-1">
+                                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-white-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-nav__body-1" aria-expanded="true" aria-controls="acc-nav__body-1">
+                                                <h3 class="accordion-header d-block mb-0 text-uppercase text-blue-1">Applications</h3> 
+                                            </button>
+                                        </h2>
+                                        <div id="acc-nav__body-1" class="accordion-collapse collapse" aria-labelledby="acc-nav__header-1" data-bs-parent="">
+                                            <div class="accordion-body pt-2 pb-0">
+                                                <a href="pmc.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Phenolic Molding Compounds</h3>
+                                                </a>
+                                                <a href="pmc-envir-details.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Environmental Details</h3>
+                                                </a>
+                                                <a href="pmc-cost-param.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Cost Parameters</h3>
+                                                </a>
+                                                <a href="#product-series" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Product Series</h3>
+                                                </a>
+                                                <a href="pmc.html" class="section_37__left__link text-decoration-none mt-4 d-flex">
+                                                    <h3 class="text-blue-1 mb-0">Resources</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <h2 class="section_37__header-line mb-0 position-relative mt-5 mt-lg-3">Typical Phenolic Molding Compounds <span class='text-blue-1 font-normal'>Applications</span></h2>
+                    {% for header in page_pmc_app.block_7__headers %}
+                        <div class="block_7 col flex-lg-row d-lg-flex align-items-center d-none">
+                            <div class="block_7__left col col-lg-6 overflow-hidden">
+                                <div class="block_7__img-wrap col col-lg-12">
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-lg-block">
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-lg-none w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11 col-lg-11 offset-lg-1">
+                                    <h3 class="mb-0 text-blue-1">{{ header }}</h3>
+                                    <p class="text_add mt-3 mb-0">Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text text_add mb-0 text-black-1 mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam </li>
+                                        <li class="ul_3__text text_add mb-0 text-black-1 mt-3">Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                        <div class="block_7 col flex-column d-flex align-items-center d-lg-none">
+                            <div class="block_7__left col overflow-hidden">
+                                <div class="block_7__img-wrap col">                                    
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11">
+                                    <h3 class="mb-0 text-blue-1 mt-5">Cookware handles and knobs</h3>
+                                    <p class="text_add mt-3 mb-0">Phenolic molding compounds provide thermal insulation for household appliances.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">High Temperature Resistance</li>
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">High Levels of Dimensional Stability</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_7 col flex-column d-flex align-items-center d-lg-none">
+                            <div class="block_7__left col overflow-hidden">
+                                <div class="block_7__img-wrap col mt-5">                                    
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11">
+                                    <h3 class="mb-0 text-blue-1 mt-5">Electrical Applications</h3>
+                                    <p class="text_add mt-3 mb-0">Phenolic thermosets are used as insulating materials in the electrical industry and exhibit an outstanding mix of thermal and electrical properties.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">High Thermal Properties</li>
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">High Dielectric Strength and Resistivity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_7 col flex-column d-flex align-items-center d-lg-none">
+                            <div class="block_7__left col overflow-hidden">
+                                <div class="block_7__img-wrap col mt-5">                                    
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11">
+                                    <h3 class="mb-0 text-blue-1 mt-5">Drive train components</h3>
+                                    <p class="text_add mt-3 mb-0">Phenolics are used as a replacement for steel and die cast aluminum in automotive light weighting.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">High Shock and Impact Resistance</li>
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">Corrosion Resistant</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_7 col flex-column d-flex align-items-center d-lg-none">
+                            <div class="block_7__left col overflow-hidden">
+                                <div class="block_7__img-wrap col mt-5">                                    
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11">
+                                    <h3 class="mb-0 text-blue-1 mt-5">Small appliance parts</h3>
+                                    <p class="text_add mt-3 mb-0">Phenolic thermosets are used in temperature controllers to meet the high electrical capacity required.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">Wide Range of Design Flexibility</li>
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">High Heat Deflection Temperature </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_7 col flex-column d-flex align-items-center d-lg-none">
+                            <div class="block_7__left col overflow-hidden">
+                                <div class="block_7__img-wrap col mt-5">                                    
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11">
+                                    <h3 class="mb-0 text-blue-1 mt-5">Gas meter parts</h3>
+                                    <p class="text_add mt-3 mb-0">Phenolic molding compounds have excellent thermal performance and are specified to insulate and protect sensitive components from adverse effects of high temperature exposure.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">Insulative Protection</li>
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">Love Friction and Minimize Wear</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_7 col flex-column d-flex align-items-center d-lg-none">
+                            <div class="block_7__left col overflow-hidden">
+                                <div class="block_7__img-wrap col mt-5">                                    
+                                    <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob w-100 w-lg-auto">
+                                </div>
+                            </div>
+                            <div class="block_7__right d-flex col-12 flex-column align-items-start justify-content-center">
+                                <div class="block_7__text-wrap col-11">
+                                    <h3 class="mb-0 text-blue-1 mt-5">Bottle and container  covers and closures</h3>
+                                    <p class="text_add mt-3 mb-0">Phenolics are widely used for caps and closures due to their toughness and durability.</p>
+                                    <ul class="ul_3 mb-0 ps-3">
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">Long Service Life</li>
+                                        <li class="ul_3__text mb-0 text-black-1 mt-3">Durability and Chemical Resistance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    <div class="row section_27_bg bg-blue-l1 ms-3 ms-md-n4">
+                        <div class="col px-0">
+                            <div class="container section_27 d-flex flex-column justify-content-center mt-4 mt-md-5">
+                                <h2 class="section_37__header-line mb-0 position-relative mt-0 ms-n5 ps-2 ps-md-0 ms-md-0" id="product-series">Related <span class='text-blue-1 font-normal'>Product Series</span></h2>
+                
+                                <div class="section_27__blocks row row-cols-sm-2 row-cols-lg-2 g-3 g-md-4 mx-n2 mt-1">
+                
+                
+                                    <div class="block_6-wrap">
+                                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                                <p class="block_6__text mb-0 text-black-1">General Purpose Phenolic Materials</p>
+                                            </div>
+                                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                                <div class="block_6__link text-decoration-none">
+                                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco Series 02000</h3>
+                                                </div> 
+                                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                                            </div>
+                                            <a href="series-02000.html" class="stretched-link "></a>
+                                        </div>    
+                                    </div>
+                
+
+                                    <div class="block_6-wrap">
+                                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                                <p class="block_6__text mb-0 text-black-1">Electrical Grade Phenolic Materials</p>
+                                            </div>
+                                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                                <div class="block_6__link text-decoration-none">
+                                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco Series 03000</h3>
+                                                </div> 
+                                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                                            </div>
+                                            <a href="series-03000.html" class="stretched-link "></a>
+                                        </div>    
+                                    </div>
+
+
+                                    <div class="block_6-wrap">
+                                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                                <p class="block_6__text mb-0 text-black-1">Heat Resistant Phenolic Materials</p>
+                                            </div>
+                                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                                <div class="block_6__link text-decoration-none">
+                                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco Series 04000</h3>
+                                                </div> 
+                                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                                            </div>
+                                            <a href="series-04000.html" class="stretched-link "></a>
+                                        </div>    
+                                    </div>
+
+
+                                    <div class="block_6-wrap">
+                                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                                <p class="block_6__text mb-0 text-black-1">Graphite Lubricated Phenolic Materials</p>
+                                            </div>
+                                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                                <div class="block_6__link text-decoration-none">
+                                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco Series 05000</h3>
+                                                </div> 
+                                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                                            </div>
+                                            <a href="series-05000.html" class="stretched-link "></a>
+                                        </div>    
+                                    </div>
+
+
+                                    <div class="block_6-wrap">
+                                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                                <p class="block_6__text mb-0 text-black-1">Glass Fiber/Specialty Phenolic Materials</p>
+                                            </div>
+                                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                                <div class="block_6__link text-decoration-none">
+                                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco Series 06000</h3>
+                                                </div> 
+                                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                                            </div>
+                                            <a href="series-06000.html" class="stretched-link "></a>
+                                        </div>    
+                                    </div>
+
+                                    <div class="block_6-wrap">
+                                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                                <p class="block_6__text mb-0 text-black-1">Impact Modified Phenolic Materials</p>
+                                            </div>
+                                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                                <div class="block_6__link text-decoration-none">
+                                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco Series 07000</h3>
+                                                </div> 
+                                                <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                                            </div>
+                                            <a href="series-07000.html" class="stretched-link "></a>
+                                        </div>    
+                                    </div>
+
+                
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_107_bg h-100 p-0 m-0 overline-r overline_mob-r"> 
+        <div class="section_107 col-12 px-0 d-flex align-items-start align-items-md-center pt-5 pb-4 pb-lg-5">
+            <div class="container cont-site section_107__content col-md-12 d-flex flex-column flex-lg-row justify-content-start justify-content-md-between align-items-center mt-3 mt-md-0">
+                <div class="section_107__left col-lg-8 position-relative">
+                    <h1 class="section_107__header text-center text-lg-start text-blue-l3 mb-0">Learn More</h1>
+                    <p class="section_107__text text-center text-lg-start text-white-1 mb-0 pe-lg-4">Phenolic Molding Compound Applications</p>
+                </div>
+                <div class="section_107__right col-lg-4  position-relative align-self-center align-self-lg-end">
+                    <a type="button" class="btn btn-yellow-1 section_107__button ms-0 ms-md-4 mt-4 mt-lg-0 navbtn" data-navbtn="contact_modal">Contact Plenco</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

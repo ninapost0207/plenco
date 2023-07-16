@@ -1,0 +1,203 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Processing Guide (English)' %}
+{% set pageClass = 'body_processing-guide' %}
+
+{% set page_technical_service = {
+    heading: {
+        heading_top_text: "Plenco’s Processing Guide",
+        bg_img: "./assets/img/pages/processing-guide/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_21: {
+        class: "overline-r overline_mob-r",
+        header: "Reports & Resources CTA",
+        text: "Plenco’s Reports & Resources",
+        button: "Reports & Resources",
+        link_to: "#",
+    },
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_technical_service.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
+    
+    
+    <div class="row section_heading_bottom bg-blue-3 {{ page_processing_guide.heading.class }}" style="{{ page_processing_guide.heading.style }}">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">The purpose of this manual is to serve as an information guide for <span class='text-blue-l2'>thermoset product designers, mold designers, mold makers and molders</span></p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">It has been compiled by the Plenco Technical Service Group from many years of experience in the thermoset molding industry. We offer to share this information with our molding compound customers, for whatever value it may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. (Processing Guide text)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container cont-site">
+        <div class="row section_20_bg overflow-hidden">
+            <div class="section_20 col px-0">
+                <p class="section_20__header mb-0 text_main">The manual is organized into sections pertaining to injection molding, compression molding, 
+                    transfer molding, thermoset part design, preventative maintenance of presses and molds and a 
+                    glossary of terms.</p>
+                <p class="section_20__text mb-0 mt-4 text_add">While we have attempted to be as thorough as possible in preparing each section, this manual 
+                    is a living document. Therefore, we welcome any comments, input or questions you may have while 
+                    using it. (Processing Guide)</p>
+
+                
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Introduction & Part Design tips</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Introduction</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Glossary of Thermoset Molding Terms</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Storage of Thermoset Materials</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Thermoset Part Design Tips</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Injection Unit Design Tips</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Injection Mold Design Tips</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Compression Mold Design Tips</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Transfer Mold Design Tips</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Preforming & Preheating</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Preforming & Preheating</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-2_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-3_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Preventative Maintenance</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Preforming & Preheating</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Introduction & Part Design tips</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Injection Molding</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Injection Phenolic Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Injection Polyester Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Injection Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Injection Troubleshooting Chart</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Injection Troubleshooting Guide</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Injection Startup Guide</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Injection Troubleshooting Index</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Injection Startup Index</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-4_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-5" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-5_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Compression</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Compression Molding</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Cold Powder Compression Setup</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Compression Setup</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Preheat Compression Phenolic Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Preheat Compression Polyester Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Preheat Compression Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Compression Troubleshooting Chart</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Compression Troubleshooting Chart</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Compression Troubleshooting Guide</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Compression Troubleshooting Guide</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Compression Troubleshooting Index</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Compression Troubleshooting Index</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-10 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Transfer</h3>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Transfer Molding</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Transfer Molding Phenolic Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">Transfer Molding Polyester Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Transfer Molding Startup Procedure</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Transfer Troubleshooting Chart</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Transfer Troubleshooting Chart</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Transfer Troubleshooting Guide</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Transfer Troubleshooting Guide</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-4 d-block text-black-1">Transfer Troubleshooting Index</a>
+                            <a href="link_document.html" class="block_7__link mb-0 mt-2 d-block text-black-1">BMC Transfer Troubleshooting Index</a>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-6" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/photo_mock_1.jpg" alt="Pic-6_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+    {% include '../components/sections/section_21.twig' with {data: page_technical_service.section_21} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

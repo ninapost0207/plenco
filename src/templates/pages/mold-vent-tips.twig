@@ -1,0 +1,107 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Mold Vent Tips' %}
+{% set pageClass = 'body_mold-vent-tips' %}
+
+{% set page_mold_vent_tips = {
+    heading: {
+        heading_top_text: "Mold Vent Tips",
+        bg_img: "./assets/img/pages/mold-vent-tips/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    }
+}
+%}
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_mold_vent_tips.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_mold_vent_tips.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">PLENCO’s years of experience in the thermoset molding industry have given us some insight into designing vents for molding <span class='text-blue-l2'>PLENCO phenolic and polyester materials</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1"> We offer to share these tips with our molding compound customers, for whatever value they may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. We offer these ideas for you to use at your own discretion. (Mold Vent Tips text)</p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="row section_8_bg position-relative">
+        <div class="section_8 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row align-items-lg-center position-relative">
+                    
+                    <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">Mold <span class='text-blue-1 font-normal'>Venting</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">When molding thermosets, the curing process that takes place produces volatiles. These volatiles, along with the air already within the cavity chamber, can be trapped and superheated to temperatures of 700°F to 800°F.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">If these gases are not allowed to escape through vents, they can oxidize the lubricants leaving a “Burn Mark” on the part. Vents provide a means through which the gases can escape the cavities and the mold. Besides causing visual problems, improper or inadequate venting may result in parts that are short of material, that have unpredictable dimensions, or that have lower than expected physical or electrical properties.</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="section_8__img-cont position-relative">
+                        <img src="./assets/img/pages/mold-vent-tips/mold-vent-tips.jpg" alt="Mold Vent Tips" class="section_8__image position-relative">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container cont-site">
+        <h2 class="mt-5 pt-4 pt-lg-5 mb-0">Vent <span class='text-blue-1'>Location</span></h2>
+        <p class="text_add pt-3 pt-lg-4 mb-0">Unless the part geometry shows some obvious location for a vent, e.g., opposite the gate on a pump seal, a brief molding trial should be conducted to observe where the gas voids occur. As much as possible, vents should be located wherever a gas void or knit is seen on a part. The vents should be machined into the moving half of the mold.</p>
+    </div>
+
+    <div class="container_grey bg-grey-2">
+        <div class="container cont-site">
+            <h2 class="mb-0">Vent <span class='text-blue-1'>Design</span></h2>
+            <p class="text_add pt-3 pt-lg-4 mb-0">Generally, we suggest when molding phenolic materials that the vents be 1/4” wide and .0030” to .0035” deep with the depth being critical. A vent that is too shallow can be sealed by the clamping pressure of the press. A vent that is too deep or too short will not allow the material to set up or cure in the vent. Therefore, we suggest that the .0030” to .0035” depth be maintained for 3/4” to 1”, after which the vent can be relieved to a depth of .010” or .020”. (For PLENCO polyester materials we suggest that the vent depth be .0020” to .0025”.) If a vent is too deep, internal cavity pressure maybe too low and the mechanical properties developed may be too low as well. Improper venting will normally affect shrinkage by yielding oversize parts when the vents are shallow or nonexistent and undersize parts when the vents are too deep. To facilitate the removal of material from the vent with the part, the corner of the vent at the part edge can be radiused or chamfered slightly. One important fact to keep in mind when venting is that all vents must extend to the outside of the mold. 
+                <span class="text-add-italic">A vent that ends in a closed pocket will be of little use because the gases have no means of escaping the mold.</span></p>
+        </div>
+    </div>
+
+    <div class="container cont-site">
+        <h2 class="mt-5 pt-4 pt-lg-5 mb-0">Venting <span class='text-blue-1'>Ejector Pins</span></h2>
+        <p class="text_add pt-3 pt-lg-4 mb-0">An ejector pin should fit the hole in which it will operate within .001”. A flat can then be ground on the pin no deeper than .005” for a distance that will take the vent 1/8” below the fit length of the pin. Normally, the fit length(the distance from the cavity floor to the relief area) is 1/2” to 5/8” long. The ejection stroke should be set long enough for the entire vent plus 1/8” to extend above the bottom of the cavity. This is so the vent can be self cleaning or so an operator can blow the flash off the pin.</p>
+    </div>
+
+    <div class="container cont-site mb-5 pb-4">
+        <h2 class="mt-5 pt-4 pt-lg-5 mb-0">Vent <span class='text-blue-1'>Polish</span></h2>
+        <p class="text_add pt-3 pt-lg-4 mb-0">Something that is often overlooked in venting is the polish. We recommend very strongly that all vents be draw polished in the direction of flow <strong>at least</strong> as well as the cavities and cores. They should be polished for their entire length including the relieved distance. If a mold is to be chrome plated, all the molding surfaces are to be polished and plated <strong>including the vents</strong>. (Mold Vent Tips text)</p>
+    </div>
+
+    <div class="row section_21_bg h-100 p-0 m-0 overline-r overline_mob-r"> 
+        <div class="section_21 col-12 px-0 d-flex align-items-start align-items-md-center pt-5 pb-4 pb-lg-5">
+            <div class="container cont-site section_21__content col-md-12 d-flex flex-column flex-lg-row justify-content-start justify-content-md-between align-items-center">
+                <div class="section_21__left col-auto position-relative">
+                    <h1 class="section_21__header text-center text-lg-start text-blue-l3 mb-0">Reports & Resources CTA</h1>
+                    <p class="section_21__text text-center text-lg-start text-white-1 mb-0">Plenco’s Reports & Resources text</p>
+                </div>
+                <div class="section_21__right col-auto position-relative align-self-center align-self-lg-end">
+                    <a class="btn btn-yellow-1 section_21__button ms-0 ms-md-4 mt-4 mt-lg-0">Reports & Resources</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

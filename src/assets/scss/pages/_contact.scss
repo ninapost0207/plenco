@@ -1,0 +1,293 @@
+.body_contact {
+        
+    & .section_heading_bottom {
+        height: 457px;
+        
+        @include respond-to(lg) {
+            height: 420px;
+        }
+        @include respond-to(md) {
+            height: 380px;
+        }
+        @include respond-to(sm) {
+            height: 340px;
+        }
+        @include respond-to(xs) {        
+            height: 314px;
+        }
+    }
+
+
+
+
+
+
+
+//---------------------SECTION 29---------------------------------
+
+    & .section_29_bg { 
+        background: url('../img/svg/question__bg_top.svg'),url('../img/svg/question__bg_middle.svg'),url('../img/svg/question__bg_bottom.svg'), linear-gradient(90deg, rgba(255,255,255,1) calc(100vw - 790px), rgba(231,242,242,1) calc(100vw - 790px), rgba(231,242,242,1) 100%);
+        background-position: 95% 0%, calc(95% - 20px) 50%, 95% 100%, 0 0;
+        background-repeat: no-repeat;
+        margin-top: 140px;
+        padding-bottom: 140px;
+
+        @include respond-to(sm) {
+            background: url('../img/svg/question__bg_middle.svg'), linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(231,242,242,1) 20%, rgba(231,242,242,1) 100%);
+            background-position: center 30px, 0 0;
+            background-size: calc(100vw - 70px) auto, 100% 15%;
+            background-repeat: no-repeat;
+            margin-top: 52px;
+            padding-bottom: 0px;
+
+        }
+
+        & .section_29 {
+            margin-top: 180px;
+            margin-bottom: 64px;
+
+                @include respond-to(sm) {
+                    margin-top: 131px;
+                    margin-bottom: 41px;
+                }
+
+
+            & .questions-form {
+
+
+
+                & .questions__inputs-wrap {
+
+                    & .questions__header {
+                        font-family: "Mulish-400";
+                        font-size: 16px;
+                        @include ls(25);
+                    }
+
+                    & .questions__input  {
+                        height: 50px;
+
+                        &::placeholder {
+                            color: $grey-1;
+                        }
+                    }
+
+                    & .questions__add-text {
+                        font-family: "Muli-300";
+                        font-size: 12px;
+                        @include ls(25);
+                    }
+                }
+            
+                & .questions__btn_submit {
+                    width: $btn-small-width;
+                }   
+            }
+
+        }
+
+    }
+
+
+
+
+//---------------------SECTION 29---------------------------------
+
+    & .section_38_bg {
+        padding-top: 153px;
+        padding-bottom: 80px;
+
+        @include respond-to(md) {
+            padding-top: 65px;
+            padding-bottom: 70px;
+
+        }
+
+        @include respond-to(sm) {
+            padding-top: 30px;
+            padding-bottom: 58px;
+        }
+    }
+
+
+    & .section_38 {
+
+        & .section_38__header-line {
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -46px;
+                top: 7px;
+                height: 7px;
+                width: 27px;
+                background-color: $light-blue-2;
+                
+                @include respond-to(sm) {
+                    content: "";
+                    position:relative;
+                    display: inline-block;
+                    left: 0px;
+                    top: -8px;
+                    height: 7px;
+                    width: 27px;
+                    margin-right: 15px;
+                    background-color: $light-blue-2;
+                }
+
+            }
+
+
+        }
+
+
+        & .section_38__contact-bold {
+            font-family: "Mulish-600";
+            font-size: 16px;
+            line-height: 24px;
+            @include ls(25);
+        }
+        
+
+    }
+
+//---------------------SECTION 29---------------------------------
+
+    & .section_39_bg {
+
+    }
+
+    & .section_39 {
+
+        & .section_39__block {
+            @include respond-to(sm) {
+                border: none !important;
+            }
+
+            &:nth-child(5n) {
+
+                @include respond-to(md) {
+                    border-left: none !important;
+                }
+            }
+
+        }
+
+    }
+
+/*
+d-flex align-items-stretch justify-content-between flex-wrap
+
+                <div class="section_39__line h-100 w-0 border-end border-1 border-blue-l2"></div>
+            <div class="section_39__content row row-cols-4">
+
+*/
+
+//---------------------SECTION 16---------------------------------
+
+    & .section_16_bg {
+        padding-top: 60px;
+        padding-bottom: 110px;
+
+        @include respond-to(sm) {
+            padding-top: 50px;
+            padding-bottom: 45px;
+        }
+
+    }
+
+
+    & .section_16 {
+
+        @include respond-to(sm) {
+            //margin-top: 67px;
+        }
+
+        & .text_main_bold {
+            font-family: "Mulish-Black-Italic";
+        }
+
+
+
+
+
+        & .block_7 {
+
+            margin-top: 44px;
+        
+            @include respond-to(sm) {
+                margin-top: 30px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                    width: 100%;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 25px);
+                    }
+
+                    & .text_add__extrabold {
+                        font-family: "Mulish-800";
+                    }
+
+                    & .ul_1__text::before {
+                        background-color: $light-blue-3;
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 150px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

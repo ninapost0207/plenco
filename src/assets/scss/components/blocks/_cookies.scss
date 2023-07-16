@@ -1,0 +1,40 @@
+.block_cookies {
+    min-height: 84px;
+    z-index: 1000;
+    top: 116px;
+
+    @include respond-to(sm) {
+        top: 83px;
+    }
+
+
+    & .block_cookies__content {
+    
+        & .block_cookies__decisions {
+    
+
+            & .block_cookies__btn_accept {
+                font-family: "Play-700";
+                font-size: 20px;
+            }
+
+            & .block_cookies__btn_close {
+                font-family: "Mulish-600";
+                font-size: 16px;
+            }
+    
+    
+        }
+    }
+    
+
+    & .block_cookies__close {
+        height: 14px;
+        width: 14px;
+        top: 14px;
+        right: 19px;
+        cursor: pointer;
+    }
+
+
+}

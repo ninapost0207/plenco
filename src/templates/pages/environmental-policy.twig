@@ -1,0 +1,134 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Environmental Policy page' %}
+{% set pageClass = 'body_environmental-policy' %}
+
+{% set page_environmental_policy = {
+    heading: {
+        heading_top_text: "Environmental Policy",
+        bg_img: "./assets/img/pages/enviromental-policy/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_technical-service overline-r",
+        header: "About <span class='text-blue-1'>Plenco</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "about Plenco",
+        link_to: "about.html"
+    },
+
+
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %} 
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_environmental_policy.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_environmental_policy.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">The environment in which we live and work is of <span class='text-blue-l2' >utmost importance to Plenco</span>.</p>
+                </div>
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">The principle and process are clear. Ever since our founding, Plenco has been a good employer, supplier and neighbor when it comes to the environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <div class="row section_15_bg overflow-hidden">
+        <div class="section_15 col px-0">
+            <div class="container cont-site">
+                <h2 class="section_15__header text-start mb-0">Environmental <span class="text-blue-1">Policy</span></h2>
+                <p class="section_15__text text_main mb-0 mt-4">Ever since our founding, Plenco has been a good employer, 
+                    supplier and neighbor when it comes to the environment. We have implemented 
+                    sustainable processes that not only are respectful of our surroundings but make good 
+                    business sense as well. (Basecamp - 10/07/21 Proofs - About - Environmental Policy)</p>
+                
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden">
+                        <div class="block_7__img-wrap col col-md-12">
+                            <img src="./assets/img/pages/enviromental-policy/policy.jpg" alt="Pic-1" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/enviromental-policy/policy.jpg" alt="Pic-1_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <ul class="ul_1 mb-0 ps-3">
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-5 mt-md-0">A respect for our environmental impact 
+                                    has guided the design and location of our buildings, plant processes and contingency 
+                                    planning. Dust collectors help clean the air while recovering materials that can be 
+                                    reused. Our phenol recovery plant reclaims phenol from production condensate for 
+                                    reuse, minimizing waste while reducing overall demand for virgin phenol.</li>
+                                <li class="ul_1__text text_add mb-0 text-black-1 mt-4">This is the most efficient runner, 
+                                    but in some cases it is necessary for the runner to be in only one half of the mold.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="ul_1 mb-0 ps-3">
+                    <li class="ul_1__text text_add mb-0 text-black-1 mt-4 mt-md-5">At all levels, our plant operations utilize management 
+                        practices and the best available technology to maximize product quality and minimize environmental 
+                        impact. Over the past decades, these carefully planned efforts have reduced production waste to levels 
+                        approaching zero.</li>
+                    <li class="ul_1__text text_add mb-0 text-black-1 mt-4">Green practices and processes support our customers’ 
+                        requirements to meet their environmental objectives as products move downstream through the supply chain.</li>
+                    <li class="ul_1__text text_add mb-0 text-black-1 mt-4">The United States Environmental Protection Agency has 
+                        awarded Plenco a Letter of Commendation in recognition of our “voluntary initiative to reduce toxic emissions 
+                        and foster pollution prevention as the preferred approach to environmental improvement.”</li>
+                </ul>
+                <p class="section_15__text text_add mb-0 mt-5">The vast majority of Plenco’s environmental practices and policies 
+                    pre-date the existence of regulatory bodies such as the Environmental Protection Agency. Environmental 
+                    stewardship and responsibility have been a part our identity as a company from the start. Nonetheless, 
+                    Plenco is committed to continuous improvement as it relates to our environmental practices and policies.</p>
+            
+                
+                <h2 class="section_15__header text-start mb-0 mt-5 pt-3">Plenco <span class="text-blue-1">Resources</span></h2>
+
+                <div class="block_6 position-relative col-12 col-sm-6 col-md-5 col-lg-4 mt-4 bg-grey-2">
+                    <p class="block_6__text mb-0 text-black-1 mb-3 pt-5 px-4">Plenco’s CSR Manual</p>
+                    <div class="block_6__line h-0 w-50 mt-4 border-bottom border-1 border-blue-l2 ms-4"></div>
+                    <h3 class="mb-0 text-blue-1 mt-3 ps-4 pb-3">CSR Manual</h3>
+                    <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
+                    <a href="link_document.html" class="stretched-link"></a>
+                </div>    
+                
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    {% include '../components/sections/section_13.twig' with {data: page_environmental_policy.section_13} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %} 

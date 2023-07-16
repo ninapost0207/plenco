@@ -1,0 +1,74 @@
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1450px;
+
+$nav-btn-change: 0.5s;
+$cookies-change: 0.5s;
+
+$yellow-1: #F9C80E;
+$green_el: #E7F2F2;
+$blue-1: #005498;
+$blue-2: #011E40;
+$dark-blue-1: #012F55;
+$white-1: #FFFFFF; 
+$black-1: #000000;
+$light-blue-1: #E7F2F2;
+$light-blue-2: #42BFDD;
+$light-blue-3: #BBE6E4;
+$grey-1: #707070;
+$grey-2: #EFEFEF;
+$grey-4: #666667;
+
+$white: #FFF; 
+$black: #000000;
+
+//-------------------BOOTSTRAP---------------------------
+
+$modal-fade-transform: scale(1);
+
+$container-max-widths: (
+sm: 100%,
+md: 100%,
+lg: 100%,
+xl: 1160px,
+xxl: 1161px
+);
+
+
+$site-themes: (
+    "yellow-1": $yellow-1,
+    "blue-1": $blue-1,
+    "blue-2": $blue-2,
+    "blue-3": $dark-blue-1,
+    "blue-l1": $light-blue-1,
+    "blue-l2": $light-blue-2,
+    "blue-l3": $light-blue-3,
+    "grey-1": $grey-1,
+    "grey-2": $grey-2,
+    "grey-3": $green_el,
+    "grey-4": $grey-4,
+    "white-1": $white-1,
+    "black-1": $black-1,
+);
+
+
+//-------------BUTTONS---------------------------------
+$btn-standard-width: 251px;
+$btn-small-width: 208px;
+
+
+//---------------CARDS--------------------------------
+$card-border-radius: 0;
+
+
+$nav-link-color: #000 !important;
+$nav-link-hover-color:#000 !important;
+
+
+.bx5-dark-blue-1 {
+    border-left: 50px solid red;
+    border-right: 5px solid $dark-blue-1;
+}
+

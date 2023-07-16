@@ -1,0 +1,393 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Facility page' %}
+{% set pageClass = 'body_facility' %}
+
+
+
+
+{% set page_facility = {
+    heading: {
+        heading_top_text: "Facility",
+        bg_img: "./assets/img/pages/facility/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_13: {
+        class: "page_facility overline-r",
+        header: "Contact <span class='text-blue-1'>Plenco</span>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Contact Plenco",
+        link_to: "contact.html"
+    },
+}
+%}
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_facility.nav_side} %}
+
+    {% include '../components/sections/section_heading_top.twig' with {data: page_facility.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 text-start">Plenco’s facilities are highly engineered and have allowed us to manufacture/distribute first-rate, consistent products over the last <span class="text-blue-l2">87 years</span>.
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="section_201">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div class="block_207">
+                                <div>
+                                    <h2>The Plenco <span>Facility</span></h2>
+                                    <p>Plenco operates large manufacturing and warehouse facilities in Sheboygan, Wisconsin. 
+                                        The construction of these plants is the result of the efforts of Plenco’s own engineering staff - many of whom are registered Professional Engineers.</plass=>
+                                    <p>This staff is involved in the planning, development, installation, and continuous 
+                                        improvement of plant equipment. These units are capable of producing resin products under 
+                                        strict process control as well as molding materials with a high level of quality and 
+                                        consistency. The engineering of our manufacturing factory and its expansions has produced a 
+                                        facility deliberately designed around large capacity production, smooth efficient flow of 
+                                        manufacturing processes, and adaptability to equipment and product change. Throughout its 
+                                        design history, manufacturing cost containment has been a key element. Well-developed 
+                                        preventive maintenance programs (PMP) assure the consistent on-time delivery of Plenco 
+                                        products.</p>
+                                    <p>At all levels, our plant operations utilize management practices and the best available 
+                                        technology to maximize product quality and minimize environmental impact. These carefully 
+                                        planned efforts have reduced production waste to levels approaching zero. The United States 
+                                        Environmental Protection Agency has awarded Plenco a Letter of Commendation in recognition 
+                                        of our “voluntary initiative to reduce toxic emissions and foster pollution prevention as 
+                                        the preferred approach to environmental improvement.</p>
+                                </div>
+                                <a href="#plenco-buildings" class="block_button button_plain arrow"> <!--button_yel-->
+                                    <img src="./assets/img/svg/arrow_down_1.svg" alt="">
+                                    <h3>Plenco Facility</h3> 
+                                </a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/img/pages/facility/facility.jpg" alt="Facility">
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+    
+    </div>
+    
+   
+   
+   
+    <div class="row section_16_bg overflow-hidden px-0" id="plenco-buildings">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <h2>Plenco <span>Buildings</span></h2>
+
+
+                <div class="block_206 lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/facility/Corporate_Headquarters_Main_Office.jpg" alt="Main Corporate Office">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Main Corporate Office</h3>
+                            <p>Plenco’s corporate headquarters is located in Sheboygan, WI, and boasts a modernist style 
+                                designed by architect William Weeks, Jr. The main office brings together the Sales, Marketing, 
+                                Technical Service, Human Resources, IT, Operations and Procurement organizations and several 
+                                functions that support Plenco’s key business groups.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_206 image_left lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/facility/North_Ave_Plant.jpg" alt="Main Corporate Office">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>North Avenue Plant</h3>
+                            <p>The North Ave Plant is home to Plenco’s Phenolic Resin, Phenolic Molding Material and Granular 
+                                Polyester manufacturing operations, in addition to our Research & Development, Quality Assurance, 
+                                Environmental Health & Safety and Maintenance & Engineering Departments. The close relationship 
+                                between customers, Sales, Research & Development and Production allows a quick and seamless transition 
+                                from custom formulations based on customer’s requirements, lab size batches, scaled all the way to 
+                                full production.</p>
+                            <p>A source of pride for Plenco is the internal expertise of our Engineering and Maintenance departments 
+                                who plan, install and maintain all the process equipment. This intimate knowledge of all our 
+                                manufacturing processes allows employee safety and product quality to be designed into every process, 
+                                as well as giving Plenco the ability to quickly modify production equipment to meet customer’s needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="block_206 lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/facility/BMC_Plant.jpg" alt="Main Corporate Office">
+                        </div>
+                    </div>
+                    <div class="lined">
+                        <div>
+                            <h3>Bulk Molding Compound Plant</h3>
+                            <p>Plenco’s Bulk Molding Compound (BMC) production facility yields batch-to-batch consistent material 
+                                from a state of the art manufacturing process with strict quality control. Our Research & Development 
+                                team and fully functional lab enables Plenco to develop custom formulations for customers so they can 
+                                have a competitive advantage in the marketplace.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_206 image_left lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/facility/Phenol_Recovery.jpg" alt="Main Corporate Office">
+                        </div>
+                    </div>
+                    <div class="lined">
+                        <div>
+                            <h3>Phenol Recovery</h3>
+                            <p>The Phenol Recovery facility allows Plenco to reclaim phenol from production distillate for reuse, 
+                                minimizing waste while reducing overall demand for virgin phenol. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_206 lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/facility/Warehouse.jpg" alt="Main Corporate Office">
+                        </div>
+                    </div>
+                    <div class="lined">
+                        <div>
+                            <h3>Warehouse</h3>
+                            <p>Plenco’s warehouse provides over 200,000 square feet of temperature controlled storage space, 
+                                including enclosed docks, for packaging, raw materials and finished goods. To guarantee the 
+                                highest standards of accuracy, the entire facility utilizes barcode technology for real time picking 
+                                and inventory control.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_206 image_left lined">
+                    <div>
+                        <div>
+                            <img src="./assets/img/pages/facility/Tool_and_Die.jpg" alt="Main Corporate Office">
+                        </div>
+                    </div>
+                    <div class="lined">
+                        <div>
+                            <h3>Tool & Die</h3>
+                            <p>As part of Plenco’s commitment to equipment reliability, innovation and customer relationships 
+                                our Tool & Die facility serves a critical role in that process. From designing and machining parts for 
+                                production and laboratory equipment, to building prototype dies for Research & Development, the Tool & 
+                                Die capabilities ensure Plenco is able to consistently meet customer’s needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_8-2_bg position-relative ">
+        <div class="section_8-2 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8-2__data d-flex flex-column-reverse flex-lg-row position-relative align-items-lg-center">
+                    
+                    <div class="section_8-2__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8-2__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0 d-none d-lg-block">Research<span class='text-blue-1 font-normal'>& Development</span></h2>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-2">The 
+                                        core of Plenco’s research and development facilities is a complete synthesis laboratory for the production 
+                                        of prototype resins: resins are designed for specific applications; process improvements are scrutinized; 
+                                        additives and curing agents are blended to produce finished resin products. This versatility facilitates 
+                                        the testing of specific ideas, but more important, it enables the use of experimental design and optimization 
+                                        techniques. (Research & Development text.)</p>
+                                </div>
+                                <a href="research-development.html" class="block_4__button bnt btn-yellow-1 px-3 mt-5 col-12 col-sm-auto ms-auto me-auto ms-lg-0 ">Research & Development</a>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <img src="./assets/img/pages/facility/research.jpg" alt="Facility" class="section_8__image position-relative d-none d-lg-block">
+                    <img src="./assets/img/pages/facility/research_mob.jpg" alt="Facility" class="section_8__image position-relative d-lg-none">
+                    <h2 class="block_4__header position-relative mb-0 text-start d-lg-none mb-3">Research<span class='text-blue-1 font-normal'>& Development</span></h2>
+
+                </div>
+            </div> 
+        </div>
+    
+    </div>
+
+
+
+
+    <div class="section_202">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <p>The standards for judging quality customer service continually change.</p>
+                        <div class="subheader">Plenco’s dedication to keeping current with emerging technologies in manufacturing processes, inventory 
+                            control, and product distribution systems permits us to meet the changing needs of our worldwide customer base.</div>
+                    </div>
+                    <div>
+                        <p>Investments in distribution facilities, equipment, and experienced personnel allow 
+                            us to respond to our domestic and foreign customer product delivery requirements. This is accomplished by maintaining raw material 
+                            and finished goods inventories at levels required to service customer demands and provide on-time deliveries.</p>
+                        <p>Plenco has the systems in place to communicate electronically (EDI) with 
+                            our customers in support of current manufacturing concepts such as JIT and Kanban. Systems are also in use and 
+                            available to supply requirements in inventory identification and bar coding.</p>
+                        <p>Working closely with Sales, Manufacturing, and Quality Assurance 
+                            departments, Plenco’s distribution team quickly and accurately schedules shipments. From truckloads of molding 
+                            compounds and powdered resins to tanker trailers of liquid resins, we have the means to service our customer packaging 
+                            and transportation requests.</p>
+                        <p>At Plenco we realize that simply providing acceptable levels of service 
+                            is not good enough. Continuous efforts are made to provide the superior service required to gain and maintain 
+                            preferred supplier status. To achieve this, Plenco’s distribution team remains alert and responsive to all of the 
+                            product delivery requirements of our customers. (Distribution text.)</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    
+    <div class="row section_18_bg overflow-hidden">
+        <div class="section_18 col-12 px-0">
+            <div class="container cont-site">
+                <div class="section_18__data col-12">
+                    <h2 class="section_18__header mb-0 text-start text-md-center">Production <span class="text-blue-1">Schedule</span></h2>
+                    <div class="section_18__content col-12 d-flex flex-column justify-content-between align-items-start flex-md-row mt-3 mt-md-5">
+                        <div class="section_18__left col-12 col-md-6">
+                            <div class="section_18__wrap col-12 col-md-11">
+                                <p class="section_18__text text_add mb-0">Following is our PLENCO holiday schedule for <b>2021:</b></p>
+                                <div class="section_18__blocks-cont border-start border-20 border-blue-1 mt-3 pt-2 pb-3">
+                                    
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Mon. - Sun. July 19 - 25</h5>
+                                        <p class="block_8__text text-add  mb-0">SHUTDOWN</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Friday, September 3</h5>
+                                        <p class="block_8__text text-add  mb-0">Floating Holiday</p>
+                                        <h5 class="block_8__header mb-0 mt-2 pt-1">Monday, September 6</h5>
+                                        <p class="block_8__text text-add  mb-0">Labor Day</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Thursday, November 25</h5>
+                                        <p class="block_8__text text-add  mb-0">Thanksgiving Day</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Friday, November 26</h5>
+                                        <p class="block_8__text text-add  mb-0">Company Holiday</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Thursday, December 23</h5>
+                                        <p class="block_8__text text-add  mb-0">Christmas Day Holiday</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Friday, December 24</h5>
+                                        <p class="block_8__text text-add  mb-0">Christmas Eve Holiday</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Thursday, December 30</h5>
+                                        <p class="block_8__text text-add  mb-0">New Year’s Day Holiday</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Friday, December 31</h5>
+                                        <p class="block_8__text text-add  mb-0">New Year’s Eve Holiday</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_18__right col-12 col-md-6 mt-5 mt-md-0">
+                            <div class="section_18__wrap col-12 col-md-11 offset-md-1">
+                                <p class="section_18__text mb-0">Following is our PLENCO holiday schedule for <b>2022:</b></p>
+                                <div class="section_18__blocks-cont border-start border-20 border-blue-1 mt-3 pt-2 pb-3">
+
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Friday, May 27</h5>
+                                        <p class="block_8__text text-add  mb-0">Floating Holiday</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Monday, May 30</h5>
+                                        <p class="block_8__text text-add  mb-0">Memorial Day</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Monday, July 4</h5>
+                                        <p class="block_8__text text-add  mb-0">Independence Holiday</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Mon. - Sun. July 25 - 31</h5>
+                                        <p class="block_8__text text-add  mb-0">SHUTDOWN</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Friday, September 2</h5>
+                                        <p class="block_8__text text-add  mb-0">Floating Holiday</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Monday, September 5</h5>
+                                        <p class="block_8__text text-add  mb-0">Labor Day</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Thursday, November 24</h5>
+                                        <p class="block_8__text text-add  mb-0">Thanksgiving Day</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Friday, November 25</h5>
+                                        <p class="block_8__text text-add  mb-0">Company Holiday</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Monday, December 26</h5>
+                                        <p class="block_8__text text-add  mb-0">Christmas Day Holiday</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Tuesday, December 27</h5>
+                                        <p class="block_8__tex text-add t mb-0">Christmas Eve Holiday</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Wednesday, December 28</h5>
+                                        <p class="block_8__text text-add  mb-0">Floating Holiday</p>
+                                    </div>
+                                    <div class="block_8 col-12 position-relative bg-grey-2 mt-2 py-3 px-4">
+                                        <h5 class="block_8__header mb-0">Thursday, December 29</h5>
+                                        <p class="block_8__text text-add mb-0">New Year’s Eve Holiday</p>
+                                        <h5 class="block_8__header mb-0 mb-0 mt-2 pt-1">Friday, December 30</h5>
+                                        <p class="block_8__text text-add  mb-0">New Year’s Day Holiday</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    {% include '../components/sections/section_13.twig' with {data: page_facility.section_13} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

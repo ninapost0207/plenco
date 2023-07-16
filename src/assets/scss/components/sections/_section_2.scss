@@ -1,0 +1,104 @@
+/*.section_2_bg {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    margin-bottom: 90px;
+    
+    @include respond-to(sm) {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+}
+
+.section_2 {
+    
+
+    & .container {
+        padding-bottom: 94px !important; 
+        padding-top: 112px !important;
+
+        @include respond-to(sm) {
+            padding-bottom: 69px !important; 
+        }
+
+    }
+
+    & h3 {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & .section_2__cards-cont {
+
+
+        & .section_2__card {
+            padding-top: 32px;
+            max-width: 267px;
+            
+
+            @include respond-to(lg) {
+                max-width: 478px;
+            }
+
+            @include respond-to(sm) {
+                padding-top: 45px;
+            }
+
+            & .section_2__card__img-cont {
+                height: 128px;
+            }
+
+            & .section_2__card__content-cont {
+                background-color: $dark-blue-1 !important;
+
+                & .section_2__card__header-cont {
+                    padding-left: 0 !important;
+                    height: 120px;
+
+                    & .section_2__card__header {
+                        color: $light-blue-3;
+                        font-family: "Muli-700";
+                        font-size: 22px;
+                        letter-spacing: 0.05rem;
+                    }
+
+
+                }
+                
+                & .section_2__card__text {
+                    color: $white;
+                    min-height: 260px;
+                    font-family: "Muli-300";
+                    font-size: 16px;
+                    letter-spacing: 0rem;
+                }
+
+
+                & .section_2__card__line {
+                    margin-bottom: 0;
+                    margin-top: 24px;
+                    background-color: $white;
+                    border-top: 1px solid $white;
+                    height: 0;
+
+                }
+
+                & .section_2__card__bottom-block {
+
+                    & .section_2__card__bottom-block__text  {
+                        color: $light-blue-3;
+                        text-transform: uppercase;
+                        font-family: "Play-700";
+                        font-size: 16px;
+                        display: inline-block;
+                    }
+                }
+
+            }
+
+        }
+
+
+
+
+    }
+
+}
+*/

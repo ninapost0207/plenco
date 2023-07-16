@@ -1,0 +1,227 @@
+.body_careers {
+        
+    & .section_heading_bottom {
+        height: 437px;        
+        
+        @include respond-to(xs) {        
+            height: 450px;
+        }
+    }
+
+
+//--------------------------SECTION 12----------------------------
+    .section_12_bg {
+
+        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        background-position:  100% 0%;
+        background-size:  100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 55px;
+        
+        @include respond-to(md) {
+            background: linear-gradient(270deg, rgba(255,255,255,1) 16%, rgba(231,242,242,1) 16%, rgba(231,242,242,1) 100%);
+        }
+
+        @include respond-to(sm) {
+            padding-top: 30px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            background: linear-gradient(270deg, rgba(255,255,255,1) 40%, rgba(231,242,242,1) 40%, rgba(231,242,242,1) 100%); 
+            background-size:   100% 200px;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+
+    .section_12 {
+
+        & .section_12__header {
+            text-transform: none;
+        }
+
+        & .section_12__data {
+
+            & .section_12__textarea {
+
+                & .section_12__button {
+                    min-width: 349px;
+                }
+            }
+
+            & .section_12__video {
+                height: 370px;
+                max-height: 400px;
+            }
+
+        }
+
+        //--------------------- mob ----------------------------------
+
+        & .section_12__data_mob {
+
+            & .section_12__video {
+                height: calc(100vw / 2);
+            }
+        }
+    }
+
+    .section_12__bg-img_bottom {
+        height: 100px;
+        background-image: url('../img/svg/section_12__bg.svg');
+        background-repeat: no-repeat;
+        background-position: 25px bottom;
+        background-size: 602px 943px;
+        bottom: -100px;
+        z-index: -1;
+    }
+
+
+//---------------------SECTION 28---------------------------------
+    & .section_28_bg {
+        padding-top: 108px;
+        padding-bottom: 75px;
+
+        background-image:  url("../img/svg/section_14__bg.svg");
+        background-repeat: no-repeat;
+        background-position: 25px bottom;
+        background-size: 602px auto;
+
+
+        @include respond-to(sm) {
+            margin-top: 0px;
+            padding-bottom: 125px;
+
+            background: url("../img/svg/mosaic_3.svg");
+            background-size:  auto auto;
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+        }
+    }
+
+
+    & .section_28 {
+
+
+        @include respond-to(sm) {
+        }
+
+        & .section_28__data {
+
+            & .block_4__text {
+                font-family: "Muli-600";
+                font-size: 24px;
+                line-height: 30px;
+                @include ls(50);
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                }
+            }
+
+            & .block_4__text_add  {
+                font-family: "Muli-300";
+                font-size: 16px;
+                line-height: 18px;
+                @include ls(25);
+
+                @include respond-to(sm) {
+                    font-size: 14px;
+                }
+            }
+
+
+            & .section_28_accordion {
+
+                & .accordion-button:after {
+                    background-image: url('../img/svg/accordion__arrow_blue_down.svg');
+                    background-size: 45%;
+                    background-position: center center;
+                }
+            
+                & .accordion-button:not(.collapsed)::after {
+                    background-image: url('../img/svg/accordion__arrow_blue_up.svg');
+                }
+            }
+
+
+
+
+
+            //----------------------------GALLERY JOBS-----------------------
+
+            & .gallery_jobs {
+
+                & .block_6 {
+                    min-height: 212px;
+
+                    & .block_6__header {
+                        font-family: "Muli-600";
+                        font-size: 24px;
+                        line-height: 30px;
+                        @include ls(50);
+
+                        @include respond-to(sm) {
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+
+                    }
+
+                    & .block_6__subheader {
+                        font-family: "Mulish-300";
+                        font-size: 16px;
+                        line-height: 24px;
+                        @include ls(25);
+                    }
+
+                    & .block_6__text {
+                        font-family: "Mulish-600";
+                        font-size: 16px;
+                        line-height: 22px;
+                        @include ls(25);
+
+                        @include respond-to(sm) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            & .allery_jobs__pages {
+                height: 50px;
+                margin-top: 75px;
+                
+
+                & .gallery_jobs__control {
+                    width: 50px;
+                    font-family: "Mulish-800";
+                    font-size: 22px;
+                    @include ls(25);
+                    line-height: 24px;
+
+                    &.selected {
+                        background-color: $blue-1;
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+    }
+
+//-----------------SECTION 13----------------------------
+
+    & .section_13_bg {
+        @include respond-to(sm) { 
+            position: unset;
+        }
+
+        
+        & .section_13__button {
+            
+        }
+    }
+
+
+}

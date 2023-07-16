@@ -1,0 +1,79 @@
+.body_terms-conditions {
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 70% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 70% 50% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 75% 50% !important;
+            background-size: 300% !important;
+        }
+    }
+    & .section_heading_bottom {
+        height: 364px;
+        
+        @include respond-to(md) {
+            height: 330px;
+        }
+        @include respond-to(sm) {
+            height: 270px;
+        }
+        @include respond-to(xs) {        
+            height: 220px;
+        }
+    }
+
+    //--------------------------SECTION 100----------------
+    /*& .section_100 {        
+        height: 315px;
+
+        @include respond-to(md) {
+            height: 300px;
+        }
+        @include respond-to(sm) {
+            height: 280px;
+        }
+        @include respond-to(xs) {        
+            height: 263px;
+        }
+    }*/
+
+
+    //--------------------------SECTION 106----------------
+
+    & .section_106 {
+
+        & .section_106_accordion {
+
+            & .accordion-button {
+                height: 45px;
+
+                
+                &:after {
+                    height: 45px;
+                    width: 45px;
+                    margin-left: 20px;
+                    background-image: url('../img/svg/acc-arrow-down_45.svg');
+                    background-position: center center;
+                    background-size: contain;
+                }
+               
+                &:not(.collapsed)::after {
+                    //transform: rotate(180deg)!important;
+                    background-image: url('../img/svg/acc-arrow-up_45.svg');
+        
+                }
+            }
+
+        }
+
+    }
+
+}
+

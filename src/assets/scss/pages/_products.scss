@@ -1,0 +1,110 @@
+.body_products {
+
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 80% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 25% 100% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 40% 100% !important;
+            background-size: 400% !important;
+        }
+    }
+    & .section_heading_bottom {
+        height: 496px;
+        
+        @include respond-to(md) {
+            height: 480px;
+        }
+        @include respond-to(sm) {
+            height: 470px;
+        }
+        @include respond-to(xs) {        
+            height: 450px;
+        }     
+    }
+
+
+//---------------------SECTION 40---------------------------------
+
+    & .section_40_bg {
+        padding-top: 90px;
+        padding-bottom: 100px;
+        background-image:  url("../img/svg/section_14__bg.svg");
+        background-repeat: no-repeat;
+        background-position: 25px bottom;
+        background-size: 602px auto;
+
+
+        @include respond-to(sm) {
+            padding-top: 50px;
+            padding-bottom: 60px;
+            background: url("../img/svg/mosaic_3.svg");
+            background-size:  auto auto;
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+        }
+    }
+
+    & .section_40 {
+        
+
+        & .section_40__content {
+
+            & .section_40__card-wrap {
+                
+                margin-bottom: 160px;
+
+                @include respond-to(sm) {
+                    margin-bottom: 65px;
+
+                }
+
+                & .card {
+            
+                    & .card-title {
+                        font-family: "Almarai-700";
+                        font-size: 24px;
+                        line-height: 30px;
+                        @include ls(25);
+                    }
+            
+                    & .card-text {
+                        font-family: "Muli-300";
+                        font-size: 16px;
+                        line-height: 18px;
+                        @include ls(25);
+                    }
+            
+                    & .card_bottom-cont {
+                        height: 60px;
+                    }
+            
+            
+                }
+            }
+        }
+    }
+
+
+
+//-----------------SECTION 13----------------------------
+
+    & .section_13_bg {
+        @include respond-to(sm) { 
+            position: unset;
+        }
+
+        
+
+
+    }
+
+
+}

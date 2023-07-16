@@ -1,0 +1,78 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Accessibility' %}
+{% set pageClass = 'body_accessibility' %}
+
+{% set page_accessibility = {
+    heading: {
+        heading_top_text: "Accessibility",        
+        bg_img: "./assets/img/pages/accessibility/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_accessibility.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_accessibility.heading} %}
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">At Plenco, we’re committed to accessibility. It is our policy to ensure that everyone, including persons with disabilities, has full and <span class='text-blue-l2'>equal access to our digital offerings</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1"></p> 
+                </div>                
+            </div>
+        </div>2
+    </div>
+
+
+
+    <div class="section_106">
+        <div>
+            <div class="subheader">Our website strives to meet the following accessibility standards: <a href="#">Web Content Accessibility Guidelines (WCAG) 2.0 AA, PDF/Universal Accessibility (PDF/UA)</a> to ensure our digital offerings are ADA Compliant.</div>                
+            <p>Here are just some of the many ways that our website is accessible and meets the above accessibility standards:</p>
+            <ul>
+                <li>Background and foreground colors are made to have high contrast ratios</li>
+                <li>Buttons have discernible names</li>
+                <li>Clean, efficient coding practices</li>
+                <li>Descriptive alt tags are set on all meaningful images</li>
+                <li>We use a focus indicator to highlight interactable elements</li>
+                <li>We maintain a consistent and maintainable layout throughout the website</li>                    
+            </ul>
+            <p>Plenco and it’s developers are committed to accessibility and we are always seeking to improve. If you know of a way we can improve, we’d love to hear more. You can email the developers of this site at <a href="mailto:info@fifthcolor.com" class="text-black-1" style="font-family: 'Mulish-600';">info@fifthcolor.com</a>.</p>
+        </div>
+    </div> 
+
+
+    
+    
+       
+
+
+
+
+
+
+
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

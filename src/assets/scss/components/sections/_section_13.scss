@@ -1,0 +1,34 @@
+.section_13_bg {
+
+    padding-top: 73px;
+    padding-bottom: 54px;
+    background-image:  url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+    background-repeat: no-repeat;
+    background-position: -14px 0%, 102% 100%, 0 0;
+    background-size: 642px auto, auto auto, 100% 100%;
+
+
+    @include respond-to(md) {
+        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+    }
+
+    @include respond-to(sm) {
+        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+        background-position: -195px 0%, 0 0;
+        background-size: 500px auto, 100% 100%;
+        padding-bottom: 64px;
+    }
+}
+
+
+
+.section_13 {
+
+    & .section_13__button {      
+        min-width: $btn-standard-width;  
+
+        &:hover {
+            color: $black;
+        }
+    }
+}

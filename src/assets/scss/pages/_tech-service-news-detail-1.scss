@@ -1,0 +1,147 @@
+.body_tech-service-news-detail {    
+    
+    & .section_heading_bottom {    
+        height: 280px;
+        
+        @include respond-to(sm) {
+            height: 350px;
+        }
+    }
+
+    & .text_add-bold {
+        font-family: "Mulish-600";
+        font-size: 16px;
+        line-height: 28px;    
+        @include ls(25);
+        
+    }
+
+//------------------------------------SECTION 108----------------------
+
+& .section_108_bg {
+    padding-top: 75px;
+    padding-bottom: 80px;
+
+    @include respond-to(sm) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+& .section_108 {
+
+
+    & .section_108__content {
+        padding-top: 75px;
+        padding-bottom: 75px;
+
+        @include respond-to(sm) {
+            padding-bottom: 20px;
+            padding-top: 25px;
+        }
+    }
+
+
+
+    & .text_spec {
+        font-family: "Mulish-Light-Italic";
+        font-size: 14px;
+        line-height: 28px;
+        @include ls(25);
+    }
+
+    & .ul_3 {
+
+          & .ul_3__text {
+              font-size: 16px;
+              line-height: 25px;
+          }  
+    }
+
+
+
+    
+
+    
+    & .section_108__tags {
+                
+        & .block_tag_1 {
+            min-height: 26px;
+            min-width: 76px;
+        
+            & .block_tag_1__text {
+                font-family: "Mulish-300";
+                font-size: 14px;
+                line-height: 20px;
+                @include ls(25);
+            }
+        }
+
+    }
+}
+
+
+    //---------------------SECTION 30---------------------------------
+
+    & .section_30_bg {
+        padding-top: 120px;
+        margin-bottom: 90px;
+
+        @include respond-to(sm) {
+            padding-top: 75px;
+        }
+
+    }
+    
+    
+    & .section_30 {
+
+        & .section_30__card-wrap {
+
+            & .section_30__card {
+                min-height: 200px;
+
+                & .text_main {
+                    @include respond-to(sm) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                & .section_30__tags {
+                    
+                    & .block_tag_1 {
+                        min-height: 26px;
+                        min-width: 76px;
+                    
+                        & .block_tag_1__text {
+                            font-family: "Mulish-300";
+                            font-size: 14px;
+                            line-height: 20px;
+                            @include ls(25);
+                        }
+                    }
+            
+                }
+
+            }
+
+        }
+
+        & .section_30__button {
+            margin-top: 80px;
+
+            @include respond-to(sm) {
+                margin-top: 50px;
+            }
+        }
+
+    }
+    
+
+
+
+}
+
+    
+
